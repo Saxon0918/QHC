@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from itertools import product
 from typing import Iterable, Sequence
 
 import numpy as np
@@ -194,13 +195,22 @@ def paired_bootstrap_delta(
     seed: int = 42,
     metric: str = "ap",
     confidence: float = 0.95,
-) -> dict[str, float | int | None]:
+) -> dict[str, float | int | str | None]:
     """Cluster-level paired bootstrap of proposed minus baseline performance.
 
     ``groups`` must identify independent graphs or time blocks. Resampling
     candidates individually would understate uncertainty when they share a
     projection graph. A positive delta means better performance, including
     for Brier and log loss (where we reverse the raw loss difference).
+
+    When there are at most 10,000 possible *ordered* cluster resamples, all
+    ``n_groups ** n_groups`` draws are enumerated exactly. This removes Monte
+    Carlo error from tiny-cluster percentile endpoints but cannot make a
+    confidence interval based on few independent graphs scientifically strong.
+    Larger cases use ``n_bootstrap`` seeded Monte Carlo draws and report the
+    approximate standard error of the requested tail probability. A single
+    independent group cannot estimate between-group uncertainty: its CI is
+    deliberately undefined.
     """
     y, base, _ = _candidate_arrays(labels, baseline_scores)
     _, proposed, _ = _candidate_arrays(y, proposed_scores)
@@ -213,29 +223,65 @@ def paired_bootstrap_delta(
         raise ValueError("unsupported metric")
 
     def delta(indices: np.ndarray) -> float | None:
-        summary_a = _candidate_summary(y[indices], base[indices], None)
-        summary_b = _candidate_summary(y[indices], proposed[indices], None)
-        va, vb = summary_a[metric], summary_b[metric]
-        if va is None or vb is None:
-            return None
-        return float(va - vb if metric in {"brier", "log_loss"} else vb - va)
+        local_y = y[indices]
+        local_base = base[indices]
+        local_proposed = proposed[indices]
+        if metric == "ap":
+            if not np.any(local_y == 1):
+                return None
+            va = average_precision_score(local_y, local_base)
+            vb = average_precision_score(local_y, local_proposed)
+            return float(vb - va)
+        if metric == "auroc":
+            if np.unique(local_y).size != 2:
+                return None
+            va = roc_auc_score(local_y, local_base)
+            vb = roc_auc_score(local_y, local_proposed)
+            return float(vb - va)
+        if metric == "brier":
+            return float(brier_score_loss(local_y, local_base)
+                         - brier_score_loss(local_y, local_proposed))
+        va = log_loss(local_y, np.clip(local_base, 1e-15, 1 - 1e-15), labels=[0, 1])
+        vb = log_loss(local_y, np.clip(local_proposed, 1e-15, 1 - 1e-15), labels=[0, 1])
+        return float(va - vb)
 
     observed = delta(np.arange(y.size))
     unique_groups = np.unique(group_array)
     group_indices = [np.flatnonzero(group_array == group) for group in unique_groups]
+    n_groups = len(unique_groups)
+    exact_combinations = n_groups ** n_groups
+    exact = exact_combinations <= 10_000
+    attempted = exact_combinations if exact else n_bootstrap
     rng = np.random.default_rng(seed)
+    draw_indices = (product(range(n_groups), repeat=n_groups)
+                    if exact else (
+                        rng.integers(0, n_groups, size=n_groups)
+                        for _ in range(n_bootstrap)
+                    ))
     samples = []
-    for _ in range(n_bootstrap):
-        chosen = rng.integers(0, len(unique_groups), size=len(unique_groups))
+    for chosen in draw_indices:
         indices = np.concatenate([group_indices[i] for i in chosen])
         value = delta(indices)
         if value is not None:
             samples.append(value)
-    if not samples:
+    if not samples or n_groups < 2:
         low = high = None
     else:
         alpha = (1 - confidence) / 2
         low, high = (float(x) for x in np.quantile(samples, [alpha, 1 - alpha]))
+    alpha = (1 - confidence) / 2
+    tail_probability_mc_se = (None if exact or not samples else
+                              float(np.sqrt(alpha * (1 - alpha) / len(samples))))
+    if n_groups < 2:
+        warning = "One independent group cannot estimate between-group uncertainty."
+    elif n_groups < 8:
+        warning = ("Fewer than eight independent groups: the cluster-bootstrap "
+                   "percentile interval is exploratory, even with exact enumeration.")
+    elif not exact and n_bootstrap < 1000:
+        warning = ("Monte Carlo percentile endpoints use fewer than 1000 "
+                   "resamples and can vary noticeably with the seed.")
+    else:
+        warning = None
     return {
         "delta": observed,
         "ci_low": low,
@@ -243,5 +289,11 @@ def paired_bootstrap_delta(
         "confidence": confidence,
         "bootstrap_valid": len(samples),
         "bootstrap_requested": n_bootstrap,
-        "group_count": len(unique_groups),
+        "bootstrap_attempted": attempted,
+        "bootstrap_invalid": attempted - len(samples),
+        "bootstrap_method": "exact_enumeration" if exact else "monte_carlo",
+        "bootstrap_total_combinations": exact_combinations if exact else None,
+        "tail_probability_mc_se": tail_probability_mc_se,
+        "inference_warning": warning,
+        "group_count": n_groups,
     }

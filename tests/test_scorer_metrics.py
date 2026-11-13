@@ -73,7 +73,9 @@ def test_discrimination_and_group_bootstrap():
     assert set(summary["by_cardinality"]) == {"2", "3"}
     interval = paired_bootstrap_delta(labels, base, proposed, groups=["g1"] * 4 + ["g2"] * 4, n_bootstrap=30, seed=1)
     assert interval["delta"] >= 0
-    assert interval["bootstrap_valid"] == 30
+    assert interval["bootstrap_method"] == "exact_enumeration"
+    assert interval["bootstrap_total_combinations"] == 4
+    assert interval["bootstrap_valid"] == 4
     assert interval["ci_low"] is not None
     with pytest.raises(ValueError):
         evaluate_candidate_predictions([0, 1], [0.2])

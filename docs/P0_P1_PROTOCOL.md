@@ -30,9 +30,46 @@ choices before treating any result as a formal scientific comparison.
    threshold, not a validation-optimized Gate 2 result.
 5. The smoke run is for code validation only. Its small number of graph
    clusters makes confidence intervals unstable. Gate 1 remains unevaluated
-   until two real-data protocols, fixed minimum meaningful effect and adequate
-   replication are added. Do not tune the method on smoke test results and
-   later present those same graphs as a clean holdout.
+   until the real-data pilots and adequate independent replication are
+   evaluated. Do not tune the method on smoke test results and later present
+   those same graphs as a clean holdout.
+
+## Temporal real-data pilot added after the smoke run
+
+The real protocol uses two distinct Cornell temporal releases: Enron email
+events restricted to at most 25 members, and high-school contact simplices
+defined as maximal cliques of 20-second pairwise contact windows. The latter
+are operational groups, not independently established irreducible multi-person
+interactions. The exact archive hashes and member file names are verified only
+when the official tarballs can be obtained; the development host could access
+the Cornell release pages but not Google Drive. No raw result is implied by
+having implemented the runner.
+
+`configs/p1_real_pilot.yaml` fixes 8 time-ordered windows per source, assigned
+4 train, 1 validation and 3 test, with boundaries chosen deterministically at
+quantiles of **unique timestamps before scoring**. The resolved configuration
+stores the resulting numeric cuts. Each event is assigned whole to one window;
+same-time events stay together. Each window projects only its own events and
+locally numbers only nodes present in that window. The source-to-local node map
+is kept for audit, but node IDs and event timestamps are not scorer features.
+The task is to reconstruct each test window's recorded member sets from its
+same-window binary projection; it is not future-event forecasting. Repeated
+member sets are deduplicated for the main binary target, and event frequency
+cannot be inferred from binary projection.
+
+The real pilot includes candidate sizes 2–5 and fixes an absolute AP gain of
+0.02 as the minimum meaningful effect before inspecting real scores. Q3 is
+compared with C0, C2 and C3 using the same candidates and scorer family. Per
+source AP/base rate, candidate recall, hard-negative diagnostics, time and
+memory are reported. Each source has its own train/validation/test scorer;
+the root report averages the two source-level AP differences equally. Within
+one source, its windows are correlated and no source-level confidence interval
+is estimated. Formal Gate 1 remains unevaluated until reproducible incremental
+value and acceptable cost are established.
+`p1-real-sweep` runs five prespecified seeds (42–46) and records per-source
+AP differences and their spread. Seed variation is a sensitivity check on the
+same two datasets, not independent replication. The single-seed command is a
+pilot; the sweep is suitable for the server.
 
 ## Data boundaries
 
@@ -62,7 +99,7 @@ unitary does not give quantum computational speedup. The short-time signal
 may be explained by weighted common external neighbors. Favor a negative or
 conditional result over an unsupported "quantum advantage" claim.
 
-This repository currently has no real-data reconstruction result and no
-downstream structure-learning result. The approximate exact-set diagnostic in
-the P1 report is not a Gate 2 result because the first protocol is synthetic
-and the full reconstruction model/baselines have not been evaluated.
+This repository currently has no measured real-data result and no downstream
+structure-learning result. The approximate exact-set diagnostic in the P1
+report is not a Gate 2 result because the full reconstruction model and
+baselines have not been evaluated.

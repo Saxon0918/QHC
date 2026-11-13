@@ -10,9 +10,10 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
+import re
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Mapping, Sequence
+from typing import Any, Dict, Iterable, List, Mapping, Optional, Sequence
 
 import numpy as np
 import yaml
@@ -46,18 +47,7 @@ def load_protocol(path: Path) -> dict[str, Any]:
     missing = [key for key in required if key not in config]
     if missing:
         raise ValueError("missing configuration sections: {}".format(missing))
-    if config["observation"].get("projection") != "binary":
-        raise ValueError("P1 primary protocol requires binary projection")
-    if config["observation"].get("use_test_hyperedges_as_input") is not False:
-        raise ValueError("test hyperedges cannot be model inputs")
-    if config["observation"].get("allow_node_features") is not False:
-        raise ValueError("P1 primary protocol is topology-only; feature ablations are separate")
-    if config["hamiltonian"].get("kind") != "norm_laplacian":
-        raise ValueError("P1 primary Hamiltonian must be the normalized Laplacian")
-    if float(config["hamiltonian"].get("scale", 0.0)) != 0.5:
-        raise ValueError("P1 primary Hamiltonian uses the fixed 0.5 scale")
-    if float(config["hamiltonian"].get("feature_laplacian_weight", -1)) != 0.0:
-        raise ValueError("P1 primary Hamiltonian cannot use node features")
+    validate_shared_p1_protocol(config)
     if set(config["split_seeds"]) != {"train", "validation", "test"}:
         raise ValueError("split_seeds must specify train, validation and test")
     seeds = {split: list(values) for split, values in config["split_seeds"].items()}
@@ -76,6 +66,28 @@ def load_protocol(path: Path) -> dict[str, Any]:
             raise ValueError("node features require a separate feature ablation protocol")
         if settings.get("edge_add_prob", 0) or settings.get("edge_drop_prob", 0):
             raise ValueError("noisy observations require a separate non-clique protocol")
+    return config
+
+
+def validate_shared_p1_protocol(config: Mapping[str, Any]) -> None:
+    """Validate the common observation, candidate, feature and scorer contract."""
+    required = ("project", "observation", "hamiltonian", "time", "candidate",
+                "quantum", "scorer", "reporting")
+    missing = [key for key in required if key not in config]
+    if missing:
+        raise ValueError("missing configuration sections: {}".format(missing))
+    if config["observation"].get("projection") != "binary":
+        raise ValueError("P1 primary protocol requires binary projection")
+    if config["observation"].get("use_test_hyperedges_as_input") is not False:
+        raise ValueError("test hyperedges cannot be model inputs")
+    if config["observation"].get("allow_node_features") is not False:
+        raise ValueError("P1 primary protocol is topology-only; feature ablations are separate")
+    if config["hamiltonian"].get("kind") != "norm_laplacian":
+        raise ValueError("P1 primary Hamiltonian must be the normalized Laplacian")
+    if float(config["hamiltonian"].get("scale", 0.0)) != 0.5:
+        raise ValueError("P1 primary Hamiltonian uses the fixed 0.5 scale")
+    if float(config["hamiltonian"].get("feature_laplacian_weight", -1)) != 0.0:
+        raise ValueError("P1 primary Hamiltonian cannot use node features")
     times = config["time"].get("points")
     if not isinstance(times, list) or not times or any(float(t) <= 0 for t in times):
         raise ValueError("time.points must contain fixed positive values")
@@ -100,7 +112,6 @@ def load_protocol(path: Path) -> dict[str, Any]:
         raise ValueError("P1 primary metric is average_precision")
     if not isinstance(reporting.get("precision_at_budget"), int) or reporting["precision_at_budget"] < 1:
         raise ValueError("reporting.precision_at_budget must be a positive integer")
-    return config
 
 
 def _hash_observation(adjacency: sparse.csr_matrix) -> str:
@@ -114,6 +125,13 @@ def _hash_observation(adjacency: sparse.csr_matrix) -> str:
 def _hash_truth(edges: Iterable[Iterable[int]]) -> str:
     payload = json.dumps(sorted(canonical_edge_set(edges)), separators=(",", ":"))
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()
+
+
+def _feature_cache_stem(graph_id: str) -> str:
+    """Keep flat cache paths even when source-qualified graph IDs contain '/' ."""
+    if re.fullmatch(r"[A-Za-z0-9_.-]+", graph_id):
+        return graph_id
+    return "graph-" + hashlib.sha256(graph_id.encode("utf-8")).hexdigest()
 
 
 @dataclass
@@ -236,13 +254,14 @@ def prepare_graph(
 
     # The cache is deliberately written before any reference to test truth.
     cache_dir.mkdir(parents=True, exist_ok=True)
-    np.savez_compressed(cache_dir / (graph_id + ".npz"), **variants,
+    cache_stem = _feature_cache_stem(graph_id)
+    np.savez_compressed(cache_dir / (cache_stem + ".npz"), **variants,
                         R_coh=quantum_diagnostics["R_coh"],
                         R_inc=quantum_diagnostics["R_inc"],
                         coherence_contrast=quantum_diagnostics["C"],
                         phase_sample_variance=phase_diagnostics["phase_sample_variance"],
                         phase_estimator_variance=phase_diagnostics["phase_estimator_variance"])
-    write_json(cache_dir / (graph_id + "_candidates.json"),
+    write_json(cache_dir / (cache_stem + "_candidates.json"),
                [record.feature_payload() for record in records])
 
     truth = graph.hyperedges_truth
@@ -300,6 +319,32 @@ def run_p1(config_path: Path, output_dir: Path) -> dict[str, Any]:
         "interpretation": "不能仅从 A 区分两个真实超图",
     })
 
+    return run_p1_graphs(config_path, output_dir, config, graphs, profiler,
+                         gate_reason="S1/S2 synthetic data are only the first P1 check; "
+                                     "two real-data protocols and prespecified effect size "
+                                     "are still required")
+
+
+def run_p1_graphs(
+    config_path: Path, output_dir: Path, config: Mapping[str, Any],
+    graphs: Sequence[GraphRecord], profiler: RunProfiler, *, gate_reason: str,
+    inference_note: Optional[str] = None,
+    comparison_group_by_graph: Optional[Mapping[str, str]] = None,
+) -> dict[str, Any]:
+    """Score an already fixed set of train/validation/test graphs.
+
+    The same observed graph and candidate pool are used by every variant.
+    The caller must establish source provenance and split disjointness first.
+    """
+    config_path, output_dir = Path(config_path), Path(output_dir)
+    split_ids = {split: [graph.graph_id for graph in graphs if graph.split == split]
+                 for split in ("train", "validation", "test")}
+    if any(not ids for ids in split_ids.values()):
+        raise ValueError("train, validation and test all require graphs")
+    if sum(map(len, split_ids.values())) != len(graphs):
+        raise ValueError("each graph must have a recognized split")
+    validate_disjoint_graph_splits(split_ids)
+
     prepared = [prepare_graph(graph, config, output_dir / "feature_cache", profiler)
                 for graph in graphs]
     coverage = {item.graph.graph_id: {"split": item.graph.split,
@@ -311,11 +356,22 @@ def run_p1(config_path: Path, output_dir: Path) -> dict[str, Any]:
     manifest = {
         "protocol": config["project"]["protocol"],
         "config_sha256": sha256_file(config_path),
+        "resolved_config_sha256": sha256_file(output_dir / "config_resolved.yaml"),
         "research_plan_sha256": sha256_file(plan) if plan.exists() else None,
         "graph_records": [
             {"graph_id": graph.graph_id, "split": graph.split,
+             "feature_cache_stem": _feature_cache_stem(graph.graph_id),
              "scenario": graph.provenance.get("dataset"),
              "parameters": graph.provenance.get("parameters"),
+             "source_id": graph.provenance.get("source_id") or
+                          graph.provenance.get("event_source", {}).get("source_id"),
+             "source_url": graph.provenance.get("source_url") or
+                           graph.provenance.get("event_source", {}).get("source_url"),
+             "license": graph.provenance.get("license") or
+                        graph.provenance.get("event_source", {}).get("license"),
+             "source_files": graph.provenance.get("files") or
+                             graph.provenance.get("event_source", {}).get("files"),
+             "window": graph.provenance.get("window"),
              "observation_sha256": _hash_observation(graph.adjacency_csr),
              "truth_sha256_for_audit_only": _hash_truth(graph.hyperedges_truth or []),
              "truth_visible_to_feature_builder": False}
@@ -347,6 +403,8 @@ def run_p1(config_path: Path, output_dir: Path) -> dict[str, Any]:
     report: dict[str, Any] = {"protocol": config["project"]["protocol"],
                               "primary_metric": "average_precision",
                               "variants": {}, "planned_comparisons": {}}
+    if inference_note is not None:
+        report["inference_note"] = inference_note
     test_scores: dict[str, np.ndarray] = {}
     test_labels = _stack(prepared, "test", variant_names[0])[1]
     test_groups = _stack(prepared, "test", variant_names[0])[2]
@@ -468,15 +526,43 @@ def run_p1(config_path: Path, output_dir: Path) -> dict[str, Any]:
             float(np.mean(matched_aps)) if matched_aps else None)
 
     baseline = test_scores["Q3_group"]
+    comparison_groups = (np.asarray([comparison_group_by_graph[str(group)]
+                                     for group in test_groups])
+                         if comparison_group_by_graph is not None else test_groups)
     for comparator in ("C0_classical", "C2_wave", "C3_spectral"):
         report["planned_comparisons"]["Q3_vs_" + comparator] = paired_bootstrap_delta(
-            test_labels, test_scores[comparator], baseline, test_groups,
+            test_labels, test_scores[comparator], baseline, comparison_groups,
             n_bootstrap=int(config.get("reporting", {}).get("bootstrap_replicates", 1000)),
             seed=int(config["project"]["seed"]), metric="ap",
         )
+    if comparison_group_by_graph is not None:
+        report["comparison_cluster_unit"] = "source_dataset"
+        by_source: dict[str, Any] = {}
+        test_sizes = np.asarray([record.size for item in prepared if item.graph.split == "test"
+                                 for record in item.records])
+        for source in sorted(set(comparison_group_by_graph.values())):
+            source_mask = comparison_groups == source
+            labels = test_labels[source_mask]
+            variants = {name: evaluate_candidate_predictions(
+                labels, scores[source_mask], sizes=test_sizes[source_mask],
+                budget=int(config["reporting"]["precision_at_budget"]))
+                for name, scores in test_scores.items()}
+            q3_ap = variants["Q3_group"]["ap"]
+            by_source[source] = {
+                "test_candidate_count": int(source_mask.sum()),
+                "positive_rate": float(labels.mean()),
+                "variants": variants,
+                "planned_delta_ap": {
+                    "Q3_vs_" + comparator: (None if q3_ap is None or
+                        variants[comparator]["ap"] is None else
+                        float(q3_ap - variants[comparator]["ap"]))
+                    for comparator in ("C0_classical", "C2_wave", "C3_spectral")
+                },
+            }
+        report["test_by_source"] = by_source
     report["gate_1"] = {
         "status": "not_evaluated",
-        "reason": "S1/S2 synthetic data are only the first P1 check; two real-data protocols and prespecified effect size are still required",
+        "reason": gate_reason,
     }
     write_json(output_dir / "candidate_metrics.json", report)
     with (output_dir / "predictions.jsonl").open("w", encoding="utf-8") as handle:
@@ -489,11 +575,12 @@ def run_p1(config_path: Path, output_dir: Path) -> dict[str, Any]:
     cache_label_free = True
     for item in prepared:
         graph_id = item.graph.graph_id
-        with np.load(output_dir / "feature_cache" / (graph_id + ".npz")) as saved:
+        cache_stem = _feature_cache_stem(graph_id)
+        with np.load(output_dir / "feature_cache" / (cache_stem + ".npz")) as saved:
             cache_label_free &= not any("label" in key.lower() or "truth" in key.lower()
                                         for key in saved.files)
         cached_candidates = json.loads((output_dir / "feature_cache" /
-                                        (graph_id + "_candidates.json")).read_text(
+                                        (cache_stem + "_candidates.json")).read_text(
                                             encoding="utf-8"))
         cache_label_free &= all("label_if_training" not in record and
                                 "prediction_score" not in record
@@ -508,6 +595,8 @@ def run_p1(config_path: Path, output_dir: Path) -> dict[str, Any]:
         "candidate_rows_aligned_across_variants": aligned,
         "feature_cache_has_no_truth_or_label_fields": cache_label_free,
         "graph_ids_by_split": split_ids,
+        "comparison_cluster_unit": ("source_dataset" if comparison_group_by_graph
+                                    is not None else "independent_graph"),
         "shared_observation_source": "one GraphRecord.observed() per graph for all variants",
         "shared_scorer_family": "StandardScaler + LogisticRegression",
         "same_validation_C_search_grid": config["scorer"].get(

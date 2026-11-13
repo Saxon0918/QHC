@@ -6,7 +6,7 @@ import pytest
 import yaml
 
 from qhyper.experiment_logger import RunProfiler
-from qhyper.p1_pipeline import load_protocol, prepare_graph
+from qhyper.p1_pipeline import _feature_cache_stem, load_protocol, prepare_graph
 from qhyper.synthetic import SyntheticConfig, generate_synthetic
 
 
@@ -68,3 +68,22 @@ def test_feature_cache_is_invariant_to_hidden_truth(tmp_path):
     assert all("label_if_training" not in row for row in first_payload)
     with np.load(tmp_path / "first" / (graph.graph_id + ".npz")) as saved:
         assert not any("truth" in key or "label" in key for key in saved.files)
+
+
+def test_source_qualified_graph_id_uses_flat_feature_cache(tmp_path):
+    sample = generate_synthetic(SyntheticConfig(
+        case="S1", n_nodes=12, num_hyperedges=8,
+        edge_sizes=(3,), n_blocks=3), seed=17)
+    graph = replace(sample.graph, graph_id="cornell/email/temporal::window:0")
+    config = {
+        "project": {"seed": 42},
+        "candidate": {"budget": 12, "min_size": 3, "max_size": 3,
+                      "generators": ["local_clique"]},
+        "time": {"points": [0.25]},
+        "quantum": {"incoherent_reference": "exact", "phase_samples": 2,
+                    "max_state_columns": 16},
+    }
+    prepare_graph(graph, config, tmp_path, RunProfiler())
+    stem = _feature_cache_stem(graph.graph_id)
+    assert (tmp_path / (stem + ".npz")).is_file()
+    assert (tmp_path / (stem + "_candidates.json")).is_file()

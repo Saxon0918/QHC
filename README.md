@@ -11,9 +11,10 @@ assumed.
 The plan has two separate targets. A reconstructs recorded hyperedges from a
 projected ordinary graph, using separately labelled training hypergraphs.
 B constructs a latent incidence matrix for downstream node tasks without
-ground-truth hyperedges. This first delivery tests A's mechanism with
-independent synthetic graphs. It does **not** implement B, soft incidence,
-end-to-end candidate renewal, or claim that Gate 1/2 has passed.
+ground-truth hyperedges. The current P1 code tests A's mechanism on independent
+synthetic graphs and on separately timed Cornell event datasets. It does
+**not** implement B, soft incidence, end-to-end candidate renewal, or claim
+that Gate 1/2 has passed.
 
 ## Run the first acceptance checks
 
@@ -65,18 +66,70 @@ family and validation search grid.
 `configs/p1_smoke.yaml` starts at size 3, so all true size-2 event edges in
 S1 are outside candidate scope. The output reports this in candidate coverage
 and exact-recall ceilings. A later school-contact protocol must explicitly
-include size 2. The Cornell `nverts`/`simplices` local-file loader is available,
-but no real-data experiment or official published-baseline reproduction is
-claimed here. No raw dataset is downloaded automatically.
+include size 2. The real-data protocol has its own size-2-inclusive
+configuration and `p1-real` command. No official published-baseline
+reproduction is claimed. No raw dataset is downloaded automatically.
+
+## Temporal real-data P1 pilot
+
+Download `email-Enron.tar.gz` from the [Cornell Enron release](https://www.cs.cornell.edu/~arb/data/email-Enron/)
+and `contact-high-school.tar.gz` from the [Cornell high-school temporal release](https://www.cs.cornell.edu/~arb/data/contact-high-school/).
+The official pages point to Google Drive archives. Archive contents and raw
+timestamp values must be checked on the machine that can access them. Unpack
+the exact archives without adding them to Git:
+
+```bash
+python scripts/06_unpack_cornell_events.py --archive /path/to/email-Enron.tar.gz --output data/raw/email-Enron --source-id cornell/email-Enron/temporal-at-most-25 --source-url 'https://www.cs.cornell.edu/~arb/data/email-Enron/' --archive-url 'https://drive.google.com/open?id=1tTVZkdpgRW47WWmsrdUCukHz0x2M6N77'
+python scripts/06_unpack_cornell_events.py --archive /path/to/contact-high-school.tar.gz --output data/raw/contact-high-school --source-id cornell/contact-high-school/temporal-20-second --source-url 'https://www.cs.cornell.edu/~arb/data/contact-high-school/' --archive-url 'https://drive.google.com/open?id=1VA2P62awVYgluOIh1W4NZQQgkQCBk-Eu'
+```
+
+Then choose a single-seed pilot or the full prespecified seed sweep:
+
+```bash
+python main.py p1-real --config configs/p1_real_pilot.yaml
+python main.py p1-real-sweep --config configs/p1_real_pilot.yaml
+```
+
+The two commands are alternatives; the sweep includes seed 42 from the pilot.
+
+The runner fixes eight chronological windows per source from unique timestamp
+quantiles, assigning four to training, one to validation, and three to test.
+It writes the actual boundaries and absolute input paths to
+`config_resolved.yaml` before scoring. The experiment uses each test window's
+binary projection to reconstruct member sets **in that window**; it does not
+forecast future events. Identical event IDs never cross splits, and one time
+stamp is never split. All variants use the same candidates, training labels,
+validation search, and held-out scores. Only member sets, not event frequency,
+are the binary target. The minimum meaningful AP change is fixed at 0.02 in
+the configuration.
+The sweep reports each source's AP difference for seeds 42–46 and its spread.
+These seeds test algorithm stability on the same data; they are not independent
+networks or valid uncertainty clusters.
+
+The high-school reference groups are maximal cliques of pairwise contacts in
+20-second intervals, so they are operational labels rather than independent
+evidence of irreducible multi-person interactions. Both datasets have repeated
+node identities across time. The report logs repeated member sets and source
+node overlap across roles. Each source gets its own scorer and report under
+`results/RUN_ID/sources/source-0` and `source-1`; the root report compares the
+two source-level AP differences with equal weight. It does not treat windows
+or candidates as independent replicates. Inspect the root
+`real_input_audit.json` and `candidate_metrics.json`, then each source's
+`candidate_coverage.json`, `candidate_metrics.json`, `fairness_checks.json`,
+and `runtime_memory.json`. Two source clusters cannot establish Gate 1. The
+full feature run is CPU capable but can be computationally expensive; it is
+suitable for the server.
 
 ## Run records
 
 Each P1 run saves the resolved configuration, dependency/platform record,
-synthetic data manifest and hashes, S3 ambiguity witness, candidate coverage
+data manifest and hashes, candidate coverage
 and Recall@Budget, a label-free feature cache, label-free diagnostics, held-out
-scores/labels for evaluation, paired **graph-level** bootstrap comparisons,
+scores/labels for evaluation, paired cluster-level bootstrap comparisons,
 and wall-clock/RSS records for candidate generation, every feature family and
 scorer training. RSS peaks are sampled every 20 ms and can miss shorter spikes.
+Synthetic runs also save the S3 ambiguity witness; real runs save the source
+archive and time-window audit when the archive manifest is available.
 
 The primary planned comparisons are Q3 against C0, C2 and C3. Reported AP is
 accompanied by positive base rate and per-cardinality results. A positive
@@ -85,6 +138,6 @@ requires at least two real-data protocols, a preregistered meaningful effect,
 matched false-clique analyses and acceptable cost; Gate 2 requires exact
 hyperedge recovery improvement under the same candidates and selection rule.
 
-`docs/P0_P1_PROTOCOL.md` records the current decisions and limits. The code
-is deliberately modular so later A1 real-data protocols can be added without
-using test truth during candidate or feature construction.
+`docs/P0_P1_PROTOCOL.md` records the current decisions and limits. The shared
+P1 evaluator keeps test truth out of candidate and feature construction for
+both synthetic and temporal real-data runs.
