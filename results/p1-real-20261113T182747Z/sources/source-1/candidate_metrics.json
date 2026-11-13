@@ -1,0 +1,4779 @@
+{
+  "comparison_cluster_unit": "source_dataset",
+  "gate_1": {
+    "reason": "One temporal source cannot independently establish Gate 1; evaluate both sources, source-level replication and cost",
+    "status": "not_evaluated"
+  },
+  "inference_note": "Time windows from this source are correlated. All test windows share one source cluster, so a source-level confidence interval is undefined.",
+  "minimum_meaningful_delta_ap": 0.02,
+  "planned_comparisons": {
+    "Q3_vs_C0_classical": {
+      "bootstrap_attempted": 1,
+      "bootstrap_invalid": 0,
+      "bootstrap_method": "exact_enumeration",
+      "bootstrap_requested": 1000,
+      "bootstrap_total_combinations": 1,
+      "bootstrap_valid": 1,
+      "ci_high": null,
+      "ci_low": null,
+      "confidence": 0.95,
+      "delta": -0.012239863602563239,
+      "group_count": 1,
+      "inference_warning": "One independent group cannot estimate between-group uncertainty.",
+      "tail_probability_mc_se": null
+    },
+    "Q3_vs_C2_wave": {
+      "bootstrap_attempted": 1,
+      "bootstrap_invalid": 0,
+      "bootstrap_method": "exact_enumeration",
+      "bootstrap_requested": 1000,
+      "bootstrap_total_combinations": 1,
+      "bootstrap_valid": 1,
+      "ci_high": null,
+      "ci_low": null,
+      "confidence": 0.95,
+      "delta": -0.018216311374629757,
+      "group_count": 1,
+      "inference_warning": "One independent group cannot estimate between-group uncertainty.",
+      "tail_probability_mc_se": null
+    },
+    "Q3_vs_C3_spectral": {
+      "bootstrap_attempted": 1,
+      "bootstrap_invalid": 0,
+      "bootstrap_method": "exact_enumeration",
+      "bootstrap_requested": 1000,
+      "bootstrap_total_combinations": 1,
+      "bootstrap_valid": 1,
+      "ci_high": null,
+      "ci_low": null,
+      "confidence": 0.95,
+      "delta": 0.004384924665561951,
+      "group_count": 1,
+      "inference_warning": "One independent group cannot estimate between-group uncertainty.",
+      "tail_probability_mc_se": null
+    }
+  },
+  "primary_metric": "average_precision",
+  "protocol": "cross_time_real_p1_pilot_v1",
+  "test_by_source": {
+    "cornell/contact-high-school/temporal-20-second": {
+      "planned_delta_ap": {
+        "Q3_vs_C0_classical": -0.012239863602563239,
+        "Q3_vs_C2_wave": -0.018216311374629757,
+        "Q3_vs_C3_spectral": 0.004384924665561951
+      },
+      "positive_rate": 0.2733333333333333,
+      "test_candidate_count": 450,
+      "variants": {
+        "C0_classical": {
+          "ap": 0.893309043339899,
+          "auroc": 0.9649436861341091,
+          "brier": 0.06035668090045554,
+          "budget_used": 10,
+          "by_cardinality": {
+            "2": {
+              "ap": 0.9205105561204183,
+              "auroc": 0.4903846153846154,
+              "brier": 0.08468788380691357,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.3895536376440865,
+              "positive_rate": 0.9122807017543859,
+              "positives": 104,
+              "precision_at_budget": null
+            },
+            "3": {
+              "ap": 0.3083245347543427,
+              "auroc": 0.6730324074074074,
+              "brier": 0.14479838900918424,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.4622237043247532,
+              "positive_rate": 0.15789473684210525,
+              "positives": 18,
+              "precision_at_budget": null
+            },
+            "4": {
+              "ap": 0.03333333333333333,
+              "auroc": 0.7363636363636363,
+              "brier": 0.00900064237990387,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 0.0690802514288404,
+              "positive_rate": 0.009009009009009009,
+              "positives": 1,
+              "precision_at_budget": null
+            },
+            "5": {
+              "ap": null,
+              "auroc": null,
+              "brier": 4.6230649828269514e-15,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 4.840399720286687e-08,
+              "positive_rate": 0.0,
+              "positives": 0,
+              "precision_at_budget": null
+            }
+          },
+          "count": 450,
+          "log_loss": 0.2328234005908727,
+          "positive_rate": 0.2733333333333333,
+          "positives": 123,
+          "precision_at_budget": 1.0
+        },
+        "C0_without_explicit_c2": {
+          "ap": 0.8664065003939374,
+          "auroc": 0.9574476019989557,
+          "brier": 0.09035813126995451,
+          "budget_used": 10,
+          "by_cardinality": {
+            "2": {
+              "ap": 0.9010511232400056,
+              "auroc": 0.4639423076923077,
+              "brier": 0.08409772746549307,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.31527167991301325,
+              "positive_rate": 0.9122807017543859,
+              "positives": 104,
+              "precision_at_budget": null
+            },
+            "3": {
+              "ap": 0.17156754310426547,
+              "auroc": 0.5405092592592593,
+              "brier": 0.24980402977234176,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.6925552873074635,
+              "positive_rate": 0.15789473684210525,
+              "positives": 18,
+              "precision_at_budget": null
+            },
+            "4": {
+              "ap": 0.013333333333333334,
+              "auroc": 0.32727272727272727,
+              "brier": 0.02310903971616926,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 0.15257863718882744,
+              "positive_rate": 0.009009009009009009,
+              "positives": 1,
+              "precision_at_budget": null
+            },
+            "5": {
+              "ap": null,
+              "auroc": null,
+              "brier": 0.00028157962046465476,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 0.016568498736162784,
+              "positive_rate": 0.0,
+              "positives": 0,
+              "precision_at_budget": null
+            }
+          },
+          "count": 450,
+          "log_loss": 0.2970391252240184,
+          "positive_rate": 0.2733333333333333,
+          "positives": 123,
+          "precision_at_budget": 0.9
+        },
+        "C1_heat": {
+          "ap": 0.862953920642707,
+          "auroc": 0.9571865443425076,
+          "brier": 0.06892502568019812,
+          "budget_used": 10,
+          "by_cardinality": {
+            "2": {
+              "ap": 0.9227924195699434,
+              "auroc": 0.475,
+              "brier": 0.08479463951324161,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.37272255486246203,
+              "positive_rate": 0.9122807017543859,
+              "positives": 104,
+              "precision_at_budget": null
+            },
+            "3": {
+              "ap": 0.19203112480952414,
+              "auroc": 0.5723379629629629,
+              "brier": 0.17853063759908214,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.584908673562374,
+              "positive_rate": 0.15789473684210525,
+              "positives": 18,
+              "precision_at_budget": null
+            },
+            "4": {
+              "ap": 0.038461538461538464,
+              "auroc": 0.7727272727272727,
+              "brier": 0.008983603273123211,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 0.05884610641727082,
+              "positive_rate": 0.009009009009009009,
+              "positives": 1,
+              "precision_at_budget": null
+            },
+            "5": {
+              "ap": null,
+              "auroc": null,
+              "brier": 1.7725895492614562e-11,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 2.5335946032175687e-06,
+              "positive_rate": 0.0,
+              "positives": 0,
+              "precision_at_budget": null
+            }
+          },
+          "count": 450,
+          "log_loss": 0.257115909070554,
+          "positive_rate": 0.2733333333333333,
+          "positives": 123,
+          "precision_at_budget": 0.9
+        },
+        "C2_wave": {
+          "ap": 0.8992854911119655,
+          "auroc": 0.9635265159991049,
+          "brier": 0.059579134180297165,
+          "budget_used": 10,
+          "by_cardinality": {
+            "2": {
+              "ap": 0.9317988992540222,
+              "auroc": 0.5259615384615385,
+              "brier": 0.08431257573686313,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.3815467207586341,
+              "positive_rate": 0.9122807017543859,
+              "positives": 104,
+              "precision_at_budget": null
+            },
+            "3": {
+              "ap": 0.2404341130871226,
+              "auroc": 0.6221064814814815,
+              "brier": 0.14209747773806342,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.45699017085367033,
+              "positive_rate": 0.15789473684210525,
+              "positives": 18,
+              "precision_at_budget": null
+            },
+            "4": {
+              "ap": 0.027777777777777776,
+              "auroc": 0.6818181818181819,
+              "brier": 0.009007786351280182,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 0.08629768993319549,
+              "positive_rate": 0.009009009009009009,
+              "positives": 1,
+              "precision_at_budget": null
+            },
+            "5": {
+              "ap": null,
+              "auroc": null,
+              "brier": 8.79729821685706e-18,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 1.7524219596941879e-09,
+              "positive_rate": 0.0,
+              "positives": 0,
+              "precision_at_budget": null
+            }
+          },
+          "count": 450,
+          "log_loss": 0.23371610982423613,
+          "positive_rate": 0.2733333333333333,
+          "positives": 123,
+          "precision_at_budget": 1.0
+        },
+        "C3_spectral": {
+          "ap": 0.8766842550717738,
+          "auroc": 0.9506973968822257,
+          "brier": 0.08598820857580856,
+          "budget_used": 10,
+          "by_cardinality": {
+            "2": {
+              "ap": 0.9252141988070097,
+              "auroc": 0.5451923076923078,
+              "brier": 0.0826597032299665,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.3091555127001233,
+              "positive_rate": 0.9122807017543859,
+              "positives": 104,
+              "precision_at_budget": null
+            },
+            "3": {
+              "ap": 0.12253531167703738,
+              "auroc": 0.34432870370370366,
+              "brier": 0.23986676902413964,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.6734424019579762,
+              "positive_rate": 0.15789473684210525,
+              "positives": 18,
+              "precision_at_budget": null
+            },
+            "4": {
+              "ap": 0.010869565217391304,
+              "auroc": 0.17272727272727273,
+              "brier": 0.01725537255115663,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 0.12143128099144955,
+              "positive_rate": 0.009009009009009009,
+              "positives": 1,
+              "precision_at_budget": null
+            },
+            "5": {
+              "ap": null,
+              "auroc": null,
+              "brier": 0.00010206908979614275,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 0.00966139768304336,
+              "positive_rate": 0.0,
+              "positives": 0,
+              "precision_at_budget": null
+            }
+          },
+          "count": 450,
+          "log_loss": 0.2812609991197601,
+          "positive_rate": 0.2733333333333333,
+          "positives": 123,
+          "precision_at_budget": 0.9
+        },
+        "C4_short_time_only": {
+          "ap": 0.6789479977424505,
+          "auroc": 0.8700927376246239,
+          "brier": 0.14777521272755653,
+          "budget_used": 10,
+          "by_cardinality": {
+            "2": {
+              "ap": 0.9063016479204016,
+              "auroc": 0.41250000000000003,
+              "brier": 0.16255939495382313,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.5090520962722764,
+              "positive_rate": 0.9122807017543859,
+              "positives": 104,
+              "precision_at_budget": null
+            },
+            "3": {
+              "ap": 0.11435784592084974,
+              "auroc": 0.296875,
+              "brier": 0.2747370761810994,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.7547828053275986,
+              "positive_rate": 0.15789473684210525,
+              "positives": 18,
+              "precision_at_budget": null
+            },
+            "4": {
+              "ap": 0.010101010101010102,
+              "auroc": 0.10909090909090913,
+              "brier": 0.11074174765271688,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 0.3864452302733767,
+              "positive_rate": 0.009009009009009009,
+              "positives": 1,
+              "precision_at_budget": null
+            },
+            "5": {
+              "ap": null,
+              "auroc": null,
+              "brier": 0.03923165791502443,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 0.20280682160782798,
+              "positive_rate": 0.0,
+              "positives": 0,
+              "precision_at_budget": null
+            }
+          },
+          "count": 450,
+          "log_loss": 0.46552034786933216,
+          "positive_rate": 0.2733333333333333,
+          "positives": 123,
+          "precision_at_budget": 0.7
+        },
+        "Q1_pairwise": {
+          "ap": 0.8620225413222817,
+          "auroc": 0.9571865443425076,
+          "brier": 0.06691160513174906,
+          "budget_used": 10,
+          "by_cardinality": {
+            "2": {
+              "ap": 0.9275442733886198,
+              "auroc": 0.5067307692307692,
+              "brier": 0.08449427478785534,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.37904930652836805,
+              "positive_rate": 0.9122807017543859,
+              "positives": 104,
+              "precision_at_budget": null
+            },
+            "3": {
+              "ap": 0.22495981082009053,
+              "auroc": 0.6383101851851851,
+              "brier": 0.1674628649612882,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.5698565030430405,
+              "positive_rate": 0.15789473684210525,
+              "positives": 18,
+              "precision_at_budget": null
+            },
+            "4": {
+              "ap": 0.013888888888888888,
+              "auroc": 0.3545454545454545,
+              "brier": 0.012495771371552668,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 0.07022289408214219,
+              "positive_rate": 0.009009009009009009,
+              "positives": 1,
+              "precision_at_budget": null
+            },
+            "5": {
+              "ap": null,
+              "auroc": null,
+              "brier": 7.005012825702479e-07,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 0.00018295803992362855,
+              "positive_rate": 0.0,
+              "positives": 0,
+              "precision_at_budget": null
+            }
+          },
+          "count": 450,
+          "log_loss": 0.2577562486148664,
+          "positive_rate": 0.2733333333333333,
+          "positives": 123,
+          "precision_at_budget": 0.9
+        },
+        "Q2_coherent": {
+          "ap": 0.8942374630085852,
+          "auroc": 0.9587031650133014,
+          "brier": 0.0647965826230315,
+          "budget_used": 10,
+          "by_cardinality": {
+            "2": {
+              "ap": 0.9349370223638631,
+              "auroc": 0.5355769230769231,
+              "brier": 0.08487950006180038,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.37056023821557516,
+              "positive_rate": 0.9122807017543859,
+              "positives": 104,
+              "precision_at_budget": null
+            },
+            "3": {
+              "ap": 0.17392025687488893,
+              "auroc": 0.5150462962962963,
+              "brier": 0.1621386987890757,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.503051838548163,
+              "positive_rate": 0.15789473684210525,
+              "positives": 18,
+              "precision_at_budget": null
+            },
+            "4": {
+              "ap": 0.01818181818181818,
+              "auroc": 0.509090909090909,
+              "brier": 0.008994482081534015,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 0.06401151828153658,
+              "positive_rate": 0.009009009009009009,
+              "positives": 1,
+              "precision_at_budget": null
+            },
+            "5": {
+              "ap": null,
+              "auroc": null,
+              "brier": 2.8291083247977645e-12,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 1.2364950233774167e-06,
+              "positive_rate": 0.0,
+              "positives": 0,
+              "precision_at_budget": null
+            }
+          },
+          "count": 450,
+          "log_loss": 0.23710487229169847,
+          "positive_rate": 0.2733333333333333,
+          "positives": 123,
+          "precision_at_budget": 1.0
+        },
+        "Q2_contrast": {
+          "ap": 0.8727618093135716,
+          "auroc": 0.9593993187638299,
+          "brier": 0.06105061581500329,
+          "budget_used": 10,
+          "by_cardinality": {
+            "2": {
+              "ap": 0.9036849836797979,
+              "auroc": 0.4403846153846154,
+              "brier": 0.08421617319070357,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.3642296657319585,
+              "positive_rate": 0.9122807017543859,
+              "positives": 104,
+              "precision_at_budget": null
+            },
+            "3": {
+              "ap": 0.22578783094068666,
+              "auroc": 0.5862268518518519,
+              "brier": 0.14800985769171054,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.47149092365502254,
+              "positive_rate": 0.15789473684210525,
+              "positives": 18,
+              "precision_at_budget": null
+            },
+            "4": {
+              "ap": 0.0196078431372549,
+              "auroc": 0.5454545454545454,
+              "brier": 0.009000086449424316,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 0.06725722202533438,
+              "positive_rate": 0.009009009009009009,
+              "positives": 1,
+              "precision_at_budget": null
+            },
+            "5": {
+              "ap": null,
+              "auroc": null,
+              "brier": 2.433994173086234e-12,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 9.113645655598452e-07,
+              "positive_rate": 0.0,
+              "positives": 0,
+              "precision_at_budget": null
+            }
+          },
+          "count": 450,
+          "log_loss": 0.22830622221421049,
+          "positive_rate": 0.2733333333333333,
+          "positives": 123,
+          "precision_at_budget": 0.9
+        },
+        "Q2_incoherent": {
+          "ap": 0.884089722986726,
+          "auroc": 0.9507222595161731,
+          "brier": 0.08804200013640144,
+          "budget_used": 10,
+          "by_cardinality": {
+            "2": {
+              "ap": 0.9360123060633225,
+              "auroc": 0.5932692307692308,
+              "brier": 0.08172411911480937,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.3048992375903967,
+              "positive_rate": 0.9122807017543859,
+              "positives": 104,
+              "precision_at_budget": null
+            },
+            "3": {
+              "ap": 0.11626931561112289,
+              "auroc": 0.3188657407407407,
+              "brier": 0.24815451129541566,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.6900208667131096,
+              "positive_rate": 0.15789473684210525,
+              "positives": 18,
+              "precision_at_budget": null
+            },
+            "4": {
+              "ap": 0.010309278350515464,
+              "auroc": 0.12727272727272732,
+              "brier": 0.018025888067169763,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 0.12599182903262632,
+              "positive_rate": 0.009009009009009009,
+              "positives": 1,
+              "precision_at_budget": null
+            },
+            "5": {
+              "ap": null,
+              "auroc": null,
+              "brier": 0.0001068704428752504,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 0.009874824174047966,
+              "positive_rate": 0.0,
+              "positives": 0,
+              "precision_at_budget": null
+            }
+          },
+          "count": 450,
+          "log_loss": 0.2855602008812012,
+          "positive_rate": 0.2733333333333333,
+          "positives": 123,
+          "precision_at_budget": 0.9
+        },
+        "Q3_group": {
+          "ap": 0.8810691797373358,
+          "auroc": 0.9573108575122449,
+          "brier": 0.06384950557403121,
+          "budget_used": 10,
+          "by_cardinality": {
+            "2": {
+              "ap": 0.9185297946299704,
+              "auroc": 0.48365384615384616,
+              "brier": 0.08478937947627405,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.3671693676971515,
+              "positive_rate": 0.9122807017543859,
+              "positives": 104,
+              "precision_at_budget": null
+            },
+            "3": {
+              "ap": 0.17957249418102716,
+              "auroc": 0.5121527777777777,
+              "brier": 0.1584832028832481,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.505484362564986,
+              "positive_rate": 0.15789473684210525,
+              "positives": 18,
+              "precision_at_budget": null
+            },
+            "4": {
+              "ap": 0.019230769230769232,
+              "auroc": 0.5363636363636364,
+              "brier": 0.00900182990065376,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 0.06876410574008127,
+              "positive_rate": 0.009009009009009009,
+              "positives": 1,
+              "precision_at_budget": null
+            },
+            "5": {
+              "ap": null,
+              "auroc": null,
+              "brier": 3.206840106926374e-12,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 9.770332961518868e-07,
+              "positive_rate": 0.0,
+              "positives": 0,
+              "precision_at_budget": null
+            }
+          },
+          "count": 450,
+          "log_loss": 0.23803433208384128,
+          "positive_rate": 0.2733333333333333,
+          "positives": 123,
+          "precision_at_budget": 0.9
+        },
+        "Q3_independent_columns": {
+          "ap": 0.8834844131474082,
+          "auroc": 0.958504263941722,
+          "brier": 0.06283041010765963,
+          "budget_used": 10,
+          "by_cardinality": {
+            "2": {
+              "ap": 0.9201739027077749,
+              "auroc": 0.49423076923076925,
+              "brier": 0.08453303267659591,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.36374041971547993,
+              "positive_rate": 0.9122807017543859,
+              "positives": 104,
+              "precision_at_budget": null
+            },
+            "3": {
+              "ap": 0.18995764301698725,
+              "auroc": 0.5341435185185185,
+              "brier": 0.15471956853763266,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.48999999005021705,
+              "positive_rate": 0.15789473684210525,
+              "positives": 18,
+              "precision_at_budget": null
+            },
+            "4": {
+              "ap": 0.018867924528301886,
+              "auroc": 0.5272727272727273,
+              "brier": 0.008998991078302368,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 0.0666162820242144,
+              "positive_rate": 0.009009009009009009,
+              "positives": 1,
+              "precision_at_budget": null
+            },
+            "5": {
+              "ap": null,
+              "auroc": null,
+              "brier": 3.0019228436865482e-12,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 1.073437925358954e-06,
+              "positive_rate": 0.0,
+              "positives": 0,
+              "precision_at_budget": null
+            }
+          },
+          "count": 450,
+          "log_loss": 0.23271318482130438,
+          "positive_rate": 0.2733333333333333,
+          "positives": 123,
+          "precision_at_budget": 0.9
+        },
+        "Q4_random_phase": {
+          "ap": 0.8819137960676781,
+          "auroc": 0.9517664901419656,
+          "brier": 0.08774681415330213,
+          "budget_used": 10,
+          "by_cardinality": {
+            "2": {
+              "ap": 0.9305144655530435,
+              "auroc": 0.564423076923077,
+              "brier": 0.08217881155271983,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.3067016641708,
+              "positive_rate": 0.9122807017543859,
+              "positives": 104,
+              "precision_at_budget": null
+            },
+            "3": {
+              "ap": 0.12634048862519467,
+              "auroc": 0.3645833333333333,
+              "brier": 0.24598511484669847,
+              "budget_used": null,
+              "count": 114,
+              "log_loss": 0.6855442488924762,
+              "positive_rate": 0.15789473684210525,
+              "positives": 18,
+              "precision_at_budget": null
+            },
+            "4": {
+              "ap": 0.009615384615384616,
+              "auroc": 0.0636363636363636,
+              "brier": 0.018592508583006713,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 0.1292755048723649,
+              "positive_rate": 0.009009009009009009,
+              "positives": 1,
+              "precision_at_budget": null
+            },
+            "5": {
+              "ap": null,
+              "auroc": null,
+              "brier": 0.00010459735800475518,
+              "budget_used": null,
+              "count": 111,
+              "log_loss": 0.009724372908433884,
+              "positive_rate": 0.0,
+              "positives": 0,
+              "precision_at_budget": null
+            }
+          },
+          "count": 450,
+          "log_loss": 0.28565560116196026,
+          "positive_rate": 0.2733333333333333,
+          "positives": 123,
+          "precision_at_budget": 0.9
+        }
+      }
+    }
+  },
+  "variants": {
+    "C0_classical": {
+      "feature_count": 28,
+      "test_by_graph": {
+        "cornell/contact-high-school/temporal-20-second::window:5": {
+          "candidate": {
+            "ap": 0.8533155865674004,
+            "auroc": 0.9595454545454545,
+            "brier": 0.06239126141996254,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.8671152049761026,
+                "auroc": 0.41818181818181815,
+                "brier": 0.1262395485069599,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.5925936288873075,
+                "positive_rate": 0.868421052631579,
+                "positives": 33,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.7142857142857142,
+                "auroc": 0.783410138248848,
+                "brier": 0.12004086530234942,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.4049139843825905,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 9.050875784823175e-07,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.0005811349189714488,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 6.0564151746034846e-15,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 4.539909971140549e-08,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.2528452865068317,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 0.8
+          },
+          "candidate_recall_upper_bound": 0.025157232704402517,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.040540540540540536,
+            "fn": 1557,
+            "fp": 5,
+            "jaccard": 0.020689655172413793,
+            "precision": 0.868421052631579,
+            "predicted_count": 38,
+            "recall": 0.020754716981132074,
+            "tp": 33,
+            "true_count": 1590
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.5369079792992837,
+            "matched_candidate_count": 24,
+            "matched_pair_count": 12,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:6": {
+          "candidate": {
+            "ap": 0.9544112540759575,
+            "auroc": 0.9790909090909091,
+            "brier": 0.052033935992086486,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9782222699432508,
+                "auroc": 0.7619047619047619,
+                "brier": 0.07553057687191984,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.3044507598023619,
+                "positive_rate": 0.9210526315789473,
+                "positives": 35,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.5185897435897435,
+                "auroc": 0.9044117647058825,
+                "brier": 0.10357651253982388,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.36529047178157853,
+                "positive_rate": 0.10526315789473684,
+                "positives": 4,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": 0.16666666666666666,
+                "auroc": 0.8611111111111112,
+                "brier": 0.027000567599097736,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.20616206756574096,
+                "positive_rate": 0.02702702702702703,
+                "positives": 1,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 2.5473732476132043e-15,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 4.29263264047996e-08,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.22052109925597488,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 1.0
+          },
+          "candidate_recall_upper_bound": 0.02185792349726776,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.037473233404710926,
+            "fn": 1795,
+            "fp": 3,
+            "jaccard": 0.019094380796508457,
+            "precision": 0.9210526315789473,
+            "predicted_count": 38,
+            "recall": 0.01912568306010929,
+            "tp": 35,
+            "true_count": 1830
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.7120535714285714,
+            "matched_candidate_count": 16,
+            "matched_pair_count": 8,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:7": {
+          "candidate": {
+            "ap": 0.8851775668582961,
+            "auroc": 0.9550097804825037,
+            "brier": 0.06664484528931759,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9270233208903578,
+                "auroc": 0.2222222222222222,
+                "brier": 0.05229352604186096,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.2716165242425902,
+                "positive_rate": 0.9473684210526315,
+                "positives": 36,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.17351947015812563,
+                "auroc": 0.3686635944700461,
+                "brier": 0.21077778918537943,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.6164666568100905,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 4.544530353887241e-07,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.0004975518018088022,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 5.265406526264167e-15,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 5.6886565492395534e-08,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.22510381600981139,
+            "positive_rate": 0.2866666666666667,
+            "positives": 43,
+            "precision_at_budget": 0.9
+          },
+          "candidate_recall_upper_bound": 0.03134110787172012,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.05106382978723404,
+            "fn": 1336,
+            "fp": 2,
+            "jaccard": 0.026200873362445413,
+            "precision": 0.9473684210526315,
+            "predicted_count": 38,
+            "recall": 0.026239067055393587,
+            "tp": 36,
+            "true_count": 1372
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.4360598279715927,
+            "matched_candidate_count": 18,
+            "matched_pair_count": 9,
+            "matched_positive_rate": 0.5
+          }
+        }
+      },
+      "test_candidate_metrics_pooled": {
+        "ap": 0.893309043339899,
+        "auroc": 0.9649436861341091,
+        "brier": 0.06035668090045554,
+        "budget_used": null,
+        "by_cardinality": {
+          "2": {
+            "ap": 0.9205105561204183,
+            "auroc": 0.4903846153846154,
+            "brier": 0.08468788380691357,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.3895536376440865,
+            "positive_rate": 0.9122807017543859,
+            "positives": 104,
+            "precision_at_budget": null
+          },
+          "3": {
+            "ap": 0.3083245347543427,
+            "auroc": 0.6730324074074074,
+            "brier": 0.14479838900918424,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.4622237043247532,
+            "positive_rate": 0.15789473684210525,
+            "positives": 18,
+            "precision_at_budget": null
+          },
+          "4": {
+            "ap": 0.03333333333333333,
+            "auroc": 0.7363636363636363,
+            "brier": 0.00900064237990387,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 0.0690802514288404,
+            "positive_rate": 0.009009009009009009,
+            "positives": 1,
+            "precision_at_budget": null
+          },
+          "5": {
+            "ap": null,
+            "auroc": null,
+            "brier": 4.6230649828269514e-15,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 4.840399720286687e-08,
+            "positive_rate": 0.0,
+            "positives": 0,
+            "precision_at_budget": null
+          }
+        },
+        "count": 450,
+        "log_loss": 0.2328234005908727,
+        "positive_rate": 0.2733333333333333,
+        "positives": 123,
+        "precision_at_budget": null
+      },
+      "test_candidates": 450,
+      "test_matched_ap_mean_across_graphs": 0.5616737928998159,
+      "test_precision_at_budget_mean_across_graphs": 0.9,
+      "training_candidates": 600,
+      "validation_ap": 0.9013667947010224,
+      "validation_candidates": 150,
+      "validation_selected_C": 10.0,
+      "validation_threshold": {
+        "selected_count": 38,
+        "threshold": 0.8537282261284916,
+        "validation_f1": 0.9333333333333333
+      }
+    },
+    "C0_without_explicit_c2": {
+      "feature_count": 26,
+      "test_by_graph": {
+        "cornell/contact-high-school/temporal-20-second::window:5": {
+          "candidate": {
+            "ap": 0.8224429249086842,
+            "auroc": 0.9484090909090909,
+            "brier": 0.09445353788567955,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.8544152726889644,
+                "auroc": 0.42424242424242425,
+                "brier": 0.11427815727348986,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.39004192155904355,
+                "positive_rate": 0.868421052631579,
+                "positives": 33,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.21683275316815687,
+                "auroc": 0.5529953917050692,
+                "brier": 0.2421152778298914,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.6768578805227824,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 0.016651416669126933,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.13631477852620247,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 0.00024264140988505484,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.015229937294378337,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.3076623130964725,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 0.7
+          },
+          "candidate_recall_upper_bound": 0.025157232704402517,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.040540540540540536,
+            "fn": 1557,
+            "fp": 5,
+            "jaccard": 0.020689655172413793,
+            "precision": 0.868421052631579,
+            "predicted_count": 38,
+            "recall": 0.020754716981132074,
+            "tp": 33,
+            "true_count": 1590
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.4641168225049804,
+            "matched_candidate_count": 24,
+            "matched_pair_count": 12,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:6": {
+          "candidate": {
+            "ap": 0.8618159298701278,
+            "auroc": 0.9561363636363636,
+            "brier": 0.09263896275523856,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.8951140305727573,
+                "auroc": 0.4380952380952381,
+                "brier": 0.07750253181267107,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.29837833728956564,
+                "positive_rate": 0.9210526315789473,
+                "positives": 35,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.14867424242424243,
+                "auroc": 0.5294117647058824,
+                "brier": 0.2531551837575041,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.6993589336607154,
+                "positive_rate": 0.10526315789473684,
+                "positives": 4,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": 0.045454545454545456,
+                "auroc": 0.41666666666666663,
+                "brier": 0.035694152090259244,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.18281359559898758,
+                "positive_rate": 0.02702702702702703,
+                "positives": 1,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 0.0002747998453927976,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.01636468200411152,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.3018907504495023,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 0.9
+          },
+          "candidate_recall_upper_bound": 0.02185792349726776,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.037473233404710926,
+            "fn": 1795,
+            "fp": 3,
+            "jaccard": 0.019094380796508457,
+            "precision": 0.9210526315789473,
+            "predicted_count": 38,
+            "recall": 0.01912568306010929,
+            "tp": 35,
+            "true_count": 1830
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.4998473748473748,
+            "matched_candidate_count": 16,
+            "matched_pair_count": 8,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:7": {
+          "candidate": {
+            "ap": 0.9266938172697442,
+            "auroc": 0.9666376874592479,
+            "brier": 0.08398189316894543,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9674500951729113,
+                "auroc": 0.5347222222222222,
+                "brier": 0.06051249331031825,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.2573947808904305,
+                "positive_rate": 0.9473684210526315,
+                "positives": 36,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.21145671596799415,
+                "auroc": 0.511520737327189,
+                "brier": 0.2541416277296296,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.7014490477388928,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 0.016981550389121608,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.13860753744129228,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 0.000327297606116112,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.018110876909998498,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.28156431212608024,
+            "positive_rate": 0.2866666666666667,
+            "positives": 43,
+            "precision_at_budget": 1.0
+          },
+          "candidate_recall_upper_bound": 0.03134110787172012,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.05106382978723404,
+            "fn": 1336,
+            "fp": 2,
+            "jaccard": 0.026200873362445413,
+            "precision": 0.9473684210526315,
+            "predicted_count": 38,
+            "recall": 0.026239067055393587,
+            "tp": 36,
+            "true_count": 1372
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.5406050739384073,
+            "matched_candidate_count": 18,
+            "matched_pair_count": 9,
+            "matched_positive_rate": 0.5
+          }
+        }
+      },
+      "test_candidate_metrics_pooled": {
+        "ap": 0.8664065003939374,
+        "auroc": 0.9574476019989557,
+        "brier": 0.09035813126995451,
+        "budget_used": null,
+        "by_cardinality": {
+          "2": {
+            "ap": 0.9010511232400056,
+            "auroc": 0.4639423076923077,
+            "brier": 0.08409772746549307,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.31527167991301325,
+            "positive_rate": 0.9122807017543859,
+            "positives": 104,
+            "precision_at_budget": null
+          },
+          "3": {
+            "ap": 0.17156754310426547,
+            "auroc": 0.5405092592592593,
+            "brier": 0.24980402977234176,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.6925552873074635,
+            "positive_rate": 0.15789473684210525,
+            "positives": 18,
+            "precision_at_budget": null
+          },
+          "4": {
+            "ap": 0.013333333333333334,
+            "auroc": 0.32727272727272727,
+            "brier": 0.02310903971616926,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 0.15257863718882744,
+            "positive_rate": 0.009009009009009009,
+            "positives": 1,
+            "precision_at_budget": null
+          },
+          "5": {
+            "ap": null,
+            "auroc": null,
+            "brier": 0.00028157962046465476,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 0.016568498736162784,
+            "positive_rate": 0.0,
+            "positives": 0,
+            "precision_at_budget": null
+          }
+        },
+        "count": 450,
+        "log_loss": 0.2970391252240184,
+        "positive_rate": 0.2733333333333333,
+        "positives": 123,
+        "precision_at_budget": null
+      },
+      "test_candidates": 450,
+      "test_matched_ap_mean_across_graphs": 0.5015230904302541,
+      "test_precision_at_budget_mean_across_graphs": 0.8666666666666667,
+      "training_candidates": 600,
+      "validation_ap": 0.9129942985570882,
+      "validation_candidates": 150,
+      "validation_selected_C": 0.01,
+      "validation_threshold": {
+        "selected_count": 38,
+        "threshold": 0.7407562531484758,
+        "validation_f1": 0.9333333333333333
+      }
+    },
+    "C1_heat": {
+      "feature_count": 46,
+      "test_by_graph": {
+        "cornell/contact-high-school/temporal-20-second::window:5": {
+          "candidate": {
+            "ap": 0.824870313777346,
+            "auroc": 0.9520454545454546,
+            "brier": 0.0760880577772591,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.8488743555177696,
+                "auroc": 0.35151515151515156,
+                "brier": 0.12813834667457089,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.5682031963427127,
+                "positive_rate": 0.868421052631579,
+                "positives": 33,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.3017632694103282,
+                "auroc": 0.7096774193548387,
+                "brier": 0.17219908124907016,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.524872989510043,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 1.0443360177866104e-05,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.001957145601234842,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 3.1457470800972526e-11,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 2.9538439570957267e-06,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.27739612494584537,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 0.7
+          },
+          "candidate_recall_upper_bound": 0.025157232704402517,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.04051565377532228,
+            "fn": 1557,
+            "fp": 6,
+            "jaccard": 0.020676691729323307,
+            "precision": 0.8461538461538461,
+            "predicted_count": 39,
+            "recall": 0.020754716981132074,
+            "tp": 33,
+            "true_count": 1590
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.4536329776461355,
+            "matched_candidate_count": 24,
+            "matched_pair_count": 12,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:6": {
+          "candidate": {
+            "ap": 0.855969254561021,
+            "auroc": 0.9584090909090909,
+            "brier": 0.06832335342765508,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9447874615086634,
+                "auroc": 0.5904761904761905,
+                "brier": 0.07363691061359916,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.31292924812919337,
+                "positive_rate": 0.9210526315789473,
+                "positives": 35,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.17216117216117216,
+                "auroc": 0.6397058823529411,
+                "brier": 0.16983276598290248,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.6190870140212276,
+                "positive_rate": 0.10526315789473684,
+                "positives": 4,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": 0.125,
+                "auroc": 0.8055555555555556,
+                "brier": 0.02693662981049504,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.1732198460580274,
+                "positive_rate": 0.02702702702702703,
+                "positives": 1,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 1.3321263897514579e-11,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 2.3037758643764528e-06,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.27883891670380007,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 0.8
+          },
+          "candidate_recall_upper_bound": 0.02185792349726776,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.03743315508021391,
+            "fn": 1795,
+            "fp": 5,
+            "jaccard": 0.01907356948228883,
+            "precision": 0.875,
+            "predicted_count": 40,
+            "recall": 0.01912568306010929,
+            "tp": 35,
+            "true_count": 1830
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.5554563492063492,
+            "matched_candidate_count": 16,
+            "matched_pair_count": 8,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:7": {
+          "candidate": {
+            "ap": 0.9196531474252081,
+            "auroc": 0.9610954140404261,
+            "brier": 0.06236366583568018,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9647856056663164,
+                "auroc": 0.5,
+                "brier": 0.05260866125155478,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.2370352201154797,
+                "positive_rate": 0.9473684210526315,
+                "positives": 36,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.2044613938692886,
+                "auroc": 0.4055299539170507,
+                "brier": 0.1935600655652739,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.6107660171558509,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 3.7366486967352055e-06,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.0013613275925501512,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 8.398951779356582e-12,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 2.3431639881805253e-06,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.21511268556201657,
+            "positive_rate": 0.2866666666666667,
+            "positives": 43,
+            "precision_at_budget": 1.0
+          },
+          "candidate_recall_upper_bound": 0.03134110787172012,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.049680624556423,
+            "fn": 1337,
+            "fp": 2,
+            "jaccard": 0.025473071324599708,
+            "precision": 0.9459459459459459,
+            "predicted_count": 37,
+            "recall": 0.025510204081632654,
+            "tp": 35,
+            "true_count": 1372
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.4673314339981007,
+            "matched_candidate_count": 18,
+            "matched_pair_count": 9,
+            "matched_positive_rate": 0.5
+          }
+        }
+      },
+      "test_candidate_metrics_pooled": {
+        "ap": 0.862953920642707,
+        "auroc": 0.9571865443425076,
+        "brier": 0.06892502568019812,
+        "budget_used": null,
+        "by_cardinality": {
+          "2": {
+            "ap": 0.9227924195699434,
+            "auroc": 0.475,
+            "brier": 0.08479463951324161,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.37272255486246203,
+            "positive_rate": 0.9122807017543859,
+            "positives": 104,
+            "precision_at_budget": null
+          },
+          "3": {
+            "ap": 0.19203112480952414,
+            "auroc": 0.5723379629629629,
+            "brier": 0.17853063759908214,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.584908673562374,
+            "positive_rate": 0.15789473684210525,
+            "positives": 18,
+            "precision_at_budget": null
+          },
+          "4": {
+            "ap": 0.038461538461538464,
+            "auroc": 0.7727272727272727,
+            "brier": 0.008983603273123211,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 0.05884610641727082,
+            "positive_rate": 0.009009009009009009,
+            "positives": 1,
+            "precision_at_budget": null
+          },
+          "5": {
+            "ap": null,
+            "auroc": null,
+            "brier": 1.7725895492614562e-11,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 2.5335946032175687e-06,
+            "positive_rate": 0.0,
+            "positives": 0,
+            "precision_at_budget": null
+          }
+        },
+        "count": 450,
+        "log_loss": 0.257115909070554,
+        "positive_rate": 0.2733333333333333,
+        "positives": 123,
+        "precision_at_budget": null
+      },
+      "test_candidates": 450,
+      "test_matched_ap_mean_across_graphs": 0.4921402536168618,
+      "test_precision_at_budget_mean_across_graphs": 0.8333333333333334,
+      "training_candidates": 600,
+      "validation_ap": 0.9065291208223812,
+      "validation_candidates": 150,
+      "validation_selected_C": 1.0,
+      "validation_threshold": {
+        "selected_count": 39,
+        "threshold": 0.8671823635902002,
+        "validation_f1": 0.8947368421052632
+      }
+    },
+    "C2_wave": {
+      "feature_count": 46,
+      "test_by_graph": {
+        "cornell/contact-high-school/temporal-20-second::window:5": {
+          "candidate": {
+            "ap": 0.8655300526932577,
+            "auroc": 0.9627272727272728,
+            "brier": 0.06370462252003188,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.8818074236156896,
+                "auroc": 0.45454545454545453,
+                "brier": 0.12643819504279966,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.6035081565292246,
+                "positive_rate": 0.868421052631579,
+                "positives": 33,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.4813186813186813,
+                "auroc": 0.8202764976958525,
+                "brier": 0.1250273214452192,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.3944202409379029,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 1.013908125674825e-07,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.00017638374108565336,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 1.9972063430128806e-17,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 2.5953075134262918e-09,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.25285203598798267,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 0.8
+          },
+          "candidate_recall_upper_bound": 0.025157232704402517,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.03933620159803319,
+            "fn": 1558,
+            "fp": 5,
+            "jaccard": 0.02006269592476489,
+            "precision": 0.8648648648648649,
+            "predicted_count": 37,
+            "recall": 0.02012578616352201,
+            "tp": 32,
+            "true_count": 1590
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.4977966417111154,
+            "matched_candidate_count": 24,
+            "matched_pair_count": 12,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:6": {
+          "candidate": {
+            "ap": 0.944168002637204,
+            "auroc": 0.9736363636363636,
+            "brier": 0.051128621517954664,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9753330971801284,
+                "auroc": 0.7428571428571429,
+                "brier": 0.07437907740153667,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.2983640974175959,
+                "positive_rate": 0.9210526315789473,
+                "positives": 35,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.2851190476190476,
+                "auroc": 0.7794117647058824,
+                "brier": 0.10113231310242547,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.34588381525939654,
+                "positive_rate": 0.10526315789473684,
+                "positives": 4,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": 0.09090909090909091,
+                "auroc": 0.7222222222222222,
+                "brier": 0.027023253744395636,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.2586672096424132,
+                "positive_rate": 0.02702702702702703,
+                "positives": 1,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 3.716091068211208e-18,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 1.4425706473785194e-09,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.22701404994580074,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 1.0
+          },
+          "candidate_recall_upper_bound": 0.02185792349726776,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.037473233404710926,
+            "fn": 1795,
+            "fp": 3,
+            "jaccard": 0.019094380796508457,
+            "precision": 0.9210526315789473,
+            "predicted_count": 38,
+            "recall": 0.01912568306010929,
+            "tp": 35,
+            "true_count": 1830
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.641599025974026,
+            "matched_candidate_count": 16,
+            "matched_pair_count": 8,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:7": {
+          "candidate": {
+            "ap": 0.906265167258577,
+            "auroc": 0.9556618126494241,
+            "brier": 0.06390415850290494,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.956202806074745,
+                "auroc": 0.4166666666666667,
+                "brier": 0.05212045476625306,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.24276790832908185,
+                "positive_rate": 0.9473684210526315,
+                "positives": 36,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.15504725720833945,
+                "auroc": 0.3179723502304147,
+                "brier": 0.2001327986665455,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.6306664563637113,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 3.918632341622463e-09,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 4.947641608777403e-05,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 2.703740152231156e-18,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 1.2193877182777531e-09,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.22128224353892498,
+            "positive_rate": 0.2866666666666667,
+            "positives": 43,
+            "precision_at_budget": 1.0
+          },
+          "candidate_recall_upper_bound": 0.03134110787172012,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.05106382978723404,
+            "fn": 1336,
+            "fp": 2,
+            "jaccard": 0.026200873362445413,
+            "precision": 0.9473684210526315,
+            "predicted_count": 38,
+            "recall": 0.026239067055393587,
+            "tp": 36,
+            "true_count": 1372
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.44009622367465506,
+            "matched_candidate_count": 18,
+            "matched_pair_count": 9,
+            "matched_positive_rate": 0.5
+          }
+        }
+      },
+      "test_candidate_metrics_pooled": {
+        "ap": 0.8992854911119655,
+        "auroc": 0.9635265159991049,
+        "brier": 0.059579134180297165,
+        "budget_used": null,
+        "by_cardinality": {
+          "2": {
+            "ap": 0.9317988992540222,
+            "auroc": 0.5259615384615385,
+            "brier": 0.08431257573686313,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.3815467207586341,
+            "positive_rate": 0.9122807017543859,
+            "positives": 104,
+            "precision_at_budget": null
+          },
+          "3": {
+            "ap": 0.2404341130871226,
+            "auroc": 0.6221064814814815,
+            "brier": 0.14209747773806342,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.45699017085367033,
+            "positive_rate": 0.15789473684210525,
+            "positives": 18,
+            "precision_at_budget": null
+          },
+          "4": {
+            "ap": 0.027777777777777776,
+            "auroc": 0.6818181818181819,
+            "brier": 0.009007786351280182,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 0.08629768993319549,
+            "positive_rate": 0.009009009009009009,
+            "positives": 1,
+            "precision_at_budget": null
+          },
+          "5": {
+            "ap": null,
+            "auroc": null,
+            "brier": 8.79729821685706e-18,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 1.7524219596941879e-09,
+            "positive_rate": 0.0,
+            "positives": 0,
+            "precision_at_budget": null
+          }
+        },
+        "count": 450,
+        "log_loss": 0.23371610982423613,
+        "positive_rate": 0.2733333333333333,
+        "positives": 123,
+        "precision_at_budget": null
+      },
+      "test_candidates": 450,
+      "test_matched_ap_mean_across_graphs": 0.5264972971199321,
+      "test_precision_at_budget_mean_across_graphs": 0.9333333333333332,
+      "training_candidates": 600,
+      "validation_ap": 0.9038462825545646,
+      "validation_candidates": 150,
+      "validation_selected_C": 10.0,
+      "validation_threshold": {
+        "selected_count": 38,
+        "threshold": 0.8819120811558612,
+        "validation_f1": 0.9333333333333333
+      }
+    },
+    "C3_spectral": {
+      "feature_count": 34,
+      "test_by_graph": {
+        "cornell/contact-high-school/temporal-20-second::window:5": {
+          "candidate": {
+            "ap": 0.8559077318440752,
+            "auroc": 0.9411363636363637,
+            "brier": 0.09456895140482219,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9111559647813676,
+                "auroc": 0.5757575757575757,
+                "brier": 0.11374213649764331,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.3868728171952305,
+                "positive_rate": 0.868421052631579,
+                "positives": 33,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.15484668586172345,
+                "auroc": 0.29032258064516125,
+                "brier": 0.24976297909803075,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.6938443507598782,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 0.009964761037150483,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.09990412342455302,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 9.330161386879973e-05,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.009318286095682611,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.3007232102302856,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 0.9
+          },
+          "candidate_recall_upper_bound": 0.025157232704402517,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.040540540540540536,
+            "fn": 1557,
+            "fp": 5,
+            "jaccard": 0.020689655172413793,
+            "precision": 0.868421052631579,
+            "predicted_count": 38,
+            "recall": 0.020754716981132074,
+            "tp": 33,
+            "true_count": 1590
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.4361208437295394,
+            "matched_candidate_count": 24,
+            "matched_pair_count": 12,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:6": {
+          "candidate": {
+            "ap": 0.8681553714196766,
+            "auroc": 0.9486363636363637,
+            "brier": 0.08943574701189402,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9129352269653822,
+                "auroc": 0.4571428571428572,
+                "brier": 0.07619799370709213,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.2928156203770551,
+                "positive_rate": 0.9210526315789473,
+                "positives": 35,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.09523809523809523,
+                "auroc": 0.3382352941176471,
+                "brier": 0.24391715628999952,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.6820708967402732,
+                "positive_rate": 0.10526315789473684,
+                "positives": 4,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": 0.03225806451612903,
+                "auroc": 0.16666666666666663,
+                "brier": 0.033714061852221304,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.17225207359609707,
+                "positive_rate": 0.02702702702702703,
+                "positives": 1,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 9.638009087658209e-05,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.009246111423585246,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.29174080330791147,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 0.9
+          },
+          "candidate_recall_upper_bound": 0.02185792349726776,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.037473233404710926,
+            "fn": 1795,
+            "fp": 3,
+            "jaccard": 0.019094380796508457,
+            "precision": 0.9210526315789473,
+            "predicted_count": 38,
+            "recall": 0.01912568306010929,
+            "tp": 35,
+            "true_count": 1830
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.4722222222222222,
+            "matched_candidate_count": 16,
+            "matched_pair_count": 8,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:7": {
+          "candidate": {
+            "ap": 0.9267297174202433,
+            "auroc": 0.9632688545968268,
+            "brier": 0.07395992731070954,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9725771943217496,
+                "auroc": 0.5833333333333334,
+                "brier": 0.05803897948516404,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.24777810052808427,
+                "positive_rate": 0.9473684210526315,
+                "positives": 36,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.1980309042809043,
+                "auroc": 0.423963133640553,
+                "brier": 0.22592017168438877,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.6444119583737772,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 0.008087294764098103,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.09213764595369855,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 0.00011652556464304647,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.010419795529862219,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.25131898382108325,
+            "positive_rate": 0.2866666666666667,
+            "positives": 43,
+            "precision_at_budget": 1.0
+          },
+          "candidate_recall_upper_bound": 0.03134110787172012,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.05106382978723404,
+            "fn": 1336,
+            "fp": 2,
+            "jaccard": 0.026200873362445413,
+            "precision": 0.9473684210526315,
+            "predicted_count": 38,
+            "recall": 0.026239067055393587,
+            "tp": 36,
+            "true_count": 1372
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.6666518122400475,
+            "matched_candidate_count": 18,
+            "matched_pair_count": 9,
+            "matched_positive_rate": 0.5
+          }
+        }
+      },
+      "test_candidate_metrics_pooled": {
+        "ap": 0.8766842550717738,
+        "auroc": 0.9506973968822257,
+        "brier": 0.08598820857580856,
+        "budget_used": null,
+        "by_cardinality": {
+          "2": {
+            "ap": 0.9252141988070097,
+            "auroc": 0.5451923076923078,
+            "brier": 0.0826597032299665,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.3091555127001233,
+            "positive_rate": 0.9122807017543859,
+            "positives": 104,
+            "precision_at_budget": null
+          },
+          "3": {
+            "ap": 0.12253531167703738,
+            "auroc": 0.34432870370370366,
+            "brier": 0.23986676902413964,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.6734424019579762,
+            "positive_rate": 0.15789473684210525,
+            "positives": 18,
+            "precision_at_budget": null
+          },
+          "4": {
+            "ap": 0.010869565217391304,
+            "auroc": 0.17272727272727273,
+            "brier": 0.01725537255115663,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 0.12143128099144955,
+            "positive_rate": 0.009009009009009009,
+            "positives": 1,
+            "precision_at_budget": null
+          },
+          "5": {
+            "ap": null,
+            "auroc": null,
+            "brier": 0.00010206908979614275,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 0.00966139768304336,
+            "positive_rate": 0.0,
+            "positives": 0,
+            "precision_at_budget": null
+          }
+        },
+        "count": 450,
+        "log_loss": 0.2812609991197601,
+        "positive_rate": 0.2733333333333333,
+        "positives": 123,
+        "precision_at_budget": null
+      },
+      "test_candidates": 450,
+      "test_matched_ap_mean_across_graphs": 0.5249982927306031,
+      "test_precision_at_budget_mean_across_graphs": 0.9333333333333332,
+      "training_candidates": 600,
+      "validation_ap": 0.9326555445431386,
+      "validation_candidates": 150,
+      "validation_selected_C": 0.01,
+      "validation_threshold": {
+        "selected_count": 38,
+        "threshold": 0.7887256615899343,
+        "validation_f1": 0.9333333333333333
+      }
+    },
+    "C4_short_time_only": {
+      "feature_count": 1,
+      "test_by_graph": {
+        "cornell/contact-high-school/temporal-20-second::window:5": {
+          "candidate": {
+            "ap": 0.6508010640516212,
+            "auroc": 0.8354545454545454,
+            "brier": 0.16527185141184997,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.8838301507953163,
+                "auroc": 0.5212121212121212,
+                "brier": 0.1670076303791049,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.5182950911142433,
+                "positive_rate": 0.868421052631579,
+                "positives": 33,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.12643801056364723,
+                "auroc": 0.17050691244239632,
+                "brier": 0.32951287109985594,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.8795233121972924,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 0.1146013711067003,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.3916689340010338,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 0.04547967363862355,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.22312304103964165,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.5057626826822891,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 0.7
+          },
+          "candidate_recall_upper_bound": 0.025157232704402517,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.04118715929739552,
+            "fn": 1556,
+            "fp": 27,
+            "jaccard": 0.021026592455163882,
+            "precision": 0.5573770491803278,
+            "predicted_count": 61,
+            "recall": 0.021383647798742137,
+            "tp": 34,
+            "true_count": 1590
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.5082398127235084,
+            "matched_candidate_count": 24,
+            "matched_pair_count": 12,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:6": {
+          "candidate": {
+            "ap": 0.6814089032767507,
+            "auroc": 0.8645454545454545,
+            "brier": 0.15238096623867764,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9002345822008676,
+                "auroc": 0.24761904761904763,
+                "brier": 0.15739501835156358,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.4970243104987638,
+                "positive_rate": 0.9210526315789473,
+                "positives": 35,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.08202119231530997,
+                "auroc": 0.22058823529411764,
+                "brier": 0.2718017672103108,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.7429169278690505,
+                "positive_rate": 0.10526315789473684,
+                "positives": 4,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": 0.029411764705882353,
+                "auroc": 0.08333333333333337,
+                "brier": 0.14134020416319407,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.4559922515851661,
+                "positive_rate": 0.02702702702702703,
+                "positives": 1,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 0.035623771092222624,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.18775577787080602,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.47290962765231936,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 0.8
+          },
+          "candidate_recall_upper_bound": 0.02185792349726776,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.035997882477501325,
+            "fn": 1796,
+            "fp": 25,
+            "jaccard": 0.018328840970350403,
+            "precision": 0.576271186440678,
+            "predicted_count": 59,
+            "recall": 0.018579234972677595,
+            "tp": 34,
+            "true_count": 1830
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.4168650793650794,
+            "matched_candidate_count": 16,
+            "matched_pair_count": 8,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:7": {
+          "candidate": {
+            "ap": 0.7841917552723574,
+            "auroc": 0.919365355357531,
+            "brier": 0.12567282053214204,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9603517951050549,
+                "auroc": 0.45833333333333337,
+                "brier": 0.16327553613080076,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.5118368872038223,
+                "positive_rate": 0.9473684210526315,
+                "positives": 36,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.2225070866230216,
+                "auroc": 0.4792626728110599,
+                "brier": 0.2228965902331313,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.6419081759164523,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 0.07628366768825637,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.31167450523393014,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 0.03659152901422712,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.1975416459130365,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.41788873327338794,
+            "positive_rate": 0.2866666666666667,
+            "positives": 43,
+            "precision_at_budget": 0.9
+          },
+          "candidate_recall_upper_bound": 0.03134110787172012,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.0507399577167019,
+            "fn": 1336,
+            "fp": 11,
+            "jaccard": 0.026030368763557483,
+            "precision": 0.7659574468085106,
+            "predicted_count": 47,
+            "recall": 0.026239067055393587,
+            "tp": 36,
+            "true_count": 1372
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.7138888888888888,
+            "matched_candidate_count": 18,
+            "matched_pair_count": 9,
+            "matched_positive_rate": 0.5
+          }
+        }
+      },
+      "test_candidate_metrics_pooled": {
+        "ap": 0.6789479977424505,
+        "auroc": 0.8700927376246239,
+        "brier": 0.14777521272755653,
+        "budget_used": null,
+        "by_cardinality": {
+          "2": {
+            "ap": 0.9063016479204016,
+            "auroc": 0.41250000000000003,
+            "brier": 0.16255939495382313,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.5090520962722764,
+            "positive_rate": 0.9122807017543859,
+            "positives": 104,
+            "precision_at_budget": null
+          },
+          "3": {
+            "ap": 0.11435784592084974,
+            "auroc": 0.296875,
+            "brier": 0.2747370761810994,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.7547828053275986,
+            "positive_rate": 0.15789473684210525,
+            "positives": 18,
+            "precision_at_budget": null
+          },
+          "4": {
+            "ap": 0.010101010101010102,
+            "auroc": 0.10909090909090913,
+            "brier": 0.11074174765271688,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 0.3864452302733767,
+            "positive_rate": 0.009009009009009009,
+            "positives": 1,
+            "precision_at_budget": null
+          },
+          "5": {
+            "ap": null,
+            "auroc": null,
+            "brier": 0.03923165791502443,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 0.20280682160782798,
+            "positive_rate": 0.0,
+            "positives": 0,
+            "precision_at_budget": null
+          }
+        },
+        "count": 450,
+        "log_loss": 0.46552034786933216,
+        "positive_rate": 0.2733333333333333,
+        "positives": 123,
+        "precision_at_budget": null
+      },
+      "test_candidates": 450,
+      "test_matched_ap_mean_across_graphs": 0.5463312603258256,
+      "test_precision_at_budget_mean_across_graphs": 0.7999999999999999,
+      "training_candidates": 600,
+      "validation_ap": 0.6814702080460817,
+      "validation_candidates": 150,
+      "validation_selected_C": 0.01,
+      "validation_threshold": {
+        "selected_count": 66,
+        "threshold": 0.4858375862369921,
+        "validation_f1": 0.6601941747572816
+      }
+    },
+    "Q1_pairwise": {
+      "feature_count": 58,
+      "test_by_graph": {
+        "cornell/contact-high-school/temporal-20-second::window:5": {
+          "candidate": {
+            "ap": 0.8505836946995154,
+            "auroc": 0.9595454545454545,
+            "brier": 0.07204453268116685,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.8701328193521527,
+                "auroc": 0.4363636363636364,
+                "brier": 0.1267719681491817,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.5805363225688674,
+                "positive_rate": 0.868421052631579,
+                "positives": 33,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.3607948442534909,
+                "auroc": 0.7695852534562212,
+                "brier": 0.15751267437781444,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.47702314587422334,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 0.0001044133735628919,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.006707674090638575,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 5.171009412356604e-09,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 6.0886580927290565e-05,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.26958464363790263,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 0.9
+          },
+          "candidate_recall_upper_bound": 0.025157232704402517,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.040540540540540536,
+            "fn": 1557,
+            "fp": 5,
+            "jaccard": 0.020689655172413793,
+            "precision": 0.868421052631579,
+            "predicted_count": 38,
+            "recall": 0.020754716981132074,
+            "tp": 33,
+            "true_count": 1590
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.512561853351327,
+            "matched_candidate_count": 24,
+            "matched_pair_count": 12,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:6": {
+          "candidate": {
+            "ap": 0.9217513294014312,
+            "auroc": 0.9668181818181818,
+            "brier": 0.054388269158383774,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.953826025764619,
+                "auroc": 0.6190476190476191,
+                "brier": 0.0750756346239121,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.3192928100644113,
+                "positive_rate": 0.9210526315789473,
+                "positives": 35,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.24485930735930733,
+                "auroc": 0.7499999999999999,
+                "brier": 0.11340347097550997,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.3788475644790077,
+                "positive_rate": 0.10526315789473684,
+                "positives": 4,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": 0.04,
+                "auroc": 0.33333333333333337,
+                "brier": 0.02691983783829799,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.16367728495600264,
+                "positive_rate": 0.02702702702702703,
+                "positives": 1,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 9.755743343698093e-09,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 8.257803848921094e-05,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.2172563277563075,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 1.0
+          },
+          "candidate_recall_upper_bound": 0.02185792349726776,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.037473233404710926,
+            "fn": 1795,
+            "fp": 3,
+            "jaccard": 0.019094380796508457,
+            "precision": 0.9210526315789473,
+            "predicted_count": 38,
+            "recall": 0.01912568306010929,
+            "tp": 35,
+            "true_count": 1830
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.5870535714285714,
+            "matched_candidate_count": 16,
+            "matched_pair_count": 8,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:7": {
+          "candidate": {
+            "ap": 0.8403971374167838,
+            "auroc": 0.9484894588133015,
+            "brier": 0.07430201355569654,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9606699925594753,
+                "auroc": 0.4583333333333333,
+                "brier": 0.05163522159047222,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.23731878695182534,
+                "positive_rate": 0.9473684210526315,
+                "positives": 36,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.2248293058332864,
+                "auroc": 0.5069124423963134,
+                "brier": 0.23147244953054022,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.8536987987758905,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 0.01046306290279712,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.0402837231997853,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 2.086577094954689e-06,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.00040540950035438414,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.28642777445038914,
+            "positive_rate": 0.2866666666666667,
+            "positives": 43,
+            "precision_at_budget": 0.8
+          },
+          "candidate_recall_upper_bound": 0.03134110787172012,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.05099150141643059,
+            "fn": 1336,
+            "fp": 4,
+            "jaccard": 0.02616279069767442,
+            "precision": 0.9,
+            "predicted_count": 40,
+            "recall": 0.026239067055393587,
+            "tp": 36,
+            "true_count": 1372
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.47005314946491417,
+            "matched_candidate_count": 18,
+            "matched_pair_count": 9,
+            "matched_positive_rate": 0.5
+          }
+        }
+      },
+      "test_candidate_metrics_pooled": {
+        "ap": 0.8620225413222817,
+        "auroc": 0.9571865443425076,
+        "brier": 0.06691160513174906,
+        "budget_used": null,
+        "by_cardinality": {
+          "2": {
+            "ap": 0.9275442733886198,
+            "auroc": 0.5067307692307692,
+            "brier": 0.08449427478785534,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.37904930652836805,
+            "positive_rate": 0.9122807017543859,
+            "positives": 104,
+            "precision_at_budget": null
+          },
+          "3": {
+            "ap": 0.22495981082009053,
+            "auroc": 0.6383101851851851,
+            "brier": 0.1674628649612882,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.5698565030430405,
+            "positive_rate": 0.15789473684210525,
+            "positives": 18,
+            "precision_at_budget": null
+          },
+          "4": {
+            "ap": 0.013888888888888888,
+            "auroc": 0.3545454545454545,
+            "brier": 0.012495771371552668,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 0.07022289408214219,
+            "positive_rate": 0.009009009009009009,
+            "positives": 1,
+            "precision_at_budget": null
+          },
+          "5": {
+            "ap": null,
+            "auroc": null,
+            "brier": 7.005012825702479e-07,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 0.00018295803992362855,
+            "positive_rate": 0.0,
+            "positives": 0,
+            "precision_at_budget": null
+          }
+        },
+        "count": 450,
+        "log_loss": 0.2577562486148664,
+        "positive_rate": 0.2733333333333333,
+        "positives": 123,
+        "precision_at_budget": null
+      },
+      "test_candidates": 450,
+      "test_matched_ap_mean_across_graphs": 0.5232228580816042,
+      "test_precision_at_budget_mean_across_graphs": 0.9,
+      "training_candidates": 600,
+      "validation_ap": 0.9351989388601362,
+      "validation_candidates": 150,
+      "validation_selected_C": 1.0,
+      "validation_threshold": {
+        "selected_count": 38,
+        "threshold": 0.8934199543206731,
+        "validation_f1": 0.9333333333333333
+      }
+    },
+    "Q2_coherent": {
+      "feature_count": 34,
+      "test_by_graph": {
+        "cornell/contact-high-school/temporal-20-second::window:5": {
+          "candidate": {
+            "ap": 0.8433555805142912,
+            "auroc": 0.9522727272727273,
+            "brier": 0.07291831611418229,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.8747526746547949,
+                "auroc": 0.4545454545454546,
+                "brier": 0.12816957381081384,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.5658285047621686,
+                "positive_rate": 0.868421052631579,
+                "positives": 33,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.2578435574087748,
+                "auroc": 0.6082949308755761,
+                "brier": 0.15966296272057157,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.48766654558774125,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 3.0007779006581056e-06,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.0013394488036462216,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 4.118180632855971e-12,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 1.2479995038585799e-06,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.2672161179667542,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 0.9
+          },
+          "candidate_recall_upper_bound": 0.025157232704402517,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.038130381303813035,
+            "fn": 1559,
+            "fp": 5,
+            "jaccard": 0.019435736677115987,
+            "precision": 0.8611111111111112,
+            "predicted_count": 36,
+            "recall": 0.01949685534591195,
+            "tp": 31,
+            "true_count": 1590
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.47851573377889167,
+            "matched_candidate_count": 24,
+            "matched_pair_count": 12,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:6": {
+          "candidate": {
+            "ap": 0.9154109746655865,
+            "auroc": 0.9661363636363636,
+            "brier": 0.05781450232607836,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9463747606736023,
+                "auroc": 0.5714285714285715,
+                "brier": 0.07529163308393667,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.32027582675428795,
+                "positive_rate": 0.9210526315789473,
+                "positives": 35,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.4065734989648033,
+                "auroc": 0.7132352941176471,
+                "brier": 0.12665552938582603,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.42309320897607955,
+                "positive_rate": 0.10526315789473684,
+                "positives": 4,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": 0.058823529411764705,
+                "auroc": 0.5555555555555556,
+                "brier": 0.02697792364871619,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.18942978609498196,
+                "positive_rate": 0.02702702702702703,
+                "positives": 1,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 1.5749185881212018e-12,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 1.0115364815648018e-06,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.23504641913412078,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 0.9
+          },
+          "candidate_recall_upper_bound": 0.02185792349726776,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.03536977491961415,
+            "fn": 1797,
+            "fp": 3,
+            "jaccard": 0.01800327332242226,
+            "precision": 0.9166666666666666,
+            "predicted_count": 36,
+            "recall": 0.018032786885245903,
+            "tp": 33,
+            "true_count": 1830
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.557318722943723,
+            "matched_candidate_count": 16,
+            "matched_pair_count": 8,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:7": {
+          "candidate": {
+            "ap": 0.9213515169599877,
+            "auroc": 0.9602260378178656,
+            "brier": 0.06365692942883389,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9732066835503712,
+                "auroc": 0.6111111111111112,
+                "brier": 0.05117729329065064,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.22557638313026912,
+                "positive_rate": 0.9473684210526315,
+                "positives": 36,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.15735019814377363,
+                "auroc": 0.35023041474654376,
+                "brier": 0.20009760426082948,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.5983957610806682,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 2.521817985198526e-06,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.0012653199459815685,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 2.794225753416121e-12,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 1.4499490847088675e-06,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.2090520797742205,
+            "positive_rate": 0.2866666666666667,
+            "positives": 43,
+            "precision_at_budget": 1.0
+          },
+          "candidate_recall_upper_bound": 0.03134110787172012,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.05106382978723404,
+            "fn": 1336,
+            "fp": 2,
+            "jaccard": 0.026200873362445413,
+            "precision": 0.9473684210526315,
+            "predicted_count": 38,
+            "recall": 0.026239067055393587,
+            "tp": 36,
+            "true_count": 1372
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.47156603382093576,
+            "matched_candidate_count": 18,
+            "matched_pair_count": 9,
+            "matched_positive_rate": 0.5
+          }
+        }
+      },
+      "test_candidate_metrics_pooled": {
+        "ap": 0.8942374630085852,
+        "auroc": 0.9587031650133014,
+        "brier": 0.0647965826230315,
+        "budget_used": null,
+        "by_cardinality": {
+          "2": {
+            "ap": 0.9349370223638631,
+            "auroc": 0.5355769230769231,
+            "brier": 0.08487950006180038,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.37056023821557516,
+            "positive_rate": 0.9122807017543859,
+            "positives": 104,
+            "precision_at_budget": null
+          },
+          "3": {
+            "ap": 0.17392025687488893,
+            "auroc": 0.5150462962962963,
+            "brier": 0.1621386987890757,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.503051838548163,
+            "positive_rate": 0.15789473684210525,
+            "positives": 18,
+            "precision_at_budget": null
+          },
+          "4": {
+            "ap": 0.01818181818181818,
+            "auroc": 0.509090909090909,
+            "brier": 0.008994482081534015,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 0.06401151828153658,
+            "positive_rate": 0.009009009009009009,
+            "positives": 1,
+            "precision_at_budget": null
+          },
+          "5": {
+            "ap": null,
+            "auroc": null,
+            "brier": 2.8291083247977645e-12,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 1.2364950233774167e-06,
+            "positive_rate": 0.0,
+            "positives": 0,
+            "precision_at_budget": null
+          }
+        },
+        "count": 450,
+        "log_loss": 0.23710487229169847,
+        "positive_rate": 0.2733333333333333,
+        "positives": 123,
+        "precision_at_budget": null
+      },
+      "test_candidates": 450,
+      "test_matched_ap_mean_across_graphs": 0.5024668301811835,
+      "test_precision_at_budget_mean_across_graphs": 0.9333333333333332,
+      "training_candidates": 600,
+      "validation_ap": 0.9308194377988616,
+      "validation_candidates": 150,
+      "validation_selected_C": 1.0,
+      "validation_threshold": {
+        "selected_count": 38,
+        "threshold": 0.8942996309589979,
+        "validation_f1": 0.9333333333333333
+      }
+    },
+    "Q2_contrast": {
+      "feature_count": 34,
+      "test_by_graph": {
+        "cornell/contact-high-school/temporal-20-second::window:5": {
+          "candidate": {
+            "ap": 0.8278898777893061,
+            "auroc": 0.9547727272727273,
+            "brier": 0.06908568349621066,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.8464348842905812,
+                "auroc": 0.4,
+                "brier": 0.12675572741763377,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.561881750047322,
+                "positive_rate": 0.868421052631579,
+                "positives": 33,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.3909290709290709,
+                "auroc": 0.7004608294930875,
+                "brier": 0.14594621673649152,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.45755546909801603,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 4.828280614421176e-06,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.0014720424699747893,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 5.192123969734503e-12,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 1.2000128367081802e-06,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.2586208286625791,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 0.8
+          },
+          "candidate_recall_upper_bound": 0.025157232704402517,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.040540540540540536,
+            "fn": 1557,
+            "fp": 5,
+            "jaccard": 0.020689655172413793,
+            "precision": 0.868421052631579,
+            "predicted_count": 38,
+            "recall": 0.020754716981132074,
+            "tp": 33,
+            "true_count": 1590
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.49072316572316566,
+            "matched_candidate_count": 24,
+            "matched_pair_count": 12,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:6": {
+          "candidate": {
+            "ap": 0.9222734470633414,
+            "auroc": 0.9677272727272728,
+            "brier": 0.052982228307425695,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9520535033315577,
+                "auroc": 0.5904761904761905,
+                "brier": 0.07426560417110016,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.2991482162512843,
+                "positive_rate": 0.9210526315789473,
+                "positives": 35,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.4625959079283888,
+                "auroc": 0.7426470588235294,
+                "brier": 0.10859168909083687,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.3763705049105265,
+                "positive_rate": 0.10526315789473684,
+                "positives": 4,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": 0.0625,
+                "auroc": 0.5833333333333333,
+                "brier": 0.026993435193053847,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.19945466342790674,
+                "positive_rate": 0.02702702702702703,
+                "positives": 1,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 4.663621658234026e-13,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 5.302854822894868e-07,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.220330357143628,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 1.0
+          },
+          "candidate_recall_upper_bound": 0.02185792349726776,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.037473233404710926,
+            "fn": 1795,
+            "fp": 3,
+            "jaccard": 0.019094380796508457,
+            "precision": 0.9210526315789473,
+            "predicted_count": 38,
+            "recall": 0.01912568306010929,
+            "tp": 35,
+            "true_count": 1830
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.527804834054834,
+            "matched_candidate_count": 16,
+            "matched_pair_count": 8,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:7": {
+          "candidate": {
+            "ap": 0.9099403381472999,
+            "auroc": 0.961095414040426,
+            "brier": 0.0610839356413735,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9534639156842808,
+                "auroc": 0.4027777777777778,
+                "brier": 0.05162718798337682,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.23165903089726916,
+                "positive_rate": 0.9473684210526315,
+                "positives": 36,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.1810077685077685,
+                "auroc": 0.4377880184331797,
+                "brier": 0.18949166724780325,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.580546796956525,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 1.9958746046764134e-06,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.0008449601781215531,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 1.6434963837007964e-12,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 1.0037953776818686e-06,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.20596748083642433,
+            "positive_rate": 0.2866666666666667,
+            "positives": 43,
+            "precision_at_budget": 1.0
+          },
+          "candidate_recall_upper_bound": 0.03134110787172012,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.05106382978723404,
+            "fn": 1336,
+            "fp": 2,
+            "jaccard": 0.026200873362445413,
+            "precision": 0.9473684210526315,
+            "predicted_count": 38,
+            "recall": 0.026239067055393587,
+            "tp": 36,
+            "true_count": 1372
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.4530475153024172,
+            "matched_candidate_count": 18,
+            "matched_pair_count": 9,
+            "matched_positive_rate": 0.5
+          }
+        }
+      },
+      "test_candidate_metrics_pooled": {
+        "ap": 0.8727618093135716,
+        "auroc": 0.9593993187638299,
+        "brier": 0.06105061581500329,
+        "budget_used": null,
+        "by_cardinality": {
+          "2": {
+            "ap": 0.9036849836797979,
+            "auroc": 0.4403846153846154,
+            "brier": 0.08421617319070357,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.3642296657319585,
+            "positive_rate": 0.9122807017543859,
+            "positives": 104,
+            "precision_at_budget": null
+          },
+          "3": {
+            "ap": 0.22578783094068666,
+            "auroc": 0.5862268518518519,
+            "brier": 0.14800985769171054,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.47149092365502254,
+            "positive_rate": 0.15789473684210525,
+            "positives": 18,
+            "precision_at_budget": null
+          },
+          "4": {
+            "ap": 0.0196078431372549,
+            "auroc": 0.5454545454545454,
+            "brier": 0.009000086449424316,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 0.06725722202533438,
+            "positive_rate": 0.009009009009009009,
+            "positives": 1,
+            "precision_at_budget": null
+          },
+          "5": {
+            "ap": null,
+            "auroc": null,
+            "brier": 2.433994173086234e-12,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 9.113645655598452e-07,
+            "positive_rate": 0.0,
+            "positives": 0,
+            "precision_at_budget": null
+          }
+        },
+        "count": 450,
+        "log_loss": 0.22830622221421049,
+        "positive_rate": 0.2733333333333333,
+        "positives": 123,
+        "precision_at_budget": null
+      },
+      "test_candidates": 450,
+      "test_matched_ap_mean_across_graphs": 0.49052517169347226,
+      "test_precision_at_budget_mean_across_graphs": 0.9333333333333332,
+      "training_candidates": 600,
+      "validation_ap": 0.9178260499649876,
+      "validation_candidates": 150,
+      "validation_selected_C": 1.0,
+      "validation_threshold": {
+        "selected_count": 38,
+        "threshold": 0.8010134628242297,
+        "validation_f1": 0.9333333333333333
+      }
+    },
+    "Q2_incoherent": {
+      "feature_count": 34,
+      "test_by_graph": {
+        "cornell/contact-high-school/temporal-20-second::window:5": {
+          "candidate": {
+            "ap": 0.8624220549162585,
+            "auroc": 0.9409090909090909,
+            "brier": 0.0967226588754205,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9246109560114479,
+                "auroc": 0.6424242424242425,
+                "brier": 0.1131488094009909,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.3842305861236179,
+                "positive_rate": 0.868421052631579,
+                "positives": 33,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.13441517992601584,
+                "auroc": 0.23502304147465436,
+                "brier": 0.2587650990832778,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.7118172573753683,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 0.010062803230686328,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.10113021464210467,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 9.044836149911181e-05,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.009253249121870349,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.30489337474819034,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 0.9
+          },
+          "candidate_recall_upper_bound": 0.025157232704402517,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.03933620159803319,
+            "fn": 1558,
+            "fp": 5,
+            "jaccard": 0.02006269592476489,
+            "precision": 0.8648648648648649,
+            "predicted_count": 37,
+            "recall": 0.02012578616352201,
+            "tp": 32,
+            "true_count": 1590
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.4312785863137526,
+            "matched_candidate_count": 24,
+            "matched_pair_count": 12,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:6": {
+          "candidate": {
+            "ap": 0.8750314396209217,
+            "auroc": 0.9475,
+            "brier": 0.09125108849702218,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9222568877156144,
+                "auroc": 0.4761904761904762,
+                "brier": 0.07566423761416738,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.29040628166830873,
+                "positive_rate": 0.9210526315789473,
+                "positives": 35,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.0900848595310188,
+                "auroc": 0.30147058823529416,
+                "brier": 0.2510141385063839,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.6961073423526345,
+                "positive_rate": 0.10526315789473684,
+                "positives": 4,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": 0.030303030303030304,
+                "auroc": 0.11111111111111116,
+                "brier": 0.0343176222721997,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.17528912732111085,
+                "positive_rate": 0.02702702702702703,
+                "positives": 1,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 0.00011170156489165473,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.009822854923748212,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.29557774037237083,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 0.9
+          },
+          "candidate_recall_upper_bound": 0.02185792349726776,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.037473233404710926,
+            "fn": 1795,
+            "fp": 3,
+            "jaccard": 0.019094380796508457,
+            "precision": 0.9210526315789473,
+            "predicted_count": 38,
+            "recall": 0.01912568306010929,
+            "tp": 35,
+            "true_count": 1830
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.4916666666666667,
+            "matched_candidate_count": 16,
+            "matched_pair_count": 8,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:7": {
+          "candidate": {
+            "ap": 0.9291004752978557,
+            "auroc": 0.9637035427081069,
+            "brier": 0.07615225303676165,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9764566667459079,
+                "auroc": 0.6388888888888888,
+                "brier": 0.056359310329269795,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.24006084497926353,
+                "positive_rate": 0.9473684210526315,
+                "positives": 36,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.19025646972075544,
+                "auroc": 0.4147465437788018,
+                "brier": 0.2346842962965853,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.6621380004113258,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 0.009697238698623269,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.10155614513466334,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 0.00011846140223498472,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.010548368476525339,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.2562094875230425,
+            "positive_rate": 0.2866666666666667,
+            "positives": 43,
+            "precision_at_budget": 1.0
+          },
+          "candidate_recall_upper_bound": 0.03134110787172012,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.049680624556423,
+            "fn": 1337,
+            "fp": 2,
+            "jaccard": 0.025473071324599708,
+            "precision": 0.9459459459459459,
+            "predicted_count": 37,
+            "recall": 0.025510204081632654,
+            "tp": 35,
+            "true_count": 1372
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.6715219421101775,
+            "matched_candidate_count": 18,
+            "matched_pair_count": 9,
+            "matched_positive_rate": 0.5
+          }
+        }
+      },
+      "test_candidate_metrics_pooled": {
+        "ap": 0.884089722986726,
+        "auroc": 0.9507222595161731,
+        "brier": 0.08804200013640144,
+        "budget_used": null,
+        "by_cardinality": {
+          "2": {
+            "ap": 0.9360123060633225,
+            "auroc": 0.5932692307692308,
+            "brier": 0.08172411911480937,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.3048992375903967,
+            "positive_rate": 0.9122807017543859,
+            "positives": 104,
+            "precision_at_budget": null
+          },
+          "3": {
+            "ap": 0.11626931561112289,
+            "auroc": 0.3188657407407407,
+            "brier": 0.24815451129541566,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.6900208667131096,
+            "positive_rate": 0.15789473684210525,
+            "positives": 18,
+            "precision_at_budget": null
+          },
+          "4": {
+            "ap": 0.010309278350515464,
+            "auroc": 0.12727272727272732,
+            "brier": 0.018025888067169763,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 0.12599182903262632,
+            "positive_rate": 0.009009009009009009,
+            "positives": 1,
+            "precision_at_budget": null
+          },
+          "5": {
+            "ap": null,
+            "auroc": null,
+            "brier": 0.0001068704428752504,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 0.009874824174047966,
+            "positive_rate": 0.0,
+            "positives": 0,
+            "precision_at_budget": null
+          }
+        },
+        "count": 450,
+        "log_loss": 0.2855602008812012,
+        "positive_rate": 0.2733333333333333,
+        "positives": 123,
+        "precision_at_budget": null
+      },
+      "test_candidates": 450,
+      "test_matched_ap_mean_across_graphs": 0.531489065030199,
+      "test_precision_at_budget_mean_across_graphs": 0.9333333333333332,
+      "training_candidates": 600,
+      "validation_ap": 0.9298631244614395,
+      "validation_candidates": 150,
+      "validation_selected_C": 0.01,
+      "validation_threshold": {
+        "selected_count": 38,
+        "threshold": 0.8226519430658986,
+        "validation_f1": 0.9333333333333333
+      }
+    },
+    "Q3_group": {
+      "feature_count": 46,
+      "test_by_graph": {
+        "cornell/contact-high-school/temporal-20-second::window:5": {
+          "candidate": {
+            "ap": 0.8079925870784421,
+            "auroc": 0.9461363636363638,
+            "brier": 0.07342218607073603,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.8320124093343478,
+                "auroc": 0.3393939393939394,
+                "brier": 0.12825625210236827,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.5731876675273274,
+                "positive_rate": 0.868421052631579,
+                "positives": 33,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.2818971568971569,
+                "auroc": 0.5714285714285714,
+                "brier": 0.1615643541673789,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.5085780278099259,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 3.915462251675258e-06,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.0013403804609936787,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 6.9377907660711605e-12,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 1.3495711515486823e-06,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.27437826956003336,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 0.8
+          },
+          "candidate_recall_upper_bound": 0.025157232704402517,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.038130381303813035,
+            "fn": 1559,
+            "fp": 5,
+            "jaccard": 0.019435736677115987,
+            "precision": 0.8611111111111112,
+            "predicted_count": 36,
+            "recall": 0.01949685534591195,
+            "tp": 31,
+            "true_count": 1590
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.47234586198401995,
+            "matched_candidate_count": 24,
+            "matched_pair_count": 12,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:6": {
+          "candidate": {
+            "ap": 0.931962211123501,
+            "auroc": 0.969090909090909,
+            "brier": 0.054753080447161935,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9641360728603803,
+                "auroc": 0.6666666666666667,
+                "brier": 0.07488493325589532,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.3043881022176981,
+                "positive_rate": 0.9210526315789473,
+                "positives": 35,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.411525974025974,
+                "auroc": 0.7426470588235294,
+                "brier": 0.11495703108107502,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.38582390849339154,
+                "positive_rate": 0.10526315789473684,
+                "positives": 4,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": 0.05555555555555555,
+                "auroc": 0.5277777777777778,
+                "brier": 0.026999119520195267,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.2041444270960563,
+                "positive_rate": 0.02702702702702703,
+                "positives": 1,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 5.997693424763466e-13,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 5.521468100138609e-07,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.22520947092671642,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 1.0
+          },
+          "candidate_recall_upper_bound": 0.02185792349726776,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.03536977491961415,
+            "fn": 1797,
+            "fp": 3,
+            "jaccard": 0.01800327332242226,
+            "precision": 0.9166666666666666,
+            "predicted_count": 36,
+            "recall": 0.018032786885245903,
+            "tp": 33,
+            "true_count": 1830
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.5554563492063492,
+            "matched_candidate_count": 16,
+            "matched_pair_count": 8,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:7": {
+          "candidate": {
+            "ap": 0.9208855156001026,
+            "auroc": 0.9615301021517062,
+            "brier": 0.06337325020419572,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9697845079538662,
+                "auroc": 0.5694444444444444,
+                "brier": 0.05122695307055856,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.22393233334642929,
+                "positive_rate": 0.9473684210526315,
+                "positives": 36,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.16877963306534735,
+                "auroc": 0.39170506912442393,
+                "brier": 0.19892822340129032,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.6220511513916404,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 2.4547195143318915e-06,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.0008075096631938437,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 2.082960212231613e-12,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 1.029381926893117e-06,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.2145152557647741,
+            "positive_rate": 0.2866666666666667,
+            "positives": 43,
+            "precision_at_budget": 1.0
+          },
+          "candidate_recall_upper_bound": 0.03134110787172012,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.05106382978723404,
+            "fn": 1336,
+            "fp": 2,
+            "jaccard": 0.026200873362445413,
+            "precision": 0.9473684210526315,
+            "predicted_count": 38,
+            "recall": 0.026239067055393587,
+            "tp": 36,
+            "true_count": 1372
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.4567105189654209,
+            "matched_candidate_count": 18,
+            "matched_pair_count": 9,
+            "matched_positive_rate": 0.5
+          }
+        }
+      },
+      "test_candidate_metrics_pooled": {
+        "ap": 0.8810691797373358,
+        "auroc": 0.9573108575122449,
+        "brier": 0.06384950557403121,
+        "budget_used": null,
+        "by_cardinality": {
+          "2": {
+            "ap": 0.9185297946299704,
+            "auroc": 0.48365384615384616,
+            "brier": 0.08478937947627405,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.3671693676971515,
+            "positive_rate": 0.9122807017543859,
+            "positives": 104,
+            "precision_at_budget": null
+          },
+          "3": {
+            "ap": 0.17957249418102716,
+            "auroc": 0.5121527777777777,
+            "brier": 0.1584832028832481,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.505484362564986,
+            "positive_rate": 0.15789473684210525,
+            "positives": 18,
+            "precision_at_budget": null
+          },
+          "4": {
+            "ap": 0.019230769230769232,
+            "auroc": 0.5363636363636364,
+            "brier": 0.00900182990065376,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 0.06876410574008127,
+            "positive_rate": 0.009009009009009009,
+            "positives": 1,
+            "precision_at_budget": null
+          },
+          "5": {
+            "ap": null,
+            "auroc": null,
+            "brier": 3.206840106926374e-12,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 9.770332961518868e-07,
+            "positive_rate": 0.0,
+            "positives": 0,
+            "precision_at_budget": null
+          }
+        },
+        "count": 450,
+        "log_loss": 0.23803433208384128,
+        "positive_rate": 0.2733333333333333,
+        "positives": 123,
+        "precision_at_budget": null
+      },
+      "test_candidates": 450,
+      "test_matched_ap_mean_across_graphs": 0.4948375767185967,
+      "test_precision_at_budget_mean_across_graphs": 0.9333333333333332,
+      "training_candidates": 600,
+      "validation_ap": 0.9313929850384814,
+      "validation_candidates": 150,
+      "validation_selected_C": 1.0,
+      "validation_threshold": {
+        "selected_count": 38,
+        "threshold": 0.9026465552774907,
+        "validation_f1": 0.9333333333333333
+      }
+    },
+    "Q3_independent_columns": {
+      "feature_count": 40,
+      "test_by_graph": {
+        "cornell/contact-high-school/temporal-20-second::window:5": {
+          "candidate": {
+            "ap": 0.8130205665977717,
+            "auroc": 0.9502272727272727,
+            "brier": 0.07176119063861058,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.8346971718414721,
+                "auroc": 0.35757575757575755,
+                "brier": 0.127705351179396,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.5627068368778662,
+                "positive_rate": 0.868421052631579,
+                "positives": 33,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.28906244434194744,
+                "auroc": 0.6405529953917051,
+                "brier": 0.15555877266222148,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.48272023864025043,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 3.834853815381531e-06,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.0013938993081980705,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 5.917731336576319e-12,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 1.3354836106636279e-06,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.2651856837132357,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 0.7
+          },
+          "candidate_recall_upper_bound": 0.025157232704402517,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.040540540540540536,
+            "fn": 1557,
+            "fp": 5,
+            "jaccard": 0.020689655172413793,
+            "precision": 0.868421052631579,
+            "predicted_count": 38,
+            "recall": 0.020754716981132074,
+            "tp": 33,
+            "true_count": 1590
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.47940755029570825,
+            "matched_candidate_count": 24,
+            "matched_pair_count": 12,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:6": {
+          "candidate": {
+            "ap": 0.92887320645742,
+            "auroc": 0.9688636363636363,
+            "brier": 0.05427298999141357,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9593068803137965,
+                "auroc": 0.6380952380952382,
+                "brier": 0.07469514452316628,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.30383053018760914,
+                "positive_rate": 0.9210526315789473,
+                "positives": 35,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.44704968944099377,
+                "auroc": 0.7573529411764706,
+                "brier": 0.11325966967617278,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.38902314099006885,
+                "positive_rate": 0.10526315789473684,
+                "positives": 4,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": 0.05555555555555555,
+                "auroc": 0.5277777777777778,
+                "brier": 0.026990961056967577,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.1975105412770562,
+                "positive_rate": 0.02702702702702703,
+                "positives": 1,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 7.932750430795617e-13,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 6.961009987978855e-07,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.224242368584932,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 1.0
+          },
+          "candidate_recall_upper_bound": 0.02185792349726776,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.03536977491961415,
+            "fn": 1797,
+            "fp": 3,
+            "jaccard": 0.01800327332242226,
+            "precision": 0.9166666666666666,
+            "predicted_count": 36,
+            "recall": 0.018032786885245903,
+            "tp": 33,
+            "true_count": 1830
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.5486381673881674,
+            "matched_candidate_count": 16,
+            "matched_pair_count": 8,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:7": {
+          "candidate": {
+            "ap": 0.9183078174401065,
+            "auroc": 0.9602260378178658,
+            "brier": 0.06245704969295474,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9681505210257616,
+                "auroc": 0.5555555555555556,
+                "brier": 0.05119860232722545,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.22468389208096454,
+                "positive_rate": 0.9473684210526315,
+                "positives": 36,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.1635846383067852,
+                "auroc": 0.3686635944700461,
+                "brier": 0.19534026327450374,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.598256590520332,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 2.1773241241478663e-06,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.0009444054873889754,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 2.2947621514037633e-12,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 1.188729166615348e-06,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.20871150216574547,
+            "positive_rate": 0.2866666666666667,
+            "positives": 43,
+            "precision_at_budget": 1.0
+          },
+          "candidate_recall_upper_bound": 0.03134110787172012,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.05106382978723404,
+            "fn": 1336,
+            "fp": 2,
+            "jaccard": 0.026200873362445413,
+            "precision": 0.9473684210526315,
+            "predicted_count": 38,
+            "recall": 0.026239067055393587,
+            "tp": 36,
+            "true_count": 1372
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.4530475153024172,
+            "matched_candidate_count": 18,
+            "matched_pair_count": 9,
+            "matched_positive_rate": 0.5
+          }
+        }
+      },
+      "test_candidate_metrics_pooled": {
+        "ap": 0.8834844131474082,
+        "auroc": 0.958504263941722,
+        "brier": 0.06283041010765963,
+        "budget_used": null,
+        "by_cardinality": {
+          "2": {
+            "ap": 0.9201739027077749,
+            "auroc": 0.49423076923076925,
+            "brier": 0.08453303267659591,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.36374041971547993,
+            "positive_rate": 0.9122807017543859,
+            "positives": 104,
+            "precision_at_budget": null
+          },
+          "3": {
+            "ap": 0.18995764301698725,
+            "auroc": 0.5341435185185185,
+            "brier": 0.15471956853763266,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.48999999005021705,
+            "positive_rate": 0.15789473684210525,
+            "positives": 18,
+            "precision_at_budget": null
+          },
+          "4": {
+            "ap": 0.018867924528301886,
+            "auroc": 0.5272727272727273,
+            "brier": 0.008998991078302368,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 0.0666162820242144,
+            "positive_rate": 0.009009009009009009,
+            "positives": 1,
+            "precision_at_budget": null
+          },
+          "5": {
+            "ap": null,
+            "auroc": null,
+            "brier": 3.0019228436865482e-12,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 1.073437925358954e-06,
+            "positive_rate": 0.0,
+            "positives": 0,
+            "precision_at_budget": null
+          }
+        },
+        "count": 450,
+        "log_loss": 0.23271318482130438,
+        "positive_rate": 0.2733333333333333,
+        "positives": 123,
+        "precision_at_budget": null
+      },
+      "test_candidates": 450,
+      "test_matched_ap_mean_across_graphs": 0.49369774432876423,
+      "test_precision_at_budget_mean_across_graphs": 0.9,
+      "training_candidates": 600,
+      "validation_ap": 0.9278057630179454,
+      "validation_candidates": 150,
+      "validation_selected_C": 1.0,
+      "validation_threshold": {
+        "selected_count": 38,
+        "threshold": 0.8882997899650911,
+        "validation_f1": 0.9333333333333333
+      }
+    },
+    "Q4_random_phase": {
+      "feature_count": 34,
+      "test_by_graph": {
+        "cornell/contact-high-school/temporal-20-second::window:5": {
+          "candidate": {
+            "ap": 0.8608505738553451,
+            "auroc": 0.9404545454545454,
+            "brier": 0.09587541281360394,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9180025381515112,
+                "auroc": 0.5757575757575758,
+                "brier": 0.11381607477714398,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.3869031296672731,
+                "positive_rate": 0.868421052631579,
+                "positives": 33,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.15152262896623797,
+                "auroc": 0.27649769585253453,
+                "brier": 0.25426640471986844,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.7028147184961927,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 0.010564470509437774,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.10385948404594599,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 8.898087310611425e-05,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.009144798414124269,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.30393624454156204,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 0.9
+          },
+          "candidate_recall_upper_bound": 0.025157232704402517,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.038130381303813035,
+            "fn": 1559,
+            "fp": 5,
+            "jaccard": 0.019435736677115987,
+            "precision": 0.8611111111111112,
+            "predicted_count": 36,
+            "recall": 0.01949685534591195,
+            "tp": 31,
+            "true_count": 1590
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.4205083312420269,
+            "matched_candidate_count": 24,
+            "matched_pair_count": 12,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:6": {
+          "candidate": {
+            "ap": 0.8710767752717062,
+            "auroc": 0.949090909090909,
+            "brier": 0.09083813680910477,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9142624711497692,
+                "auroc": 0.4285714285714286,
+                "brier": 0.07615421760074896,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.2924576056706936,
+                "positive_rate": 0.9210526315789473,
+                "positives": 35,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.10415671285236502,
+                "auroc": 0.40441176470588236,
+                "brier": 0.24810809364977016,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.6899780638931469,
+                "positive_rate": 0.10526315789473684,
+                "positives": 4,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": 0.02857142857142857,
+                "auroc": 0.05555555555555558,
+                "brier": 0.0351297084468905,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.18074034470953929,
+                "positive_rate": 0.02702702702702703,
+                "positives": 1,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 0.00010685084624438565,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.009559805976844296,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.29582440679214755,
+            "positive_rate": 0.26666666666666666,
+            "positives": 40,
+            "precision_at_budget": 0.8
+          },
+          "candidate_recall_upper_bound": 0.02185792349726776,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.037473233404710926,
+            "fn": 1795,
+            "fp": 3,
+            "jaccard": 0.019094380796508457,
+            "precision": 0.9210526315789473,
+            "predicted_count": 38,
+            "recall": 0.01912568306010929,
+            "tp": 35,
+            "true_count": 1830
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.4686771561771562,
+            "matched_candidate_count": 16,
+            "matched_pair_count": 8,
+            "matched_positive_rate": 0.5
+          }
+        },
+        "cornell/contact-high-school/temporal-20-second::window:7": {
+          "candidate": {
+            "ap": 0.933969382792882,
+            "auroc": 0.9656596392088677,
+            "brier": 0.07652689283719763,
+            "budget_used": 10,
+            "by_cardinality": {
+              "2": {
+                "ap": 0.9802402205958869,
+                "auroc": 0.6805555555555556,
+                "brier": 0.05656614228026654,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.240744257174433,
+                "positive_rate": 0.9473684210526315,
+                "positives": 36,
+                "precision_at_budget": null
+              },
+              "3": {
+                "ap": 0.20497054500604198,
+                "auroc": 0.44239631336405527,
+                "brier": 0.23558084617045685,
+                "budget_used": null,
+                "count": 38,
+                "log_loss": 0.6638399642880884,
+                "positive_rate": 0.18421052631578946,
+                "positives": 7,
+                "precision_at_budget": null
+              },
+              "4": {
+                "ap": null,
+                "auroc": null,
+                "brier": 0.010083346792691864,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.10322668586160944,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              },
+              "5": {
+                "ap": null,
+                "auroc": null,
+                "brier": 0.0001179603546637657,
+                "budget_used": null,
+                "count": 37,
+                "log_loss": 0.010468514334333096,
+                "positive_rate": 0.0,
+                "positives": 0,
+                "precision_at_budget": null
+              }
+            },
+            "count": 150,
+            "log_loss": 0.2572061521521713,
+            "positive_rate": 0.2866666666666667,
+            "positives": 43,
+            "precision_at_budget": 1.0
+          },
+          "candidate_recall_upper_bound": 0.03134110787172012,
+          "exact_reconstruction_diagnostic": {
+            "f1": 0.04829545454545455,
+            "fn": 1338,
+            "fp": 2,
+            "jaccard": 0.024745269286754003,
+            "precision": 0.9444444444444444,
+            "predicted_count": 36,
+            "recall": 0.02478134110787172,
+            "tp": 34,
+            "true_count": 1372
+          },
+          "matched_false_clique_diagnostic": {
+            "matched_ap": 0.6459080498296186,
+            "matched_candidate_count": 18,
+            "matched_pair_count": 9,
+            "matched_positive_rate": 0.5
+          }
+        }
+      },
+      "test_candidate_metrics_pooled": {
+        "ap": 0.8819137960676781,
+        "auroc": 0.9517664901419656,
+        "brier": 0.08774681415330213,
+        "budget_used": null,
+        "by_cardinality": {
+          "2": {
+            "ap": 0.9305144655530435,
+            "auroc": 0.564423076923077,
+            "brier": 0.08217881155271983,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.3067016641708,
+            "positive_rate": 0.9122807017543859,
+            "positives": 104,
+            "precision_at_budget": null
+          },
+          "3": {
+            "ap": 0.12634048862519467,
+            "auroc": 0.3645833333333333,
+            "brier": 0.24598511484669847,
+            "budget_used": null,
+            "count": 114,
+            "log_loss": 0.6855442488924762,
+            "positive_rate": 0.15789473684210525,
+            "positives": 18,
+            "precision_at_budget": null
+          },
+          "4": {
+            "ap": 0.009615384615384616,
+            "auroc": 0.0636363636363636,
+            "brier": 0.018592508583006713,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 0.1292755048723649,
+            "positive_rate": 0.009009009009009009,
+            "positives": 1,
+            "precision_at_budget": null
+          },
+          "5": {
+            "ap": null,
+            "auroc": null,
+            "brier": 0.00010459735800475518,
+            "budget_used": null,
+            "count": 111,
+            "log_loss": 0.009724372908433884,
+            "positive_rate": 0.0,
+            "positives": 0,
+            "precision_at_budget": null
+          }
+        },
+        "count": 450,
+        "log_loss": 0.28565560116196026,
+        "positive_rate": 0.2733333333333333,
+        "positives": 123,
+        "precision_at_budget": null
+      },
+      "test_candidates": 450,
+      "test_matched_ap_mean_across_graphs": 0.5116978457496005,
+      "test_precision_at_budget_mean_across_graphs": 0.9,
+      "training_candidates": 600,
+      "validation_ap": 0.9363356344074389,
+      "validation_candidates": 150,
+      "validation_selected_C": 0.01,
+      "validation_threshold": {
+        "selected_count": 38,
+        "threshold": 0.8246691000717624,
+        "validation_f1": 0.9333333333333333
+      }
+    }
+  }
+}
