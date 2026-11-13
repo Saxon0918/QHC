@@ -1,0 +1,25 @@
+{
+  "interpretation": "不能仅从 A 区分两个真实超图",
+  "same_binary_projection": true,
+  "truth_world_1": [
+    [
+      0,
+      1,
+      2
+    ]
+  ],
+  "truth_world_2": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ]
+  ]
+}

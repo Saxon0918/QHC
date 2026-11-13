@@ -1,0 +1,777 @@
+{
+  "rss_peak_is_sampled": true,
+  "rss_sampling_interval_seconds": 0.02,
+  "stages": [
+    {
+      "name": "synthetic_generation",
+      "peak_rss_bytes": 136253440,
+      "rss_end_bytes": 136253440,
+      "rss_start_bytes": 134942720,
+      "seconds": 0.020366474986076355
+    },
+    {
+      "name": "synthetic-s1-101:candidate_proposal",
+      "peak_rss_bytes": 136777728,
+      "rss_end_bytes": 136777728,
+      "rss_start_bytes": 136777728,
+      "seconds": 0.0013639619573950768
+    },
+    {
+      "name": "synthetic-s1-101:classical_features",
+      "peak_rss_bytes": 137302016,
+      "rss_end_bytes": 137302016,
+      "rss_start_bytes": 136777728,
+      "seconds": 0.05664846766740084
+    },
+    {
+      "name": "synthetic-s1-101:quantum_group_features",
+      "peak_rss_bytes": 137826304,
+      "rss_end_bytes": 137826304,
+      "rss_start_bytes": 137302016,
+      "seconds": 0.04187518870458007
+    },
+    {
+      "name": "synthetic-s1-101:heat_features",
+      "peak_rss_bytes": 137826304,
+      "rss_end_bytes": 137826304,
+      "rss_start_bytes": 137826304,
+      "seconds": 0.0413623908534646
+    },
+    {
+      "name": "synthetic-s1-101:wave_features",
+      "peak_rss_bytes": 138088448,
+      "rss_end_bytes": 138088448,
+      "rss_start_bytes": 137826304,
+      "seconds": 0.056213878095149994
+    },
+    {
+      "name": "synthetic-s1-101:spectral_features",
+      "peak_rss_bytes": 138088448,
+      "rss_end_bytes": 138088448,
+      "rss_start_bytes": 138088448,
+      "seconds": 0.0107251419685781
+    },
+    {
+      "name": "synthetic-s1-101:quantum_pair_features",
+      "peak_rss_bytes": 138088448,
+      "rss_end_bytes": 138088448,
+      "rss_start_bytes": 138088448,
+      "seconds": 0.014614085666835308
+    },
+    {
+      "name": "synthetic-s1-101:random_phase_control",
+      "peak_rss_bytes": 138088448,
+      "rss_end_bytes": 138088448,
+      "rss_start_bytes": 138088448,
+      "seconds": 0.1776205338537693
+    },
+    {
+      "name": "synthetic-s1-102:candidate_proposal",
+      "peak_rss_bytes": 138350592,
+      "rss_end_bytes": 138350592,
+      "rss_start_bytes": 138088448,
+      "seconds": 0.0019436590373516083
+    },
+    {
+      "name": "synthetic-s1-102:classical_features",
+      "peak_rss_bytes": 138350592,
+      "rss_end_bytes": 138350592,
+      "rss_start_bytes": 138350592,
+      "seconds": 0.05999054806306958
+    },
+    {
+      "name": "synthetic-s1-102:quantum_group_features",
+      "peak_rss_bytes": 138350592,
+      "rss_end_bytes": 138350592,
+      "rss_start_bytes": 138350592,
+      "seconds": 0.06342390738427639
+    },
+    {
+      "name": "synthetic-s1-102:heat_features",
+      "peak_rss_bytes": 138350592,
+      "rss_end_bytes": 138350592,
+      "rss_start_bytes": 138350592,
+      "seconds": 0.0616180500946939
+    },
+    {
+      "name": "synthetic-s1-102:wave_features",
+      "peak_rss_bytes": 138612736,
+      "rss_end_bytes": 138612736,
+      "rss_start_bytes": 138350592,
+      "seconds": 0.0829684971831739
+    },
+    {
+      "name": "synthetic-s1-102:spectral_features",
+      "peak_rss_bytes": 138612736,
+      "rss_end_bytes": 138612736,
+      "rss_start_bytes": 138612736,
+      "seconds": 0.01573306694626808
+    },
+    {
+      "name": "synthetic-s1-102:quantum_pair_features",
+      "peak_rss_bytes": 138612736,
+      "rss_end_bytes": 138612736,
+      "rss_start_bytes": 138612736,
+      "seconds": 0.01800789637491107
+    },
+    {
+      "name": "synthetic-s1-102:random_phase_control",
+      "peak_rss_bytes": 138612736,
+      "rss_end_bytes": 138612736,
+      "rss_start_bytes": 138612736,
+      "seconds": 0.2693388592451811
+    },
+    {
+      "name": "synthetic-s1-103:candidate_proposal",
+      "peak_rss_bytes": 138874880,
+      "rss_end_bytes": 138874880,
+      "rss_start_bytes": 138874880,
+      "seconds": 0.0016020829789340496
+    },
+    {
+      "name": "synthetic-s1-103:classical_features",
+      "peak_rss_bytes": 138874880,
+      "rss_end_bytes": 138874880,
+      "rss_start_bytes": 138874880,
+      "seconds": 0.050855271983891726
+    },
+    {
+      "name": "synthetic-s1-103:quantum_group_features",
+      "peak_rss_bytes": 138874880,
+      "rss_end_bytes": 138874880,
+      "rss_start_bytes": 138874880,
+      "seconds": 0.053866222966462374
+    },
+    {
+      "name": "synthetic-s1-103:heat_features",
+      "peak_rss_bytes": 138874880,
+      "rss_end_bytes": 138874880,
+      "rss_start_bytes": 138874880,
+      "seconds": 0.05341578088700771
+    },
+    {
+      "name": "synthetic-s1-103:wave_features",
+      "peak_rss_bytes": 138874880,
+      "rss_end_bytes": 138874880,
+      "rss_start_bytes": 138874880,
+      "seconds": 0.07271639304235578
+    },
+    {
+      "name": "synthetic-s1-103:spectral_features",
+      "peak_rss_bytes": 138874880,
+      "rss_end_bytes": 138874880,
+      "rss_start_bytes": 138874880,
+      "seconds": 0.0136385434307158
+    },
+    {
+      "name": "synthetic-s1-103:quantum_pair_features",
+      "peak_rss_bytes": 138874880,
+      "rss_end_bytes": 138874880,
+      "rss_start_bytes": 138874880,
+      "seconds": 0.016400605905801058
+    },
+    {
+      "name": "synthetic-s1-103:random_phase_control",
+      "peak_rss_bytes": 138874880,
+      "rss_end_bytes": 138874880,
+      "rss_start_bytes": 138874880,
+      "seconds": 0.23098226683214307
+    },
+    {
+      "name": "synthetic-s1-201:candidate_proposal",
+      "peak_rss_bytes": 139399168,
+      "rss_end_bytes": 139399168,
+      "rss_start_bytes": 139399168,
+      "seconds": 0.0017321310006082058
+    },
+    {
+      "name": "synthetic-s1-201:classical_features",
+      "peak_rss_bytes": 139399168,
+      "rss_end_bytes": 139399168,
+      "rss_start_bytes": 139399168,
+      "seconds": 0.061504969373345375
+    },
+    {
+      "name": "synthetic-s1-201:quantum_group_features",
+      "peak_rss_bytes": 139399168,
+      "rss_end_bytes": 139399168,
+      "rss_start_bytes": 139399168,
+      "seconds": 0.06520758988335729
+    },
+    {
+      "name": "synthetic-s1-201:heat_features",
+      "peak_rss_bytes": 139399168,
+      "rss_end_bytes": 139399168,
+      "rss_start_bytes": 139399168,
+      "seconds": 0.06368763092905283
+    },
+    {
+      "name": "synthetic-s1-201:wave_features",
+      "peak_rss_bytes": 139399168,
+      "rss_end_bytes": 139399168,
+      "rss_start_bytes": 139399168,
+      "seconds": 0.08740547113120556
+    },
+    {
+      "name": "synthetic-s1-201:spectral_features",
+      "peak_rss_bytes": 139399168,
+      "rss_end_bytes": 139399168,
+      "rss_start_bytes": 139399168,
+      "seconds": 0.016408543568104506
+    },
+    {
+      "name": "synthetic-s1-201:quantum_pair_features",
+      "peak_rss_bytes": 139399168,
+      "rss_end_bytes": 139399168,
+      "rss_start_bytes": 139399168,
+      "seconds": 0.018009947147220373
+    },
+    {
+      "name": "synthetic-s1-201:random_phase_control",
+      "peak_rss_bytes": 139399168,
+      "rss_end_bytes": 139399168,
+      "rss_start_bytes": 139399168,
+      "seconds": 0.2768461829982698
+    },
+    {
+      "name": "synthetic-s1-301:candidate_proposal",
+      "peak_rss_bytes": 139661312,
+      "rss_end_bytes": 139661312,
+      "rss_start_bytes": 139661312,
+      "seconds": 0.00168505497276783
+    },
+    {
+      "name": "synthetic-s1-301:classical_features",
+      "peak_rss_bytes": 139661312,
+      "rss_end_bytes": 139661312,
+      "rss_start_bytes": 139661312,
+      "seconds": 0.056465295143425465
+    },
+    {
+      "name": "synthetic-s1-301:quantum_group_features",
+      "peak_rss_bytes": 139661312,
+      "rss_end_bytes": 139661312,
+      "rss_start_bytes": 139661312,
+      "seconds": 0.05725372303277254
+    },
+    {
+      "name": "synthetic-s1-301:heat_features",
+      "peak_rss_bytes": 139661312,
+      "rss_end_bytes": 139661312,
+      "rss_start_bytes": 139661312,
+      "seconds": 0.05453572701662779
+    },
+    {
+      "name": "synthetic-s1-301:wave_features",
+      "peak_rss_bytes": 139661312,
+      "rss_end_bytes": 139661312,
+      "rss_start_bytes": 139661312,
+      "seconds": 0.07495917286723852
+    },
+    {
+      "name": "synthetic-s1-301:spectral_features",
+      "peak_rss_bytes": 139661312,
+      "rss_end_bytes": 139661312,
+      "rss_start_bytes": 139661312,
+      "seconds": 0.01469513913616538
+    },
+    {
+      "name": "synthetic-s1-301:quantum_pair_features",
+      "peak_rss_bytes": 139661312,
+      "rss_end_bytes": 139661312,
+      "rss_start_bytes": 139661312,
+      "seconds": 0.016902590170502663
+    },
+    {
+      "name": "synthetic-s1-301:random_phase_control",
+      "peak_rss_bytes": 139661312,
+      "rss_end_bytes": 139661312,
+      "rss_start_bytes": 139661312,
+      "seconds": 0.2547826739028096
+    },
+    {
+      "name": "synthetic-s1-302:candidate_proposal",
+      "peak_rss_bytes": 139923456,
+      "rss_end_bytes": 139923456,
+      "rss_start_bytes": 139923456,
+      "seconds": 0.0015488099306821823
+    },
+    {
+      "name": "synthetic-s1-302:classical_features",
+      "peak_rss_bytes": 139923456,
+      "rss_end_bytes": 139923456,
+      "rss_start_bytes": 139923456,
+      "seconds": 0.045565817039459944
+    },
+    {
+      "name": "synthetic-s1-302:quantum_group_features",
+      "peak_rss_bytes": 139923456,
+      "rss_end_bytes": 139923456,
+      "rss_start_bytes": 139923456,
+      "seconds": 0.04617149382829666
+    },
+    {
+      "name": "synthetic-s1-302:heat_features",
+      "peak_rss_bytes": 139923456,
+      "rss_end_bytes": 139923456,
+      "rss_start_bytes": 139923456,
+      "seconds": 0.043241630773991346
+    },
+    {
+      "name": "synthetic-s1-302:wave_features",
+      "peak_rss_bytes": 139923456,
+      "rss_end_bytes": 139923456,
+      "rss_start_bytes": 139923456,
+      "seconds": 0.05945669999346137
+    },
+    {
+      "name": "synthetic-s1-302:spectral_features",
+      "peak_rss_bytes": 139923456,
+      "rss_end_bytes": 139923456,
+      "rss_start_bytes": 139923456,
+      "seconds": 0.012014790903776884
+    },
+    {
+      "name": "synthetic-s1-302:quantum_pair_features",
+      "peak_rss_bytes": 139923456,
+      "rss_end_bytes": 139923456,
+      "rss_start_bytes": 139923456,
+      "seconds": 0.01546534663066268
+    },
+    {
+      "name": "synthetic-s1-302:random_phase_control",
+      "peak_rss_bytes": 139923456,
+      "rss_end_bytes": 139923456,
+      "rss_start_bytes": 139923456,
+      "seconds": 0.20509702526032925
+    },
+    {
+      "name": "synthetic-s2-101:candidate_proposal",
+      "peak_rss_bytes": 140185600,
+      "rss_end_bytes": 140185600,
+      "rss_start_bytes": 140185600,
+      "seconds": 0.0021678381599485874
+    },
+    {
+      "name": "synthetic-s2-101:classical_features",
+      "peak_rss_bytes": 140185600,
+      "rss_end_bytes": 140185600,
+      "rss_start_bytes": 140185600,
+      "seconds": 0.07718490017578006
+    },
+    {
+      "name": "synthetic-s2-101:quantum_group_features",
+      "peak_rss_bytes": 140185600,
+      "rss_end_bytes": 140185600,
+      "rss_start_bytes": 140185600,
+      "seconds": 0.08503319276496768
+    },
+    {
+      "name": "synthetic-s2-101:heat_features",
+      "peak_rss_bytes": 140185600,
+      "rss_end_bytes": 140185600,
+      "rss_start_bytes": 140185600,
+      "seconds": 0.09320119395852089
+    },
+    {
+      "name": "synthetic-s2-101:wave_features",
+      "peak_rss_bytes": 140185600,
+      "rss_end_bytes": 140185600,
+      "rss_start_bytes": 140185600,
+      "seconds": 0.11329639796167612
+    },
+    {
+      "name": "synthetic-s2-101:spectral_features",
+      "peak_rss_bytes": 140185600,
+      "rss_end_bytes": 140185600,
+      "rss_start_bytes": 140185600,
+      "seconds": 0.020280402153730392
+    },
+    {
+      "name": "synthetic-s2-101:quantum_pair_features",
+      "peak_rss_bytes": 140185600,
+      "rss_end_bytes": 140185600,
+      "rss_start_bytes": 140185600,
+      "seconds": 0.020499165169894695
+    },
+    {
+      "name": "synthetic-s2-101:random_phase_control",
+      "peak_rss_bytes": 140185600,
+      "rss_end_bytes": 140185600,
+      "rss_start_bytes": 140185600,
+      "seconds": 0.34985712775960565
+    },
+    {
+      "name": "synthetic-s2-102:candidate_proposal",
+      "peak_rss_bytes": 140447744,
+      "rss_end_bytes": 140447744,
+      "rss_start_bytes": 140447744,
+      "seconds": 0.0026641436852514744
+    },
+    {
+      "name": "synthetic-s2-102:classical_features",
+      "peak_rss_bytes": 140447744,
+      "rss_end_bytes": 140447744,
+      "rss_start_bytes": 140447744,
+      "seconds": 0.07864875299856067
+    },
+    {
+      "name": "synthetic-s2-102:quantum_group_features",
+      "peak_rss_bytes": 140447744,
+      "rss_end_bytes": 140447744,
+      "rss_start_bytes": 140447744,
+      "seconds": 0.08945019403472543
+    },
+    {
+      "name": "synthetic-s2-102:heat_features",
+      "peak_rss_bytes": 140447744,
+      "rss_end_bytes": 140447744,
+      "rss_start_bytes": 140447744,
+      "seconds": 0.09461020398885012
+    },
+    {
+      "name": "synthetic-s2-102:wave_features",
+      "peak_rss_bytes": 140447744,
+      "rss_end_bytes": 140447744,
+      "rss_start_bytes": 140447744,
+      "seconds": 0.11706593912094831
+    },
+    {
+      "name": "synthetic-s2-102:spectral_features",
+      "peak_rss_bytes": 140447744,
+      "rss_end_bytes": 140447744,
+      "rss_start_bytes": 140447744,
+      "seconds": 0.019870384130626917
+    },
+    {
+      "name": "synthetic-s2-102:quantum_pair_features",
+      "peak_rss_bytes": 140447744,
+      "rss_end_bytes": 140447744,
+      "rss_start_bytes": 140447744,
+      "seconds": 0.02067511808127165
+    },
+    {
+      "name": "synthetic-s2-102:random_phase_control",
+      "peak_rss_bytes": 140447744,
+      "rss_end_bytes": 140447744,
+      "rss_start_bytes": 140447744,
+      "seconds": 0.35722928773611784
+    },
+    {
+      "name": "synthetic-s2-103:candidate_proposal",
+      "peak_rss_bytes": 140972032,
+      "rss_end_bytes": 140972032,
+      "rss_start_bytes": 140709888,
+      "seconds": 0.002459194976836443
+    },
+    {
+      "name": "synthetic-s2-103:classical_features",
+      "peak_rss_bytes": 140972032,
+      "rss_end_bytes": 140972032,
+      "rss_start_bytes": 140972032,
+      "seconds": 0.07801757380366325
+    },
+    {
+      "name": "synthetic-s2-103:quantum_group_features",
+      "peak_rss_bytes": 140972032,
+      "rss_end_bytes": 140972032,
+      "rss_start_bytes": 140972032,
+      "seconds": 0.08537929877638817
+    },
+    {
+      "name": "synthetic-s2-103:heat_features",
+      "peak_rss_bytes": 140972032,
+      "rss_end_bytes": 140972032,
+      "rss_start_bytes": 140972032,
+      "seconds": 0.08687363285571337
+    },
+    {
+      "name": "synthetic-s2-103:wave_features",
+      "peak_rss_bytes": 140972032,
+      "rss_end_bytes": 140972032,
+      "rss_start_bytes": 140972032,
+      "seconds": 0.11625988036394119
+    },
+    {
+      "name": "synthetic-s2-103:spectral_features",
+      "peak_rss_bytes": 140972032,
+      "rss_end_bytes": 140972032,
+      "rss_start_bytes": 140972032,
+      "seconds": 0.020196606870740652
+    },
+    {
+      "name": "synthetic-s2-103:quantum_pair_features",
+      "peak_rss_bytes": 140972032,
+      "rss_end_bytes": 140972032,
+      "rss_start_bytes": 140972032,
+      "seconds": 0.020968331955373287
+    },
+    {
+      "name": "synthetic-s2-103:random_phase_control",
+      "peak_rss_bytes": 140972032,
+      "rss_end_bytes": 140972032,
+      "rss_start_bytes": 140972032,
+      "seconds": 0.3454771898686886
+    },
+    {
+      "name": "synthetic-s2-201:candidate_proposal",
+      "peak_rss_bytes": 141234176,
+      "rss_end_bytes": 141234176,
+      "rss_start_bytes": 141234176,
+      "seconds": 0.0021281465888023376
+    },
+    {
+      "name": "synthetic-s2-201:classical_features",
+      "peak_rss_bytes": 141234176,
+      "rss_end_bytes": 141234176,
+      "rss_start_bytes": 141234176,
+      "seconds": 0.07789298705756664
+    },
+    {
+      "name": "synthetic-s2-201:quantum_group_features",
+      "peak_rss_bytes": 141234176,
+      "rss_end_bytes": 141234176,
+      "rss_start_bytes": 141234176,
+      "seconds": 0.08497152104973793
+    },
+    {
+      "name": "synthetic-s2-201:heat_features",
+      "peak_rss_bytes": 141234176,
+      "rss_end_bytes": 141234176,
+      "rss_start_bytes": 141234176,
+      "seconds": 0.09189862618222833
+    },
+    {
+      "name": "synthetic-s2-201:wave_features",
+      "peak_rss_bytes": 141234176,
+      "rss_end_bytes": 141234176,
+      "rss_start_bytes": 141234176,
+      "seconds": 0.11392609868198633
+    },
+    {
+      "name": "synthetic-s2-201:spectral_features",
+      "peak_rss_bytes": 141234176,
+      "rss_end_bytes": 141234176,
+      "rss_start_bytes": 141234176,
+      "seconds": 0.01985508343204856
+    },
+    {
+      "name": "synthetic-s2-201:quantum_pair_features",
+      "peak_rss_bytes": 141234176,
+      "rss_end_bytes": 141234176,
+      "rss_start_bytes": 141234176,
+      "seconds": 0.020460499916225672
+    },
+    {
+      "name": "synthetic-s2-201:random_phase_control",
+      "peak_rss_bytes": 141234176,
+      "rss_end_bytes": 141234176,
+      "rss_start_bytes": 141234176,
+      "seconds": 0.3529972000978887
+    },
+    {
+      "name": "synthetic-s2-301:candidate_proposal",
+      "peak_rss_bytes": 141758464,
+      "rss_end_bytes": 141758464,
+      "rss_start_bytes": 141758464,
+      "seconds": 0.00234901811927557
+    },
+    {
+      "name": "synthetic-s2-301:classical_features",
+      "peak_rss_bytes": 141758464,
+      "rss_end_bytes": 141758464,
+      "rss_start_bytes": 141758464,
+      "seconds": 0.0784387057647109
+    },
+    {
+      "name": "synthetic-s2-301:quantum_group_features",
+      "peak_rss_bytes": 141758464,
+      "rss_end_bytes": 141758464,
+      "rss_start_bytes": 141758464,
+      "seconds": 0.08768299594521523
+    },
+    {
+      "name": "synthetic-s2-301:heat_features",
+      "peak_rss_bytes": 141758464,
+      "rss_end_bytes": 141758464,
+      "rss_start_bytes": 141758464,
+      "seconds": 0.09381849598139524
+    },
+    {
+      "name": "synthetic-s2-301:wave_features",
+      "peak_rss_bytes": 141758464,
+      "rss_end_bytes": 141758464,
+      "rss_start_bytes": 141758464,
+      "seconds": 0.1157494648359716
+    },
+    {
+      "name": "synthetic-s2-301:spectral_features",
+      "peak_rss_bytes": 141758464,
+      "rss_end_bytes": 141758464,
+      "rss_start_bytes": 141758464,
+      "seconds": 0.01988142728805542
+    },
+    {
+      "name": "synthetic-s2-301:quantum_pair_features",
+      "peak_rss_bytes": 141758464,
+      "rss_end_bytes": 141758464,
+      "rss_start_bytes": 141758464,
+      "seconds": 0.018441980704665184
+    },
+    {
+      "name": "synthetic-s2-301:random_phase_control",
+      "peak_rss_bytes": 141758464,
+      "rss_end_bytes": 141758464,
+      "rss_start_bytes": 141758464,
+      "seconds": 0.35686370404437184
+    },
+    {
+      "name": "synthetic-s2-302:candidate_proposal",
+      "peak_rss_bytes": 142282752,
+      "rss_end_bytes": 142282752,
+      "rss_start_bytes": 142282752,
+      "seconds": 0.0026956088840961456
+    },
+    {
+      "name": "synthetic-s2-302:classical_features",
+      "peak_rss_bytes": 142282752,
+      "rss_end_bytes": 142282752,
+      "rss_start_bytes": 142282752,
+      "seconds": 0.0776923862285912
+    },
+    {
+      "name": "synthetic-s2-302:quantum_group_features",
+      "peak_rss_bytes": 142282752,
+      "rss_end_bytes": 142282752,
+      "rss_start_bytes": 142282752,
+      "seconds": 0.08550859289243817
+    },
+    {
+      "name": "synthetic-s2-302:heat_features",
+      "peak_rss_bytes": 142282752,
+      "rss_end_bytes": 142282752,
+      "rss_start_bytes": 142282752,
+      "seconds": 0.08359237387776375
+    },
+    {
+      "name": "synthetic-s2-302:wave_features",
+      "peak_rss_bytes": 142282752,
+      "rss_end_bytes": 142282752,
+      "rss_start_bytes": 142282752,
+      "seconds": 0.11895610392093658
+    },
+    {
+      "name": "synthetic-s2-302:spectral_features",
+      "peak_rss_bytes": 142282752,
+      "rss_end_bytes": 142282752,
+      "rss_start_bytes": 142282752,
+      "seconds": 0.02029527025297284
+    },
+    {
+      "name": "synthetic-s2-302:quantum_pair_features",
+      "peak_rss_bytes": 142282752,
+      "rss_end_bytes": 142282752,
+      "rss_start_bytes": 142282752,
+      "seconds": 0.020588399842381477
+    },
+    {
+      "name": "synthetic-s2-302:random_phase_control",
+      "peak_rss_bytes": 142282752,
+      "rss_end_bytes": 142282752,
+      "rss_start_bytes": 142282752,
+      "seconds": 0.34288701321929693
+    },
+    {
+      "name": "scorer_fit:C0_classical",
+      "peak_rss_bytes": 144379904,
+      "rss_end_bytes": 144379904,
+      "rss_start_bytes": 142807040,
+      "seconds": 0.043467314913868904
+    },
+    {
+      "name": "scorer_fit:C0_without_explicit_c2",
+      "peak_rss_bytes": 144642048,
+      "rss_end_bytes": 144642048,
+      "rss_start_bytes": 144642048,
+      "seconds": 0.02512058289721608
+    },
+    {
+      "name": "scorer_fit:C1_heat",
+      "peak_rss_bytes": 145428480,
+      "rss_end_bytes": 145428480,
+      "rss_start_bytes": 144904192,
+      "seconds": 0.03332766983658075
+    },
+    {
+      "name": "scorer_fit:C2_wave",
+      "peak_rss_bytes": 145690624,
+      "rss_end_bytes": 145690624,
+      "rss_start_bytes": 145690624,
+      "seconds": 0.031611576210707426
+    },
+    {
+      "name": "scorer_fit:C3_spectral",
+      "peak_rss_bytes": 145952768,
+      "rss_end_bytes": 145952768,
+      "rss_start_bytes": 145952768,
+      "seconds": 0.030138428788632154
+    },
+    {
+      "name": "scorer_fit:C4_short_time_only",
+      "peak_rss_bytes": 146214912,
+      "rss_end_bytes": 146214912,
+      "rss_start_bytes": 145952768,
+      "seconds": 0.015129123348742723
+    },
+    {
+      "name": "scorer_fit:Q1_pairwise",
+      "peak_rss_bytes": 147001344,
+      "rss_end_bytes": 147001344,
+      "rss_start_bytes": 146477056,
+      "seconds": 0.03564696712419391
+    },
+    {
+      "name": "scorer_fit:Q2_coherent",
+      "peak_rss_bytes": 147263488,
+      "rss_end_bytes": 147263488,
+      "rss_start_bytes": 147001344,
+      "seconds": 0.026183835230767727
+    },
+    {
+      "name": "scorer_fit:Q2_incoherent",
+      "peak_rss_bytes": 147263488,
+      "rss_end_bytes": 147263488,
+      "rss_start_bytes": 147263488,
+      "seconds": 0.031066088005900383
+    },
+    {
+      "name": "scorer_fit:Q2_contrast",
+      "peak_rss_bytes": 147525632,
+      "rss_end_bytes": 147525632,
+      "rss_start_bytes": 147525632,
+      "seconds": 0.02545034931972623
+    },
+    {
+      "name": "scorer_fit:Q3_group",
+      "peak_rss_bytes": 147525632,
+      "rss_end_bytes": 147525632,
+      "rss_start_bytes": 147525632,
+      "seconds": 0.03065750515088439
+    },
+    {
+      "name": "scorer_fit:Q3_independent_columns",
+      "peak_rss_bytes": 147787776,
+      "rss_end_bytes": 147787776,
+      "rss_start_bytes": 147787776,
+      "seconds": 0.03448145277798176
+    },
+    {
+      "name": "scorer_fit:Q4_random_phase",
+      "peak_rss_bytes": 148049920,
+      "rss_end_bytes": 148049920,
+      "rss_start_bytes": 147787776,
+      "seconds": 0.026461713947355747
+    }
+  ],
+  "total_profiled_seconds": 8.013615496456623
+}

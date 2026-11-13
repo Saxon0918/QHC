@@ -1,0 +1,44 @@
+{
+  "C0_exact_short_time_feature_column": 14,
+  "candidate_budget_per_graph": 100,
+  "candidate_rows_aligned_across_variants": true,
+  "feature_cache_has_no_truth_or_label_fields": true,
+  "graph_ids_by_split": {
+    "test": [
+      "synthetic-s1-301",
+      "synthetic-s1-302",
+      "synthetic-s2-301",
+      "synthetic-s2-302"
+    ],
+    "train": [
+      "synthetic-s1-101",
+      "synthetic-s1-102",
+      "synthetic-s1-103",
+      "synthetic-s2-101",
+      "synthetic-s2-102",
+      "synthetic-s2-103"
+    ],
+    "validation": [
+      "synthetic-s1-201",
+      "synthetic-s2-201"
+    ]
+  },
+  "precision_at_budget_per_graph": 10,
+  "same_validation_C_search_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "shared_observation_source": "one GraphRecord.observed() per graph for all variants",
+  "shared_scorer_family": "StandardScaler + LogisticRegression",
+  "threshold_selection_input": "validation candidate labels and scores only",
+  "time_grid": [
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    4.0,
+    8.0
+  ]
+}

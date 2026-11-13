@@ -1,0 +1,319 @@
+{
+  "config_sha256": "6b7032727fde9f036ee04a5d6012ed43d3e56e39bc7b0df3931cb3a3282b903e",
+  "graph_records": [
+    {
+      "graph_id": "synthetic-s1-101",
+      "observation_sha256": "efadd7229fd631381816f43d5b4d57c816e1c66ff35f3ef62867aa984e7a3504",
+      "parameters": {
+        "case": "S1",
+        "decoy_triangle_count": 3,
+        "edge_add_prob": 0.0,
+        "edge_drop_prob": 0.0,
+        "edge_sizes": [
+          3,
+          4
+        ],
+        "feature_signal": 0.0,
+        "generated_event_count": 24,
+        "include_multiplicity": false,
+        "n_blocks": 3,
+        "n_nodes": 30,
+        "num_hyperedges": 24,
+        "seed": 101,
+        "true_unique_edge_count": 24
+      },
+      "scenario": "synthetic-S1",
+      "split": "train",
+      "truth_sha256_for_audit_only": "d03db441216170b40e617dfd163f16881d7bf4900191da613fb88ba52eb08075",
+      "truth_visible_to_feature_builder": false
+    },
+    {
+      "graph_id": "synthetic-s1-102",
+      "observation_sha256": "d27aedaeac4f582c6eef275bef89b21863c222d99b1ec74fd8d0665d3c7df879",
+      "parameters": {
+        "case": "S1",
+        "decoy_triangle_count": 3,
+        "edge_add_prob": 0.0,
+        "edge_drop_prob": 0.0,
+        "edge_sizes": [
+          3,
+          4
+        ],
+        "feature_signal": 0.0,
+        "generated_event_count": 24,
+        "include_multiplicity": false,
+        "n_blocks": 3,
+        "n_nodes": 30,
+        "num_hyperedges": 24,
+        "seed": 102,
+        "true_unique_edge_count": 24
+      },
+      "scenario": "synthetic-S1",
+      "split": "train",
+      "truth_sha256_for_audit_only": "1763d8fc510c768f363b11c29e22c2317e0830c31d4ba39e0e7de8c4fe43f9fc",
+      "truth_visible_to_feature_builder": false
+    },
+    {
+      "graph_id": "synthetic-s1-103",
+      "observation_sha256": "7ecdd2da6304fc834cc8d01d52e7eff722c0cd14b711f40ad10c131e5e1951d1",
+      "parameters": {
+        "case": "S1",
+        "decoy_triangle_count": 3,
+        "edge_add_prob": 0.0,
+        "edge_drop_prob": 0.0,
+        "edge_sizes": [
+          3,
+          4
+        ],
+        "feature_signal": 0.0,
+        "generated_event_count": 24,
+        "include_multiplicity": false,
+        "n_blocks": 3,
+        "n_nodes": 30,
+        "num_hyperedges": 24,
+        "seed": 103,
+        "true_unique_edge_count": 24
+      },
+      "scenario": "synthetic-S1",
+      "split": "train",
+      "truth_sha256_for_audit_only": "bcf447075aa9508599252586ac7ed52d14ec782fad09f1edd3cc0e24e1332887",
+      "truth_visible_to_feature_builder": false
+    },
+    {
+      "graph_id": "synthetic-s1-201",
+      "observation_sha256": "67739ba4300ee43e6ce0f7ef0151d0b5a283b37e7830b9bcf58885a1052502cf",
+      "parameters": {
+        "case": "S1",
+        "decoy_triangle_count": 3,
+        "edge_add_prob": 0.0,
+        "edge_drop_prob": 0.0,
+        "edge_sizes": [
+          3,
+          4
+        ],
+        "feature_signal": 0.0,
+        "generated_event_count": 24,
+        "include_multiplicity": false,
+        "n_blocks": 3,
+        "n_nodes": 30,
+        "num_hyperedges": 24,
+        "seed": 201,
+        "true_unique_edge_count": 24
+      },
+      "scenario": "synthetic-S1",
+      "split": "validation",
+      "truth_sha256_for_audit_only": "c960a20a9087089df44d1efcdeb54424699a65f76031f2b2fb8761bc3cb07460",
+      "truth_visible_to_feature_builder": false
+    },
+    {
+      "graph_id": "synthetic-s1-301",
+      "observation_sha256": "3965e18874ac47ed924924c09846c771a667c3d42fb6d80b1f25a6ff304e856d",
+      "parameters": {
+        "case": "S1",
+        "decoy_triangle_count": 3,
+        "edge_add_prob": 0.0,
+        "edge_drop_prob": 0.0,
+        "edge_sizes": [
+          3,
+          4
+        ],
+        "feature_signal": 0.0,
+        "generated_event_count": 24,
+        "include_multiplicity": false,
+        "n_blocks": 3,
+        "n_nodes": 30,
+        "num_hyperedges": 24,
+        "seed": 301,
+        "true_unique_edge_count": 24
+      },
+      "scenario": "synthetic-S1",
+      "split": "test",
+      "truth_sha256_for_audit_only": "8ff3481f25f4a5d5dad189f38f6759811daf3c83eed0c5d311794161e85b8f25",
+      "truth_visible_to_feature_builder": false
+    },
+    {
+      "graph_id": "synthetic-s1-302",
+      "observation_sha256": "c68df2e5b082c55f259d66e08ad298b495e230483758c162aa9fa08da99b2b89",
+      "parameters": {
+        "case": "S1",
+        "decoy_triangle_count": 3,
+        "edge_add_prob": 0.0,
+        "edge_drop_prob": 0.0,
+        "edge_sizes": [
+          3,
+          4
+        ],
+        "feature_signal": 0.0,
+        "generated_event_count": 24,
+        "include_multiplicity": false,
+        "n_blocks": 3,
+        "n_nodes": 30,
+        "num_hyperedges": 24,
+        "seed": 302,
+        "true_unique_edge_count": 24
+      },
+      "scenario": "synthetic-S1",
+      "split": "test",
+      "truth_sha256_for_audit_only": "22103618cbcf835d00a785113ae80fc385960524312d66cf00617388226a6954",
+      "truth_visible_to_feature_builder": false
+    },
+    {
+      "graph_id": "synthetic-s2-101",
+      "observation_sha256": "ed1737ca874af20a240b0acf38b05b633f301f515688b213d5576967fef14a2b",
+      "parameters": {
+        "case": "S2",
+        "decoy_triangle_count": 0,
+        "edge_add_prob": 0.0,
+        "edge_drop_prob": 0.0,
+        "edge_sizes": [
+          3,
+          4
+        ],
+        "feature_signal": 0.0,
+        "generated_event_count": 36,
+        "include_multiplicity": false,
+        "n_blocks": 3,
+        "n_nodes": 30,
+        "num_hyperedges": 36,
+        "seed": 101,
+        "true_unique_edge_count": 36
+      },
+      "scenario": "synthetic-S2",
+      "split": "train",
+      "truth_sha256_for_audit_only": "a0f4b1fcaa4ad1cf11a04ef10b8ab73e47c055ec4bef03c67f84486df188f68b",
+      "truth_visible_to_feature_builder": false
+    },
+    {
+      "graph_id": "synthetic-s2-102",
+      "observation_sha256": "f2b47100e657ba671d788bfd0d565f34b73f4c6533b5ed6e273d3e1636a131eb",
+      "parameters": {
+        "case": "S2",
+        "decoy_triangle_count": 0,
+        "edge_add_prob": 0.0,
+        "edge_drop_prob": 0.0,
+        "edge_sizes": [
+          3,
+          4
+        ],
+        "feature_signal": 0.0,
+        "generated_event_count": 36,
+        "include_multiplicity": false,
+        "n_blocks": 3,
+        "n_nodes": 30,
+        "num_hyperedges": 36,
+        "seed": 102,
+        "true_unique_edge_count": 36
+      },
+      "scenario": "synthetic-S2",
+      "split": "train",
+      "truth_sha256_for_audit_only": "6d8653c983c68079dd52216866f8f8091dd2e782602913cb7c83d448de37c8b7",
+      "truth_visible_to_feature_builder": false
+    },
+    {
+      "graph_id": "synthetic-s2-103",
+      "observation_sha256": "d3d88f0e01aeab144eb181da3cae965bdc573b098d8ccc23240e9d175b32f72a",
+      "parameters": {
+        "case": "S2",
+        "decoy_triangle_count": 0,
+        "edge_add_prob": 0.0,
+        "edge_drop_prob": 0.0,
+        "edge_sizes": [
+          3,
+          4
+        ],
+        "feature_signal": 0.0,
+        "generated_event_count": 36,
+        "include_multiplicity": false,
+        "n_blocks": 3,
+        "n_nodes": 30,
+        "num_hyperedges": 36,
+        "seed": 103,
+        "true_unique_edge_count": 36
+      },
+      "scenario": "synthetic-S2",
+      "split": "train",
+      "truth_sha256_for_audit_only": "fd1cdacb95f64e44fa182ac25db481906554438c1a600ce363d130fb9fd1068a",
+      "truth_visible_to_feature_builder": false
+    },
+    {
+      "graph_id": "synthetic-s2-201",
+      "observation_sha256": "a1ea7fc4c5ab69812403fa9320dab830e0527cf65bb5953574398d54b513dacf",
+      "parameters": {
+        "case": "S2",
+        "decoy_triangle_count": 0,
+        "edge_add_prob": 0.0,
+        "edge_drop_prob": 0.0,
+        "edge_sizes": [
+          3,
+          4
+        ],
+        "feature_signal": 0.0,
+        "generated_event_count": 36,
+        "include_multiplicity": false,
+        "n_blocks": 3,
+        "n_nodes": 30,
+        "num_hyperedges": 36,
+        "seed": 201,
+        "true_unique_edge_count": 36
+      },
+      "scenario": "synthetic-S2",
+      "split": "validation",
+      "truth_sha256_for_audit_only": "34c0b91151f4edb9b4d74b725081dfe4d4c383d65eb1f731e7f6992035d9ee04",
+      "truth_visible_to_feature_builder": false
+    },
+    {
+      "graph_id": "synthetic-s2-301",
+      "observation_sha256": "2e38640e812aeb3113b9eefb10b2c2d7e7bfa6d3154c10fb5d6a518f5c8f2dd4",
+      "parameters": {
+        "case": "S2",
+        "decoy_triangle_count": 0,
+        "edge_add_prob": 0.0,
+        "edge_drop_prob": 0.0,
+        "edge_sizes": [
+          3,
+          4
+        ],
+        "feature_signal": 0.0,
+        "generated_event_count": 36,
+        "include_multiplicity": false,
+        "n_blocks": 3,
+        "n_nodes": 30,
+        "num_hyperedges": 36,
+        "seed": 301,
+        "true_unique_edge_count": 36
+      },
+      "scenario": "synthetic-S2",
+      "split": "test",
+      "truth_sha256_for_audit_only": "ed4bc762fe29ab851682f2a5a07f3ae08882e29b204e844777ac196fc4c6c884",
+      "truth_visible_to_feature_builder": false
+    },
+    {
+      "graph_id": "synthetic-s2-302",
+      "observation_sha256": "99068dab6260ab6cdbcb0c7ef284ba580ab19df4f0abed17dc97e0c2c9f420dd",
+      "parameters": {
+        "case": "S2",
+        "decoy_triangle_count": 0,
+        "edge_add_prob": 0.0,
+        "edge_drop_prob": 0.0,
+        "edge_sizes": [
+          3,
+          4
+        ],
+        "feature_signal": 0.0,
+        "generated_event_count": 36,
+        "include_multiplicity": false,
+        "n_blocks": 3,
+        "n_nodes": 30,
+        "num_hyperedges": 36,
+        "seed": 302,
+        "true_unique_edge_count": 36
+      },
+      "scenario": "synthetic-S2",
+      "split": "test",
+      "truth_sha256_for_audit_only": "c177130d4b127fe0be36ac2619dc73e2d1863230aa017b4c11d0d4c53a7059d1",
+      "truth_visible_to_feature_builder": false
+    }
+  ],
+  "protocol": "cross_graph_synthetic_p1_smoke",
+  "research_plan_sha256": "8d9d2cc5970c3e8c3eba4accfff284e5875253392edf08dadd23c8094937e02c"
+}
