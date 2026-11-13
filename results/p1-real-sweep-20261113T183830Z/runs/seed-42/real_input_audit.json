@@ -1,0 +1,393 @@
+{
+  "datasets": [
+    {
+      "archive_manifest": {
+        "archive_file_name": "email-Enron.tar.gz",
+        "archive_sha256": "c5440bb84ce969d5f0ad7cdca7549457206b8fdad5e160e6d19db1452e4ba9ae",
+        "archive_url": "https://drive.google.com/open?id=1tTVZkdpgRW47WWmsrdUCukHz0x2M6N77",
+        "downloaded_at_utc": null,
+        "extracted_at_utc": "2026-11-13T18:24:33.673940+00:00",
+        "files": {
+          "nverts": {
+            "archive_member": "email-Enron/email-Enron-nverts.txt",
+            "file": "nverts.txt",
+            "sha256": "a1411e6310ebd197884ef2b7fdd11013dc18746f6ce71b5b26fe8e09fe5ed032",
+            "size_bytes": 21827
+          },
+          "simplices": {
+            "archive_member": "email-Enron/email-Enron-simplices.txt",
+            "file": "simplices.txt",
+            "sha256": "3024b89401b4e09dd9b1961b411ce048bda30304f3da1bd1457a95081c154827",
+            "size_bytes": 87907
+          },
+          "times": {
+            "archive_member": "email-Enron/email-Enron-times.txt",
+            "file": "times.txt",
+            "sha256": "ded0d24aa880b6bc54c74f79c63850b615d2d1aafd544f6ced519745beeb1d6a",
+            "size_bytes": 163245
+          }
+        },
+        "source_id": "cornell/email-Enron/temporal-at-most-25",
+        "source_url": "https://www.cs.cornell.edu/~arb/data/email-Enron/"
+      },
+      "filtered_singleton_event_count": 431,
+      "license_or_access_terms": null,
+      "raw_event_count": 10883,
+      "raw_node_count_in_event_files": 143,
+      "repeated_memberships_across_roles": {
+        "train_test": 188,
+        "train_test_fraction_of_test_unique": 0.26038781163434904,
+        "train_validation": 198,
+        "validation_test": 144
+      },
+      "retained_event_count": 10452,
+      "shared_source_nodes_train_test": 129,
+      "source_files": {
+        "nverts": {
+          "name": "nverts.txt",
+          "sha256": "a1411e6310ebd197884ef2b7fdd11013dc18746f6ce71b5b26fe8e09fe5ed032"
+        },
+        "simplices": {
+          "name": "simplices.txt",
+          "sha256": "3024b89401b4e09dd9b1961b411ce048bda30304f3da1bd1457a95081c154827"
+        },
+        "times": {
+          "name": "times.txt",
+          "sha256": "ded0d24aa880b6bc54c74f79c63850b615d2d1aafd544f6ced519745beeb1d6a"
+        }
+      },
+      "source_id": "cornell/email-Enron/temporal-at-most-25",
+      "source_url": "https://www.cs.cornell.edu/~arb/data/email-Enron/",
+      "unique_member_set_count": 1457,
+      "window_summary": [
+        {
+          "event_count": 1302,
+          "graph_id": "cornell/email-Enron/temporal-at-most-25::window:0",
+          "num_nodes": 94,
+          "split": "train",
+          "time_window": {
+            "first_timestamp": 63046642020000.0,
+            "index": 0,
+            "last_timestamp": 63095535600000.0,
+            "lower_inclusive": null,
+            "method": "timestamp_boundaries",
+            "retained_event_count": 1302,
+            "upper_exclusive": 63095538060000.0
+          },
+          "unique_member_set_count": 236
+        },
+        {
+          "event_count": 1308,
+          "graph_id": "cornell/email-Enron/temporal-at-most-25::window:1",
+          "num_nodes": 115,
+          "split": "train",
+          "time_window": {
+            "first_timestamp": 63095538060000.0,
+            "index": 1,
+            "last_timestamp": 63105218940000.0,
+            "lower_inclusive": 63095538060000.0,
+            "method": "timestamp_boundaries",
+            "retained_event_count": 1308,
+            "upper_exclusive": 63105220740000.0
+          },
+          "unique_member_set_count": 349
+        },
+        {
+          "event_count": 1314,
+          "graph_id": "cornell/email-Enron/temporal-at-most-25::window:2",
+          "num_nodes": 118,
+          "split": "train",
+          "time_window": {
+            "first_timestamp": 63105220740000.0,
+            "index": 2,
+            "last_timestamp": 63111617100000.0,
+            "lower_inclusive": 63105220740000.0,
+            "method": "timestamp_boundaries",
+            "retained_event_count": 1314,
+            "upper_exclusive": 63111620160000.0
+          },
+          "unique_member_set_count": 364
+        },
+        {
+          "event_count": 1309,
+          "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+          "num_nodes": 123,
+          "split": "train",
+          "time_window": {
+            "first_timestamp": 63111620160000.0,
+            "index": 3,
+            "last_timestamp": 63117845880000.0,
+            "lower_inclusive": 63111620160000.0,
+            "method": "timestamp_boundaries",
+            "retained_event_count": 1309,
+            "upper_exclusive": 63117846420000.0
+          },
+          "unique_member_set_count": 365
+        },
+        {
+          "event_count": 1321,
+          "graph_id": "cornell/email-Enron/temporal-at-most-25::window:4",
+          "num_nodes": 120,
+          "split": "validation",
+          "time_window": {
+            "first_timestamp": 63117846420000.0,
+            "index": 4,
+            "last_timestamp": 63123816420000.0,
+            "lower_inclusive": 63117846420000.0,
+            "method": "timestamp_boundaries",
+            "retained_event_count": 1321,
+            "upper_exclusive": 63123816660000.0
+          },
+          "unique_member_set_count": 336
+        },
+        {
+          "event_count": 1306,
+          "graph_id": "cornell/email-Enron/temporal-at-most-25::window:5",
+          "num_nodes": 132,
+          "split": "test",
+          "time_window": {
+            "first_timestamp": 63123816660000.0,
+            "index": 5,
+            "last_timestamp": 63134117940000.0,
+            "lower_inclusive": 63123816660000.0,
+            "method": "timestamp_boundaries",
+            "retained_event_count": 1306,
+            "upper_exclusive": 63134164017000.0
+          },
+          "unique_member_set_count": 327
+        },
+        {
+          "event_count": 1297,
+          "graph_id": "cornell/email-Enron/temporal-at-most-25::window:6",
+          "num_nodes": 104,
+          "split": "test",
+          "time_window": {
+            "first_timestamp": 63134164017000.0,
+            "index": 6,
+            "last_timestamp": 63140768751000.0,
+            "lower_inclusive": 63134164017000.0,
+            "method": "timestamp_boundaries",
+            "retained_event_count": 1297,
+            "upper_exclusive": 63140769769000.0
+          },
+          "unique_member_set_count": 279
+        },
+        {
+          "event_count": 1295,
+          "graph_id": "cornell/email-Enron/temporal-at-most-25::window:7",
+          "num_nodes": 102,
+          "split": "test",
+          "time_window": {
+            "first_timestamp": 63140769769000.0,
+            "index": 7,
+            "last_timestamp": 63159582033000.0,
+            "lower_inclusive": 63140769769000.0,
+            "method": "timestamp_boundaries",
+            "retained_event_count": 1295,
+            "upper_exclusive": null
+          },
+          "unique_member_set_count": 341
+        }
+      ]
+    },
+    {
+      "archive_manifest": {
+        "archive_file_name": "contact-high-school.tar.gz",
+        "archive_sha256": "b0ce4f74cf27544d0af85e645f6b823fab02e671b869785f6b6cf730a468b7fe",
+        "archive_url": "https://drive.google.com/open?id=1VA2P62awVYgluOIh1W4NZQQgkQCBk-Eu",
+        "downloaded_at_utc": null,
+        "extracted_at_utc": "2026-11-13T18:24:52.844287+00:00",
+        "files": {
+          "nverts": {
+            "archive_member": "contact-high-school/contact-high-school-nverts.txt",
+            "file": "nverts.txt",
+            "sha256": "00c16332961640f158f7651dec7fed9b69d4a0da2446f9c5fcd8af5c9f53bb9e",
+            "size_bytes": 344070
+          },
+          "simplices": {
+            "archive_member": "contact-high-school/contact-high-school-simplices.txt",
+            "file": "simplices.txt",
+            "sha256": "35241fd536981339e67717c9a9c820ffd81225d93ec4a0950532e2d636011bbe",
+            "size_bytes": 1250872
+          },
+          "times": {
+            "archive_member": "contact-high-school/contact-high-school-times.txt",
+            "file": "times.txt",
+            "sha256": "d11e5acb07755f3d5603fc4f7b4593bab139824c1c9c1d4a4a67e157deaf9786",
+            "size_bytes": 1892385
+          }
+        },
+        "source_id": "cornell/contact-high-school/temporal-20-second",
+        "source_url": "https://www.cs.cornell.edu/~arb/data/contact-high-school/"
+      },
+      "filtered_singleton_event_count": 0,
+      "license_or_access_terms": null,
+      "raw_event_count": 172035,
+      "raw_node_count_in_event_files": 327,
+      "repeated_memberships_across_roles": {
+        "train_test": 1913,
+        "train_test_fraction_of_test_unique": 0.5402428692459758,
+        "train_validation": 958,
+        "validation_test": 823
+      },
+      "retained_event_count": 172035,
+      "shared_source_nodes_train_test": 313,
+      "source_files": {
+        "nverts": {
+          "name": "nverts.txt",
+          "sha256": "00c16332961640f158f7651dec7fed9b69d4a0da2446f9c5fcd8af5c9f53bb9e"
+        },
+        "simplices": {
+          "name": "simplices.txt",
+          "sha256": "35241fd536981339e67717c9a9c820ffd81225d93ec4a0950532e2d636011bbe"
+        },
+        "times": {
+          "name": "times.txt",
+          "sha256": "d11e5acb07755f3d5603fc4f7b4593bab139824c1c9c1d4a4a67e157deaf9786"
+        }
+      },
+      "source_id": "cornell/contact-high-school/temporal-20-second",
+      "source_url": "https://www.cs.cornell.edu/~arb/data/contact-high-school/",
+      "unique_member_set_count": 7818,
+      "window_summary": [
+        {
+          "event_count": 26436,
+          "graph_id": "cornell/contact-high-school/temporal-20-second::window:0",
+          "num_nodes": 319,
+          "split": "train",
+          "time_window": {
+            "first_timestamp": 1385982020.0,
+            "index": 0,
+            "last_timestamp": 1386054460.0,
+            "lower_inclusive": null,
+            "method": "timestamp_boundaries",
+            "retained_event_count": 26436,
+            "upper_exclusive": 1386054480.0
+          },
+          "unique_member_set_count": 2707
+        },
+        {
+          "event_count": 27129,
+          "graph_id": "cornell/contact-high-school/temporal-20-second::window:1",
+          "num_nodes": 299,
+          "split": "train",
+          "time_window": {
+            "first_timestamp": 1386054480.0,
+            "index": 1,
+            "last_timestamp": 1386072900.0,
+            "lower_inclusive": 1386054480.0,
+            "method": "timestamp_boundaries",
+            "retained_event_count": 27129,
+            "upper_exclusive": 1386072920.0
+          },
+          "unique_member_set_count": 2059
+        },
+        {
+          "event_count": 22410,
+          "graph_id": "cornell/contact-high-school/temporal-20-second::window:2",
+          "num_nodes": 312,
+          "split": "train",
+          "time_window": {
+            "first_timestamp": 1386072920.0,
+            "index": 2,
+            "last_timestamp": 1386145360.0,
+            "lower_inclusive": 1386072920.0,
+            "method": "timestamp_boundaries",
+            "retained_event_count": 22410,
+            "upper_exclusive": 1386145380.0
+          },
+          "unique_member_set_count": 1700
+        },
+        {
+          "event_count": 23702,
+          "graph_id": "cornell/contact-high-school/temporal-20-second::window:3",
+          "num_nodes": 299,
+          "split": "train",
+          "time_window": {
+            "first_timestamp": 1386145380.0,
+            "index": 3,
+            "last_timestamp": 1386163800.0,
+            "lower_inclusive": 1386145380.0,
+            "method": "timestamp_boundaries",
+            "retained_event_count": 23702,
+            "upper_exclusive": 1386163820.0
+          },
+          "unique_member_set_count": 2156
+        },
+        {
+          "event_count": 19464,
+          "graph_id": "cornell/contact-high-school/temporal-20-second::window:4",
+          "num_nodes": 299,
+          "split": "validation",
+          "time_window": {
+            "first_timestamp": 1386163820.0,
+            "index": 4,
+            "last_timestamp": 1386236260.0,
+            "lower_inclusive": 1386163820.0,
+            "method": "timestamp_boundaries",
+            "retained_event_count": 19464,
+            "upper_exclusive": 1386236280.0
+          },
+          "unique_member_set_count": 1536
+        },
+        {
+          "event_count": 17287,
+          "graph_id": "cornell/contact-high-school/temporal-20-second::window:5",
+          "num_nodes": 284,
+          "split": "test",
+          "time_window": {
+            "first_timestamp": 1386236280.0,
+            "index": 5,
+            "last_timestamp": 1386254700.0,
+            "lower_inclusive": 1386236280.0,
+            "method": "timestamp_boundaries",
+            "retained_event_count": 17287,
+            "upper_exclusive": 1386254720.0
+          },
+          "unique_member_set_count": 1590
+        },
+        {
+          "event_count": 22760,
+          "graph_id": "cornell/contact-high-school/temporal-20-second::window:6",
+          "num_nodes": 305,
+          "split": "test",
+          "time_window": {
+            "first_timestamp": 1386254720.0,
+            "index": 6,
+            "last_timestamp": 1386327160.0,
+            "lower_inclusive": 1386254720.0,
+            "method": "timestamp_boundaries",
+            "retained_event_count": 22760,
+            "upper_exclusive": 1386327180.0
+          },
+          "unique_member_set_count": 1830
+        },
+        {
+          "event_count": 12847,
+          "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+          "num_nodes": 286,
+          "split": "test",
+          "time_window": {
+            "first_timestamp": 1386327180.0,
+            "index": 7,
+            "last_timestamp": 1386345580.0,
+            "lower_inclusive": 1386327180.0,
+            "method": "timestamp_boundaries",
+            "retained_event_count": 12847,
+            "upper_exclusive": null
+          },
+          "unique_member_set_count": 1372
+        }
+      ]
+    }
+  ],
+  "event_handling": "complete events, unique member sets for binary target",
+  "minimum_meaningful_delta_ap_fixed_before_scoring": 0.02,
+  "primary_analysis_unit": "source_dataset",
+  "processing_code_sha256": {
+    "real_data": "d25fc51f73e1de4573c9c3d3883c918ac3597be7909b6df478894dca7a7e5dab",
+    "real_pipeline": "43bc04eaac67edcdd2eb9a1384e729635a1852afddc71a9909a32606ddcc79c1"
+  },
+  "protocol": "cross_time_real_p1_pilot_v1",
+  "run_time_utc": "2026-11-13T18:38:31.775351+00:00"
+}

@@ -1,0 +1,2510 @@
+{
+  "cornell/email-Enron/temporal-at-most-25::window:0": {
+    "coverage": {
+      "by_size": {
+        "2": {
+          "covered_count": 19,
+          "recall": 0.12418300653594772,
+          "truth_count": 153
+        },
+        "3": {
+          "covered_count": 8,
+          "recall": 0.1568627450980392,
+          "truth_count": 51
+        },
+        "4": {
+          "covered_count": 3,
+          "recall": 0.21428571428571427,
+          "truth_count": 14
+        },
+        "5": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 6
+        },
+        "6": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 7
+        },
+        "7": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 1
+        },
+        "9": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 1
+        },
+        "10": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 1
+        },
+        "12": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 1
+        },
+        "13": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 1
+        }
+      },
+      "candidate_count": 150,
+      "covered_count": 30,
+      "recall": 0.1271186440677966,
+      "size_scope_recall_ceiling": 0.9491525423728814,
+      "truth_count": 236,
+      "truth_excluded_by_size": 12
+    },
+    "recall_at_budget": [
+      {
+        "budget": 0,
+        "by_size": {
+          "2": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 153
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 51
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 14
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 6
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 7
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "9": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "12": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "13": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 0,
+        "covered_count": 0,
+        "recall": 0.0,
+        "truth_count": 236
+      },
+      {
+        "budget": 10,
+        "by_size": {
+          "2": {
+            "covered_count": 6,
+            "recall": 0.0392156862745098,
+            "truth_count": 153
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 51
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 14
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 6
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 7
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "9": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "12": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "13": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 10,
+        "covered_count": 6,
+        "recall": 0.025423728813559324,
+        "truth_count": 236
+      },
+      {
+        "budget": 50,
+        "by_size": {
+          "2": {
+            "covered_count": 19,
+            "recall": 0.12418300653594772,
+            "truth_count": 153
+          },
+          "3": {
+            "covered_count": 3,
+            "recall": 0.058823529411764705,
+            "truth_count": 51
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 14
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 6
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 7
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "9": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "12": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "13": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 50,
+        "covered_count": 22,
+        "recall": 0.09322033898305085,
+        "truth_count": 236
+      },
+      {
+        "budget": 150,
+        "by_size": {
+          "2": {
+            "covered_count": 19,
+            "recall": 0.12418300653594772,
+            "truth_count": 153
+          },
+          "3": {
+            "covered_count": 8,
+            "recall": 0.1568627450980392,
+            "truth_count": 51
+          },
+          "4": {
+            "covered_count": 3,
+            "recall": 0.21428571428571427,
+            "truth_count": 14
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 6
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 7
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "9": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "12": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "13": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 150,
+        "covered_count": 30,
+        "recall": 0.1271186440677966,
+        "truth_count": 236
+      }
+    ],
+    "split": "train"
+  },
+  "cornell/email-Enron/temporal-at-most-25::window:1": {
+    "coverage": {
+      "by_size": {
+        "2": {
+          "covered_count": 24,
+          "recall": 0.10666666666666667,
+          "truth_count": 225
+        },
+        "3": {
+          "covered_count": 5,
+          "recall": 0.07575757575757576,
+          "truth_count": 66
+        },
+        "4": {
+          "covered_count": 1,
+          "recall": 0.03571428571428571,
+          "truth_count": 28
+        },
+        "5": {
+          "covered_count": 1,
+          "recall": 0.08333333333333333,
+          "truth_count": 12
+        },
+        "6": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 6
+        },
+        "7": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 3
+        },
+        "8": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 4
+        },
+        "9": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 1
+        },
+        "10": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 2
+        },
+        "11": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 1
+        },
+        "12": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 1
+        }
+      },
+      "candidate_count": 150,
+      "covered_count": 31,
+      "recall": 0.08882521489971347,
+      "size_scope_recall_ceiling": 0.9484240687679083,
+      "truth_count": 349,
+      "truth_excluded_by_size": 18
+    },
+    "recall_at_budget": [
+      {
+        "budget": 0,
+        "by_size": {
+          "2": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 225
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 66
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 28
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 12
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 6
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 3
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 4
+          },
+          "9": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "11": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "12": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 0,
+        "covered_count": 0,
+        "recall": 0.0,
+        "truth_count": 349
+      },
+      {
+        "budget": 10,
+        "by_size": {
+          "2": {
+            "covered_count": 9,
+            "recall": 0.04,
+            "truth_count": 225
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 66
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 28
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 12
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 6
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 3
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 4
+          },
+          "9": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "11": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "12": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 10,
+        "covered_count": 9,
+        "recall": 0.025787965616045846,
+        "truth_count": 349
+      },
+      {
+        "budget": 50,
+        "by_size": {
+          "2": {
+            "covered_count": 24,
+            "recall": 0.10666666666666667,
+            "truth_count": 225
+          },
+          "3": {
+            "covered_count": 3,
+            "recall": 0.045454545454545456,
+            "truth_count": 66
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 28
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 12
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 6
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 3
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 4
+          },
+          "9": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "11": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "12": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 50,
+        "covered_count": 27,
+        "recall": 0.07736389684813753,
+        "truth_count": 349
+      },
+      {
+        "budget": 150,
+        "by_size": {
+          "2": {
+            "covered_count": 24,
+            "recall": 0.10666666666666667,
+            "truth_count": 225
+          },
+          "3": {
+            "covered_count": 5,
+            "recall": 0.07575757575757576,
+            "truth_count": 66
+          },
+          "4": {
+            "covered_count": 1,
+            "recall": 0.03571428571428571,
+            "truth_count": 28
+          },
+          "5": {
+            "covered_count": 1,
+            "recall": 0.08333333333333333,
+            "truth_count": 12
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 6
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 3
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 4
+          },
+          "9": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "11": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "12": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 150,
+        "covered_count": 31,
+        "recall": 0.08882521489971347,
+        "truth_count": 349
+      }
+    ],
+    "split": "train"
+  },
+  "cornell/email-Enron/temporal-at-most-25::window:2": {
+    "coverage": {
+      "by_size": {
+        "2": {
+          "covered_count": 21,
+          "recall": 0.08641975308641975,
+          "truth_count": 243
+        },
+        "3": {
+          "covered_count": 6,
+          "recall": 0.09375,
+          "truth_count": 64
+        },
+        "4": {
+          "covered_count": 5,
+          "recall": 0.17857142857142858,
+          "truth_count": 28
+        },
+        "5": {
+          "covered_count": 1,
+          "recall": 0.07692307692307693,
+          "truth_count": 13
+        },
+        "6": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 3
+        },
+        "7": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 5
+        },
+        "8": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 2
+        },
+        "10": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 3
+        },
+        "12": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 1
+        },
+        "16": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 2
+        }
+      },
+      "candidate_count": 150,
+      "covered_count": 33,
+      "recall": 0.09065934065934066,
+      "size_scope_recall_ceiling": 0.9560439560439561,
+      "truth_count": 364,
+      "truth_excluded_by_size": 16
+    },
+    "recall_at_budget": [
+      {
+        "budget": 0,
+        "by_size": {
+          "2": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 243
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 64
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 28
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 13
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 3
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 3
+          },
+          "12": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "16": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          }
+        },
+        "candidate_count": 0,
+        "covered_count": 0,
+        "recall": 0.0,
+        "truth_count": 364
+      },
+      {
+        "budget": 10,
+        "by_size": {
+          "2": {
+            "covered_count": 6,
+            "recall": 0.024691358024691357,
+            "truth_count": 243
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 64
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 28
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 13
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 3
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 3
+          },
+          "12": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "16": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          }
+        },
+        "candidate_count": 10,
+        "covered_count": 6,
+        "recall": 0.016483516483516484,
+        "truth_count": 364
+      },
+      {
+        "budget": 50,
+        "by_size": {
+          "2": {
+            "covered_count": 21,
+            "recall": 0.08641975308641975,
+            "truth_count": 243
+          },
+          "3": {
+            "covered_count": 2,
+            "recall": 0.03125,
+            "truth_count": 64
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 28
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 13
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 3
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 3
+          },
+          "12": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "16": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          }
+        },
+        "candidate_count": 50,
+        "covered_count": 23,
+        "recall": 0.06318681318681318,
+        "truth_count": 364
+      },
+      {
+        "budget": 150,
+        "by_size": {
+          "2": {
+            "covered_count": 21,
+            "recall": 0.08641975308641975,
+            "truth_count": 243
+          },
+          "3": {
+            "covered_count": 6,
+            "recall": 0.09375,
+            "truth_count": 64
+          },
+          "4": {
+            "covered_count": 5,
+            "recall": 0.17857142857142858,
+            "truth_count": 28
+          },
+          "5": {
+            "covered_count": 1,
+            "recall": 0.07692307692307693,
+            "truth_count": 13
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 3
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 3
+          },
+          "12": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "16": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          }
+        },
+        "candidate_count": 150,
+        "covered_count": 33,
+        "recall": 0.09065934065934066,
+        "truth_count": 364
+      }
+    ],
+    "split": "train"
+  },
+  "cornell/email-Enron/temporal-at-most-25::window:3": {
+    "coverage": {
+      "by_size": {
+        "2": {
+          "covered_count": 17,
+          "recall": 0.07142857142857142,
+          "truth_count": 238
+        },
+        "3": {
+          "covered_count": 6,
+          "recall": 0.09523809523809523,
+          "truth_count": 63
+        },
+        "4": {
+          "covered_count": 1,
+          "recall": 0.037037037037037035,
+          "truth_count": 27
+        },
+        "5": {
+          "covered_count": 2,
+          "recall": 0.13333333333333333,
+          "truth_count": 15
+        },
+        "6": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 8
+        },
+        "7": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 4
+        },
+        "8": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 4
+        },
+        "9": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 2
+        },
+        "10": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 1
+        },
+        "12": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 2
+        },
+        "13": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 1
+        }
+      },
+      "candidate_count": 150,
+      "covered_count": 26,
+      "recall": 0.07123287671232877,
+      "size_scope_recall_ceiling": 0.9397260273972603,
+      "truth_count": 365,
+      "truth_excluded_by_size": 22
+    },
+    "recall_at_budget": [
+      {
+        "budget": 0,
+        "by_size": {
+          "2": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 238
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 63
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 27
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 15
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 8
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 4
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 4
+          },
+          "9": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "12": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "13": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 0,
+        "covered_count": 0,
+        "recall": 0.0,
+        "truth_count": 365
+      },
+      {
+        "budget": 10,
+        "by_size": {
+          "2": {
+            "covered_count": 5,
+            "recall": 0.02100840336134454,
+            "truth_count": 238
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 63
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 27
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 15
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 8
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 4
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 4
+          },
+          "9": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "12": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "13": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 10,
+        "covered_count": 5,
+        "recall": 0.0136986301369863,
+        "truth_count": 365
+      },
+      {
+        "budget": 50,
+        "by_size": {
+          "2": {
+            "covered_count": 17,
+            "recall": 0.07142857142857142,
+            "truth_count": 238
+          },
+          "3": {
+            "covered_count": 2,
+            "recall": 0.031746031746031744,
+            "truth_count": 63
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 27
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 15
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 8
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 4
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 4
+          },
+          "9": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "12": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "13": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 50,
+        "covered_count": 19,
+        "recall": 0.052054794520547946,
+        "truth_count": 365
+      },
+      {
+        "budget": 150,
+        "by_size": {
+          "2": {
+            "covered_count": 17,
+            "recall": 0.07142857142857142,
+            "truth_count": 238
+          },
+          "3": {
+            "covered_count": 6,
+            "recall": 0.09523809523809523,
+            "truth_count": 63
+          },
+          "4": {
+            "covered_count": 1,
+            "recall": 0.037037037037037035,
+            "truth_count": 27
+          },
+          "5": {
+            "covered_count": 2,
+            "recall": 0.13333333333333333,
+            "truth_count": 15
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 8
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 4
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 4
+          },
+          "9": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "12": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "13": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 150,
+        "covered_count": 26,
+        "recall": 0.07123287671232877,
+        "truth_count": 365
+      }
+    ],
+    "split": "train"
+  },
+  "cornell/email-Enron/temporal-at-most-25::window:4": {
+    "coverage": {
+      "by_size": {
+        "2": {
+          "covered_count": 20,
+          "recall": 0.08583690987124463,
+          "truth_count": 233
+        },
+        "3": {
+          "covered_count": 1,
+          "recall": 0.018518518518518517,
+          "truth_count": 54
+        },
+        "4": {
+          "covered_count": 2,
+          "recall": 0.08695652173913043,
+          "truth_count": 23
+        },
+        "5": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 5
+        },
+        "6": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 5
+        },
+        "7": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 7
+        },
+        "8": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 2
+        },
+        "10": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 2
+        },
+        "11": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 2
+        },
+        "12": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 2
+        },
+        "18": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 1
+        }
+      },
+      "candidate_count": 150,
+      "covered_count": 23,
+      "recall": 0.06845238095238096,
+      "size_scope_recall_ceiling": 0.9375,
+      "truth_count": 336,
+      "truth_excluded_by_size": 21
+    },
+    "recall_at_budget": [
+      {
+        "budget": 0,
+        "by_size": {
+          "2": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 233
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 54
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 23
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 7
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "11": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "12": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "18": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 0,
+        "covered_count": 0,
+        "recall": 0.0,
+        "truth_count": 336
+      },
+      {
+        "budget": 10,
+        "by_size": {
+          "2": {
+            "covered_count": 6,
+            "recall": 0.02575107296137339,
+            "truth_count": 233
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 54
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 23
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 7
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "11": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "12": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "18": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 10,
+        "covered_count": 6,
+        "recall": 0.017857142857142856,
+        "truth_count": 336
+      },
+      {
+        "budget": 50,
+        "by_size": {
+          "2": {
+            "covered_count": 20,
+            "recall": 0.08583690987124463,
+            "truth_count": 233
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 54
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 23
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 7
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "11": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "12": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "18": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 50,
+        "covered_count": 20,
+        "recall": 0.05952380952380952,
+        "truth_count": 336
+      },
+      {
+        "budget": 150,
+        "by_size": {
+          "2": {
+            "covered_count": 20,
+            "recall": 0.08583690987124463,
+            "truth_count": 233
+          },
+          "3": {
+            "covered_count": 1,
+            "recall": 0.018518518518518517,
+            "truth_count": 54
+          },
+          "4": {
+            "covered_count": 2,
+            "recall": 0.08695652173913043,
+            "truth_count": 23
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 7
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "11": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "12": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "18": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 150,
+        "covered_count": 23,
+        "recall": 0.06845238095238096,
+        "truth_count": 336
+      }
+    ],
+    "split": "validation"
+  },
+  "cornell/email-Enron/temporal-at-most-25::window:5": {
+    "coverage": {
+      "by_size": {
+        "2": {
+          "covered_count": 14,
+          "recall": 0.06060606060606061,
+          "truth_count": 231
+        },
+        "3": {
+          "covered_count": 1,
+          "recall": 0.019230769230769232,
+          "truth_count": 52
+        },
+        "4": {
+          "covered_count": 3,
+          "recall": 0.23076923076923078,
+          "truth_count": 13
+        },
+        "5": {
+          "covered_count": 1,
+          "recall": 0.125,
+          "truth_count": 8
+        },
+        "6": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 9
+        },
+        "7": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 5
+        },
+        "8": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 5
+        },
+        "11": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 3
+        },
+        "15": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 1
+        }
+      },
+      "candidate_count": 150,
+      "covered_count": 19,
+      "recall": 0.0581039755351682,
+      "size_scope_recall_ceiling": 0.9296636085626911,
+      "truth_count": 327,
+      "truth_excluded_by_size": 23
+    },
+    "recall_at_budget": [
+      {
+        "budget": 0,
+        "by_size": {
+          "2": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 231
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 52
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 13
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 8
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 9
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "11": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 3
+          },
+          "15": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 0,
+        "covered_count": 0,
+        "recall": 0.0,
+        "truth_count": 327
+      },
+      {
+        "budget": 10,
+        "by_size": {
+          "2": {
+            "covered_count": 4,
+            "recall": 0.017316017316017316,
+            "truth_count": 231
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 52
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 13
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 8
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 9
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "11": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 3
+          },
+          "15": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 10,
+        "covered_count": 4,
+        "recall": 0.012232415902140673,
+        "truth_count": 327
+      },
+      {
+        "budget": 50,
+        "by_size": {
+          "2": {
+            "covered_count": 14,
+            "recall": 0.06060606060606061,
+            "truth_count": 231
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 52
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 13
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 8
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 9
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "11": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 3
+          },
+          "15": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 50,
+        "covered_count": 14,
+        "recall": 0.04281345565749235,
+        "truth_count": 327
+      },
+      {
+        "budget": 150,
+        "by_size": {
+          "2": {
+            "covered_count": 14,
+            "recall": 0.06060606060606061,
+            "truth_count": 231
+          },
+          "3": {
+            "covered_count": 1,
+            "recall": 0.019230769230769232,
+            "truth_count": 52
+          },
+          "4": {
+            "covered_count": 3,
+            "recall": 0.23076923076923078,
+            "truth_count": 13
+          },
+          "5": {
+            "covered_count": 1,
+            "recall": 0.125,
+            "truth_count": 8
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 9
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "11": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 3
+          },
+          "15": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 150,
+        "covered_count": 19,
+        "recall": 0.0581039755351682,
+        "truth_count": 327
+      }
+    ],
+    "split": "test"
+  },
+  "cornell/email-Enron/temporal-at-most-25::window:6": {
+    "coverage": {
+      "by_size": {
+        "2": {
+          "covered_count": 23,
+          "recall": 0.12234042553191489,
+          "truth_count": 188
+        },
+        "3": {
+          "covered_count": 4,
+          "recall": 0.08163265306122448,
+          "truth_count": 49
+        },
+        "4": {
+          "covered_count": 1,
+          "recall": 0.06666666666666667,
+          "truth_count": 15
+        },
+        "5": {
+          "covered_count": 3,
+          "recall": 0.2727272727272727,
+          "truth_count": 11
+        },
+        "6": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 5
+        },
+        "7": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 3
+        },
+        "8": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 1
+        },
+        "9": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 2
+        },
+        "10": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 1
+        },
+        "11": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 2
+        },
+        "13": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 1
+        },
+        "18": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 1
+        }
+      },
+      "candidate_count": 150,
+      "covered_count": 31,
+      "recall": 0.1111111111111111,
+      "size_scope_recall_ceiling": 0.942652329749104,
+      "truth_count": 279,
+      "truth_excluded_by_size": 16
+    },
+    "recall_at_budget": [
+      {
+        "budget": 0,
+        "by_size": {
+          "2": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 188
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 49
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 15
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 11
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 3
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "9": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "11": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "13": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "18": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 0,
+        "covered_count": 0,
+        "recall": 0.0,
+        "truth_count": 279
+      },
+      {
+        "budget": 10,
+        "by_size": {
+          "2": {
+            "covered_count": 5,
+            "recall": 0.026595744680851064,
+            "truth_count": 188
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 49
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 15
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 11
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 3
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "9": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "11": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "13": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "18": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 10,
+        "covered_count": 5,
+        "recall": 0.017921146953405017,
+        "truth_count": 279
+      },
+      {
+        "budget": 50,
+        "by_size": {
+          "2": {
+            "covered_count": 23,
+            "recall": 0.12234042553191489,
+            "truth_count": 188
+          },
+          "3": {
+            "covered_count": 1,
+            "recall": 0.02040816326530612,
+            "truth_count": 49
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 15
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 11
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 3
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "9": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "11": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "13": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "18": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 50,
+        "covered_count": 24,
+        "recall": 0.08602150537634409,
+        "truth_count": 279
+      },
+      {
+        "budget": 150,
+        "by_size": {
+          "2": {
+            "covered_count": 23,
+            "recall": 0.12234042553191489,
+            "truth_count": 188
+          },
+          "3": {
+            "covered_count": 4,
+            "recall": 0.08163265306122448,
+            "truth_count": 49
+          },
+          "4": {
+            "covered_count": 1,
+            "recall": 0.06666666666666667,
+            "truth_count": 15
+          },
+          "5": {
+            "covered_count": 3,
+            "recall": 0.2727272727272727,
+            "truth_count": 11
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 3
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "9": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "11": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "13": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "18": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 150,
+        "covered_count": 31,
+        "recall": 0.1111111111111111,
+        "truth_count": 279
+      }
+    ],
+    "split": "test"
+  },
+  "cornell/email-Enron/temporal-at-most-25::window:7": {
+    "coverage": {
+      "by_size": {
+        "2": {
+          "covered_count": 21,
+          "recall": 0.08974358974358974,
+          "truth_count": 234
+        },
+        "3": {
+          "covered_count": 4,
+          "recall": 0.08,
+          "truth_count": 50
+        },
+        "4": {
+          "covered_count": 2,
+          "recall": 0.06896551724137931,
+          "truth_count": 29
+        },
+        "5": {
+          "covered_count": 1,
+          "recall": 0.08333333333333333,
+          "truth_count": 12
+        },
+        "6": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 6
+        },
+        "7": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 2
+        },
+        "8": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 5
+        },
+        "9": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 1
+        },
+        "10": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 1
+        },
+        "12": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 1
+        }
+      },
+      "candidate_count": 150,
+      "covered_count": 28,
+      "recall": 0.08211143695014662,
+      "size_scope_recall_ceiling": 0.9530791788856305,
+      "truth_count": 341,
+      "truth_excluded_by_size": 16
+    },
+    "recall_at_budget": [
+      {
+        "budget": 0,
+        "by_size": {
+          "2": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 234
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 50
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 29
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 12
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 6
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "9": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "12": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 0,
+        "covered_count": 0,
+        "recall": 0.0,
+        "truth_count": 341
+      },
+      {
+        "budget": 10,
+        "by_size": {
+          "2": {
+            "covered_count": 6,
+            "recall": 0.02564102564102564,
+            "truth_count": 234
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 50
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 29
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 12
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 6
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "9": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "12": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 10,
+        "covered_count": 6,
+        "recall": 0.017595307917888565,
+        "truth_count": 341
+      },
+      {
+        "budget": 50,
+        "by_size": {
+          "2": {
+            "covered_count": 21,
+            "recall": 0.08974358974358974,
+            "truth_count": 234
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 50
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 29
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 12
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 6
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "9": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "12": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 50,
+        "covered_count": 21,
+        "recall": 0.06158357771260997,
+        "truth_count": 341
+      },
+      {
+        "budget": 150,
+        "by_size": {
+          "2": {
+            "covered_count": 21,
+            "recall": 0.08974358974358974,
+            "truth_count": 234
+          },
+          "3": {
+            "covered_count": 4,
+            "recall": 0.08,
+            "truth_count": 50
+          },
+          "4": {
+            "covered_count": 2,
+            "recall": 0.06896551724137931,
+            "truth_count": 29
+          },
+          "5": {
+            "covered_count": 1,
+            "recall": 0.08333333333333333,
+            "truth_count": 12
+          },
+          "6": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 6
+          },
+          "7": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2
+          },
+          "8": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 5
+          },
+          "9": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "10": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          },
+          "12": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 150,
+        "covered_count": 28,
+        "recall": 0.08211143695014662,
+        "truth_count": 341
+      }
+    ],
+    "split": "test"
+  }
+}

@@ -1,0 +1,1085 @@
+{
+  "cornell/contact-high-school/temporal-20-second::window:0": {
+    "coverage": {
+      "by_size": {
+        "2": {
+          "covered_count": 35,
+          "recall": 0.016818837097549257,
+          "truth_count": 2081
+        },
+        "3": {
+          "covered_count": 7,
+          "recall": 0.012389380530973451,
+          "truth_count": 565
+        },
+        "4": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 57
+        },
+        "5": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 4
+        }
+      },
+      "candidate_count": 150,
+      "covered_count": 42,
+      "recall": 0.015515330624307351,
+      "size_scope_recall_ceiling": 1.0,
+      "truth_count": 2707,
+      "truth_excluded_by_size": 0
+    },
+    "recall_at_budget": [
+      {
+        "budget": 0,
+        "by_size": {
+          "2": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 2081
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 565
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 57
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 4
+          }
+        },
+        "candidate_count": 0,
+        "covered_count": 0,
+        "recall": 0.0,
+        "truth_count": 2707
+      },
+      {
+        "budget": 10,
+        "by_size": {
+          "2": {
+            "covered_count": 9,
+            "recall": 0.004324843825084094,
+            "truth_count": 2081
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 565
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 57
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 4
+          }
+        },
+        "candidate_count": 10,
+        "covered_count": 9,
+        "recall": 0.0033247137052087182,
+        "truth_count": 2707
+      },
+      {
+        "budget": 50,
+        "by_size": {
+          "2": {
+            "covered_count": 35,
+            "recall": 0.016818837097549257,
+            "truth_count": 2081
+          },
+          "3": {
+            "covered_count": 1,
+            "recall": 0.0017699115044247787,
+            "truth_count": 565
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 57
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 4
+          }
+        },
+        "candidate_count": 50,
+        "covered_count": 36,
+        "recall": 0.013298854820834873,
+        "truth_count": 2707
+      },
+      {
+        "budget": 150,
+        "by_size": {
+          "2": {
+            "covered_count": 35,
+            "recall": 0.016818837097549257,
+            "truth_count": 2081
+          },
+          "3": {
+            "covered_count": 7,
+            "recall": 0.012389380530973451,
+            "truth_count": 565
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 57
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 4
+          }
+        },
+        "candidate_count": 150,
+        "covered_count": 42,
+        "recall": 0.015515330624307351,
+        "truth_count": 2707
+      }
+    ],
+    "split": "train"
+  },
+  "cornell/contact-high-school/temporal-20-second::window:1": {
+    "coverage": {
+      "by_size": {
+        "2": {
+          "covered_count": 34,
+          "recall": 0.02037147992810066,
+          "truth_count": 1669
+        },
+        "3": {
+          "covered_count": 2,
+          "recall": 0.0057306590257879654,
+          "truth_count": 349
+        },
+        "4": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 40
+        },
+        "5": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 1
+        }
+      },
+      "candidate_count": 150,
+      "covered_count": 36,
+      "recall": 0.017484215638659543,
+      "size_scope_recall_ceiling": 1.0,
+      "truth_count": 2059,
+      "truth_excluded_by_size": 0
+    },
+    "recall_at_budget": [
+      {
+        "budget": 0,
+        "by_size": {
+          "2": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1669
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 349
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 40
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 0,
+        "covered_count": 0,
+        "recall": 0.0,
+        "truth_count": 2059
+      },
+      {
+        "budget": 10,
+        "by_size": {
+          "2": {
+            "covered_count": 8,
+            "recall": 0.004793289394847214,
+            "truth_count": 1669
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 349
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 40
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 10,
+        "covered_count": 8,
+        "recall": 0.003885381253035454,
+        "truth_count": 2059
+      },
+      {
+        "budget": 50,
+        "by_size": {
+          "2": {
+            "covered_count": 34,
+            "recall": 0.02037147992810066,
+            "truth_count": 1669
+          },
+          "3": {
+            "covered_count": 1,
+            "recall": 0.0028653295128939827,
+            "truth_count": 349
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 40
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 50,
+        "covered_count": 35,
+        "recall": 0.016998542982030112,
+        "truth_count": 2059
+      },
+      {
+        "budget": 150,
+        "by_size": {
+          "2": {
+            "covered_count": 34,
+            "recall": 0.02037147992810066,
+            "truth_count": 1669
+          },
+          "3": {
+            "covered_count": 2,
+            "recall": 0.0057306590257879654,
+            "truth_count": 349
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 40
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 150,
+        "covered_count": 36,
+        "recall": 0.017484215638659543,
+        "truth_count": 2059
+      }
+    ],
+    "split": "train"
+  },
+  "cornell/contact-high-school/temporal-20-second::window:2": {
+    "coverage": {
+      "by_size": {
+        "2": {
+          "covered_count": 32,
+          "recall": 0.022939068100358423,
+          "truth_count": 1395
+        },
+        "3": {
+          "covered_count": 7,
+          "recall": 0.025089605734767026,
+          "truth_count": 279
+        },
+        "4": {
+          "covered_count": 1,
+          "recall": 0.04,
+          "truth_count": 25
+        },
+        "5": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 1
+        }
+      },
+      "candidate_count": 150,
+      "covered_count": 40,
+      "recall": 0.023529411764705882,
+      "size_scope_recall_ceiling": 1.0,
+      "truth_count": 1700,
+      "truth_excluded_by_size": 0
+    },
+    "recall_at_budget": [
+      {
+        "budget": 0,
+        "by_size": {
+          "2": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1395
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 279
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 25
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 0,
+        "covered_count": 0,
+        "recall": 0.0,
+        "truth_count": 1700
+      },
+      {
+        "budget": 10,
+        "by_size": {
+          "2": {
+            "covered_count": 9,
+            "recall": 0.0064516129032258064,
+            "truth_count": 1395
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 279
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 25
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 10,
+        "covered_count": 9,
+        "recall": 0.005294117647058823,
+        "truth_count": 1700
+      },
+      {
+        "budget": 50,
+        "by_size": {
+          "2": {
+            "covered_count": 32,
+            "recall": 0.022939068100358423,
+            "truth_count": 1395
+          },
+          "3": {
+            "covered_count": 2,
+            "recall": 0.007168458781362007,
+            "truth_count": 279
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 25
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 50,
+        "covered_count": 34,
+        "recall": 0.02,
+        "truth_count": 1700
+      },
+      {
+        "budget": 150,
+        "by_size": {
+          "2": {
+            "covered_count": 32,
+            "recall": 0.022939068100358423,
+            "truth_count": 1395
+          },
+          "3": {
+            "covered_count": 7,
+            "recall": 0.025089605734767026,
+            "truth_count": 279
+          },
+          "4": {
+            "covered_count": 1,
+            "recall": 0.04,
+            "truth_count": 25
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 150,
+        "covered_count": 40,
+        "recall": 0.023529411764705882,
+        "truth_count": 1700
+      }
+    ],
+    "split": "train"
+  },
+  "cornell/contact-high-school/temporal-20-second::window:3": {
+    "coverage": {
+      "by_size": {
+        "2": {
+          "covered_count": 36,
+          "recall": 0.020905923344947737,
+          "truth_count": 1722
+        },
+        "3": {
+          "covered_count": 3,
+          "recall": 0.007751937984496124,
+          "truth_count": 387
+        },
+        "4": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 47
+        }
+      },
+      "candidate_count": 150,
+      "covered_count": 39,
+      "recall": 0.018089053803339517,
+      "size_scope_recall_ceiling": 1.0,
+      "truth_count": 2156,
+      "truth_excluded_by_size": 0
+    },
+    "recall_at_budget": [
+      {
+        "budget": 0,
+        "by_size": {
+          "2": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1722
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 387
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 47
+          }
+        },
+        "candidate_count": 0,
+        "covered_count": 0,
+        "recall": 0.0,
+        "truth_count": 2156
+      },
+      {
+        "budget": 10,
+        "by_size": {
+          "2": {
+            "covered_count": 9,
+            "recall": 0.005226480836236934,
+            "truth_count": 1722
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 387
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 47
+          }
+        },
+        "candidate_count": 10,
+        "covered_count": 9,
+        "recall": 0.004174397031539889,
+        "truth_count": 2156
+      },
+      {
+        "budget": 50,
+        "by_size": {
+          "2": {
+            "covered_count": 36,
+            "recall": 0.020905923344947737,
+            "truth_count": 1722
+          },
+          "3": {
+            "covered_count": 2,
+            "recall": 0.00516795865633075,
+            "truth_count": 387
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 47
+          }
+        },
+        "candidate_count": 50,
+        "covered_count": 38,
+        "recall": 0.017625231910946195,
+        "truth_count": 2156
+      },
+      {
+        "budget": 150,
+        "by_size": {
+          "2": {
+            "covered_count": 36,
+            "recall": 0.020905923344947737,
+            "truth_count": 1722
+          },
+          "3": {
+            "covered_count": 3,
+            "recall": 0.007751937984496124,
+            "truth_count": 387
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 47
+          }
+        },
+        "candidate_count": 150,
+        "covered_count": 39,
+        "recall": 0.018089053803339517,
+        "truth_count": 2156
+      }
+    ],
+    "split": "train"
+  },
+  "cornell/contact-high-school/temporal-20-second::window:4": {
+    "coverage": {
+      "by_size": {
+        "2": {
+          "covered_count": 32,
+          "recall": 0.025376685170499604,
+          "truth_count": 1261
+        },
+        "3": {
+          "covered_count": 7,
+          "recall": 0.027888446215139442,
+          "truth_count": 251
+        },
+        "4": {
+          "covered_count": 1,
+          "recall": 0.043478260869565216,
+          "truth_count": 23
+        },
+        "5": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 1
+        }
+      },
+      "candidate_count": 150,
+      "covered_count": 40,
+      "recall": 0.026041666666666668,
+      "size_scope_recall_ceiling": 1.0,
+      "truth_count": 1536,
+      "truth_excluded_by_size": 0
+    },
+    "recall_at_budget": [
+      {
+        "budget": 0,
+        "by_size": {
+          "2": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1261
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 251
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 23
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 0,
+        "covered_count": 0,
+        "recall": 0.0,
+        "truth_count": 1536
+      },
+      {
+        "budget": 10,
+        "by_size": {
+          "2": {
+            "covered_count": 8,
+            "recall": 0.006344171292624901,
+            "truth_count": 1261
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 251
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 23
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 10,
+        "covered_count": 8,
+        "recall": 0.005208333333333333,
+        "truth_count": 1536
+      },
+      {
+        "budget": 50,
+        "by_size": {
+          "2": {
+            "covered_count": 32,
+            "recall": 0.025376685170499604,
+            "truth_count": 1261
+          },
+          "3": {
+            "covered_count": 2,
+            "recall": 0.00796812749003984,
+            "truth_count": 251
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 23
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 50,
+        "covered_count": 34,
+        "recall": 0.022135416666666668,
+        "truth_count": 1536
+      },
+      {
+        "budget": 150,
+        "by_size": {
+          "2": {
+            "covered_count": 32,
+            "recall": 0.025376685170499604,
+            "truth_count": 1261
+          },
+          "3": {
+            "covered_count": 7,
+            "recall": 0.027888446215139442,
+            "truth_count": 251
+          },
+          "4": {
+            "covered_count": 1,
+            "recall": 0.043478260869565216,
+            "truth_count": 23
+          },
+          "5": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1
+          }
+        },
+        "candidate_count": 150,
+        "covered_count": 40,
+        "recall": 0.026041666666666668,
+        "truth_count": 1536
+      }
+    ],
+    "split": "validation"
+  },
+  "cornell/contact-high-school/temporal-20-second::window:5": {
+    "coverage": {
+      "by_size": {
+        "2": {
+          "covered_count": 34,
+          "recall": 0.026438569206842923,
+          "truth_count": 1286
+        },
+        "3": {
+          "covered_count": 9,
+          "recall": 0.03146853146853147,
+          "truth_count": 286
+        },
+        "4": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 18
+        }
+      },
+      "candidate_count": 150,
+      "covered_count": 43,
+      "recall": 0.027044025157232705,
+      "size_scope_recall_ceiling": 1.0,
+      "truth_count": 1590,
+      "truth_excluded_by_size": 0
+    },
+    "recall_at_budget": [
+      {
+        "budget": 0,
+        "by_size": {
+          "2": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1286
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 286
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 18
+          }
+        },
+        "candidate_count": 0,
+        "covered_count": 0,
+        "recall": 0.0,
+        "truth_count": 1590
+      },
+      {
+        "budget": 10,
+        "by_size": {
+          "2": {
+            "covered_count": 9,
+            "recall": 0.006998444790046656,
+            "truth_count": 1286
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 286
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 18
+          }
+        },
+        "candidate_count": 10,
+        "covered_count": 9,
+        "recall": 0.005660377358490566,
+        "truth_count": 1590
+      },
+      {
+        "budget": 50,
+        "by_size": {
+          "2": {
+            "covered_count": 34,
+            "recall": 0.026438569206842923,
+            "truth_count": 1286
+          },
+          "3": {
+            "covered_count": 1,
+            "recall": 0.0034965034965034965,
+            "truth_count": 286
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 18
+          }
+        },
+        "candidate_count": 50,
+        "covered_count": 35,
+        "recall": 0.0220125786163522,
+        "truth_count": 1590
+      },
+      {
+        "budget": 150,
+        "by_size": {
+          "2": {
+            "covered_count": 34,
+            "recall": 0.026438569206842923,
+            "truth_count": 1286
+          },
+          "3": {
+            "covered_count": 9,
+            "recall": 0.03146853146853147,
+            "truth_count": 286
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 18
+          }
+        },
+        "candidate_count": 150,
+        "covered_count": 43,
+        "recall": 0.027044025157232705,
+        "truth_count": 1590
+      }
+    ],
+    "split": "test"
+  },
+  "cornell/contact-high-school/temporal-20-second::window:6": {
+    "coverage": {
+      "by_size": {
+        "2": {
+          "covered_count": 35,
+          "recall": 0.022860875244937948,
+          "truth_count": 1531
+        },
+        "3": {
+          "covered_count": 2,
+          "recall": 0.007194244604316547,
+          "truth_count": 278
+        },
+        "4": {
+          "covered_count": 0,
+          "recall": 0.0,
+          "truth_count": 21
+        }
+      },
+      "candidate_count": 150,
+      "covered_count": 37,
+      "recall": 0.020218579234972677,
+      "size_scope_recall_ceiling": 1.0,
+      "truth_count": 1830,
+      "truth_excluded_by_size": 0
+    },
+    "recall_at_budget": [
+      {
+        "budget": 0,
+        "by_size": {
+          "2": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1531
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 278
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 21
+          }
+        },
+        "candidate_count": 0,
+        "covered_count": 0,
+        "recall": 0.0,
+        "truth_count": 1830
+      },
+      {
+        "budget": 10,
+        "by_size": {
+          "2": {
+            "covered_count": 9,
+            "recall": 0.005878510777269758,
+            "truth_count": 1531
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 278
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 21
+          }
+        },
+        "candidate_count": 10,
+        "covered_count": 9,
+        "recall": 0.004918032786885246,
+        "truth_count": 1830
+      },
+      {
+        "budget": 50,
+        "by_size": {
+          "2": {
+            "covered_count": 35,
+            "recall": 0.022860875244937948,
+            "truth_count": 1531
+          },
+          "3": {
+            "covered_count": 1,
+            "recall": 0.0035971223021582736,
+            "truth_count": 278
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 21
+          }
+        },
+        "candidate_count": 50,
+        "covered_count": 36,
+        "recall": 0.019672131147540985,
+        "truth_count": 1830
+      },
+      {
+        "budget": 150,
+        "by_size": {
+          "2": {
+            "covered_count": 35,
+            "recall": 0.022860875244937948,
+            "truth_count": 1531
+          },
+          "3": {
+            "covered_count": 2,
+            "recall": 0.007194244604316547,
+            "truth_count": 278
+          },
+          "4": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 21
+          }
+        },
+        "candidate_count": 150,
+        "covered_count": 37,
+        "recall": 0.020218579234972677,
+        "truth_count": 1830
+      }
+    ],
+    "split": "test"
+  },
+  "cornell/contact-high-school/temporal-20-second::window:7": {
+    "coverage": {
+      "by_size": {
+        "2": {
+          "covered_count": 35,
+          "recall": 0.028782894736842105,
+          "truth_count": 1216
+        },
+        "3": {
+          "covered_count": 10,
+          "recall": 0.0641025641025641,
+          "truth_count": 156
+        }
+      },
+      "candidate_count": 150,
+      "covered_count": 45,
+      "recall": 0.03279883381924198,
+      "size_scope_recall_ceiling": 1.0,
+      "truth_count": 1372,
+      "truth_excluded_by_size": 0
+    },
+    "recall_at_budget": [
+      {
+        "budget": 0,
+        "by_size": {
+          "2": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 1216
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 156
+          }
+        },
+        "candidate_count": 0,
+        "covered_count": 0,
+        "recall": 0.0,
+        "truth_count": 1372
+      },
+      {
+        "budget": 10,
+        "by_size": {
+          "2": {
+            "covered_count": 9,
+            "recall": 0.007401315789473684,
+            "truth_count": 1216
+          },
+          "3": {
+            "covered_count": 0,
+            "recall": 0.0,
+            "truth_count": 156
+          }
+        },
+        "candidate_count": 10,
+        "covered_count": 9,
+        "recall": 0.006559766763848397,
+        "truth_count": 1372
+      },
+      {
+        "budget": 50,
+        "by_size": {
+          "2": {
+            "covered_count": 35,
+            "recall": 0.028782894736842105,
+            "truth_count": 1216
+          },
+          "3": {
+            "covered_count": 5,
+            "recall": 0.03205128205128205,
+            "truth_count": 156
+          }
+        },
+        "candidate_count": 50,
+        "covered_count": 40,
+        "recall": 0.029154518950437316,
+        "truth_count": 1372
+      },
+      {
+        "budget": 150,
+        "by_size": {
+          "2": {
+            "covered_count": 35,
+            "recall": 0.028782894736842105,
+            "truth_count": 1216
+          },
+          "3": {
+            "covered_count": 10,
+            "recall": 0.0641025641025641,
+            "truth_count": 156
+          }
+        },
+        "candidate_count": 150,
+        "covered_count": 45,
+        "recall": 0.03279883381924198,
+        "truth_count": 1372
+      }
+    ],
+    "split": "test"
+  }
+}

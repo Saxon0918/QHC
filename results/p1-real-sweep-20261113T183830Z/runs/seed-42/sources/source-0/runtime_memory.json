@@ -1,0 +1,546 @@
+{
+  "rss_peak_is_sampled": true,
+  "rss_sampling_interval_seconds": 0.02,
+  "stages": [
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:0:candidate_proposal",
+      "peak_rss_bytes": 216227840,
+      "rss_end_bytes": 216227840,
+      "rss_start_bytes": 215965696,
+      "seconds": 0.007468897849321365
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:0:classical_features",
+      "peak_rss_bytes": 216752128,
+      "rss_end_bytes": 216752128,
+      "rss_start_bytes": 216489984,
+      "seconds": 0.12324382411316037
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:0:quantum_group_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 216752128,
+      "seconds": 0.204443140886724
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:0:heat_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.14275006018579006
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:0:wave_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.22068683803081512
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:0:spectral_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.03150766110047698
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:0:quantum_pair_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.04252535803243518
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:0:random_phase_control",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.8185105929151177
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:1:candidate_proposal",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.005900954362004995
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:1:classical_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.12156973592936993
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:1:quantum_group_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.24771090783178806
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:1:heat_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.15990932984277606
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:1:wave_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.2413698839955032
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:1:spectral_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.03291781106963754
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:1:quantum_pair_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.05418071011081338
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:1:random_phase_control",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.9436715859919786
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:2:candidate_proposal",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.00571619626134634
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:2:classical_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.12181171076372266
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:2:quantum_group_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.2594336629845202
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:2:heat_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.16260010981932282
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:2:wave_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.24482906190678477
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:2:spectral_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.03298360388725996
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:2:quantum_pair_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.0515390788204968
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:2:random_phase_control",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.9769381918013096
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:3:candidate_proposal",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.0057334089651703835
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:3:classical_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.12201123777776957
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:3:quantum_group_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.25952136889100075
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:3:heat_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.16315503232181072
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:3:wave_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.24664375511929393
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:3:spectral_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.03256200114265084
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:3:quantum_pair_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.04867420019581914
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:3:random_phase_control",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.986018574796617
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:4:candidate_proposal",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.005421903915703297
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:4:classical_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.1198388310149312
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:4:quantum_group_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.25962038710713387
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:4:heat_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.16426166472956538
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:4:wave_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.24758655484765768
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:4:spectral_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.03246721997857094
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:4:quantum_pair_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.05280237179249525
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:4:random_phase_control",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.9944096622057259
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:5:candidate_proposal",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.006010259967297316
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:5:classical_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.12180901505053043
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:5:quantum_group_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.2662269496358931
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:5:heat_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.16539382468909025
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:5:wave_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.25297944992780685
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:5:spectral_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.03262480115517974
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:5:quantum_pair_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.04930351208895445
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:5:random_phase_control",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 1.0123234861530364
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:6:candidate_proposal",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.005415886174887419
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:6:classical_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.11963376495987177
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:6:quantum_group_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.23155184090137482
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:6:heat_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.15462939301505685
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:6:wave_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.23205048590898514
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:6:spectral_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.032065290957689285
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:6:quantum_pair_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.05137185985222459
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:6:random_phase_control",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.8903537490405142
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:7:candidate_proposal",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.005412417929619551
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:7:classical_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.11814926704391837
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:7:quantum_group_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.22296364093199372
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:7:heat_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.15143667021766305
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:7:wave_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.24433307303115726
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:7:spectral_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.03130572009831667
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:7:quantum_pair_features",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.04748196667060256
+    },
+    {
+      "name": "cornell/email-Enron/temporal-at-most-25::window:7:random_phase_control",
+      "peak_rss_bytes": 217014272,
+      "rss_end_bytes": 217014272,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.8580072671175003
+    },
+    {
+      "name": "scorer_fit:C0_classical",
+      "peak_rss_bytes": 217800704,
+      "rss_end_bytes": 217800704,
+      "rss_start_bytes": 217014272,
+      "seconds": 0.037642826326191425
+    },
+    {
+      "name": "scorer_fit:C0_without_explicit_c2",
+      "peak_rss_bytes": 217800704,
+      "rss_end_bytes": 217800704,
+      "rss_start_bytes": 217800704,
+      "seconds": 0.023857675027102232
+    },
+    {
+      "name": "scorer_fit:C1_heat",
+      "peak_rss_bytes": 217800704,
+      "rss_end_bytes": 217800704,
+      "rss_start_bytes": 217800704,
+      "seconds": 0.03148596966639161
+    },
+    {
+      "name": "scorer_fit:C2_wave",
+      "peak_rss_bytes": 217800704,
+      "rss_end_bytes": 217800704,
+      "rss_start_bytes": 217800704,
+      "seconds": 0.03206371981650591
+    },
+    {
+      "name": "scorer_fit:C3_spectral",
+      "peak_rss_bytes": 217800704,
+      "rss_end_bytes": 217800704,
+      "rss_start_bytes": 217800704,
+      "seconds": 0.030248277354985476
+    },
+    {
+      "name": "scorer_fit:C4_short_time_only",
+      "peak_rss_bytes": 217800704,
+      "rss_end_bytes": 217800704,
+      "rss_start_bytes": 217800704,
+      "seconds": 0.015614320989698172
+    },
+    {
+      "name": "scorer_fit:Q1_pairwise",
+      "peak_rss_bytes": 217800704,
+      "rss_end_bytes": 217800704,
+      "rss_start_bytes": 217800704,
+      "seconds": 0.03450737381353974
+    },
+    {
+      "name": "scorer_fit:Q2_coherent",
+      "peak_rss_bytes": 217800704,
+      "rss_end_bytes": 217800704,
+      "rss_start_bytes": 217800704,
+      "seconds": 0.031340457033365965
+    },
+    {
+      "name": "scorer_fit:Q2_incoherent",
+      "peak_rss_bytes": 217800704,
+      "rss_end_bytes": 217800704,
+      "rss_start_bytes": 217800704,
+      "seconds": 0.027326236944645643
+    },
+    {
+      "name": "scorer_fit:Q2_contrast",
+      "peak_rss_bytes": 217800704,
+      "rss_end_bytes": 217800704,
+      "rss_start_bytes": 217800704,
+      "seconds": 0.026325149927288294
+    },
+    {
+      "name": "scorer_fit:Q3_group",
+      "peak_rss_bytes": 217800704,
+      "rss_end_bytes": 217800704,
+      "rss_start_bytes": 217800704,
+      "seconds": 0.03461768478155136
+    },
+    {
+      "name": "scorer_fit:Q3_independent_columns",
+      "peak_rss_bytes": 217800704,
+      "rss_end_bytes": 217800704,
+      "rss_start_bytes": 217800704,
+      "seconds": 0.032336910255253315
+    },
+    {
+      "name": "scorer_fit:Q4_random_phase",
+      "peak_rss_bytes": 217800704,
+      "rss_end_bytes": 217800704,
+      "rss_start_bytes": 217800704,
+      "seconds": 0.026897304225713015
+    }
+  ],
+  "total_profiled_seconds": 14.682044581975788
+}

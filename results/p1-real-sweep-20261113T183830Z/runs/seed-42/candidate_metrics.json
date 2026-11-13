@@ -1,0 +1,148 @@
+{
+  "all_sources_reach_fixed_minimum": {
+    "Q3_vs_C0_classical": false,
+    "Q3_vs_C2_wave": false,
+    "Q3_vs_C3_spectral": false
+  },
+  "equal_source_mean_delta_ap": {
+    "Q3_vs_C0_classical": -0.008743637587377895,
+    "Q3_vs_C2_wave": -0.0027415894338280733,
+    "Q3_vs_C3_spectral": -0.000628711440067431
+  },
+  "gate_1": {
+    "reason": "Two temporal pilot datasets and their correlated time windows do not provide enough independent replication or cost evidence to declare a robust Gate 1 result.",
+    "status": "not_evaluated"
+  },
+  "minimum_meaningful_delta_ap": 0.02,
+  "primary_analysis_unit": "source_dataset",
+  "primary_metric": "average_precision",
+  "protocol": "cross_time_real_p1_pilot_v1",
+  "sources": {
+    "cornell/contact-high-school/temporal-20-second": {
+      "Q3_test_AP": 0.8810691797373358,
+      "delta_reaches_fixed_minimum": {
+        "Q3_vs_C0_classical": false,
+        "Q3_vs_C2_wave": false,
+        "Q3_vs_C3_spectral": false
+      },
+      "output": "/home/d3008/Documents/zhr/pycharmprojects/QHC/results/p1-real-sweep-20261113T183830Z/runs/seed-42/sources/source-1",
+      "planned_comparison_details": {
+        "Q3_vs_C0_classical": {
+          "bootstrap_attempted": 1,
+          "bootstrap_invalid": 0,
+          "bootstrap_method": "exact_enumeration",
+          "bootstrap_requested": 1000,
+          "bootstrap_total_combinations": 1,
+          "bootstrap_valid": 1,
+          "ci_high": null,
+          "ci_low": null,
+          "confidence": 0.95,
+          "delta": -0.012239863602563239,
+          "group_count": 1,
+          "inference_warning": "One independent group cannot estimate between-group uncertainty.",
+          "tail_probability_mc_se": null
+        },
+        "Q3_vs_C2_wave": {
+          "bootstrap_attempted": 1,
+          "bootstrap_invalid": 0,
+          "bootstrap_method": "exact_enumeration",
+          "bootstrap_requested": 1000,
+          "bootstrap_total_combinations": 1,
+          "bootstrap_valid": 1,
+          "ci_high": null,
+          "ci_low": null,
+          "confidence": 0.95,
+          "delta": -0.018216311374629757,
+          "group_count": 1,
+          "inference_warning": "One independent group cannot estimate between-group uncertainty.",
+          "tail_probability_mc_se": null
+        },
+        "Q3_vs_C3_spectral": {
+          "bootstrap_attempted": 1,
+          "bootstrap_invalid": 0,
+          "bootstrap_method": "exact_enumeration",
+          "bootstrap_requested": 1000,
+          "bootstrap_total_combinations": 1,
+          "bootstrap_valid": 1,
+          "ci_high": null,
+          "ci_low": null,
+          "confidence": 0.95,
+          "delta": 0.004384924665561951,
+          "group_count": 1,
+          "inference_warning": "One independent group cannot estimate between-group uncertainty.",
+          "tail_probability_mc_se": null
+        }
+      },
+      "planned_delta_ap": {
+        "Q3_vs_C0_classical": -0.012239863602563239,
+        "Q3_vs_C2_wave": -0.018216311374629757,
+        "Q3_vs_C3_spectral": 0.004384924665561951
+      },
+      "test_positive_rate": 0.2733333333333333,
+      "test_window_count": 3
+    },
+    "cornell/email-Enron/temporal-at-most-25": {
+      "Q3_test_AP": 0.628666734654513,
+      "delta_reaches_fixed_minimum": {
+        "Q3_vs_C0_classical": false,
+        "Q3_vs_C2_wave": false,
+        "Q3_vs_C3_spectral": false
+      },
+      "output": "/home/d3008/Documents/zhr/pycharmprojects/QHC/results/p1-real-sweep-20261113T183830Z/runs/seed-42/sources/source-0",
+      "planned_comparison_details": {
+        "Q3_vs_C0_classical": {
+          "bootstrap_attempted": 1,
+          "bootstrap_invalid": 0,
+          "bootstrap_method": "exact_enumeration",
+          "bootstrap_requested": 1000,
+          "bootstrap_total_combinations": 1,
+          "bootstrap_valid": 1,
+          "ci_high": null,
+          "ci_low": null,
+          "confidence": 0.95,
+          "delta": -0.005247411572192551,
+          "group_count": 1,
+          "inference_warning": "One independent group cannot estimate between-group uncertainty.",
+          "tail_probability_mc_se": null
+        },
+        "Q3_vs_C2_wave": {
+          "bootstrap_attempted": 1,
+          "bootstrap_invalid": 0,
+          "bootstrap_method": "exact_enumeration",
+          "bootstrap_requested": 1000,
+          "bootstrap_total_combinations": 1,
+          "bootstrap_valid": 1,
+          "ci_high": null,
+          "ci_low": null,
+          "confidence": 0.95,
+          "delta": 0.01273313250697361,
+          "group_count": 1,
+          "inference_warning": "One independent group cannot estimate between-group uncertainty.",
+          "tail_probability_mc_se": null
+        },
+        "Q3_vs_C3_spectral": {
+          "bootstrap_attempted": 1,
+          "bootstrap_invalid": 0,
+          "bootstrap_method": "exact_enumeration",
+          "bootstrap_requested": 1000,
+          "bootstrap_total_combinations": 1,
+          "bootstrap_valid": 1,
+          "ci_high": null,
+          "ci_low": null,
+          "confidence": 0.95,
+          "delta": -0.005642347545696813,
+          "group_count": 1,
+          "inference_warning": "One independent group cannot estimate between-group uncertainty.",
+          "tail_probability_mc_se": null
+        }
+      },
+      "planned_delta_ap": {
+        "Q3_vs_C0_classical": -0.005247411572192551,
+        "Q3_vs_C2_wave": 0.01273313250697361,
+        "Q3_vs_C3_spectral": -0.005642347545696813
+      },
+      "test_positive_rate": 0.17333333333333334,
+      "test_window_count": 3
+    }
+  }
+}

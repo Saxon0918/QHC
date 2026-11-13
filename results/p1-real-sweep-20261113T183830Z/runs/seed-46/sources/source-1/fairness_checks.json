@@ -1,0 +1,41 @@
+{
+  "C0_exact_short_time_feature_column": 14,
+  "candidate_budget_per_graph": 150,
+  "candidate_rows_aligned_across_variants": true,
+  "comparison_cluster_unit": "source_dataset",
+  "feature_cache_has_no_truth_or_label_fields": true,
+  "graph_ids_by_split": {
+    "test": [
+      "cornell/contact-high-school/temporal-20-second::window:5",
+      "cornell/contact-high-school/temporal-20-second::window:6",
+      "cornell/contact-high-school/temporal-20-second::window:7"
+    ],
+    "train": [
+      "cornell/contact-high-school/temporal-20-second::window:0",
+      "cornell/contact-high-school/temporal-20-second::window:1",
+      "cornell/contact-high-school/temporal-20-second::window:2",
+      "cornell/contact-high-school/temporal-20-second::window:3"
+    ],
+    "validation": [
+      "cornell/contact-high-school/temporal-20-second::window:4"
+    ]
+  },
+  "precision_at_budget_per_graph": 10,
+  "same_validation_C_search_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "shared_observation_source": "one GraphRecord.observed() per graph for all variants",
+  "shared_scorer_family": "StandardScaler + LogisticRegression",
+  "threshold_selection_input": "validation candidate labels and scores only",
+  "time_grid": [
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    4.0,
+    8.0
+  ]
+}

@@ -1,0 +1,628 @@
+{
+  "cornell/contact-high-school/temporal-20-second::window:5": {
+    "by_size": {
+      "2": {
+        "matched_pair_count": 4,
+        "positive_count": 34,
+        "unmatched_positive_count": 30
+      },
+      "3": {
+        "matched_pair_count": 9,
+        "positive_count": 9,
+        "unmatched_positive_count": 0
+      }
+    },
+    "candidate_count": 150,
+    "degree_quantile_edges": [
+      7.0,
+      13.8125,
+      16.0,
+      18.650000000000002,
+      24.0
+    ],
+    "fallback_counts": {
+      "size_degree": 0,
+      "size_degree_source": 10,
+      "size_only": 0,
+      "size_source": 3
+    },
+    "matched_pair_count": 13,
+    "matched_positive_fraction": 0.3023255813953488,
+    "method": "greedy_without_replacement_size_hard_constraint",
+    "n_degree_bins": 4,
+    "negative_count": 107,
+    "negative_indices": [
+      30,
+      35,
+      6,
+      36,
+      58,
+      56,
+      62,
+      65,
+      45,
+      61,
+      60,
+      70,
+      44
+    ],
+    "pair_records": [
+      {
+        "absolute_degree_mean_difference": 6.0,
+        "match_level": "size_source",
+        "negative_degree_bin": 2,
+        "negative_index": 30,
+        "positive_degree_bin": 0,
+        "positive_index": 27,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 2
+      },
+      {
+        "absolute_degree_mean_difference": 5.5,
+        "match_level": "size_source",
+        "negative_degree_bin": 2,
+        "negative_index": 35,
+        "positive_degree_bin": 0,
+        "positive_index": 28,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 2
+      },
+      {
+        "absolute_degree_mean_difference": 5.5,
+        "match_level": "size_degree_source",
+        "negative_degree_bin": 0,
+        "negative_index": 6,
+        "positive_degree_bin": 0,
+        "positive_index": 29,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 2
+      },
+      {
+        "absolute_degree_mean_difference": 6.0,
+        "match_level": "size_source",
+        "negative_degree_bin": 1,
+        "negative_index": 36,
+        "positive_degree_bin": 0,
+        "positive_index": 31,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 2
+      },
+      {
+        "absolute_degree_mean_difference": 0.33333333333333215,
+        "match_level": "size_degree_source",
+        "negative_degree_bin": 0,
+        "negative_index": 58,
+        "positive_degree_bin": 0,
+        "positive_index": 46,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 3
+      },
+      {
+        "absolute_degree_mean_difference": 0.6666666666666679,
+        "match_level": "size_degree_source",
+        "negative_degree_bin": 2,
+        "negative_index": 56,
+        "positive_degree_bin": 2,
+        "positive_index": 52,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 3
+      },
+      {
+        "absolute_degree_mean_difference": 0.0,
+        "match_level": "size_degree_source",
+        "negative_degree_bin": 3,
+        "negative_index": 62,
+        "positive_degree_bin": 3,
+        "positive_index": 59,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 3
+      },
+      {
+        "absolute_degree_mean_difference": 0.0,
+        "match_level": "size_degree_source",
+        "negative_degree_bin": 0,
+        "negative_index": 65,
+        "positive_degree_bin": 0,
+        "positive_index": 64,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 3
+      },
+      {
+        "absolute_degree_mean_difference": 0.33333333333333215,
+        "match_level": "size_degree_source",
+        "negative_degree_bin": 0,
+        "negative_index": 45,
+        "positive_degree_bin": 0,
+        "positive_index": 66,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 3
+      },
+      {
+        "absolute_degree_mean_difference": 0.0,
+        "match_level": "size_degree_source",
+        "negative_degree_bin": 2,
+        "negative_index": 61,
+        "positive_degree_bin": 2,
+        "positive_index": 68,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 3
+      },
+      {
+        "absolute_degree_mean_difference": 0.33333333333333215,
+        "match_level": "size_degree_source",
+        "negative_degree_bin": 2,
+        "negative_index": 60,
+        "positive_degree_bin": 2,
+        "positive_index": 72,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 3
+      },
+      {
+        "absolute_degree_mean_difference": 0.6666666666666679,
+        "match_level": "size_degree_source",
+        "negative_degree_bin": 3,
+        "negative_index": 70,
+        "positive_degree_bin": 3,
+        "positive_index": 73,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 3
+      },
+      {
+        "absolute_degree_mean_difference": 0.33333333333333215,
+        "match_level": "size_degree_source",
+        "negative_degree_bin": 2,
+        "negative_index": 44,
+        "positive_degree_bin": 2,
+        "positive_index": 75,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 3
+      }
+    ],
+    "positive_count": 43,
+    "positive_indices": [
+      27,
+      28,
+      29,
+      31,
+      46,
+      52,
+      59,
+      64,
+      66,
+      68,
+      72,
+      73,
+      75
+    ],
+    "seed": 45,
+    "unmatched_positive_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      32,
+      33,
+      34,
+      37
+    ]
+  },
+  "cornell/contact-high-school/temporal-20-second::window:6": {
+    "by_size": {
+      "2": {
+        "matched_pair_count": 3,
+        "positive_count": 35,
+        "unmatched_positive_count": 32
+      },
+      "3": {
+        "matched_pair_count": 2,
+        "positive_count": 2,
+        "unmatched_positive_count": 0
+      }
+    },
+    "candidate_count": 150,
+    "degree_quantile_edges": [
+      2.5,
+      15.0,
+      16.75,
+      18.95,
+      23.0
+    ],
+    "fallback_counts": {
+      "size_degree": 0,
+      "size_degree_source": 3,
+      "size_only": 0,
+      "size_source": 2
+    },
+    "matched_pair_count": 5,
+    "matched_positive_fraction": 0.13513513513513514,
+    "method": "greedy_without_replacement_size_hard_constraint",
+    "n_degree_bins": 4,
+    "negative_count": 113,
+    "negative_indices": [
+      29,
+      36,
+      5,
+      72,
+      57
+    ],
+    "pair_records": [
+      {
+        "absolute_degree_mean_difference": 0.0,
+        "match_level": "size_degree_source",
+        "negative_degree_bin": 1,
+        "negative_index": 29,
+        "positive_degree_bin": 1,
+        "positive_index": 24,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 2
+      },
+      {
+        "absolute_degree_mean_difference": 3.5,
+        "match_level": "size_source",
+        "negative_degree_bin": 3,
+        "negative_index": 36,
+        "positive_degree_bin": 1,
+        "positive_index": 26,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 2
+      },
+      {
+        "absolute_degree_mean_difference": 6.5,
+        "match_level": "size_source",
+        "negative_degree_bin": 3,
+        "negative_index": 5,
+        "positive_degree_bin": 1,
+        "positive_index": 37,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 2
+      },
+      {
+        "absolute_degree_mean_difference": 0.0,
+        "match_level": "size_degree_source",
+        "negative_degree_bin": 2,
+        "negative_index": 72,
+        "positive_degree_bin": 2,
+        "positive_index": 41,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 3
+      },
+      {
+        "absolute_degree_mean_difference": 0.0,
+        "match_level": "size_degree_source",
+        "negative_degree_bin": 1,
+        "negative_index": 57,
+        "positive_degree_bin": 1,
+        "positive_index": 56,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 3
+      }
+    ],
+    "positive_count": 37,
+    "positive_indices": [
+      24,
+      26,
+      37,
+      41,
+      56
+    ],
+    "seed": 45,
+    "unmatched_positive_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      25,
+      27,
+      28,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+    ]
+  },
+  "cornell/contact-high-school/temporal-20-second::window:7": {
+    "by_size": {
+      "2": {
+        "matched_pair_count": 3,
+        "positive_count": 35,
+        "unmatched_positive_count": 32
+      },
+      "3": {
+        "matched_pair_count": 10,
+        "positive_count": 10,
+        "unmatched_positive_count": 0
+      }
+    },
+    "candidate_count": 150,
+    "degree_quantile_edges": [
+      3.3333333333333335,
+      13.5,
+      15.0,
+      16.383333333333333,
+      22.5
+    ],
+    "fallback_counts": {
+      "size_degree": 0,
+      "size_degree_source": 11,
+      "size_only": 0,
+      "size_source": 2
+    },
+    "matched_pair_count": 13,
+    "matched_positive_fraction": 0.28888888888888886,
+    "method": "greedy_without_replacement_size_hard_constraint",
+    "n_degree_bins": 4,
+    "negative_count": 105,
+    "negative_indices": [
+      17,
+      34,
+      5,
+      65,
+      60,
+      41,
+      62,
+      53,
+      45,
+      49,
+      71,
+      46,
+      57
+    ],
+    "pair_records": [
+      {
+        "absolute_degree_mean_difference": 2.0,
+        "match_level": "size_source",
+        "negative_degree_bin": 1,
+        "negative_index": 17,
+        "positive_degree_bin": 0,
+        "positive_index": 21,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 2
+      },
+      {
+        "absolute_degree_mean_difference": 4.5,
+        "match_level": "size_degree_source",
+        "negative_degree_bin": 0,
+        "negative_index": 34,
+        "positive_degree_bin": 0,
+        "positive_index": 25,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 2
+      },
+      {
+        "absolute_degree_mean_difference": 6.0,
+        "match_level": "size_source",
+        "negative_degree_bin": 3,
+        "negative_index": 5,
+        "positive_degree_bin": 0,
+        "positive_index": 29,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 2
+      },
+      {
+        "absolute_degree_mean_difference": 0.0,
+        "match_level": "size_degree_source",
+        "negative_degree_bin": 2,
+        "negative_index": 65,
+        "positive_degree_bin": 2,
+        "positive_index": 39,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 3
+      },
+      {
+        "absolute_degree_mean_difference": 0.0,
+        "match_level": "size_degree_source",
+        "negative_degree_bin": 0,
+        "negative_index": 60,
+        "positive_degree_bin": 0,
+        "positive_index": 40,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 3
+      },
+      {
+        "absolute_degree_mean_difference": 0.0,
+        "match_level": "size_degree_source",
+        "negative_degree_bin": 2,
+        "negative_index": 41,
+        "positive_degree_bin": 2,
+        "positive_index": 42,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 3
+      },
+      {
+        "absolute_degree_mean_difference": 3.000000000000001,
+        "match_level": "size_degree_source",
+        "negative_degree_bin": 0,
+        "negative_index": 62,
+        "positive_degree_bin": 0,
+        "positive_index": 47,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 3
+      },
+      {
+        "absolute_degree_mean_difference": 0.6666666666666679,
+        "match_level": "size_degree_source",
+        "negative_degree_bin": 0,
+        "negative_index": 53,
+        "positive_degree_bin": 0,
+        "positive_index": 48,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 3
+      },
+      {
+        "absolute_degree_mean_difference": 0.0,
+        "match_level": "size_degree_source",
+        "negative_degree_bin": 1,
+        "negative_index": 45,
+        "positive_degree_bin": 1,
+        "positive_index": 54,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 3
+      },
+      {
+        "absolute_degree_mean_difference": 9.0,
+        "match_level": "size_degree_source",
+        "negative_degree_bin": 0,
+        "negative_index": 49,
+        "positive_degree_bin": 0,
+        "positive_index": 56,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 3
+      },
+      {
+        "absolute_degree_mean_difference": 0.0,
+        "match_level": "size_degree_source",
+        "negative_degree_bin": 2,
+        "negative_index": 71,
+        "positive_degree_bin": 2,
+        "positive_index": 66,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 3
+      },
+      {
+        "absolute_degree_mean_difference": 0.3333333333333339,
+        "match_level": "size_degree_source",
+        "negative_degree_bin": 0,
+        "negative_index": 46,
+        "positive_degree_bin": 0,
+        "positive_index": 68,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 3
+      },
+      {
+        "absolute_degree_mean_difference": 2.333333333333333,
+        "match_level": "size_degree_source",
+        "negative_degree_bin": 0,
+        "negative_index": 57,
+        "positive_degree_bin": 0,
+        "positive_index": 75,
+        "proposal_source_jaccard": 1.0,
+        "same_proposal_source": true,
+        "size": 3
+      }
+    ],
+    "positive_count": 45,
+    "positive_indices": [
+      21,
+      25,
+      29,
+      39,
+      40,
+      42,
+      47,
+      48,
+      54,
+      56,
+      66,
+      68,
+      75
+    ],
+    "seed": 45,
+    "unmatched_positive_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      27,
+      28,
+      30,
+      31,
+      32,
+      33,
+      35,
+      36,
+      37
+    ]
+  }
+}

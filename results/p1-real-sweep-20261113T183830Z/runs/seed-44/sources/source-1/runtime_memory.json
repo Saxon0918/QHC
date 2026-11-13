@@ -1,0 +1,546 @@
+{
+  "rss_peak_is_sampled": true,
+  "rss_sampling_interval_seconds": 0.02,
+  "stages": [
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:0:candidate_proposal",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.006905620917677879
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:0:classical_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.12092279084026814
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:0:quantum_group_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.5971364611759782
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:0:heat_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.268796538002789
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:0:wave_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.43361429311335087
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:0:spectral_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.03624504525214434
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:0:quantum_pair_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.11565637541934848
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:0:random_phase_control",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 2.1495487447828054
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:1:candidate_proposal",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.00699283042922616
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:1:classical_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.12425797805190086
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:1:quantum_group_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.5387546443380415
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:1:heat_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.2518182769417763
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:1:wave_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.40891533298417926
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:1:spectral_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.0360435526818037
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:1:quantum_pair_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.08667222177609801
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:1:random_phase_control",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 1.9262180118821561
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:2:candidate_proposal",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.006120511796325445
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:2:classical_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.12320461357012391
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:2:quantum_group_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.5191139010712504
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:2:heat_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.2371197328902781
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:2:wave_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.3989261160604656
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:2:spectral_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.034709067083895206
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:2:quantum_pair_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.09478901792317629
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:2:random_phase_control",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 1.833320920355618
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:3:candidate_proposal",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.0062940241768956184
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:3:classical_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.12480360828340054
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:3:quantum_group_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.5386313321068883
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:3:heat_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.25117291137576103
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:3:wave_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.41217921720817685
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:3:spectral_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.03545735077932477
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:3:quantum_pair_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.09320058673620224
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:3:random_phase_control",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 1.947710547130555
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:4:candidate_proposal",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.005339744035154581
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:4:classical_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.12207395071163774
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:4:quantum_group_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.4997122301720083
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:4:heat_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.22969928896054626
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:4:wave_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.38537010131403804
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:4:spectral_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.03472700295969844
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:4:quantum_pair_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.10603129817172885
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:4:random_phase_control",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 1.760699677746743
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:5:candidate_proposal",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.005852994043380022
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:5:classical_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.12315597990527749
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:5:quantum_group_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.4850881649181247
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:5:heat_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.22791121480986476
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:5:wave_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.39103282801806927
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:5:spectral_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.03498064819723368
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:5:quantum_pair_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.08780815731734037
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:5:random_phase_control",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 1.7177980309352279
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:6:candidate_proposal",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.005600641947239637
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:6:classical_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.12252615904435515
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:6:quantum_group_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.5247659138403833
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:6:heat_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.24015547521412373
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:6:wave_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.3980116141028702
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:6:spectral_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.03491408610716462
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:6:quantum_pair_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.09692839393392205
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:6:random_phase_control",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 1.863333247601986
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:7:candidate_proposal",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.00536083709448576
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:7:classical_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.12258729711174965
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:7:quantum_group_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.46783599723130465
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:7:heat_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.2253266330808401
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:7:wave_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.37195595307275653
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:7:spectral_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.03370641218498349
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:7:quantum_pair_features",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.09180663386359811
+    },
+    {
+      "name": "cornell/contact-high-school/temporal-20-second::window:7:random_phase_control",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 1.6617954750545323
+    },
+    {
+      "name": "scorer_fit:C0_classical",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.024747371673583984
+    },
+    {
+      "name": "scorer_fit:C0_without_explicit_c2",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.02575953071936965
+    },
+    {
+      "name": "scorer_fit:C1_heat",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.024215094279497862
+    },
+    {
+      "name": "scorer_fit:C2_wave",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.026561906095594168
+    },
+    {
+      "name": "scorer_fit:C3_spectral",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.02641094010323286
+    },
+    {
+      "name": "scorer_fit:C4_short_time_only",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.011708951089531183
+    },
+    {
+      "name": "scorer_fit:Q1_pairwise",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.02830530982464552
+    },
+    {
+      "name": "scorer_fit:Q2_coherent",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.027805506717413664
+    },
+    {
+      "name": "scorer_fit:Q2_incoherent",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.024197102058678865
+    },
+    {
+      "name": "scorer_fit:Q2_contrast",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.027058639097958803
+    },
+    {
+      "name": "scorer_fit:Q3_group",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.026018483098596334
+    },
+    {
+      "name": "scorer_fit:Q3_independent_columns",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.030915483366698027
+    },
+    {
+      "name": "scorer_fit:Q4_random_phase",
+      "peak_rss_bytes": 246374400,
+      "rss_end_bytes": 246374400,
+      "rss_start_bytes": 246374400,
+      "seconds": 0.025259927846491337
+    }
+  ],
+  "total_profiled_seconds": 26.578108505811542
+}

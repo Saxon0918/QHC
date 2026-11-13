@@ -1,0 +1,2175 @@
+[
+  {
+    "candidate_id": "c764224bccb9eb35448b5560840e7d6fc7b118c5df965be28b2f4e94f7f37809",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      90,
+      94
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "5081f7025dbdfac2b29b8d3b0a2fd39f001a4bcc234f1016cba2c41bfc04fe07",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      70,
+      92
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "90ad8ba80f3baf1c909ac565f3690c209e8eba33fec88ff1e86041419c4d9ddd",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      55,
+      120
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "bba5ca275d950271808e4d931aa2d4f46a79c487e211321d83125301524a06da",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      12,
+      101
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "bf91a013c7d8db0845b59e027883fac63f318a2daff94b7f49b2cab6ccda7e5a",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      1,
+      108
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "e085d7469c04a2fa740b02ee8ff718bc6d764b325d09489b19751f1c18d5b0bf",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      28,
+      93
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "a8136b806903f3121fde6532d1e92af0f5640cf839d2d6bd9129e0b9fd9e3749",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      7,
+      93
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "66188996b958ad82763e4a3a4a0baccb7296ba040ec186f052ec73f4fbf024f1",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      1,
+      57
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "be60c9520aac007c78f7d357d6bbb97be12f905029a4bcd1f179b86ea9fcd7e8",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      27,
+      114
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "e93a673511fe8f29e05e96bc27516fa7d4c3d9d86128eada552982e9154aaa21",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      41,
+      118
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "c1e41b4a2d7710aedbef88f2f5d2b6490ef9a2f38424b3ceff69a18449ba2cf4",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      28,
+      42
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "c74ba138923e639aefa0466bfefa2ae136727c7721539c20d1edea89f321d314",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      40,
+      72
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "b38a09c55dfb3735cfa904277e873924779169cddfea2590b285b62452eb12af",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      65,
+      90
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "635deb8ed59a7c9432db5e2f4c8080a633404780372c383b7c28335a58423de9",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      93
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "4ebfeeda1bf1cbecc120c9f418743793bd1b37d53f6607af86bd02c4e346e25e",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      49,
+      115
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "9252610898a0a5f9b06e3dc1afb42ee1dffdaf07d33bf3c8695d2185eff3558e",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      87,
+      94
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "7c6b00ddaec97954333183939100ee0ac1bd098110128ae9ab9922a1caf4196e",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      79,
+      80
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "b9853b0034426fb22bf54e6437ea4369b0165b89016cd596f5e7d441d7c769fe",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      4,
+      41
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "37ed5416469e19dcf01c791227ba10853c4f8189bd26382a085c97b1874468d2",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      42,
+      96
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "71e60eab5adce48066bff1a7fc3f9f5fb90a2bbd1d2cefbdc0f5e9d578a5fc8f",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      31,
+      91
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "cf8129caf600aaf3a4316fb4bbd1a403dbe2e1d86d54fef089b3df80c5525031",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      30,
+      101
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "e0d830142f248786327ca0f8ff72c71be01818a6b85e362a912ebd1489fbb652",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      70,
+      108
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "11c9beea058691c1f13596745b1170e6e1b779eb705f80b546025efe50cbc7fe",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      65,
+      81
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "e58f43fc7ec08fdef131a2970aac4c9ff656ca055fde66d0e77e01f0059bcb2a",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      87,
+      101
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "bc8e3ee085d776a48358a1058fec19db7e8454dd702123d1e88d2db9064e6339",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      50,
+      115
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "f9e761d2b41d2f3e26c12fa02bd9318c52a4ac170fb93acd7658a6ba7658e7a5",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      20,
+      49
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "36dc6f3ce9594c14e2d02bef5aed3a497db04d39eeb6a30751e948e31d816979",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      39,
+      90
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "a2dec0858f9193f8c3fdb1f68c4ea3b2c0af9958df9c0db44cd89f214b866527",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      1,
+      93
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "639f5e13d6c4c18ce57b79d74849acffba513d91abfddfc7fea9b511cb52c4b7",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      13,
+      67
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "f8db581a36c84814888739656d29cadbe232da50c3738534c47071db7def4767",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      1,
+      115
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "55a7ae5410e04c8c7763aa9c7a5850e026d3c72b044ac77a534e0433a463cc25",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      16,
+      68
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "006d6f247617508da3e41422d993d4860a820306a56e1b8bb95aec45c27c4976",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      16,
+      50
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "ccba31f56261cd4389ebd7261403aa9a47aaba9fd8b3b0e9e64fac916273851a",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      47,
+      93
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "282ef6a3f127f94ead8debab3fac9cbcbdf8cea73cd0e9c793e1dbd24a419cf1",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      30,
+      87
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "ba7a9390faf739767f1d8f893ca0bee9b83444260693cc2da84f11ad00663b06",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      95
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "59fac27bcebbb1cc93ef14d54b5fa930397ddbdf754665c6f1c01808c4fc044e",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      49,
+      121
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "81859093283e49baa00f19d06c02c0036c44d3b91ecf9b4c01da470665666391",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      28,
+      43
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "b8174b9a383274e9e6b79b6575fb201217bff65952cac5e692c36d71fe7e413b",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      40,
+      111
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "b60e4a74c32079e7a6b21f2f202ed2e5403aa2b7a7af71a9ce20009e8c5c679d",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      19,
+      39,
+      90
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "a36a0c0448e55db0e14853ca9324119115ae0e361d0b35b861940465e37f3e3c",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      7,
+      60,
+      90
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "bbb2b11b9eb7ae020bee33323f95b1891ccbfd95855ee0651f2aad4fcab5a014",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      1,
+      41,
+      76
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "3e998c6056b6ec015304d19b20e8a4f03ddfadd8d5bbc17f76102cdd21ac8ac4",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      42,
+      93,
+      115
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "8580963e16b8969e73fec9feca76a6983ee1558ea6e0b6b0f37cc9fc139a4e26",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      12,
+      15,
+      43
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "e1649c13f30d8c36b1195252e609de87e1b10fd45de45951e8adf6fdc4ef954e",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      21,
+      48
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "c729a784d04da6a754720353f6e13602ec1e619d137e2009f92fc0509059f566",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      40,
+      111,
+      112
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "4b81dc8e9dcfe653db418d474f2def21555b55df18bfb232148a5d71b0700e65",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      30,
+      84,
+      101
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "ea30bc79484f3a6e47b2abd72fb0824cc05109f8c8ec57a6e4331a59337677b0",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      68,
+      95,
+      105
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "af1b4305ccfdeeb4f30226f77cacb422fc376dddac834e13deafdb211fe6cc49",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      41,
+      92,
+      118
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "815292d68bfda5d53caa55bfe737fd545ddf013b2242d7a87eda84199265c9e3",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      28,
+      43,
+      101
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "fb0cb1b9402beb8f23419f76ca642e57ba9caf4f489dbd7a818c34f11538cffc",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      4,
+      92,
+      108
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "433905a3ede359b378dee25332566fed03486b7459d4e659586fd456b79d1000",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      28,
+      49,
+      93
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "9aa83feb7f3be4a4fa73171af97954e3b4632caa48d94a07a620b391d96c4bf3",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      30,
+      43,
+      101
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "39bdae9cf74d2f9a4edc696aa55d7ea8e55f93fcd94c30a2100eb4d825426e24",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      28,
+      49,
+      96
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "56e8bebc006d115de986c0b351e7ba794557d64dbdea1afe31c5ea76d92556a0",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      3,
+      12,
+      94
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "2c98feaf4931bc71b9e9cd9b923cee86350574d6fe503ee5d562be24d9cf6556",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      12,
+      31,
+      87
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "5e32ddb58a2bdcb2e7ba9334f1a8f2ab6be0fc9224d2987dba3a74edde383f0d",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      3,
+      9,
+      43
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "04f66f4e334df8d3850dec889d689bdf46e97929bb49bceaa4ea527da85d4dc3",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      60,
+      65,
+      90
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "179dc5cd2e4aad3bc00ccb2d47a9259fcff3be1c16b7874eed6a6c956f0d6ea9",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      8,
+      16,
+      47
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "c2fe5b4e988c6e38c59f3ea772d6e0fbd522a6b9a8382af909b9cf801f8aea1d",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      9,
+      49
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "35955109d6a8c9d6e999027bae7d594825be1ea4148b4e9495646299a5e8f6fa",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      9,
+      30,
+      49
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "54df3cd32bc558926d46054ff5070d2f2f4c5918f80b1e0b5c365e1d8be48f9d",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      1,
+      28,
+      68
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "cff138a9a5df1bb7f9dd5e6ecbad2c6a3d2bb2ef931bfc08f94f8d899760455b",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      13,
+      106
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "b82807531c739a7e40a4435fd634c7e2d752fd2794a88dac38651290b3505ac3",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      3,
+      22,
+      106
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "38214e78aa49420674772714b5453e5365e95f9c1bbd1d6fbc480cbf8411cb3f",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      9,
+      16
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "fc1af605fc6d98fe45c4ce06cde586d0f2b8f36a53da18d20cfae8914081ec31",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      32,
+      39,
+      90
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "c6f8c4d955bcbd0c7ccca071418fb101d899c7630099753a5036f915712fc9e3",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      30,
+      87,
+      101
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "e318242fffa96f01355817f490ec94459f0974ddad811e7cc7d04be996521900",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      49,
+      93,
+      115
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "71b4ca8f669a66d1c5dddd4d5829230cdc16e1a2ddc7f5a8efa4aea8c8c34318",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      3,
+      94
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "ad99c36c1a1e55df7beb9e7db506f2f303911cd8b13e8e14488046cbb47ee6d5",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      21,
+      48,
+      51
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "8e69f72ff6309a722a7210fd3ffc5e511bdc153b636104be6250a3f06e6ecbaa",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      3,
+      101
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "2a4aeac2eefdb693e3d7fc6188b286aae4ea33ea0fe83d67b24d8279a12c6c55",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      28,
+      42,
+      95
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "292e416a98a4575bbb70d4675cf2f69afd72c1f8622831695b51bd7ee6b619f0",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      12,
+      90,
+      101
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "ca2a48dbca8d761d6c44583bcaaf413197b809f7cb1cc114cb3491b9dc41f5ee",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      16,
+      42,
+      82
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "b8fb33f475d37f64f731b37da8ef7942795c4ddd4efcdaff58c5e597ce2dad37",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      49,
+      105
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "bf4642473510a8d7ad53c468f29c9d5bf85a832f6934a06560a97ff9368af4e2",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      41,
+      87,
+      108
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "bb410a07e9fc03ae2a16c91d00859c52eff1b907c81b689e0b65c846e94632f7",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      31,
+      43,
+      49
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "bff1a5025091d7d8d822d5b3b67bf2bcbaccf4b368283bf960596de12feefed1",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      3,
+      37,
+      87,
+      101
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "f801bb3ca1b9295a20712238b160a0c5879df2430587a35368b0807fcc1511bb",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      12,
+      15,
+      31,
+      90
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "f43b11325ca7db6bc348afc03f16ed475921729a9e266e131354646f0270ff5d",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      12,
+      31,
+      43,
+      94
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "e0f66456fab78243fa1caaf31d87ce9c1eaa018fb01709f6bedc32fd07491019",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      16,
+      49,
+      101
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "3dd4f5615ee7f7ac13059504ff23817a6449710c17150c1f0643bb6ca9f5daf6",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      12,
+      15,
+      90,
+      101
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "2fc744249bad4c6702619d7fada0f7c99302fefa9771b213b9bffd14dc9c6537",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      28,
+      37,
+      101
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "fd54eaa13a2bd855a8507a087c58f27f813dfa798b13a3cf656f52389c61bc50",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      68,
+      74,
+      95
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "5f37139d981060d1241fd2b96766b7a060c7058248b0a68ced149c83dd0daa05",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      3,
+      13,
+      22,
+      88
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "6ebe2643dfdbb325c14a5072851f7967aac6748754a4ecdc68a89f8ae38162c5",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      8,
+      16,
+      47,
+      49
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "50d77d318faec8a450d4a90054c67123a2e7d66405a40854aa963a837ff9e62c",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      26,
+      45,
+      55,
+      65
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "e23fceef748b5dfbc730cfc74fac8ae507a0713dd04d6ebdc4d02cb87d9464a5",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      8,
+      16,
+      47,
+      93
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "fdf94018fe87386246be78bdf8f150fd5464a7b7eac4c0b75601e2bf8b97299f",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      15,
+      31,
+      90
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "35708e4815c56cc7d5643a18bd0fcb1fad67f2edb0b8a428945c1c03033f3073",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      22,
+      67,
+      88,
+      106
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "434e1f13f222e6b5beaae0a3a3087a53d64c4f5e3944c4ef3ac9650f1f26fec4",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      28,
+      37,
+      43
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "d596b2fd5ad9ba09712fcd0f7d31a530265f3b96ac957df99334885f0e0f998a",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      1,
+      28,
+      93
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "6b6dec4d4fb6565c72880272bfac697f10da5e6bc3e5cc0048468990919200e2",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      4,
+      70,
+      92,
+      108
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "6fc57ae3506823680743392d06cc030d9b659c520d990e053600696bdc956820",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      21,
+      48,
+      51
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "85a22aeb8aec856af2667d26a52a9490bd2f25a4cec8da383ca33285fd624b58",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      16,
+      42,
+      68,
+      95
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "dd14325fb526540c8fccca862fc9e5d7c9fad4093086fb5baa6f00c934e04f00",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      28,
+      31,
+      87,
+      101
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "d17c36ee681fd642907b99a8d7cb3024b28a284fbfa9eba8ad6d04f62c960f0d",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      16,
+      49,
+      74,
+      95
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "ebcc0b6bb221e0e48a5c062694329b8e493776431cc0323b044afdce0f9d1d43",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      28,
+      48,
+      51
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "4308f5e42aea334474828dc26c0c235fac295853d6d017c4ea268f9fda85d3ad",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      1,
+      47,
+      93,
+      115
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "5fdacd25ab4d003d7231691509126a4059be0981601c03404a0fa57189a58be4",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      49,
+      68,
+      89,
+      95
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "c3d2d1ca9a5e66aedf5f7432189185c509307b5e2b6496a1e732bdae0c71e4f9",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      3,
+      15,
+      87,
+      94
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "92013cb3a358bcd7119aa73a7e5e4ba3487c33978b50a55ee8e7861d288e8758",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      8,
+      49,
+      68
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "a5e80bdd707a971f166a463ae065fa439ce816935c48444b01d832dff6d3191c",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      16,
+      93,
+      95
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "688ca89a506c2e77f8682858543c1fd813ea9b11af879dd389bf6b2a98cd00c8",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      31,
+      67,
+      106,
+      112
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "db57b6cf73721a30b7455722b5ac32d4169abe3c7a8d940ecd3dfbaec4aec131",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      4,
+      41,
+      70,
+      92
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "b681afaf95623d610f71b219492be8e53d398752c5de0d1623cfd823a5c85f4a",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      16,
+      31,
+      96
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "0e60a9ef70560f34547cb069cdfcaaa9793491ec81c4287a90e3fd04ec5a5d22",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      9,
+      16,
+      96
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "1d82ecfe2ede974e5731d5d3123c90cf3fa24d3cef898f8bebec3c27fdefa364",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      1,
+      41,
+      76,
+      108
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "12ca75fe0f13142d8a243a3f39c4e25ff391e13699c3c2f958ec6dbacd7b8c79",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      16,
+      42,
+      96,
+      115
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "7605833f3d4204b1fe5655db7255cad906400bddb0beb306ef5a275be8c37847",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      16,
+      28,
+      49,
+      115
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "d77410dadc7ee690cd2428a034a6e4b2962683736537a4d4642c42cbad75dc17",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      1,
+      68,
+      74,
+      105
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "d439151fe859c29068a59d3807f730b3d38b3be5c7d46c3bb22c9ddaa01bfd27",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      9,
+      42,
+      115
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "cd3f24350261fefd2a1d8cb2d2594996c650477166f3d2cd0e55331178495b84",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      21,
+      28,
+      48
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "8e241b99bcde9ee8535a24c09005bf720bc99a67a5db10a70822101c5c856e79",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      42,
+      89,
+      95
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "2a626d2821a53d35bb13a59ae67b7e7a1dfca4e291148b0782c3b56db76f48f9",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      3,
+      87,
+      94,
+      101
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "fb05c6578bd3cbe0b78aede45c630b83f68dd322e1db302c8998facef4b03a33",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      16,
+      28,
+      30,
+      49
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "cee19d68aab851cf467b9bc8e88eb79cdd838fb1e80e0c57e502881b948f7dd9",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      1,
+      28,
+      49,
+      74,
+      93
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "c095c854a234a960f0a8c5c0b090503473518d313132ebd63c01a1ca685942ec",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      3,
+      13,
+      88,
+      106
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "0a341dfb14ee6543bbb74b15cdd5d1c0036bb9a05730c338052f45cb34c8771e",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      12,
+      22,
+      31,
+      94
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "2a7655e2cc87dbbd4045d986b8a764f2c3477b7f63d09d20d408b18fd5f43d43",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      1,
+      8,
+      49,
+      93
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "2fcfd8712318ce7e53e69e107e8b5dd2d993452d35b4fc6dba2de706fcf9e9d1",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      12,
+      31,
+      43,
+      87
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "8c6eeeb7fe412555194965e9ca664791c134872851b14145bca3f39e3e312f67",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      3,
+      31,
+      87,
+      88,
+      106
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "b35e420eb656cc59bfa090d818bdd35229aebc427d6badd65a2538e1718379a5",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      3,
+      13,
+      67,
+      73,
+      88
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "355865ce029eeb8dc200ceab316ceca5da01d0f038372c2a3785cf1705dd6dc4",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      3,
+      9,
+      94,
+      101
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "d9c6cb5659f95b592c62e7428699f0a07053208549a04b404a7af3be13c214b2",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      16,
+      28,
+      30,
+      68,
+      93
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "56fa0dbaabbe611e959d7016358b7e4652a08cc3aa77fe2e47238973c4141411",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      3,
+      12,
+      87,
+      94
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "48008e345c93b9c1fcf4806e7f5a4c5668aa04a215fee1e117795de0cdb09872",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      3,
+      12,
+      31,
+      43,
+      101
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "d743515fda76a8c36cd5e5cf2b1fc136e28af3f04c913e4e7490aba6ffa7861a",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      8,
+      28,
+      49,
+      95
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "adb7e9db63b162e1715444ccbd699a60040cdf002975c32c53439c4fe4cd9412",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      3,
+      15,
+      31,
+      43,
+      87
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "bee0176b1cea79d05f7ce127d56540392bfdbff44c76025678e77f933bdc8f32",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      3,
+      13,
+      73,
+      106,
+      107
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "070b0752c67e282d47e164827aafbd3b03e62b4837404d9e9867198c973c96b1",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      16,
+      28,
+      43,
+      101
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "71fd04d23d7306634ce92ff4fa293f3aa2c011d38d12c0af607c0699fc21339a",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      42,
+      49,
+      68,
+      89
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "e93249d07726d41c148a4ee8d847af2fe101e93af25e5a63101bb08ba70f73bf",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      12,
+      15,
+      31,
+      43,
+      94
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "0f81424a884885fc97ae41cd17cbc3bada01c91ffc2f86a3ed500ea55953fcf5",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      1,
+      8,
+      68,
+      95
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "c1e5cdc22cc369ed39efb31c3c9a18bb200d54a32ba330e008d677df7ecacbba",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      28,
+      30,
+      49,
+      68,
+      93
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "ff627b1a5697c60827b6bd8c015615dda66b021002ee5039e22f333d08d8576e",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      3,
+      13,
+      22,
+      67,
+      88
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "a5d1a2855fc677dffd006badd60e8037b14ae484768e1018f09ae18e902a5699",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      22,
+      67,
+      88,
+      101,
+      106
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "b3166f294c7245a2c880be197a7fb6aa43efc6948068932a6ac6bbbb2c715a3f",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      9,
+      16,
+      49,
+      115
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "a44a413e7f6c4588e457c1a3a41b10244afc9cc2d54f65415822df1fbbf75219",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      16,
+      28,
+      42,
+      68
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "3a02e220bf7e59b2090084850f8d6b680404c2210458459275733549ecc7bf48",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      3,
+      16,
+      31,
+      49,
+      50
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "92b68bcb23b40b322745106103c1f37ac032bf9d7d835eab7d0fe0dda4591c64",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      3,
+      15,
+      87,
+      101
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "503c796d92d8ee0339b2536e1fa2df92da0631e9ac9500f96aa0a005eca4c6ef",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      9,
+      16,
+      93,
+      96
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "d29eecb9b67130614507e7ae58ef34f92f1d94cf5b47ecdfdb02efdd0023d65d",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      8,
+      16,
+      49,
+      68,
+      95
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "8db84366d81feb0901584d28af258ede26664350d5b3f52fa5278fc107bd834c",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      15,
+      31,
+      94,
+      101
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "44afdeadf5e3654a7757f331624635bb826cf6cb273c45c294122de7fe4b18fa",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      28,
+      42,
+      68,
+      89,
+      95
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "fd5dfeeaa64035836d457dfc2dc82b31c654185dd5f760e4ede95acdc97f24dd",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      28,
+      30,
+      49,
+      68
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "b9a254223e5947bd873143809779a4bba6f01da6e90091be5c23d84a495f96b6",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      12,
+      15,
+      31,
+      90,
+      94
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "4efe47d22c7e5414058f696fb8fb7241716ae9c73e0cd301a51623e8d8da9096",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      9,
+      16,
+      42,
+      115
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "e715094bc1bcb3335831e58d3a7f02935aff1a4f7a102f172782bdd36aa39b3f",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      1,
+      8,
+      28,
+      49,
+      95
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "d264972b20a15c71183857c1a18db534d780d2beccec6eaf682239ef3437be23",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      16,
+      28,
+      42,
+      68,
+      95
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "dc968329732fbbf2b299b23f825387ba71109061f89796790e0bd89e84efd364",
+    "classical_features": null,
+    "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+    "node_ids": [
+      0,
+      3,
+      12,
+      31,
+      87
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  }
+]

@@ -1,0 +1,296 @@
+{
+  "config_sha256": "c3be1d9c801d00f9a78281f12c979af313978d2b4bfc15aae0d235d1e718f90b",
+  "graph_records": [
+    {
+      "feature_cache_stem": "graph-233377e2123fcfcccb7af1be700f6b605fad14ad7caabd0443cf0acca7c68624",
+      "graph_id": "cornell/contact-high-school/temporal-20-second::window:0",
+      "license": null,
+      "observation_sha256": "d542c2112e82363ba824235fd32dd382ff262e23b5dc512e7239cb07dd137498",
+      "parameters": null,
+      "scenario": null,
+      "source_files": {
+        "nverts": {
+          "name": "nverts.txt",
+          "sha256": "00c16332961640f158f7651dec7fed9b69d4a0da2446f9c5fcd8af5c9f53bb9e"
+        },
+        "simplices": {
+          "name": "simplices.txt",
+          "sha256": "35241fd536981339e67717c9a9c820ffd81225d93ec4a0950532e2d636011bbe"
+        },
+        "times": {
+          "name": "times.txt",
+          "sha256": "d11e5acb07755f3d5603fc4f7b4593bab139824c1c9c1d4a4a67e157deaf9786"
+        }
+      },
+      "source_id": "cornell/contact-high-school/temporal-20-second",
+      "source_url": "https://www.cs.cornell.edu/~arb/data/contact-high-school/",
+      "split": "train",
+      "truth_sha256_for_audit_only": "7d86a2bc58f463353d08834984ed4c6f0261d1e9692794293ef23dc65399ebc0",
+      "truth_visible_to_feature_builder": false,
+      "window": {
+        "first_timestamp": 1385982020.0,
+        "index": 0,
+        "last_timestamp": 1386054460.0,
+        "lower_inclusive": null,
+        "method": "timestamp_boundaries",
+        "retained_event_count": 26436,
+        "upper_exclusive": 1386054480.0
+      }
+    },
+    {
+      "feature_cache_stem": "graph-6e3ab7343496fbe359404b1731450efd743067dea63a841eb054e6baf8291a78",
+      "graph_id": "cornell/contact-high-school/temporal-20-second::window:1",
+      "license": null,
+      "observation_sha256": "d9d7c6d4b5454ac849e653770b8bd19ff12d9ea17fd926a978fb0384cadfb9b7",
+      "parameters": null,
+      "scenario": null,
+      "source_files": {
+        "nverts": {
+          "name": "nverts.txt",
+          "sha256": "00c16332961640f158f7651dec7fed9b69d4a0da2446f9c5fcd8af5c9f53bb9e"
+        },
+        "simplices": {
+          "name": "simplices.txt",
+          "sha256": "35241fd536981339e67717c9a9c820ffd81225d93ec4a0950532e2d636011bbe"
+        },
+        "times": {
+          "name": "times.txt",
+          "sha256": "d11e5acb07755f3d5603fc4f7b4593bab139824c1c9c1d4a4a67e157deaf9786"
+        }
+      },
+      "source_id": "cornell/contact-high-school/temporal-20-second",
+      "source_url": "https://www.cs.cornell.edu/~arb/data/contact-high-school/",
+      "split": "train",
+      "truth_sha256_for_audit_only": "624497af999702a2473894ac975d5f0fa27dbd5cd1dfa044fb92fc7b18adbe3a",
+      "truth_visible_to_feature_builder": false,
+      "window": {
+        "first_timestamp": 1386054480.0,
+        "index": 1,
+        "last_timestamp": 1386072900.0,
+        "lower_inclusive": 1386054480.0,
+        "method": "timestamp_boundaries",
+        "retained_event_count": 27129,
+        "upper_exclusive": 1386072920.0
+      }
+    },
+    {
+      "feature_cache_stem": "graph-308ffe4f9667b0d45c0da545432597e730075bc298a0cb367e5e1db10f054d09",
+      "graph_id": "cornell/contact-high-school/temporal-20-second::window:2",
+      "license": null,
+      "observation_sha256": "4a228b88678d9fb5114faef5d0c8895df6eadcd25fd7ac3c3a0ab56afbf6f85b",
+      "parameters": null,
+      "scenario": null,
+      "source_files": {
+        "nverts": {
+          "name": "nverts.txt",
+          "sha256": "00c16332961640f158f7651dec7fed9b69d4a0da2446f9c5fcd8af5c9f53bb9e"
+        },
+        "simplices": {
+          "name": "simplices.txt",
+          "sha256": "35241fd536981339e67717c9a9c820ffd81225d93ec4a0950532e2d636011bbe"
+        },
+        "times": {
+          "name": "times.txt",
+          "sha256": "d11e5acb07755f3d5603fc4f7b4593bab139824c1c9c1d4a4a67e157deaf9786"
+        }
+      },
+      "source_id": "cornell/contact-high-school/temporal-20-second",
+      "source_url": "https://www.cs.cornell.edu/~arb/data/contact-high-school/",
+      "split": "train",
+      "truth_sha256_for_audit_only": "17008cf04e765985710ddefc779c14e78eb1259df85c72e45c0092640cd07f5b",
+      "truth_visible_to_feature_builder": false,
+      "window": {
+        "first_timestamp": 1386072920.0,
+        "index": 2,
+        "last_timestamp": 1386145360.0,
+        "lower_inclusive": 1386072920.0,
+        "method": "timestamp_boundaries",
+        "retained_event_count": 22410,
+        "upper_exclusive": 1386145380.0
+      }
+    },
+    {
+      "feature_cache_stem": "graph-d290ebb27c813bedb60613a6570214ea55ab02be657b134577cc00023d7dec2e",
+      "graph_id": "cornell/contact-high-school/temporal-20-second::window:3",
+      "license": null,
+      "observation_sha256": "022db124f67786f632217b02a6e9b08a20110701fbd425ba05d3a3a3cf8f1243",
+      "parameters": null,
+      "scenario": null,
+      "source_files": {
+        "nverts": {
+          "name": "nverts.txt",
+          "sha256": "00c16332961640f158f7651dec7fed9b69d4a0da2446f9c5fcd8af5c9f53bb9e"
+        },
+        "simplices": {
+          "name": "simplices.txt",
+          "sha256": "35241fd536981339e67717c9a9c820ffd81225d93ec4a0950532e2d636011bbe"
+        },
+        "times": {
+          "name": "times.txt",
+          "sha256": "d11e5acb07755f3d5603fc4f7b4593bab139824c1c9c1d4a4a67e157deaf9786"
+        }
+      },
+      "source_id": "cornell/contact-high-school/temporal-20-second",
+      "source_url": "https://www.cs.cornell.edu/~arb/data/contact-high-school/",
+      "split": "train",
+      "truth_sha256_for_audit_only": "a937dd6ebf5538979018e64bd2d4b1d75779dc7456619f54cad7bb8f2560610b",
+      "truth_visible_to_feature_builder": false,
+      "window": {
+        "first_timestamp": 1386145380.0,
+        "index": 3,
+        "last_timestamp": 1386163800.0,
+        "lower_inclusive": 1386145380.0,
+        "method": "timestamp_boundaries",
+        "retained_event_count": 23702,
+        "upper_exclusive": 1386163820.0
+      }
+    },
+    {
+      "feature_cache_stem": "graph-edda72651ecbbba3f397a5b8cd78b65059ab22fa20e64f51911e680d257e3df0",
+      "graph_id": "cornell/contact-high-school/temporal-20-second::window:4",
+      "license": null,
+      "observation_sha256": "a0e2b8713aea500ecf310fae24ef9366e32ea7c7069e78e3325318da0396125b",
+      "parameters": null,
+      "scenario": null,
+      "source_files": {
+        "nverts": {
+          "name": "nverts.txt",
+          "sha256": "00c16332961640f158f7651dec7fed9b69d4a0da2446f9c5fcd8af5c9f53bb9e"
+        },
+        "simplices": {
+          "name": "simplices.txt",
+          "sha256": "35241fd536981339e67717c9a9c820ffd81225d93ec4a0950532e2d636011bbe"
+        },
+        "times": {
+          "name": "times.txt",
+          "sha256": "d11e5acb07755f3d5603fc4f7b4593bab139824c1c9c1d4a4a67e157deaf9786"
+        }
+      },
+      "source_id": "cornell/contact-high-school/temporal-20-second",
+      "source_url": "https://www.cs.cornell.edu/~arb/data/contact-high-school/",
+      "split": "validation",
+      "truth_sha256_for_audit_only": "c399f6e0ea2b3b3a987a7e70438d4cdec7e68e9102e88f393c307344fb9078ca",
+      "truth_visible_to_feature_builder": false,
+      "window": {
+        "first_timestamp": 1386163820.0,
+        "index": 4,
+        "last_timestamp": 1386236260.0,
+        "lower_inclusive": 1386163820.0,
+        "method": "timestamp_boundaries",
+        "retained_event_count": 19464,
+        "upper_exclusive": 1386236280.0
+      }
+    },
+    {
+      "feature_cache_stem": "graph-5c4c241cb9cf67416ff8ee770718918c331ea06dc1eaf90c184ab0d1f6804a34",
+      "graph_id": "cornell/contact-high-school/temporal-20-second::window:5",
+      "license": null,
+      "observation_sha256": "83f860f854e53812dd3e2844a514804ebb71b887362672f4bcd60e717e7572e8",
+      "parameters": null,
+      "scenario": null,
+      "source_files": {
+        "nverts": {
+          "name": "nverts.txt",
+          "sha256": "00c16332961640f158f7651dec7fed9b69d4a0da2446f9c5fcd8af5c9f53bb9e"
+        },
+        "simplices": {
+          "name": "simplices.txt",
+          "sha256": "35241fd536981339e67717c9a9c820ffd81225d93ec4a0950532e2d636011bbe"
+        },
+        "times": {
+          "name": "times.txt",
+          "sha256": "d11e5acb07755f3d5603fc4f7b4593bab139824c1c9c1d4a4a67e157deaf9786"
+        }
+      },
+      "source_id": "cornell/contact-high-school/temporal-20-second",
+      "source_url": "https://www.cs.cornell.edu/~arb/data/contact-high-school/",
+      "split": "test",
+      "truth_sha256_for_audit_only": "2703cd820b1ae6ee3eb31e5c20c3ba035bed8e8ed6fad662557bee2b3ee6cd38",
+      "truth_visible_to_feature_builder": false,
+      "window": {
+        "first_timestamp": 1386236280.0,
+        "index": 5,
+        "last_timestamp": 1386254700.0,
+        "lower_inclusive": 1386236280.0,
+        "method": "timestamp_boundaries",
+        "retained_event_count": 17287,
+        "upper_exclusive": 1386254720.0
+      }
+    },
+    {
+      "feature_cache_stem": "graph-e5aad7f2aa634fc120ba2bd3f57e5717e8df3f99a1a865971a6f6ebc789fab63",
+      "graph_id": "cornell/contact-high-school/temporal-20-second::window:6",
+      "license": null,
+      "observation_sha256": "1ebf50193685da270a42b01c17ad8b4fd2dc7c08012bb5d13634ab096bef7d16",
+      "parameters": null,
+      "scenario": null,
+      "source_files": {
+        "nverts": {
+          "name": "nverts.txt",
+          "sha256": "00c16332961640f158f7651dec7fed9b69d4a0da2446f9c5fcd8af5c9f53bb9e"
+        },
+        "simplices": {
+          "name": "simplices.txt",
+          "sha256": "35241fd536981339e67717c9a9c820ffd81225d93ec4a0950532e2d636011bbe"
+        },
+        "times": {
+          "name": "times.txt",
+          "sha256": "d11e5acb07755f3d5603fc4f7b4593bab139824c1c9c1d4a4a67e157deaf9786"
+        }
+      },
+      "source_id": "cornell/contact-high-school/temporal-20-second",
+      "source_url": "https://www.cs.cornell.edu/~arb/data/contact-high-school/",
+      "split": "test",
+      "truth_sha256_for_audit_only": "68600f05188d792dd81aa592499eea75733ed4047ba9377359145247a4274ebf",
+      "truth_visible_to_feature_builder": false,
+      "window": {
+        "first_timestamp": 1386254720.0,
+        "index": 6,
+        "last_timestamp": 1386327160.0,
+        "lower_inclusive": 1386254720.0,
+        "method": "timestamp_boundaries",
+        "retained_event_count": 22760,
+        "upper_exclusive": 1386327180.0
+      }
+    },
+    {
+      "feature_cache_stem": "graph-b19501ad7cf44e059d3315b3eede760278d9ee10f1947dac687bc05f23df1134",
+      "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+      "license": null,
+      "observation_sha256": "82a3eaa030e6c5c40aeae66bf4da3481f53fd020a0cf6b65505eb912c95d6d3a",
+      "parameters": null,
+      "scenario": null,
+      "source_files": {
+        "nverts": {
+          "name": "nverts.txt",
+          "sha256": "00c16332961640f158f7651dec7fed9b69d4a0da2446f9c5fcd8af5c9f53bb9e"
+        },
+        "simplices": {
+          "name": "simplices.txt",
+          "sha256": "35241fd536981339e67717c9a9c820ffd81225d93ec4a0950532e2d636011bbe"
+        },
+        "times": {
+          "name": "times.txt",
+          "sha256": "d11e5acb07755f3d5603fc4f7b4593bab139824c1c9c1d4a4a67e157deaf9786"
+        }
+      },
+      "source_id": "cornell/contact-high-school/temporal-20-second",
+      "source_url": "https://www.cs.cornell.edu/~arb/data/contact-high-school/",
+      "split": "test",
+      "truth_sha256_for_audit_only": "8c739910848cbc2e32d965e31e4b44dc383a04171d2f16c978683a3c8bd1393d",
+      "truth_visible_to_feature_builder": false,
+      "window": {
+        "first_timestamp": 1386327180.0,
+        "index": 7,
+        "last_timestamp": 1386345580.0,
+        "lower_inclusive": 1386327180.0,
+        "method": "timestamp_boundaries",
+        "retained_event_count": 12847,
+        "upper_exclusive": null
+      }
+    }
+  ],
+  "protocol": "cross_time_real_p1_pilot_v1",
+  "research_plan_sha256": "8d9d2cc5970c3e8c3eba4accfff284e5875253392edf08dadd23c8094937e02c",
+  "resolved_config_sha256": "fa10c28b0fc5d115cc8fd1f5825e7bd132fce31790154ddf713eff38369e9613"
+}

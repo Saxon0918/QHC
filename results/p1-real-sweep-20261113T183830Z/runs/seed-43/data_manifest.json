@@ -1,0 +1,14 @@
+{
+  "archive_and_window_audit": "real_input_audit.json",
+  "config_sha256": "e54db7eb512e38718b25059c55ddf501ef35242ee57004596ff385643cc93d31",
+  "protocol": "cross_time_real_p1_pilot_v1",
+  "resolved_config_sha256": "3712051e29751194e55c40ea6749ae063b8159ec4382bc55bde2d6e7ce0f4922",
+  "source_ids": [
+    "cornell/email-Enron/temporal-at-most-25",
+    "cornell/contact-high-school/temporal-20-second"
+  ],
+  "source_output_paths": {
+    "cornell/contact-high-school/temporal-20-second": "/home/d3008/Documents/zhr/pycharmprojects/QHC/results/p1-real-sweep-20261113T183830Z/runs/seed-43/sources/source-1",
+    "cornell/email-Enron/temporal-at-most-25": "/home/d3008/Documents/zhr/pycharmprojects/QHC/results/p1-real-sweep-20261113T183830Z/runs/seed-43/sources/source-0"
+  }
+}

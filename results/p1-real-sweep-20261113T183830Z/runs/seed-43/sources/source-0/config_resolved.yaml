@@ -1,0 +1,84 @@
+project:
+  name: quantum_hypergraph
+  protocol: cross_time_real_p1_pilot_v1
+  seed: 43
+minimum_meaningful_delta_ap: 0.02
+replicate_seeds:
+- 42
+- 43
+- 44
+- 45
+- 46
+datasets:
+- source_id: cornell/email-Enron/temporal-at-most-25
+  expected_raw_event_count: 10883
+  expected_num_nodes: 143
+  source_url: https://www.cs.cornell.edu/~arb/data/email-Enron/
+  archive_url: https://drive.google.com/open?id=1tTVZkdpgRW47WWmsrdUCukHz0x2M6N77
+  require_archive_manifest: true
+  license_or_access_terms: null
+  files:
+    nverts: /home/d3008/Documents/zhr/pycharmprojects/QHC/data/raw/email-Enron/nverts.txt
+    simplices: /home/d3008/Documents/zhr/pycharmprojects/QHC/data/raw/email-Enron/simplices.txt
+    times: /home/d3008/Documents/zhr/pycharmprojects/QHC/data/raw/email-Enron/times.txt
+  window_labels:
+  - train
+  - train
+  - train
+  - train
+  - validation
+  - test
+  - test
+  - test
+  window_boundaries:
+  - 63095538060000.0
+  - 63105220740000.0
+  - 63111620160000.0
+  - 63117846420000.0
+  - 63123816660000.0
+  - 63134164017000.0
+  - 63140769769000.0
+  windowing_rule_used_to_lock_boundaries:
+    method: unique_timestamp_quantiles
+    window_count: 8
+observation:
+  projection: binary
+  allow_node_features: false
+  use_test_hyperedges_as_input: false
+hamiltonian:
+  kind: norm_laplacian
+  scale: 0.5
+  feature_laplacian_weight: 0.0
+time:
+  points:
+  - 0.25
+  - 0.5
+  - 1.0
+  - 2.0
+  - 4.0
+  - 8.0
+candidate:
+  generators:
+  - local_clique
+  - maximal_clique_subsets
+  min_size: 2
+  max_size: 5
+  budget: 150
+  enforce_clique_in_exact_projection: true
+quantum:
+  incoherent_reference: exact
+  phase_samples: 16
+  max_state_columns: 64
+scorer:
+  model: logistic_regression
+  C_grid:
+  - 0.01
+  - 0.1
+  - 1.0
+  - 10.0
+  class_weight: balanced
+  threshold_metric: f1
+reporting:
+  primary_metric: average_precision
+  precision_at_budget: 10
+  bootstrap_replicates: 1000

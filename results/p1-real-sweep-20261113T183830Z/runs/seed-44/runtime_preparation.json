@@ -1,0 +1,21 @@
+{
+  "rss_peak_is_sampled": true,
+  "rss_sampling_interval_seconds": 0.02,
+  "stages": [
+    {
+      "name": "load_and_split:cornell/email-Enron/temporal-at-most-25",
+      "peak_rss_bytes": 202268672,
+      "rss_end_bytes": 202268672,
+      "rss_start_bytes": 202268672,
+      "seconds": 0.07367938989773393
+    },
+    {
+      "name": "load_and_split:cornell/contact-high-school/temporal-20-second",
+      "peak_rss_bytes": 239259648,
+      "rss_end_bytes": 231215104,
+      "rss_start_bytes": 202268672,
+      "seconds": 1.0192501139827073
+    }
+  ],
+  "total_profiled_seconds": 1.0929295038804412
+}

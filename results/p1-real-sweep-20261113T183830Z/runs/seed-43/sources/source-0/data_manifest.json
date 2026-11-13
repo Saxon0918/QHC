@@ -1,0 +1,296 @@
+{
+  "config_sha256": "e54db7eb512e38718b25059c55ddf501ef35242ee57004596ff385643cc93d31",
+  "graph_records": [
+    {
+      "feature_cache_stem": "graph-182f2274c41c9e96c712f7e4460140a7f5252adb5925809bd697980a94fd7033",
+      "graph_id": "cornell/email-Enron/temporal-at-most-25::window:0",
+      "license": null,
+      "observation_sha256": "8d9fda5872276bbff3d0aedc79b3c98f19bbd937dd39095dc99c33181de921c7",
+      "parameters": null,
+      "scenario": null,
+      "source_files": {
+        "nverts": {
+          "name": "nverts.txt",
+          "sha256": "a1411e6310ebd197884ef2b7fdd11013dc18746f6ce71b5b26fe8e09fe5ed032"
+        },
+        "simplices": {
+          "name": "simplices.txt",
+          "sha256": "3024b89401b4e09dd9b1961b411ce048bda30304f3da1bd1457a95081c154827"
+        },
+        "times": {
+          "name": "times.txt",
+          "sha256": "ded0d24aa880b6bc54c74f79c63850b615d2d1aafd544f6ced519745beeb1d6a"
+        }
+      },
+      "source_id": "cornell/email-Enron/temporal-at-most-25",
+      "source_url": "https://www.cs.cornell.edu/~arb/data/email-Enron/",
+      "split": "train",
+      "truth_sha256_for_audit_only": "f5dc652f9e3dd0ba1e91ba74bc8698a638a49a1205a283fcda04996d1d24ddb1",
+      "truth_visible_to_feature_builder": false,
+      "window": {
+        "first_timestamp": 63046642020000.0,
+        "index": 0,
+        "last_timestamp": 63095535600000.0,
+        "lower_inclusive": null,
+        "method": "timestamp_boundaries",
+        "retained_event_count": 1302,
+        "upper_exclusive": 63095538060000.0
+      }
+    },
+    {
+      "feature_cache_stem": "graph-46796204b73d035a564ab9bbefd6df923d6c47063481e1490c39292761215464",
+      "graph_id": "cornell/email-Enron/temporal-at-most-25::window:1",
+      "license": null,
+      "observation_sha256": "4f15c3c6c1b558837d16063f41586d1e13e6dce44989ca785ade12e750d03a60",
+      "parameters": null,
+      "scenario": null,
+      "source_files": {
+        "nverts": {
+          "name": "nverts.txt",
+          "sha256": "a1411e6310ebd197884ef2b7fdd11013dc18746f6ce71b5b26fe8e09fe5ed032"
+        },
+        "simplices": {
+          "name": "simplices.txt",
+          "sha256": "3024b89401b4e09dd9b1961b411ce048bda30304f3da1bd1457a95081c154827"
+        },
+        "times": {
+          "name": "times.txt",
+          "sha256": "ded0d24aa880b6bc54c74f79c63850b615d2d1aafd544f6ced519745beeb1d6a"
+        }
+      },
+      "source_id": "cornell/email-Enron/temporal-at-most-25",
+      "source_url": "https://www.cs.cornell.edu/~arb/data/email-Enron/",
+      "split": "train",
+      "truth_sha256_for_audit_only": "de461c5b11503e0dae5f057e99838f92108caf6ca5167f0439d408feec390c67",
+      "truth_visible_to_feature_builder": false,
+      "window": {
+        "first_timestamp": 63095538060000.0,
+        "index": 1,
+        "last_timestamp": 63105218940000.0,
+        "lower_inclusive": 63095538060000.0,
+        "method": "timestamp_boundaries",
+        "retained_event_count": 1308,
+        "upper_exclusive": 63105220740000.0
+      }
+    },
+    {
+      "feature_cache_stem": "graph-46467d2e8ea1cef6916ed0e8095f006537ce60f7fdb7137960313b6103b39b18",
+      "graph_id": "cornell/email-Enron/temporal-at-most-25::window:2",
+      "license": null,
+      "observation_sha256": "7e93b0f67b0f68b389e05df53d97e543cbbc5541f6a356fd91e2a81a6af20a4e",
+      "parameters": null,
+      "scenario": null,
+      "source_files": {
+        "nverts": {
+          "name": "nverts.txt",
+          "sha256": "a1411e6310ebd197884ef2b7fdd11013dc18746f6ce71b5b26fe8e09fe5ed032"
+        },
+        "simplices": {
+          "name": "simplices.txt",
+          "sha256": "3024b89401b4e09dd9b1961b411ce048bda30304f3da1bd1457a95081c154827"
+        },
+        "times": {
+          "name": "times.txt",
+          "sha256": "ded0d24aa880b6bc54c74f79c63850b615d2d1aafd544f6ced519745beeb1d6a"
+        }
+      },
+      "source_id": "cornell/email-Enron/temporal-at-most-25",
+      "source_url": "https://www.cs.cornell.edu/~arb/data/email-Enron/",
+      "split": "train",
+      "truth_sha256_for_audit_only": "b548b9d08350ae3d657beedfb932217a0588a88f54ea248cfb1cbea63dd5b302",
+      "truth_visible_to_feature_builder": false,
+      "window": {
+        "first_timestamp": 63105220740000.0,
+        "index": 2,
+        "last_timestamp": 63111617100000.0,
+        "lower_inclusive": 63105220740000.0,
+        "method": "timestamp_boundaries",
+        "retained_event_count": 1314,
+        "upper_exclusive": 63111620160000.0
+      }
+    },
+    {
+      "feature_cache_stem": "graph-8844d4244969c1b029f74a3cc0301311dc9b02e527e7974a3aa576fc58374eef",
+      "graph_id": "cornell/email-Enron/temporal-at-most-25::window:3",
+      "license": null,
+      "observation_sha256": "39c4d1d4e4e669d0caf35ef046bfea8590b71b90f687b39f5bcddd73b4f3f9ea",
+      "parameters": null,
+      "scenario": null,
+      "source_files": {
+        "nverts": {
+          "name": "nverts.txt",
+          "sha256": "a1411e6310ebd197884ef2b7fdd11013dc18746f6ce71b5b26fe8e09fe5ed032"
+        },
+        "simplices": {
+          "name": "simplices.txt",
+          "sha256": "3024b89401b4e09dd9b1961b411ce048bda30304f3da1bd1457a95081c154827"
+        },
+        "times": {
+          "name": "times.txt",
+          "sha256": "ded0d24aa880b6bc54c74f79c63850b615d2d1aafd544f6ced519745beeb1d6a"
+        }
+      },
+      "source_id": "cornell/email-Enron/temporal-at-most-25",
+      "source_url": "https://www.cs.cornell.edu/~arb/data/email-Enron/",
+      "split": "train",
+      "truth_sha256_for_audit_only": "c6e05d7d63977d289e84ac27b554dab55c61d1fef282f734c59c29969dc3e3af",
+      "truth_visible_to_feature_builder": false,
+      "window": {
+        "first_timestamp": 63111620160000.0,
+        "index": 3,
+        "last_timestamp": 63117845880000.0,
+        "lower_inclusive": 63111620160000.0,
+        "method": "timestamp_boundaries",
+        "retained_event_count": 1309,
+        "upper_exclusive": 63117846420000.0
+      }
+    },
+    {
+      "feature_cache_stem": "graph-007bf3f8a80553f0393aeb7114c6ddbdd04acc9f72f618accc514c4252e01ad9",
+      "graph_id": "cornell/email-Enron/temporal-at-most-25::window:4",
+      "license": null,
+      "observation_sha256": "8b55b21e3b5cf087a281c1ad483c7a4ed37a3186dce9b3299487e8412d80bff0",
+      "parameters": null,
+      "scenario": null,
+      "source_files": {
+        "nverts": {
+          "name": "nverts.txt",
+          "sha256": "a1411e6310ebd197884ef2b7fdd11013dc18746f6ce71b5b26fe8e09fe5ed032"
+        },
+        "simplices": {
+          "name": "simplices.txt",
+          "sha256": "3024b89401b4e09dd9b1961b411ce048bda30304f3da1bd1457a95081c154827"
+        },
+        "times": {
+          "name": "times.txt",
+          "sha256": "ded0d24aa880b6bc54c74f79c63850b615d2d1aafd544f6ced519745beeb1d6a"
+        }
+      },
+      "source_id": "cornell/email-Enron/temporal-at-most-25",
+      "source_url": "https://www.cs.cornell.edu/~arb/data/email-Enron/",
+      "split": "validation",
+      "truth_sha256_for_audit_only": "5993d4f5cab0436a0b9cee7c75e0816153eb556ca246796d86984a39ee6ebd92",
+      "truth_visible_to_feature_builder": false,
+      "window": {
+        "first_timestamp": 63117846420000.0,
+        "index": 4,
+        "last_timestamp": 63123816420000.0,
+        "lower_inclusive": 63117846420000.0,
+        "method": "timestamp_boundaries",
+        "retained_event_count": 1321,
+        "upper_exclusive": 63123816660000.0
+      }
+    },
+    {
+      "feature_cache_stem": "graph-68bca736d0b962481268024ccde91569c9564501b8ada8953b8a193c6664963b",
+      "graph_id": "cornell/email-Enron/temporal-at-most-25::window:5",
+      "license": null,
+      "observation_sha256": "02e00d53e523b3f5e02cf6bcb78f9699fe3ace309cf8822acfb7b42ca57e1f64",
+      "parameters": null,
+      "scenario": null,
+      "source_files": {
+        "nverts": {
+          "name": "nverts.txt",
+          "sha256": "a1411e6310ebd197884ef2b7fdd11013dc18746f6ce71b5b26fe8e09fe5ed032"
+        },
+        "simplices": {
+          "name": "simplices.txt",
+          "sha256": "3024b89401b4e09dd9b1961b411ce048bda30304f3da1bd1457a95081c154827"
+        },
+        "times": {
+          "name": "times.txt",
+          "sha256": "ded0d24aa880b6bc54c74f79c63850b615d2d1aafd544f6ced519745beeb1d6a"
+        }
+      },
+      "source_id": "cornell/email-Enron/temporal-at-most-25",
+      "source_url": "https://www.cs.cornell.edu/~arb/data/email-Enron/",
+      "split": "test",
+      "truth_sha256_for_audit_only": "7ec90b9eb8d24be01b40160fbefd500ad2c569836031422939b334a53420dcac",
+      "truth_visible_to_feature_builder": false,
+      "window": {
+        "first_timestamp": 63123816660000.0,
+        "index": 5,
+        "last_timestamp": 63134117940000.0,
+        "lower_inclusive": 63123816660000.0,
+        "method": "timestamp_boundaries",
+        "retained_event_count": 1306,
+        "upper_exclusive": 63134164017000.0
+      }
+    },
+    {
+      "feature_cache_stem": "graph-6f8a77305fc4964605551994a87d05c63f14d6fe95965a8fba558e4acadd10fd",
+      "graph_id": "cornell/email-Enron/temporal-at-most-25::window:6",
+      "license": null,
+      "observation_sha256": "04746b9c4fb6778dc1d8f90ff7f314f103499bf346111674babb5a8b0d4b467a",
+      "parameters": null,
+      "scenario": null,
+      "source_files": {
+        "nverts": {
+          "name": "nverts.txt",
+          "sha256": "a1411e6310ebd197884ef2b7fdd11013dc18746f6ce71b5b26fe8e09fe5ed032"
+        },
+        "simplices": {
+          "name": "simplices.txt",
+          "sha256": "3024b89401b4e09dd9b1961b411ce048bda30304f3da1bd1457a95081c154827"
+        },
+        "times": {
+          "name": "times.txt",
+          "sha256": "ded0d24aa880b6bc54c74f79c63850b615d2d1aafd544f6ced519745beeb1d6a"
+        }
+      },
+      "source_id": "cornell/email-Enron/temporal-at-most-25",
+      "source_url": "https://www.cs.cornell.edu/~arb/data/email-Enron/",
+      "split": "test",
+      "truth_sha256_for_audit_only": "359ac1382ac2cef9419670a2a9dd9abc5de74386024edd379a2fd44c13bb5f5c",
+      "truth_visible_to_feature_builder": false,
+      "window": {
+        "first_timestamp": 63134164017000.0,
+        "index": 6,
+        "last_timestamp": 63140768751000.0,
+        "lower_inclusive": 63134164017000.0,
+        "method": "timestamp_boundaries",
+        "retained_event_count": 1297,
+        "upper_exclusive": 63140769769000.0
+      }
+    },
+    {
+      "feature_cache_stem": "graph-c9d46a6ce433b60bc29dfe3b1c5bade945b70c70a8c67b1e4bcddeb7f0f64d39",
+      "graph_id": "cornell/email-Enron/temporal-at-most-25::window:7",
+      "license": null,
+      "observation_sha256": "9ec507f12fe0991e75fb5bed01a76498b577c67dd3d298dc1a2de7f468e9425a",
+      "parameters": null,
+      "scenario": null,
+      "source_files": {
+        "nverts": {
+          "name": "nverts.txt",
+          "sha256": "a1411e6310ebd197884ef2b7fdd11013dc18746f6ce71b5b26fe8e09fe5ed032"
+        },
+        "simplices": {
+          "name": "simplices.txt",
+          "sha256": "3024b89401b4e09dd9b1961b411ce048bda30304f3da1bd1457a95081c154827"
+        },
+        "times": {
+          "name": "times.txt",
+          "sha256": "ded0d24aa880b6bc54c74f79c63850b615d2d1aafd544f6ced519745beeb1d6a"
+        }
+      },
+      "source_id": "cornell/email-Enron/temporal-at-most-25",
+      "source_url": "https://www.cs.cornell.edu/~arb/data/email-Enron/",
+      "split": "test",
+      "truth_sha256_for_audit_only": "87392ff64014cc58604fd82111e552eb72a9a00508563653d0d1ba2a4ce09149",
+      "truth_visible_to_feature_builder": false,
+      "window": {
+        "first_timestamp": 63140769769000.0,
+        "index": 7,
+        "last_timestamp": 63159582033000.0,
+        "lower_inclusive": 63140769769000.0,
+        "method": "timestamp_boundaries",
+        "retained_event_count": 1295,
+        "upper_exclusive": null
+      }
+    }
+  ],
+  "protocol": "cross_time_real_p1_pilot_v1",
+  "research_plan_sha256": "8d9d2cc5970c3e8c3eba4accfff284e5875253392edf08dadd23c8094937e02c",
+  "resolved_config_sha256": "1606fa27ef51d97004affbb685ff757e5993825b9dca09a2040c87775efae589"
+}

@@ -1,0 +1,2175 @@
+[
+  {
+    "candidate_id": "132b87272bd22044c4a9d3b0b21af4fa1eed955b58b7bfb029cbffae83399209",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      22,
+      91
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "f313c91ba6657de379e259d46c3f54ee1c2c2452302845b921dba40e3f643edc",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      91,
+      148
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "fc2c6a21cff31ea318b9c98ae47e19b3e56ce74db149337e9bfcddd5aa1dc497",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      74,
+      95
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "07279405a34b7ee42a00b359d11fac9a05c8b130c6997866741410cfab0213c4",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      148,
+      284
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "1ed7eda67d6d0b24d515d74bc36493f22d82fa4759f80b9a6e4e45e541944899",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      21,
+      44
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "3ea1aa6b274a3095d8286d8169ab805fc9c82f98bf51598eec350d202d607aaf",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      69,
+      150
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "2fb353dee911d2ade0f685c7ed24e6e407a390d2aef879d21ee62b460844065c",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      264,
+      275
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "e6e2d8e52fcdd40fbd1810fb353fc09d55e9d9a31212f1505d5daf0044648073",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      156,
+      167
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "95060a0226460aeb65d73767eea223d35f0e687ffe2a710a3a334e5ec13f9a43",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      238,
+      284
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "0e6549e312115ad40b5c003b5a1759b151c944b9c9cab1f315e5d214ce14fd10",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      63,
+      135
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "4713a6061a0242d55752295052951ea54d2399a66289bfd7967d7c005af25756",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      91,
+      238
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "adc340d0285480a346eca9f6125248e47d9fba784dc63f649968012ad15b275f",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      19,
+      138
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "e4e4628bc2e7bf8968ce7ab05fa355a79250927c0634195be4c3fc9ba874ee96",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      7,
+      195
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "c821f2b79a957ab2f016c91f9e75f0464ff557fa44fc6ba7704c2edfe6077f9a",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      25,
+      90
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "bfd9d01eac8848e23dbf641da90d0228c801ccb8604af81226799487ba5ebdac",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      2,
+      115
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "cf83dd5f4b08972481cb9e02b85a91340c07d63175f09e11fde68b2ad965df88",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      139,
+      150
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "37a3e1a70fbacfb31bf0ec3fb71bafbfd4a6f8c1a724be2c549ca40a5d1cb4c1",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      10,
+      101
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "652a9907c1eec100bb2a96bec6b59c5f08e5d88b66054182cbb187e495642ba8",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      62,
+      155
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "d84431956c638d43e6d40bffafd7542f181d18792fd43cbde6bb46ced9b84f59",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      275,
+      278
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "cd631a7773e59ea2b5cee14cd1a2bd87a758ad91a6cd77f76912dc11892dd84f",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      264,
+      278
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "e1b95b53d54cca4c91dced5b20c784887f1918f049b89193458e94199cb0b829",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      10,
+      17
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "21b602b4cd7b21482cbbe506d3335b998386ab75b75e9c7c71c2ead01731d8f2",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      2,
+      105
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "bc80469f939ad43fc54a1ae44a3b98e9b47bb04c4ae887a1eae53d77ffb47bd9",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      19,
+      92
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "f3554f8a3dce89c967dac136206d1e71eb5be10cba67097d87da46a1ba448769",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      148,
+      245
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "c92dadc8ef6acf0b7b204d277114dbafbb3b97dbe6017fa20d8c4c15fcb3eb20",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      78,
+      192
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "cadbe982ad66ec628dbc624ec518e81bc25c771f2864ab16458c01e5b22e8075",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      182,
+      254
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "610f99128d2a3b706e9c79599be47be0cdfeb9ddadab750045b2ff5c71341ccd",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      42,
+      62
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "7a84ed89d8e9f793974b872e230be4ccfb597e3a537bbbb47e579ae728164477",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      22,
+      135
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "d7f09e163e2edfde00db2f7405cf86ef0f65be12f78f3822fed0b712caf4c12b",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      42,
+      43
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "b9516166f6a517e298f9dc7ff688db33b265ce1c1e1002ae8ae9490e4bfc8b04",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      155,
+      170
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "40826475e405c91bfc69efe99db59a74821759777bcc7d092ad9975e136d2fbc",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      238,
+      245
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "2c8ffe47396f2ec500b846b84fa773352ee9415d03abcda5dcdfafb9fd55b49b",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      52,
+      96
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "1ee01fe0dfcd0df32b38c9048af74621ea4ba95334fc9b4cc8da88d7c77491dd",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      48,
+      76
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "ce77d0c1f159180692c864221efbbebc1c7f724ca938285fcb5a07fd610ec38f",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      45,
+      150
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "eedca4df16106489ea98f6c895307710717fcb1d2840f192ee78c028019d03ef",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      49,
+      145
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "15bf00ad7e5cc9c9f4df24a25c4043d97cbf8774e6b53a185a1e957dfbc90eb8",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      21,
+      139
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "930e4b6cab1bc514e3f250cddb38826331875c61456f9ccdbecae73e53e50a79",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      25,
+      74
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "96d5e1c2b4b6df6d3307231dc6a7019547ad35850a267cd5033fa45fc7eb61a4",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      19,
+      238
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "159b26ec25cfdfca5a5cbe4ff044433ee11db9d1d8dc5f166d10f75ecfa72ba9",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      24,
+      34,
+      245
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "48eab1fca1483e788219ba3bf64bbeed4c6c2e434d58e16370ee1d3cd39fa900",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      19,
+      91,
+      92
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "199fad26193652120cf4daf2c257e07f46465248b4d8347901f63e8b92121ee5",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      10,
+      17,
+      188
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "c5528dc218ecb21862b9c31e1ef11666d316aa50a7ab28970298e7104887f447",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      15,
+      74,
+      115
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "bd9288c91eea060e100cdbdfe2d69d4d12f893fba0b97e98dea407ecea36bc60",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      101,
+      204,
+      221
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "77482cc81e438b4808d3906d7d100b4c25c6e0e9a50b79294a7bcf5498734396",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      48,
+      76,
+      77
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "23b0b7e64b0ebdc7ab016436516de655dea8af3938bd358258bda968c8b3b5d5",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      132,
+      135,
+      284
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "dbb07f9a93a5649e6d74cbf7041fef6cda1cae08a53fed8a9368697e45297566",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      45,
+      139,
+      140
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "232c3f3f9c8706c122300ea90f94849901a4a6ea188667ede3c2ae0e26545f9e",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      49,
+      156,
+      167
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "4018a02deaff51a82225f61454fcdba4a7cad94b9dae5d51be2d08bc47c45af3",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      7,
+      8,
+      278
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "29cd54389a6505f4e66e38f7409043b11a52667ef6543db9f08b5d91c1cedab0",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      42,
+      112,
+      279
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "6ae3b7074bb73ef018ff42676611bcd14fbf49ffa003befc29269c40996db965",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      31,
+      74,
+      96
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "80394136079d0862671d1956805a0f0a6bf217995e397cc6551014cd60d0143d",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      25,
+      65,
+      74
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "0f23fe8870e14f5a2c698e056fa503cd1cad161ff1ce2d3cbf45f9596c26e6d8",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      112,
+      155,
+      170
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "be026109fcbe6f278ce06a39dea1bd8109b3deb90fab56f444a173394bb2ba5a",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      19,
+      63,
+      132
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "8167c798b611cf87cd9bf43a4fdfb58dfd2e8be843a566e2a7f5067bc0232207",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      145,
+      156,
+      167
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "3bf213aa14333ee508d867b7b57ede7a9ebbf82d050346cc5901f800bdfa51c6",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      22,
+      132,
+      284
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "c926953b70b77bf41d6650f12488ea1563ecc75537e0b9b8eec14e0e744cafe3",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      100,
+      101,
+      192
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "1439ebbbd1e6c274f35c459afafa9a3a65020a090da78b2d38566462b7212aec",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      7,
+      117,
+      278
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "44a3c15ea191559756a6b6f7d8a0b94af104ab7e7dc82b2c2edbc38d118e24a4",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      10,
+      100,
+      101
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "4e554b9982f73c19eca8711417e79c914e90f4faa3e6a155397e995379fd9e54",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      42,
+      62,
+      155
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "df3951aef09fa264ebbb1c733f3df6b98c264734498e8ffa53f63b6305e59db8",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      8,
+      275,
+      278
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "608e28689c8732e2721a5c9a81b9fc72fe5521cbfed98513fa2f513786f79377",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      42,
+      155,
+      175
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "b84a4ddd028755b06e8e280adb4ce6eea31a4fa975d19e0accb52151be3fc035",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      105,
+      113,
+      115
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "91278e94cd0fd5236523b9ead0008069ece4e7d2a1a94dde79f0b35392f7d99e",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      56,
+      96,
+      102
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "5c860f92c6a5313b749852264f073020be0d0c42b21feb2da81d17878b75f2ee",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      138,
+      148,
+      245
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "b71ba7223906ceb2b9cb41a52013a29fe776a3d52a119d73f38ff29f74a5a981",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      139,
+      140,
+      150
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "88029ddb75f4aac8b95e273d323316ea36eca4240f706017b830f7fb429b287d",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      138,
+      148,
+      238
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "c905b982e00c3ae283a7e6eea122106db07ed466d5d80a20f7876f688f6be0e1",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      42,
+      62,
+      150
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "53c12486d0f3c3758d74980696c89573e7fb015507ff41bb63edef11d1e76fd1",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      21,
+      45,
+      139
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "c18ef05fb293415ab9c1eca4dee671b985d77128b3d1ff5b2badab3ea9cb828f",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      4,
+      16,
+      101
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "6d99df5119ab8655d1eb99e538297c92896a295c1eb6d61a4638e7c307e3e517",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      49,
+      145,
+      156
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "1f8c53ad7ef2c0449c7609e749f4b74a8493b1e54c5c4c26ec3ddae20aab9db5",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      56,
+      102,
+      104
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "79f2e1caaed0e67f12d7ef8772626dc5c91f002d71eae1a19a9fe0e7d80ff603",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      74,
+      96,
+      115
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "2acaa3c3c001f7dba550e5559188da42e487e09478c9609829872d424398e1fc",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      22,
+      63,
+      135
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "4f565a962e9aeb86d41fbf142ebae875807e53c662fe9cf01a5513fe4a99188a",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      92,
+      148,
+      284
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "35366c0989248aeef0c472d371b47e1e5530bfe386f08f38fcd6f792380edab1",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      31,
+      96,
+      115
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "2662214d801c33f8f78d851990bb90a9bd343d7ea5026007212e56cee2f194d9",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      42,
+      62,
+      165
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "7e6432de1185d7cca0aa6d2f4bec69d522e91b2f2bb0bb6ee0f0b6622a9ba42d",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      19,
+      91,
+      92,
+      238
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "25814de4f4863124e276302f7a66457d08488932144ce0062a322415cc6cc365",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      22,
+      91,
+      135,
+      284
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "ed5b91316aa68f47e072104191e573d46aa04c3ef36cc684818dd4d9b2baa398",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      64,
+      148,
+      238,
+      284
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "1756637deaeea275c40ea0e074733f42e586902ba44b8f1a0db40af937668bdc",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      42,
+      164,
+      168,
+      170
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "3ee7835ae56043cdc1736e652568d7cdd81fb9e57ab1f847cead5130c123101c",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      0,
+      64,
+      135,
+      238
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "3a4d941f623649b98bcc7fe7ba9cdc41dcf0ed93818fd9cca7e9d43bbdad2e52",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      9,
+      253,
+      257,
+      268
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "bd21aa9a5270baa3887144b14f6a9c34b2edc11b52c06b020827c70c8f581904",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      19,
+      138,
+      148,
+      238
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "99db77108ae677c32418b3309a4d03af54396af234cdddba72d2e8b1a7fce2a4",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      148,
+      238,
+      245,
+      284
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "69b9bb361a4468e1e319545eb48d689592156c7752ab647e2d598ce4913a82c4",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      25,
+      65,
+      74,
+      80
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "180169ec2899f7b2b893e515895ce70d7bccbd3ad699eb233307ca16740839ea",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      22,
+      91,
+      135,
+      148
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "249e63d91dea0aa08540d4054f0a5f7a5dca24a8da9fc392ee713f766c06bf48",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      23,
+      64,
+      132,
+      135
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "3efcf6f4d4e28ad4a6ee00121d7ee2f9ace21495047aff2c6a0ebc948e0c86f7",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      19,
+      64,
+      148,
+      238
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "8010d5f23725f0261f2e05893a8bc8a0c06b58374047542e13423ed9afbfbad8",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      19,
+      92,
+      148,
+      238
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "52efd9657f6c511702ebe46bcd26b0010ae93bca405be234598ceef81b5c5705",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      19,
+      92,
+      238,
+      245
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "0b2ebcb418e59e6f0b59520864830e87a2e91f616b76ab65fa3184468d96c87d",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      91,
+      135,
+      148,
+      238
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "0ccedbb1317753ed7c1ff5632e16da7f984eddb395edebaab39771d7a25bd0ce",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      10,
+      101,
+      192,
+      221
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "4cb9579e9c095e79fc3bdb22cb4fd9595f968e3df07cb678aaa639b00414ed8e",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      46,
+      112,
+      151,
+      155
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "52d989e776261f0bf8c8dbc9b34ba5f8571e3983be2d44c20d3ac8264a3b550e",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      7,
+      8,
+      275,
+      278
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "f89a76d17d66eb3477f12a06bbc53b89dcc35fd071f986df27680c2bb471bd0a",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      135,
+      148,
+      238,
+      284
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "581d7e046673a2e567b0891feaf186a7913ed2735a0f2c2489832ed11c9603db",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      22,
+      148,
+      238,
+      284
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "4488b1b61f8037a1de1ba42ff01cf61bc5213de08477d1fcbca148ebe4e80c17",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      64,
+      70,
+      135,
+      238
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "a8bc182d95fe8328df56afaff801acee2f788cc684ad0818153c3028059b494e",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      42,
+      155,
+      168,
+      170
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "1adff6289e36520771d5531b0628ec93f95c030206823e9ea815d5e4c8262abd",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      45,
+      139,
+      140,
+      150
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "65183a56066c5778f9f2ffca185f42101e5dfd2429cf46c1944faffa75105940",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      10,
+      78,
+      100,
+      192
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "19a3fb27c93eb5ed5a21682bfe759d9d1eab8a7c84740c76412ce821ef4e4d04",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      15,
+      31,
+      74,
+      115
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "f138cb45ac61f189c51c129e3b56a707734d42ddb58a5b1f1cb513055db1a969",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      16,
+      100,
+      192,
+      221
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "9f01a3404a49cc27bfe43046f8e82e4a9ccbe8bec8ec31bc50276e8c2f300739",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      31,
+      74,
+      95,
+      96
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "20b29ef77c0fc0cc6a84576264a8e2d4299e18bc44fc798b922ad29fdc88d5fd",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      22,
+      135,
+      238,
+      284
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "042dd9c181957fd396fb8adf6458fcf808985b65db491cc27a440ce55519d9b9",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      92,
+      238,
+      245,
+      284
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "8e8ad62fc7a6816bd1012722e148bb571e377aa5738c977c0a0ad35a6574bc2f",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      42,
+      62,
+      112,
+      279
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "179d8c3f0b5733f8e41bbc279ed9b9b6445d48a7937e96646ead2c457bc12157",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      91,
+      132,
+      135,
+      284
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "380716329e52e8ac762fe6ee94d383ad071232587f9ec275cb2ff96dda60aecb",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      42,
+      62,
+      69,
+      150
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "3bf1fc9d26696f1971418a4e5bb74d172fd37c9554f0e9c42677009a9decef3c",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      4,
+      16,
+      101,
+      221
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "9a7b2df45aa80beef0091b6efda5be1e9dbbad019a7d386d177f35c5ab456d1c",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      19,
+      22,
+      63,
+      245
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "9bf99051017c349fb677702659bc1b3f5eba25b56de8a30ab9fc2ec101ef7028",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      16,
+      101,
+      192,
+      221
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "44af772fd05df8e43f78c32eb35bfb8127748f393db5ac4c82af1d081d4dff07",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      7,
+      8,
+      117,
+      278
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "14fa3b2665f45bcf56e46da0380d7833b98f809ceac6b754bc82f4b332ae876e",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      10,
+      16,
+      100,
+      101
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "2d6e58cc0c5914588cc0781fd9fc6bb880913c05df3813335c56edd30181fa13",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      7,
+      124,
+      125,
+      153,
+      182
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "2dfa12102f6973038831ef36ca8ca6e1ec579ecddd13dd5f5f021cfed8d41443",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      155,
+      164,
+      168,
+      170,
+      175
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "910c2a1307eb4d2e6c7206b3576b38d9c670c1361a8e053662eaa3bced14982d",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      91,
+      135,
+      136,
+      238,
+      280
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "bbc55278c63aab752ff3a0a421e5c081e7bd93cbeafe402b885127faab33576e",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      22,
+      91,
+      135,
+      148,
+      238
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "55efcccfd222385d84539443a377c925a039006a29497e3f1b9d41635ed1383f",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      70,
+      91,
+      135,
+      136,
+      238
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "56f72aa8c0bf41aaf18e9e3628b3a9ea2506f2c305f89a010f925a6092298b29",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      22,
+      91,
+      135,
+      238,
+      284
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "4b9bc65eec8e8ac55189527e94957fdf9fcf9b58f25cbaf7f7178b84ca4b22e1",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      136,
+      138,
+      148,
+      245,
+      280
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "c9a1ca25e3c495d690e593311ba0e5f4f20350af8a8504f18d433a6ee992c84e",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      19,
+      64,
+      238,
+      245,
+      284
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "b23352921da1740d4aaed8662515e67e9002ede50abb67c2ee2a0b5c2084b4be",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      7,
+      117,
+      133,
+      229,
+      247
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "d49a675591a159c26a9b379013733f08ee8168757e326ad5f4a461b8de97b68a",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      10,
+      16,
+      100,
+      101,
+      221
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "531708300459c87a7f7b1d54e8a1c824171f2306487d82a86f87e75b77691c43",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      42,
+      155,
+      164,
+      168,
+      175
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "c755ed89cc6e81691584ced6269e3a69384f493575c4baffb852cd1f8f664f01",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      19,
+      91,
+      138,
+      148,
+      238
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "90329143f307255102baa29f4e68331c10a680adbbf859a9ed032957b4866e07",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      31,
+      74,
+      95,
+      96,
+      115
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "a20bf375645914bb47bfb613d47bb9b510036fe9eab033cf72cf5422e43c0192",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      91,
+      92,
+      138,
+      148,
+      238
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "79aa377d81d153e33a37aa2caf519254186eceb14aac28af5a9ca40e3f82ead8",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      22,
+      135,
+      136,
+      148,
+      238
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "cde2e588ac6b9735c52945ebc79f47b310f2fc5d6bc645dc946a6e093528a03a",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      22,
+      91,
+      132,
+      148,
+      284
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "52ec33610c8a3c48bc399e4a4b60e75837f4dbd555903aa98b5a4851fe907465",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      22,
+      138,
+      148,
+      245,
+      280
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "620443d0ecb061ad3974fd7ae82b19e6dee0e0b27fa421397c0455793c1711b3",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      19,
+      92,
+      138,
+      238,
+      245
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "ab658c262cb74812f2deec98dc998b636d1d03919727f5b203789002049bc8f8",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      22,
+      91,
+      136,
+      238,
+      280
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "cbf783a4284f185bd82d83186b689597f982cfce23573663ff4a37f330157802",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      64,
+      148,
+      238,
+      245,
+      284
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "10251600847dea1c52a4b887f4f8b7bb815994426b496549e5ff910e61b93bad",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      138,
+      148,
+      238,
+      245,
+      280
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "aaba80a6db5fd981dc3608551f06dd25a61a5706ce32355ddf4197a4d4d65e3c",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      7,
+      117,
+      125,
+      153,
+      253
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "b59e8700b31e9d18b6559db46ee832a7a5ac57949e49e2b8b25dc5495a06b3b4",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      22,
+      136,
+      148,
+      245,
+      280
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "90f055716ea22799f2a4247494b34ee140ca679ec542406f5b6bb0ca80372fda",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      19,
+      91,
+      92,
+      138,
+      238
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "8728632d6f8e4d610127debd17cb739217e7234c686b3bdcc6fda327bf3346b6",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      4,
+      16,
+      93,
+      193,
+      197
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "db49ddbbf0810e9b07b932cbf08346b1dfb9d6b598bff60cfbd8ddef4f18f528",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      4,
+      93,
+      101,
+      193,
+      197
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "40d35a4f9f8e39a6c7fcc176af7ef873886d3d103c54501c5d47eca6bd68a7db",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      7,
+      8,
+      153,
+      182,
+      278
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "8869838e96574b74ba99e23143361fc568152a4b42886536df902a5967633256",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      22,
+      138,
+      148,
+      238,
+      280
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "cb3886290e199ce2868a413b629e7fdf2343dd93fc0d89358d2db43c8f54c833",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      8,
+      117,
+      182,
+      208,
+      257
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "c8581b8f250c6ea02ebf1a9f48bfebd1dcefbbbe7f63dde2e456d0018ecea525",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      19,
+      92,
+      97,
+      238,
+      245
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "8bb4d8628407950f95423e4b6052e2ea4482c9bb9e0bbe1e9dd03ec952ee9df8",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      7,
+      124,
+      125,
+      182,
+      253
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "11054797c33962401419e6926cfd843d7dcd219d748bed0d0ae67487b10ffca6",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      22,
+      91,
+      148,
+      238,
+      284
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "82195db1c9d3282fa795ce79aefd6c7235724b3ae7b4f7170d7313f959f94066",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      10,
+      16,
+      100,
+      216,
+      221
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "3798f95349d304d29bb0d2ed6598527b4a1e2989fbf104a903faf84f3b611cc9",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      42,
+      112,
+      164,
+      170,
+      175
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "50d923281b0440b6aa0d5cdadcb809a1d2600edd02f614ef2c9bffb1981deaf9",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      16,
+      93,
+      101,
+      193,
+      197
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "2f5fecc737e04f0407c324b78ac8f6e0df89d99cca9961fb3fe96ba224ed4f00",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      42,
+      151,
+      155,
+      168,
+      175
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  },
+  {
+    "candidate_id": "b55a60f3ed0ff9cca1260a9e1e0fe70c25c476858207c61415e70f8411f97d7d",
+    "classical_features": null,
+    "graph_id": "cornell/contact-high-school/temporal-20-second::window:7",
+    "node_ids": [
+      42,
+      62,
+      106,
+      112,
+      279
+    ],
+    "proposal_sources": [
+      "maximal_clique"
+    ],
+    "quantum_features": null
+  }
+]
