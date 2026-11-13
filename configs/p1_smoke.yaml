@@ -1,0 +1,59 @@
+project:
+  name: quantum_hypergraph
+  protocol: cross_graph_synthetic_p1_smoke
+  seed: 42
+
+scenarios:
+  S1:
+    n_nodes: 30
+    num_hyperedges: 24
+    edge_sizes: [3, 4]
+    n_blocks: 3
+    feature_signal: 0.0
+  S2:
+    n_nodes: 30
+    num_hyperedges: 36
+    edge_sizes: [3, 4]
+    n_blocks: 3
+    feature_signal: 0.0
+
+split_seeds:
+  train: [101, 102, 103]
+  validation: [201]
+  test: [301, 302]
+
+observation:
+  projection: binary
+  allow_node_features: false
+  use_test_hyperedges_as_input: false
+
+hamiltonian:
+  kind: norm_laplacian
+  scale: 0.5
+  feature_laplacian_weight: 0.0
+
+time:
+  points: [0.25, 0.5, 1.0, 2.0, 4.0, 8.0]
+
+candidate:
+  generators: [local_clique, maximal_clique_subsets]
+  min_size: 3
+  max_size: 5
+  budget: 100
+  enforce_clique_in_exact_projection: true
+
+quantum:
+  incoherent_reference: exact
+  phase_samples: 16
+  max_state_columns: 64
+
+scorer:
+  model: logistic_regression
+  C_grid: [0.01, 0.1, 1.0, 10.0]
+  class_weight: balanced
+  threshold_metric: f1
+
+reporting:
+  primary_metric: average_precision
+  precision_at_budget: 10
+  bootstrap_replicates: 200

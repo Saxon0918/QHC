@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantum-hypergraph-research"
+version = "0.1.0"
+description = "Reproducible P0/P1 tests for quantum-inspired hyperedge discrimination"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.24,<3",
+  "scipy>=1.10,<2",
+  "scikit-learn>=1.3,<2",
+  "networkx>=2.8,<4",
+  "PyYAML>=6,<7",
+  "psutil>=5.9,<8",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<9"]
+plot = ["matplotlib>=3.7,<4"]
+
+[tool.setuptools.packages.find]
+include = ["qhyper*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"
