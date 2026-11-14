@@ -1,0 +1,48 @@
+qhyper/revision_temporal.py
+  s_86ca5e2515274a::t_01ebb3c91e02a1 1-256
+configs/p1_revision_smoke.yaml
+  s_86ca5e2515274a::t_01ebb3c91e02a1 1-44
+tests/test_revision_selection.py
+  s_86ca5e2515274a::t_01ebb3c91e02a1 1-97
+tests/test_revision_candidates.py
+  s_86ca5e2515274a::t_01ebb3c91e02a1 1-111
+tests/test_revision_spectrum.py
+  s_86ca5e2515274a::t_01ebb3c91e02a1 1-133
+qhyper/revision_selection.py
+  s_86ca5e2515274a::t_01ebb3c91e02a1 1-300
+qhyper/revision_candidates.py
+  s_86ca5e2515274a::t_01ebb3c91e02a1 1-291
+qhyper/revision_pipeline.py
+  s_86ca5e2515274a::t_01ebb3c91e02a1 1-780
+tests/test_revision_pipeline.py
+  s_86ca5e2515274a::t_01ebb3c91e02a1 1-140
+qhyper/revision_spectrum.py
+  s_86ca5e2515274a::t_01ebb3c91e02a1 1-305
+main.py
+  s_86ca5e2515274a::t_01ebb3c91e02a1 15,38-42,48-49,60-64
+  s_86ca5e2515274a::t_3c664997dc4407 65-66
+configs/p1_revision.yaml
+  s_86ca5e2515274a::t_01ebb3c91e02a1 1-36
+tests/test_revision_temporal.py
+  s_86ca5e2515274a::t_01ebb3c91e02a1 1-116
+README.md
+  s_86ca5e2515274a::t_8e11ed33633db4 144-172
+docs/P1_REVISION_PROTOCOL.md
+  s_86ca5e2515274a::t_75c84903bc4a5e 1-162
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.24",
+  "base_commit_sha": "deb7abba5ee7f7b2fb253bea8a5c89224f49e723",
+  "prompts": {},
+  "sessions": {
+    "s_86ca5e2515274a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "01a1d1bd-207b-7fe2-a577-553362b96fbe",
+        "model": "unknown"
+      },
+      "human_author": "saxon.zhu <saxon.zhu@htx-inc.com>"
+    }
+  }
+}
