@@ -1,0 +1,30 @@
+{
+  "hashes_include_uncommitted_edits": true,
+  "repository_directory": "/home/d3008/Documents/zhr/pycharmprojects/QHC",
+  "sha256_by_path": {
+    "main.py": "4bd475eb20a031f5c7cd8898901501871185068ae50990f0a6dbd6efba68f2b8",
+    "qhyper/__init__.py": "f6afd82e3e3d26c3fc90fc98fcb0c1595f6006e39f1eb0af51cb9b569fdcc631",
+    "qhyper/candidate_proposal.py": "96a9165fc8f161315388c3ed52f845494f6d4e8ce1a39b5076300000331eb16d",
+    "qhyper/classic_features.py": "45612d93db2dd88e574d98120890da6056de6d0491dd96200d48290d6afed621",
+    "qhyper/experiment_logger.py": "14ca3959190a3f0d388fc8d0fbfed3035cdd403774ebb1a15e79f960934c9375",
+    "qhyper/graph_io.py": "af4238b4ad139b78905edcd6c47e7e02da811f448a6f4b99a860340f3bc04b21",
+    "qhyper/group_response.py": "845adfa0ce1d35ed5623ffd152b93affa35b0eacb28271bdd25af6d79d7cc6d2",
+    "qhyper/hamiltonian.py": "e9690ab6a4e42f0769567326e481944c50156794c826dd2b30269a423d86d0b3",
+    "qhyper/hard_negatives.py": "a4ba40b88154800d9b55be1a7b1d73c3fa8379e90b003e3688bf0796b11925d9",
+    "qhyper/metrics.py": "4a9ebc47614f8ce8fdded9236fc0143cd834c55f4e402c47dbe4ca8ea002fae4",
+    "qhyper/p1_pipeline.py": "47a48345110793334375dda8a08fbcbc7ad477b54d3100cafef1fca1c15a8640",
+    "qhyper/projection.py": "9ffa7c4fe670d9edc4629eb0583ba7366ad80c4a8e7be80a2e9c2e7edc0590f2",
+    "qhyper/quantum_action.py": "0785b6342da536b80b08ecb35d60012741832824ec9c5fcb33ee44537c7672b1",
+    "qhyper/real_data.py": "d25fc51f73e1de4573c9c3d3883c918ac3597be7909b6df478894dca7a7e5dab",
+    "qhyper/real_pipeline.py": "43bc04eaac67edcdd2eb9a1384e729635a1852afddc71a9909a32606ddcc79c1",
+    "qhyper/real_sweep.py": "d15b6000a152529ac72c550347afbc77a98d397ca5c80646b541e8ccebb05d75",
+    "qhyper/revision_candidates.py": "bebd6222956e6dc1ddf10bd90d235a0c701ef009e26fb963622725096f59c943",
+    "qhyper/revision_pipeline.py": "1ccb83c0621d4547c14e5e36810f33a1aaab0edd39c8fe43c795e9ae4c577adf",
+    "qhyper/revision_selection.py": "674c20d737c72065eaf31b60cc5f1cc6be4943bb5539bff7d0bbb2b7e1838a1d",
+    "qhyper/revision_spectrum.py": "b2d48066b2f743dcaf014e651ecfb380efed657788a7b875230e14a2576d0824",
+    "qhyper/revision_temporal.py": "d4b0307921010d8d8224f96f8df8fd36482a93c0d793c59d3d0a1018dd4c6e9b",
+    "qhyper/scorer.py": "a0a0478c30106e65f8859fa35ba6c53e039f92fa818ca54ab31f4bf7810ccc8c",
+    "qhyper/splits.py": "ea65838683816dbf02e80fcc819d27c5521fb55394bd473cb8dbe40d50d87c1e",
+    "qhyper/synthetic.py": "f9fafb098f3d9eeeabd683e018c557125a73fe08dfd94e841413ca05ee96ee81"
+  }
+}

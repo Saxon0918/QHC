@@ -1,0 +1,30 @@
+{
+  "feature_stage_timing_location": "sources/*/revision_source_report.json:timing_seconds_by_graph",
+  "rss_peak_is_sampled": true,
+  "rss_sampling_interval_seconds": 0.02,
+  "rss_scope": "load_sources and whole-source stages only; feature-stage RSS is not sampled separately",
+  "stages": [
+    {
+      "name": "load_sources",
+      "peak_rss_bytes": 238223360,
+      "rss_end_bytes": 208982016,
+      "rss_start_bytes": 137654272,
+      "seconds": 1.2365706246346235
+    },
+    {
+      "name": "source:cornell/email-Enron/temporal-at-most-25",
+      "peak_rss_bytes": 220774400,
+      "rss_end_bytes": 220774400,
+      "rss_start_bytes": 208715776,
+      "seconds": 15.023348946124315
+    },
+    {
+      "name": "source:cornell/contact-high-school/temporal-20-second",
+      "peak_rss_bytes": 223920128,
+      "rss_end_bytes": 223920128,
+      "rss_start_bytes": 220774400,
+      "seconds": 16.931725114118308
+    }
+  ],
+  "total_profiled_seconds": 33.19164468487725
+}

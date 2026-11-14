@@ -1,0 +1,65 @@
+{
+  "base_protocol": "/home/d3008/Documents/zhr/pycharmprojects/QHC/configs/p1_real_pilot.yaml",
+  "base_protocol_sha256": "cda3405f09d9fcb043d49004785b4e78135af070bbbaf9b2663a580500dc08ea",
+  "mode": "real",
+  "revision_config": "/home/d3008/Documents/zhr/pycharmprojects/QHC/configs/p1_revision.yaml",
+  "revision_config_sha256": "a915d9b4e6592367dc9b848fb4395eed28fe23842439d82b4537c01ad0a56f47",
+  "sources": {
+    "cornell/contact-high-school/temporal-20-second": {
+      "archive_manifest_present": true,
+      "raw_event_count": 172035,
+      "raw_file_sha256": {
+        "nverts": "00c16332961640f158f7651dec7fed9b69d4a0da2446f9c5fcd8af5c9f53bb9e",
+        "simplices": "35241fd536981339e67717c9a9c820ffd81225d93ec4a0950532e2d636011bbe",
+        "times": "d11e5acb07755f3d5603fc4f7b4593bab139824c1c9c1d4a4a67e157deaf9786"
+      },
+      "window_boundaries": [
+        1386054480.0,
+        1386072920.0,
+        1386145380.0,
+        1386163820.0,
+        1386236280.0,
+        1386254720.0,
+        1386327180.0
+      ],
+      "window_labels": [
+        "train",
+        "train",
+        "train",
+        "train",
+        "validation",
+        "test",
+        "test",
+        "test"
+      ]
+    },
+    "cornell/email-Enron/temporal-at-most-25": {
+      "archive_manifest_present": true,
+      "raw_event_count": 10883,
+      "raw_file_sha256": {
+        "nverts": "a1411e6310ebd197884ef2b7fdd11013dc18746f6ce71b5b26fe8e09fe5ed032",
+        "simplices": "3024b89401b4e09dd9b1961b411ce048bda30304f3da1bd1457a95081c154827",
+        "times": "ded0d24aa880b6bc54c74f79c63850b615d2d1aafd544f6ced519745beeb1d6a"
+      },
+      "window_boundaries": [
+        63095538060000.0,
+        63105220740000.0,
+        63111620160000.0,
+        63117846420000.0,
+        63123816660000.0,
+        63134164017000.0,
+        63140769769000.0
+      ],
+      "window_labels": [
+        "train",
+        "train",
+        "train",
+        "train",
+        "validation",
+        "test",
+        "test",
+        "test"
+      ]
+    }
+  }
+}

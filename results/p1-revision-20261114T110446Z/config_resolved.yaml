@@ -1,0 +1,47 @@
+project:
+  name: quantum_hypergraph
+  protocol: cross_time_p1_revision_exploratory_v1
+  mode: real
+  seed: 42
+real:
+  base_protocol: p1_real_pilot.yaml
+candidate:
+  budgets:
+  - 150
+  - 300
+  - 600
+  - 1200
+  - 2400
+  analysis_budget: 600
+  target_exact_f1: 0.5
+  min_size: 2
+  max_size: 8
+  beam_width: 256
+  max_visited: 200000
+  search_exploration_fraction: 0.2
+  quota_exploration_fraction: 0.2
+time:
+  points:
+  - 0.25
+  - 0.5
+  - 1.0
+  - 2.0
+  - 4.0
+  - 8.0
+spectral:
+  eps: 1.0e-06
+  dense_limit: 400
+scorer:
+  model: logistic_regression
+  C_grid:
+  - 0.01
+  - 0.1
+  - 1.0
+  - 10.0
+  class_weight: null
+selection:
+  max_selected_grid:
+  - 10
+  - 25
+  - 50
+  - 100
