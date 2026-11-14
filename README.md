@@ -141,3 +141,32 @@ hyperedge recovery improvement under the same candidates and selection rule.
 `docs/P0_P1_PROTOCOL.md` records the current decisions and limits. The shared
 P1 evaluator keeps test truth out of candidate and feature construction for
 both synthetic and temporal real-data runs.
+
+## Theory-led P1 revision
+
+The independent [revision protocol](docs/P1_REVISION_PROTOCOL.md) specifies
+three separable tests: candidate support under a fixed budget, old Q3 versus
+group-subspace spectral features on one frozen candidate pool, and exact-set
+selection on that same pool. New `Qvol`/`Qcorr` features are compared with
+direct boundary-Gram moments and matched heat/wave Gram statistics. The old
+P1 variant IDs and results remain unchanged. A separate temporal module tests
+the conditional repeated-window Poisson identifiability equations on
+synthetic data; the existing eight real windows are too few to use it for
+empirical rate recovery.
+
+```bash
+python main.py p1-revision --config configs/p1_revision_smoke.yaml
+python main.py p1-revision --config configs/p1_revision.yaml
+```
+
+The first command is a small synthetic engineering check. The second requires
+the Cornell raw event files and archive manifests at the paths in
+`configs/p1_real_pilot.yaml`; run it on the server where those files exist.
+Its new-feature results on the previously inspected Enron and school windows
+are **exploratory**, not a passed scientific gate. Candidate AP is compared
+only within the same frozen pool. Across search budgets, the current runner
+reports candidate Recall@Budget, oracle F1 ceilings, and independent search
+run times. Full exact-set F1/Jaccard is evaluated only on the frozen
+progressive pool at `candidate.analysis_budget`; it is not a cross-budget
+comparison. Confirmatory claims require an untouched time period or
+independent source.

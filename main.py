@@ -12,6 +12,7 @@ from pathlib import Path
 from qhyper.p1_pipeline import run_p1
 from qhyper.real_pipeline import run_real_p1
 from qhyper.real_sweep import run_real_seed_sweep
+from qhyper.revision_pipeline import run_revision
 
 
 ROOT = Path(__file__).resolve().parent
@@ -34,12 +35,18 @@ def main() -> None:
     p1_sweep.add_argument("--config", type=Path,
                           default=ROOT / "configs" / "p1_real_pilot.yaml")
     p1_sweep.add_argument("--output", type=Path)
+    revision = subcommands.add_parser(
+        "p1-revision", help="run the exploratory, theory-controlled P1 revision")
+    revision.add_argument("--config", type=Path,
+                          default=ROOT / "configs" / "p1_revision_smoke.yaml")
+    revision.add_argument("--output", type=Path)
     args = parser.parse_args()
     if args.command == "verify":
         subprocess.run([sys.executable, str(ROOT / "scripts" / "00_verify_theory.py")],
                        check=True)
         return
-    prefix = ("p1-real-sweep" if args.command == "p1-real-sweep" else
+    prefix = ("p1-revision" if args.command == "p1-revision" else
+              "p1-real-sweep" if args.command == "p1-real-sweep" else
               "p1-real" if args.command == "p1-real" else "p1")
     output = args.output or ROOT / "results" / datetime.now(timezone.utc).strftime(
         prefix + "-%Y%m%dT%H%M%SZ")
@@ -48,6 +55,13 @@ def main() -> None:
         print(json.dumps({"output": str(output), "gate_1": sweep["gate_1"],
                           "seeds": sweep["seed_list"],
                           "sources": list(sweep["sources"])},
+                         ensure_ascii=False, indent=2))
+        return
+    if args.command == "p1-revision":
+        revised = run_revision(args.config, output)
+        print(json.dumps({"output": str(output), "gate": revised["gate"],
+                          "analysis_budget": revised["analysis_budget"],
+                          "sources": list(revised["sources"])},
                          ensure_ascii=False, indent=2))
         return
     report = (run_real_p1(args.config, output) if args.command == "p1-real"
