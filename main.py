@@ -9,6 +9,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+from qhyper.construction_pipeline import run_construction
 from qhyper.p1_pipeline import run_p1
 from qhyper.real_pipeline import run_real_p1
 from qhyper.real_sweep import run_real_seed_sweep
@@ -40,16 +41,28 @@ def main() -> None:
     revision.add_argument("--config", type=Path,
                           default=ROOT / "configs" / "p1_revision_smoke.yaml")
     revision.add_argument("--output", type=Path)
+    construction = subcommands.add_parser(
+        "b1-construction", help="run the label-blind latent-hypergraph construction study")
+    construction.add_argument("--config", type=Path,
+                              default=ROOT / "configs" / "b1_construction_smoke.yaml")
+    construction.add_argument("--output", type=Path)
     args = parser.parse_args()
     if args.command == "verify":
         subprocess.run([sys.executable, str(ROOT / "scripts" / "00_verify_theory.py")],
                        check=True)
         return
-    prefix = ("p1-revision" if args.command == "p1-revision" else
+    prefix = ("b1-construction" if args.command == "b1-construction" else
+              "p1-revision" if args.command == "p1-revision" else
               "p1-real-sweep" if args.command == "p1-real-sweep" else
               "p1-real" if args.command == "p1-real" else "p1")
     output = args.output or ROOT / "results" / datetime.now(timezone.utc).strftime(
         prefix + "-%Y%m%dT%H%M%SZ")
+    if args.command == "b1-construction":
+        constructed = run_construction(args.config, output)
+        print(json.dumps({"output": str(output), "status": constructed["status"],
+                          "summary": constructed["summary"]},
+                         ensure_ascii=False, indent=2))
+        return
     if args.command == "p1-real-sweep":
         sweep = run_real_seed_sweep(args.config, output)
         print(json.dumps({"output": str(output), "gate_1": sweep["gate_1"],

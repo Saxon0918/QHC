@@ -1,7 +1,8 @@
-# Quantum-inspired hypergraph reconstruction (QHC)
+# Quantum-inspired hypergraph construction and reconstruction (QHC)
 
-This repository implements the **first, falsifiable P0/P1 stage** of the
-[research specification](docs/RESEARCH_PLAN.md). Its question is whether a
+This repository implements the P0/P1 recovery experiments and a separate B1
+latent-construction prototype under the
+[research specification](docs/RESEARCH_PLAN.md). P0/P1 asks whether a
 group-conditioned coherent quantum-walk response improves discrimination of
 recorded hyperedges from false clique candidates **after** strong classical
 structure and dynamics controls are supplied. It runs on a classical computer.
@@ -11,10 +12,10 @@ assumed.
 The plan has two separate targets. A reconstructs recorded hyperedges from a
 projected ordinary graph, using separately labelled training hypergraphs.
 B constructs a latent incidence matrix for downstream node tasks without
-ground-truth hyperedges. The current P1 code tests A's mechanism on independent
-synthetic graphs and on separately timed Cornell event datasets. It does
-**not** implement B, soft incidence, end-to-end candidate renewal, or claim
-that Gate 1/2 has passed.
+ground-truth hyperedges. P1 tests A's mechanism on independent synthetic
+graphs and separately timed Cornell event datasets. B1 constructs soft and
+hard latent groups from the allowed graph and tests them on fixed downstream
+node tasks. Neither stage claims that a scientific gate has passed.
 
 ## Run the first acceptance checks
 
@@ -141,6 +142,86 @@ hyperedge recovery improvement under the same candidates and selection rule.
 `docs/P0_P1_PROTOCOL.md` records the current decisions and limits. The shared
 P1 evaluator keeps test truth out of candidate and feature construction for
 both synthetic and temporal real-data runs.
+
+## Theory-led latent construction (B1)
+
+The [B1 mathematical protocol](docs/LATENT_CONSTRUCTION_THEORY.md) derives a
+soft incidence matrix from shared quantum-walk measurement destinations. It
+also derives a classical continuous-time Markov control that agrees through
+the first nontrivial short-time term. Small graphs also receive a second
+classical control matched to the quantum kernel's total mixing trace. A
+mass-conserving sparse approximation
+keeps a fixed set of destinations and their top-k node weights, with singleton
+residuals; it remains a valid normalized hypergraph operator with a spectral
+error upper bound. A separate local-neighborhood candidate pool permits
+nonclique hard groups. Both quantum and classical kernels use exactly the same
+pool, landmark IDs, budgets, times, features, splits and downstream decoder.
+Hard candidates default to topology only; `hard.use_features: true` adds
+mutual-kNN positive-cosine feature links to the local proposal graph, and
+must be reported as a separate input-information ablation.
+
+```bash
+python main.py b1-construction --config configs/b1_construction_smoke.yaml
+python main.py b1-construction --config configs/b1_construction_trace_pilot.yaml
+python main.py b1-construction --config configs/b1_construction_cluster_pilot.yaml
+```
+
+The first CPU run has three independently drawn graphs in each of group-generated,
+pairwise-only and heterophilous regimes. It reports test Macro-F1 and LogLoss,
+operator error, storage counts, timings and sampled RSS in
+`results/RUN_ID/report.json`. The three graphs per regime are an engineering
+and negative-control check, not enough to claim generalization. Direct
+quantum/Markov weighted graph kernels and ordinary graph propagation are
+included. Linear HGNN propagation on the full soft incidence is exactly the
+same as direct propagation with its induced weighted graph; the code tests
+that identity. A classification change does not prove recorded event recovery
+or irreducible multi-body interaction.
+The second config uses five new graphs per regime and chooses the *nearest*
+time from a
+predeclared grid solely by matching the original graph's average diagonal
+propagation strength. Its selection uses no node labels and records the cost
+of computing every candidate time. It is still an exploratory synthetic
+pilot, not a real-data confirmation. The third config uses five further new
+graphs per regime and compares a four-group Ward merge of measurement
+destinations with top-k sparsification at a similar incidence-entry budget.
+The merge has an exact covariance error identity but requires the full
+transport matrix, so it is a small-graph diagnostic.
+The observed numbers and their limits are written in the
+[B1 pilot results](docs/B1_PILOT_RESULTS.md).
+
+For a real node-classification pilot, use
+`configs/b1_construction_npz.yaml` on the server. It expects each `.npz` to
+contain `features` (N×D), `labels` (N), and disjoint `train_idx`,
+`validation_idx`, `test_idx` arrays. Supply `adjacency` as a dense N×N array
+or four CSR arrays named `adjacency_data`, `adjacency_indices`,
+`adjacency_indptr`, `adjacency_shape`. A CSR feature matrix can likewise use
+`features_data/indices/indptr/shape`. The B1 loader never downloads a dataset
+or invents a split. Preserve the source dataset's standard masks where
+available, record its license and preprocessing, and keep test labels sealed
+until the final metrics. The NPZ config computes only selected transport
+columns above 128 nodes, avoiding a full dense quantum propagator; the
+exact full-kernel and hard-compression arms are then explicitly omitted.
+
+If a PyTorch-compatible `torch-geometric` installation is available on the
+server, the optional exporter below downloads the public-split Planetoid
+Cora graph and writes the exact NPZ schema plus a checksum manifest. It does
+not create hyperedge labels. Keep the official source and package version in
+the manifest; CiteSeer and PubMed are also supported by `--dataset`, with the
+config's NPZ path changed accordingly.
+
+```bash
+python scripts/prepare_b1_planetoid.py --dataset Cora --output data/processed/cora_b1.npz
+python main.py b1-construction --config configs/b1_construction_npz.yaml
+```
+
+The B1 output directory stores the resolved config, source hashes, split
+indices, constructed incidence and operator matrices, per-graph scores and
+resource records. Family construction times exclude shared input/Hamiltonian
+preparation and downstream classifier fitting; the report also gives a
+whole-run processing time and sampled stage RSS. Very brief allocation peaks
+can be missed. `results/` is Git-ignored because large experiment outputs
+should be selected for versioning deliberately. The B1 code does not modify
+any P1 recovery protocol or prior result.
 
 ## Theory-led P1 revision
 

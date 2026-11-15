@@ -1,0 +1,5699 @@
+{
+  "config_sha256": "d5e1a77d152c777e43e7e775904350efdf7be6146fedc22bea5b19b696501728",
+  "environment": {
+    "numpy": "1.24.4",
+    "platform": "macOS-26.7.3-x86_64-i386-64bit",
+    "psutil": "5.9.0",
+    "python": "3.9.19",
+    "scikit_learn": "1.3.0",
+    "scipy": "1.12.0"
+  },
+  "graphs": [
+    {
+      "dense_reference_computed": true,
+      "family_construction_costs": {
+        "markov": {
+          "kernel_precompute_seconds": 0.0028195480000001716,
+          "post_kernel_construction_diagnostics_io_seconds": 0.20695737900000033,
+          "total_construction_excluding_shared_seconds": 0.2097769270000005
+        },
+        "quantum": {
+          "kernel_precompute_seconds": 0.008735785000000273,
+          "post_kernel_construction_diagnostics_io_seconds": 0.20111546300000027,
+          "total_construction_excluding_shared_seconds": 0.20985124800000055
+        },
+        "spread_markov": {
+          "kernel_precompute_seconds": 0.00445939399999995,
+          "post_kernel_construction_diagnostics_io_seconds": 0.19533789599999984,
+          "total_construction_excluding_shared_seconds": 0.1997972899999998
+        }
+      },
+      "graph_id": "group-11",
+      "graph_processing_seconds_excluding_data_creation": 0.938702202,
+      "kernel_comparison": {
+        "quantum_minus_markov_fro": 0.04996436393497295,
+        "quantum_minus_markov_max_abs": 0.014398857243315022,
+        "quantum_minus_spread_markov_fro": 0.04707842623778442,
+        "spread_markov_generator_times": [
+          0.5633584701199194,
+          2.2631429361705653,
+          9.163321716507166
+        ]
+      },
+      "landmark_ids": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        8,
+        10,
+        12,
+        14,
+        17,
+        18,
+        19,
+        20,
+        22,
+        24,
+        27,
+        28,
+        29,
+        31,
+        32,
+        37,
+        41,
+        44,
+        45
+      ],
+      "metadata": {
+        "class_sizes": [
+          16,
+          16,
+          16
+        ],
+        "feature_dim": 8,
+        "matched_reference_cross": 9,
+        "matched_reference_edges": 167,
+        "matched_reference_within_by_class": [
+          52,
+          56,
+          50
+        ],
+        "n_classes": 3,
+        "n_nodes": 48,
+        "parameters": {
+          "background_cross": 0.02,
+          "background_within": 0.03,
+          "feature_noise_std": 1.4,
+          "feature_signal": 1.0,
+          "group_size": 4,
+          "groups_per_node": 0.6,
+          "heterophily_cross": 0.20052083333333334,
+          "heterophily_within": 0.03611111111111111,
+          "heterophily_within_density_ratio": 0.25,
+          "pairwise_cross_marginal": 0.01171875,
+          "pairwise_null": "uniform fixed counts by class and cross-class",
+          "pairwise_within_marginal_by_class": [
+            0.43333333333333335,
+            0.4666666666666667,
+            0.4166666666666667
+          ]
+        },
+        "realized_edges": 167,
+        "regime": "group",
+        "seed": 11
+      },
+      "regime": "group",
+      "test_idx": [
+        0,
+        5,
+        6,
+        17,
+        22,
+        23,
+        26,
+        30,
+        34,
+        35,
+        36,
+        45
+      ],
+      "time_selection": {
+        "policy": "fixed"
+      },
+      "train_idx": [
+        1,
+        3,
+        4,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        18,
+        19,
+        24,
+        25,
+        28,
+        29,
+        31,
+        37,
+        38,
+        40,
+        42,
+        43,
+        44
+      ],
+      "validation_idx": [
+        2,
+        9,
+        16,
+        20,
+        21,
+        27,
+        32,
+        33,
+        39,
+        41,
+        46,
+        47
+      ]
+    },
+    {
+      "dense_reference_computed": true,
+      "family_construction_costs": {
+        "markov": {
+          "kernel_precompute_seconds": 0.0010092710000000338,
+          "post_kernel_construction_diagnostics_io_seconds": 0.19521920500000034,
+          "total_construction_excluding_shared_seconds": 0.19622847600000037
+        },
+        "quantum": {
+          "kernel_precompute_seconds": 0.001668845999999835,
+          "post_kernel_construction_diagnostics_io_seconds": 0.19384054399999995,
+          "total_construction_excluding_shared_seconds": 0.19550938999999978
+        },
+        "spread_markov": {
+          "kernel_precompute_seconds": 0.0033760539999998507,
+          "post_kernel_construction_diagnostics_io_seconds": 0.20092498700000005,
+          "total_construction_excluding_shared_seconds": 0.2043010409999999
+        }
+      },
+      "graph_id": "group-23",
+      "graph_processing_seconds_excluding_data_creation": 0.9011939689999995,
+      "kernel_comparison": {
+        "quantum_minus_markov_fro": 0.03787213789161328,
+        "quantum_minus_markov_max_abs": 0.008648063239181436,
+        "quantum_minus_spread_markov_fro": 0.03603191048595241,
+        "spread_markov_generator_times": [
+          0.5630719444280952,
+          2.2589428874264503,
+          9.12645036949013
+        ]
+      },
+      "landmark_ids": [
+        1,
+        2,
+        5,
+        7,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        22,
+        23,
+        25,
+        29,
+        30,
+        34,
+        35,
+        39,
+        41,
+        43,
+        44,
+        45,
+        47
+      ],
+      "metadata": {
+        "class_sizes": [
+          16,
+          16,
+          16
+        ],
+        "feature_dim": 8,
+        "matched_reference_cross": 15,
+        "matched_reference_edges": 175,
+        "matched_reference_within_by_class": [
+          53,
+          53,
+          54
+        ],
+        "n_classes": 3,
+        "n_nodes": 48,
+        "parameters": {
+          "background_cross": 0.02,
+          "background_within": 0.03,
+          "feature_noise_std": 1.4,
+          "feature_signal": 1.0,
+          "group_size": 4,
+          "groups_per_node": 0.6,
+          "heterophily_cross": 0.20963541666666666,
+          "heterophily_within": 0.03888888888888889,
+          "heterophily_within_density_ratio": 0.25,
+          "pairwise_cross_marginal": 0.01953125,
+          "pairwise_null": "uniform fixed counts by class and cross-class",
+          "pairwise_within_marginal_by_class": [
+            0.44166666666666665,
+            0.44166666666666665,
+            0.45
+          ]
+        },
+        "realized_edges": 175,
+        "regime": "group",
+        "seed": 23
+      },
+      "regime": "group",
+      "test_idx": [
+        0,
+        10,
+        11,
+        13,
+        14,
+        16,
+        18,
+        26,
+        32,
+        34,
+        44,
+        46
+      ],
+      "time_selection": {
+        "policy": "fixed"
+      },
+      "train_idx": [
+        1,
+        3,
+        4,
+        6,
+        8,
+        9,
+        15,
+        17,
+        19,
+        20,
+        22,
+        23,
+        25,
+        27,
+        29,
+        33,
+        35,
+        38,
+        40,
+        41,
+        42,
+        43,
+        45,
+        47
+      ],
+      "validation_idx": [
+        2,
+        5,
+        7,
+        12,
+        21,
+        24,
+        28,
+        30,
+        31,
+        36,
+        37,
+        39
+      ]
+    },
+    {
+      "dense_reference_computed": true,
+      "family_construction_costs": {
+        "markov": {
+          "kernel_precompute_seconds": 0.0009754810000002223,
+          "post_kernel_construction_diagnostics_io_seconds": 0.171788544,
+          "total_construction_excluding_shared_seconds": 0.1727640250000002
+        },
+        "quantum": {
+          "kernel_precompute_seconds": 0.0016173789999998078,
+          "post_kernel_construction_diagnostics_io_seconds": 0.1829725299999998,
+          "total_construction_excluding_shared_seconds": 0.1845899089999996
+        },
+        "spread_markov": {
+          "kernel_precompute_seconds": 0.005315062999999398,
+          "post_kernel_construction_diagnostics_io_seconds": 0.23731449699999985,
+          "total_construction_excluding_shared_seconds": 0.24262955999999924
+        }
+      },
+      "graph_id": "group-37",
+      "graph_processing_seconds_excluding_data_creation": 0.9572358960000003,
+      "kernel_comparison": {
+        "quantum_minus_markov_fro": 0.04206700665209436,
+        "quantum_minus_markov_max_abs": 0.009316933832403396,
+        "quantum_minus_spread_markov_fro": 0.03709779963076929,
+        "spread_markov_generator_times": [
+          0.5633921226450341,
+          2.264017041954339,
+          9.201487659144219
+        ]
+      },
+      "landmark_ids": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        18,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        28,
+        34,
+        35,
+        37,
+        38,
+        39,
+        41,
+        43,
+        45,
+        47
+      ],
+      "metadata": {
+        "class_sizes": [
+          16,
+          16,
+          16
+        ],
+        "feature_dim": 8,
+        "matched_reference_cross": 14,
+        "matched_reference_edges": 167,
+        "matched_reference_within_by_class": [
+          50,
+          52,
+          51
+        ],
+        "n_classes": 3,
+        "n_nodes": 48,
+        "parameters": {
+          "background_cross": 0.02,
+          "background_within": 0.03,
+          "feature_noise_std": 1.4,
+          "feature_signal": 1.0,
+          "group_size": 4,
+          "groups_per_node": 0.6,
+          "heterophily_cross": 0.20052083333333334,
+          "heterophily_within": 0.03611111111111111,
+          "heterophily_within_density_ratio": 0.25,
+          "pairwise_cross_marginal": 0.018229166666666668,
+          "pairwise_null": "uniform fixed counts by class and cross-class",
+          "pairwise_within_marginal_by_class": [
+            0.4166666666666667,
+            0.43333333333333335,
+            0.425
+          ]
+        },
+        "realized_edges": 167,
+        "regime": "group",
+        "seed": 37
+      },
+      "regime": "group",
+      "test_idx": [
+        4,
+        6,
+        7,
+        14,
+        27,
+        28,
+        31,
+        35,
+        38,
+        39,
+        42,
+        46
+      ],
+      "time_selection": {
+        "policy": "fixed"
+      },
+      "train_idx": [
+        0,
+        2,
+        5,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        19,
+        20,
+        21,
+        23,
+        24,
+        25,
+        26,
+        30,
+        34,
+        36,
+        37,
+        40,
+        44,
+        45,
+        47
+      ],
+      "validation_idx": [
+        1,
+        3,
+        13,
+        16,
+        17,
+        18,
+        22,
+        29,
+        32,
+        33,
+        41,
+        43
+      ]
+    },
+    {
+      "dense_reference_computed": true,
+      "family_construction_costs": {
+        "markov": {
+          "kernel_precompute_seconds": 0.0018724109999999072,
+          "post_kernel_construction_diagnostics_io_seconds": 0.20422288500000008,
+          "total_construction_excluding_shared_seconds": 0.20609529599999998
+        },
+        "quantum": {
+          "kernel_precompute_seconds": 0.0022980510000003562,
+          "post_kernel_construction_diagnostics_io_seconds": 0.21661033899999982,
+          "total_construction_excluding_shared_seconds": 0.21890839000000017
+        },
+        "spread_markov": {
+          "kernel_precompute_seconds": 0.0048586390000000534,
+          "post_kernel_construction_diagnostics_io_seconds": 0.22910141399999961,
+          "total_construction_excluding_shared_seconds": 0.23396005299999967
+        }
+      },
+      "graph_id": "pairwise-11",
+      "graph_processing_seconds_excluding_data_creation": 1.001793976,
+      "kernel_comparison": {
+        "quantum_minus_markov_fro": 0.04595731566204202,
+        "quantum_minus_markov_max_abs": 0.013588701206251663,
+        "quantum_minus_spread_markov_fro": 0.04353739357711151,
+        "spread_markov_generator_times": [
+          0.5632080644010743,
+          2.261142802835003,
+          9.163782953185628
+        ]
+      },
+      "landmark_ids": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        8,
+        10,
+        12,
+        14,
+        17,
+        18,
+        19,
+        20,
+        22,
+        24,
+        27,
+        28,
+        29,
+        31,
+        32,
+        37,
+        41,
+        44,
+        45
+      ],
+      "metadata": {
+        "class_sizes": [
+          16,
+          16,
+          16
+        ],
+        "feature_dim": 8,
+        "matched_reference_cross": 9,
+        "matched_reference_edges": 167,
+        "matched_reference_within_by_class": [
+          52,
+          56,
+          50
+        ],
+        "n_classes": 3,
+        "n_nodes": 48,
+        "parameters": {
+          "background_cross": 0.02,
+          "background_within": 0.03,
+          "feature_noise_std": 1.4,
+          "feature_signal": 1.0,
+          "group_size": 4,
+          "groups_per_node": 0.6,
+          "heterophily_cross": 0.20052083333333334,
+          "heterophily_within": 0.03611111111111111,
+          "heterophily_within_density_ratio": 0.25,
+          "pairwise_cross_marginal": 0.01171875,
+          "pairwise_null": "uniform fixed counts by class and cross-class",
+          "pairwise_within_marginal_by_class": [
+            0.43333333333333335,
+            0.4666666666666667,
+            0.4166666666666667
+          ]
+        },
+        "realized_edges": 167,
+        "regime": "pairwise",
+        "seed": 11
+      },
+      "regime": "pairwise",
+      "test_idx": [
+        0,
+        5,
+        6,
+        17,
+        22,
+        23,
+        26,
+        30,
+        34,
+        35,
+        36,
+        45
+      ],
+      "time_selection": {
+        "policy": "fixed"
+      },
+      "train_idx": [
+        1,
+        3,
+        4,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        18,
+        19,
+        24,
+        25,
+        28,
+        29,
+        31,
+        37,
+        38,
+        40,
+        42,
+        43,
+        44
+      ],
+      "validation_idx": [
+        2,
+        9,
+        16,
+        20,
+        21,
+        27,
+        32,
+        33,
+        39,
+        41,
+        46,
+        47
+      ]
+    },
+    {
+      "dense_reference_computed": true,
+      "family_construction_costs": {
+        "markov": {
+          "kernel_precompute_seconds": 0.001658121000000179,
+          "post_kernel_construction_diagnostics_io_seconds": 0.264333218,
+          "total_construction_excluding_shared_seconds": 0.26599133900000016
+        },
+        "quantum": {
+          "kernel_precompute_seconds": 0.002218660000000483,
+          "post_kernel_construction_diagnostics_io_seconds": 0.33437786500000044,
+          "total_construction_excluding_shared_seconds": 0.3365965250000009
+        },
+        "spread_markov": {
+          "kernel_precompute_seconds": 0.006653625000000218,
+          "post_kernel_construction_diagnostics_io_seconds": 0.2568378329999996,
+          "total_construction_excluding_shared_seconds": 0.26349145799999985
+        }
+      },
+      "graph_id": "pairwise-23",
+      "graph_processing_seconds_excluding_data_creation": 1.1941932079999997,
+      "kernel_comparison": {
+        "quantum_minus_markov_fro": 0.03498928928568657,
+        "quantum_minus_markov_max_abs": 0.004500851123656058,
+        "quantum_minus_spread_markov_fro": 0.0336931622921985,
+        "spread_markov_generator_times": [
+          0.5629626743650389,
+          2.257374858578,
+          9.115027310708419
+        ]
+      },
+      "landmark_ids": [
+        1,
+        2,
+        5,
+        7,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        22,
+        23,
+        25,
+        29,
+        30,
+        34,
+        35,
+        39,
+        41,
+        43,
+        44,
+        45,
+        47
+      ],
+      "metadata": {
+        "class_sizes": [
+          16,
+          16,
+          16
+        ],
+        "feature_dim": 8,
+        "matched_reference_cross": 15,
+        "matched_reference_edges": 175,
+        "matched_reference_within_by_class": [
+          53,
+          53,
+          54
+        ],
+        "n_classes": 3,
+        "n_nodes": 48,
+        "parameters": {
+          "background_cross": 0.02,
+          "background_within": 0.03,
+          "feature_noise_std": 1.4,
+          "feature_signal": 1.0,
+          "group_size": 4,
+          "groups_per_node": 0.6,
+          "heterophily_cross": 0.20963541666666666,
+          "heterophily_within": 0.03888888888888889,
+          "heterophily_within_density_ratio": 0.25,
+          "pairwise_cross_marginal": 0.01953125,
+          "pairwise_null": "uniform fixed counts by class and cross-class",
+          "pairwise_within_marginal_by_class": [
+            0.44166666666666665,
+            0.44166666666666665,
+            0.45
+          ]
+        },
+        "realized_edges": 175,
+        "regime": "pairwise",
+        "seed": 23
+      },
+      "regime": "pairwise",
+      "test_idx": [
+        0,
+        10,
+        11,
+        13,
+        14,
+        16,
+        18,
+        26,
+        32,
+        34,
+        44,
+        46
+      ],
+      "time_selection": {
+        "policy": "fixed"
+      },
+      "train_idx": [
+        1,
+        3,
+        4,
+        6,
+        8,
+        9,
+        15,
+        17,
+        19,
+        20,
+        22,
+        23,
+        25,
+        27,
+        29,
+        33,
+        35,
+        38,
+        40,
+        41,
+        42,
+        43,
+        45,
+        47
+      ],
+      "validation_idx": [
+        2,
+        5,
+        7,
+        12,
+        21,
+        24,
+        28,
+        30,
+        31,
+        36,
+        37,
+        39
+      ]
+    },
+    {
+      "dense_reference_computed": true,
+      "family_construction_costs": {
+        "markov": {
+          "kernel_precompute_seconds": 0.0012817670000000447,
+          "post_kernel_construction_diagnostics_io_seconds": 0.2150124,
+          "total_construction_excluding_shared_seconds": 0.21629416700000004
+        },
+        "quantum": {
+          "kernel_precompute_seconds": 0.0017877589999999444,
+          "post_kernel_construction_diagnostics_io_seconds": 0.21047619500000003,
+          "total_construction_excluding_shared_seconds": 0.21226395399999998
+        },
+        "spread_markov": {
+          "kernel_precompute_seconds": 0.0037541929999997947,
+          "post_kernel_construction_diagnostics_io_seconds": 0.21539033600000046,
+          "total_construction_excluding_shared_seconds": 0.21914452900000025
+        }
+      },
+      "graph_id": "pairwise-37",
+      "graph_processing_seconds_excluding_data_creation": 0.9854690460000004,
+      "kernel_comparison": {
+        "quantum_minus_markov_fro": 0.04273085569426027,
+        "quantum_minus_markov_max_abs": 0.008282360301746783,
+        "quantum_minus_spread_markov_fro": 0.03896079113273895,
+        "spread_markov_generator_times": [
+          0.5632781703431085,
+          2.2623481681909676,
+          9.187458143547069
+        ]
+      },
+      "landmark_ids": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        18,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        28,
+        34,
+        35,
+        37,
+        38,
+        39,
+        41,
+        43,
+        45,
+        47
+      ],
+      "metadata": {
+        "class_sizes": [
+          16,
+          16,
+          16
+        ],
+        "feature_dim": 8,
+        "matched_reference_cross": 14,
+        "matched_reference_edges": 167,
+        "matched_reference_within_by_class": [
+          50,
+          52,
+          51
+        ],
+        "n_classes": 3,
+        "n_nodes": 48,
+        "parameters": {
+          "background_cross": 0.02,
+          "background_within": 0.03,
+          "feature_noise_std": 1.4,
+          "feature_signal": 1.0,
+          "group_size": 4,
+          "groups_per_node": 0.6,
+          "heterophily_cross": 0.20052083333333334,
+          "heterophily_within": 0.03611111111111111,
+          "heterophily_within_density_ratio": 0.25,
+          "pairwise_cross_marginal": 0.018229166666666668,
+          "pairwise_null": "uniform fixed counts by class and cross-class",
+          "pairwise_within_marginal_by_class": [
+            0.4166666666666667,
+            0.43333333333333335,
+            0.425
+          ]
+        },
+        "realized_edges": 167,
+        "regime": "pairwise",
+        "seed": 37
+      },
+      "regime": "pairwise",
+      "test_idx": [
+        4,
+        6,
+        7,
+        14,
+        27,
+        28,
+        31,
+        35,
+        38,
+        39,
+        42,
+        46
+      ],
+      "time_selection": {
+        "policy": "fixed"
+      },
+      "train_idx": [
+        0,
+        2,
+        5,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        19,
+        20,
+        21,
+        23,
+        24,
+        25,
+        26,
+        30,
+        34,
+        36,
+        37,
+        40,
+        44,
+        45,
+        47
+      ],
+      "validation_idx": [
+        1,
+        3,
+        13,
+        16,
+        17,
+        18,
+        22,
+        29,
+        32,
+        33,
+        41,
+        43
+      ]
+    },
+    {
+      "dense_reference_computed": true,
+      "family_construction_costs": {
+        "markov": {
+          "kernel_precompute_seconds": 0.0008803070000009683,
+          "post_kernel_construction_diagnostics_io_seconds": 0.23051992700000135,
+          "total_construction_excluding_shared_seconds": 0.23140023400000231
+        },
+        "quantum": {
+          "kernel_precompute_seconds": 0.0015580139999986642,
+          "post_kernel_construction_diagnostics_io_seconds": 0.22788517999999947,
+          "total_construction_excluding_shared_seconds": 0.22944319399999813
+        },
+        "spread_markov": {
+          "kernel_precompute_seconds": 0.0037676129999990593,
+          "post_kernel_construction_diagnostics_io_seconds": 0.47389316199999953,
+          "total_construction_excluding_shared_seconds": 0.4776607749999986
+        }
+      },
+      "graph_id": "heterophily-11",
+      "graph_processing_seconds_excluding_data_creation": 1.3500530229999992,
+      "kernel_comparison": {
+        "quantum_minus_markov_fro": 0.048612382475107525,
+        "quantum_minus_markov_max_abs": 0.010449548006827403,
+        "quantum_minus_spread_markov_fro": 0.030194069152724445,
+        "spread_markov_generator_times": [
+          0.5640523688520224,
+          2.274877271231397,
+          9.395028820798903
+        ]
+      },
+      "landmark_ids": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        8,
+        10,
+        12,
+        14,
+        17,
+        18,
+        19,
+        20,
+        22,
+        24,
+        27,
+        28,
+        29,
+        31,
+        32,
+        37,
+        41,
+        44,
+        45
+      ],
+      "metadata": {
+        "class_sizes": [
+          16,
+          16,
+          16
+        ],
+        "feature_dim": 8,
+        "matched_reference_cross": 9,
+        "matched_reference_edges": 167,
+        "matched_reference_within_by_class": [
+          52,
+          56,
+          50
+        ],
+        "n_classes": 3,
+        "n_nodes": 48,
+        "parameters": {
+          "background_cross": 0.02,
+          "background_within": 0.03,
+          "feature_noise_std": 1.4,
+          "feature_signal": 1.0,
+          "group_size": 4,
+          "groups_per_node": 0.6,
+          "heterophily_cross": 0.20052083333333334,
+          "heterophily_within": 0.03611111111111111,
+          "heterophily_within_density_ratio": 0.25,
+          "pairwise_cross_marginal": 0.01171875,
+          "pairwise_null": "uniform fixed counts by class and cross-class",
+          "pairwise_within_marginal_by_class": [
+            0.43333333333333335,
+            0.4666666666666667,
+            0.4166666666666667
+          ]
+        },
+        "realized_edges": 167,
+        "regime": "heterophily",
+        "seed": 11
+      },
+      "regime": "heterophily",
+      "test_idx": [
+        0,
+        5,
+        6,
+        17,
+        22,
+        23,
+        26,
+        30,
+        34,
+        35,
+        36,
+        45
+      ],
+      "time_selection": {
+        "policy": "fixed"
+      },
+      "train_idx": [
+        1,
+        3,
+        4,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        18,
+        19,
+        24,
+        25,
+        28,
+        29,
+        31,
+        37,
+        38,
+        40,
+        42,
+        43,
+        44
+      ],
+      "validation_idx": [
+        2,
+        9,
+        16,
+        20,
+        21,
+        27,
+        32,
+        33,
+        39,
+        41,
+        46,
+        47
+      ]
+    },
+    {
+      "dense_reference_computed": true,
+      "family_construction_costs": {
+        "markov": {
+          "kernel_precompute_seconds": 0.0012987799999990557,
+          "post_kernel_construction_diagnostics_io_seconds": 0.3104649930000001,
+          "total_construction_excluding_shared_seconds": 0.31176377299999913
+        },
+        "quantum": {
+          "kernel_precompute_seconds": 0.002911230999998793,
+          "post_kernel_construction_diagnostics_io_seconds": 0.3287655170000008,
+          "total_construction_excluding_shared_seconds": 0.3316767479999996
+        },
+        "spread_markov": {
+          "kernel_precompute_seconds": 0.007454493000000895,
+          "post_kernel_construction_diagnostics_io_seconds": 0.273087168,
+          "total_construction_excluding_shared_seconds": 0.2805416610000009
+        }
+      },
+      "graph_id": "heterophily-23",
+      "graph_processing_seconds_excluding_data_creation": 1.4153376219999991,
+      "kernel_comparison": {
+        "quantum_minus_markov_fro": 0.04408887874791018,
+        "quantum_minus_markov_max_abs": 0.009856190851544211,
+        "quantum_minus_spread_markov_fro": 0.027583373932126492,
+        "spread_markov_generator_times": [
+          0.5639104031887537,
+          2.272593763889163,
+          9.358695043861664
+        ]
+      },
+      "landmark_ids": [
+        1,
+        2,
+        5,
+        7,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        22,
+        23,
+        25,
+        29,
+        30,
+        34,
+        35,
+        39,
+        41,
+        43,
+        44,
+        45,
+        47
+      ],
+      "metadata": {
+        "class_sizes": [
+          16,
+          16,
+          16
+        ],
+        "feature_dim": 8,
+        "matched_reference_cross": 15,
+        "matched_reference_edges": 175,
+        "matched_reference_within_by_class": [
+          53,
+          53,
+          54
+        ],
+        "n_classes": 3,
+        "n_nodes": 48,
+        "parameters": {
+          "background_cross": 0.02,
+          "background_within": 0.03,
+          "feature_noise_std": 1.4,
+          "feature_signal": 1.0,
+          "group_size": 4,
+          "groups_per_node": 0.6,
+          "heterophily_cross": 0.20963541666666666,
+          "heterophily_within": 0.03888888888888889,
+          "heterophily_within_density_ratio": 0.25,
+          "pairwise_cross_marginal": 0.01953125,
+          "pairwise_null": "uniform fixed counts by class and cross-class",
+          "pairwise_within_marginal_by_class": [
+            0.44166666666666665,
+            0.44166666666666665,
+            0.45
+          ]
+        },
+        "realized_edges": 175,
+        "regime": "heterophily",
+        "seed": 23
+      },
+      "regime": "heterophily",
+      "test_idx": [
+        0,
+        10,
+        11,
+        13,
+        14,
+        16,
+        18,
+        26,
+        32,
+        34,
+        44,
+        46
+      ],
+      "time_selection": {
+        "policy": "fixed"
+      },
+      "train_idx": [
+        1,
+        3,
+        4,
+        6,
+        8,
+        9,
+        15,
+        17,
+        19,
+        20,
+        22,
+        23,
+        25,
+        27,
+        29,
+        33,
+        35,
+        38,
+        40,
+        41,
+        42,
+        43,
+        45,
+        47
+      ],
+      "validation_idx": [
+        2,
+        5,
+        7,
+        12,
+        21,
+        24,
+        28,
+        30,
+        31,
+        36,
+        37,
+        39
+      ]
+    },
+    {
+      "dense_reference_computed": true,
+      "family_construction_costs": {
+        "markov": {
+          "kernel_precompute_seconds": 0.0015955640000004934,
+          "post_kernel_construction_diagnostics_io_seconds": 0.30831078499999975,
+          "total_construction_excluding_shared_seconds": 0.30990634900000025
+        },
+        "quantum": {
+          "kernel_precompute_seconds": 0.01131540099999917,
+          "post_kernel_construction_diagnostics_io_seconds": 0.2950857669999998,
+          "total_construction_excluding_shared_seconds": 0.30640116799999895
+        },
+        "spread_markov": {
+          "kernel_precompute_seconds": 0.011397173000000649,
+          "post_kernel_construction_diagnostics_io_seconds": 0.2878066979999989,
+          "total_construction_excluding_shared_seconds": 0.29920387099999957
+        }
+      },
+      "graph_id": "heterophily-37",
+      "graph_processing_seconds_excluding_data_creation": 1.3324582249999999,
+      "kernel_comparison": {
+        "quantum_minus_markov_fro": 0.04538354131837012,
+        "quantum_minus_markov_max_abs": 0.011301760920983561,
+        "quantum_minus_spread_markov_fro": 0.028139277761703947,
+        "spread_markov_generator_times": [
+          0.5639487943001789,
+          2.273236993380883,
+          9.370724416446924
+        ]
+      },
+      "landmark_ids": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        11,
+        18,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        28,
+        34,
+        35,
+        37,
+        38,
+        39,
+        41,
+        43,
+        45,
+        47
+      ],
+      "metadata": {
+        "class_sizes": [
+          16,
+          16,
+          16
+        ],
+        "feature_dim": 8,
+        "matched_reference_cross": 14,
+        "matched_reference_edges": 167,
+        "matched_reference_within_by_class": [
+          50,
+          52,
+          51
+        ],
+        "n_classes": 3,
+        "n_nodes": 48,
+        "parameters": {
+          "background_cross": 0.02,
+          "background_within": 0.03,
+          "feature_noise_std": 1.4,
+          "feature_signal": 1.0,
+          "group_size": 4,
+          "groups_per_node": 0.6,
+          "heterophily_cross": 0.20052083333333334,
+          "heterophily_within": 0.03611111111111111,
+          "heterophily_within_density_ratio": 0.25,
+          "pairwise_cross_marginal": 0.018229166666666668,
+          "pairwise_null": "uniform fixed counts by class and cross-class",
+          "pairwise_within_marginal_by_class": [
+            0.4166666666666667,
+            0.43333333333333335,
+            0.425
+          ]
+        },
+        "realized_edges": 167,
+        "regime": "heterophily",
+        "seed": 37
+      },
+      "regime": "heterophily",
+      "test_idx": [
+        4,
+        6,
+        7,
+        14,
+        27,
+        28,
+        31,
+        35,
+        38,
+        39,
+        42,
+        46
+      ],
+      "time_selection": {
+        "policy": "fixed"
+      },
+      "train_idx": [
+        0,
+        2,
+        5,
+        8,
+        9,
+        10,
+        11,
+        12,
+        15,
+        19,
+        20,
+        21,
+        23,
+        24,
+        25,
+        26,
+        30,
+        34,
+        36,
+        37,
+        40,
+        44,
+        45,
+        47
+      ],
+      "validation_idx": [
+        1,
+        3,
+        13,
+        16,
+        17,
+        18,
+        22,
+        29,
+        32,
+        33,
+        41,
+        43
+      ]
+    }
+  ],
+  "mode": "synthetic",
+  "profile": {
+    "rss_peak_is_sampled": true,
+    "rss_sampling_interval_seconds": 0.02,
+    "stages": [
+      {
+        "name": "group-11/hamiltonian",
+        "peak_rss_bytes": 81633280,
+        "rss_end_bytes": 81633280,
+        "rss_start_bytes": 81473536,
+        "seconds": 0.002616624999999928
+      },
+      {
+        "name": "group-11/dense_quantum",
+        "peak_rss_bytes": 82599936,
+        "rss_end_bytes": 82599936,
+        "rss_start_bytes": 81637376,
+        "seconds": 0.008505632000000318
+      },
+      {
+        "name": "group-11/dense_markov",
+        "peak_rss_bytes": 83058688,
+        "rss_end_bytes": 83058688,
+        "rss_start_bytes": 82599936,
+        "seconds": 0.0026571259999998986
+      },
+      {
+        "name": "group-11/dense_spread_markov",
+        "peak_rss_bytes": 83353600,
+        "rss_end_bytes": 83353600,
+        "rss_start_bytes": 83058688,
+        "seconds": 0.004304731000000395
+      },
+      {
+        "name": "group-11/hard_candidates_shared",
+        "peak_rss_bytes": 83685376,
+        "rss_end_bytes": 83685376,
+        "rss_start_bytes": 83361792,
+        "seconds": 0.01672162499999974
+      },
+      {
+        "name": "group-11/quantum_soft_sparse",
+        "peak_rss_bytes": 83816448,
+        "rss_end_bytes": 83816448,
+        "rss_start_bytes": 83685376,
+        "seconds": 0.011397037000000054
+      },
+      {
+        "name": "group-11/quantum_hard",
+        "peak_rss_bytes": 84324352,
+        "rss_end_bytes": 84324352,
+        "rss_start_bytes": 83963904,
+        "seconds": 0.18242381399999985
+      },
+      {
+        "name": "group-11/markov_soft_sparse",
+        "peak_rss_bytes": 84357120,
+        "rss_end_bytes": 84357120,
+        "rss_start_bytes": 84328448,
+        "seconds": 0.010142722999999965
+      },
+      {
+        "name": "group-11/markov_hard",
+        "peak_rss_bytes": 84484096,
+        "rss_end_bytes": 84463616,
+        "rss_start_bytes": 84406272,
+        "seconds": 0.19042778300000007
+      },
+      {
+        "name": "group-11/spread_markov_soft_sparse",
+        "peak_rss_bytes": 84488192,
+        "rss_end_bytes": 84488192,
+        "rss_start_bytes": 84471808,
+        "seconds": 0.01046830700000001
+      },
+      {
+        "name": "group-11/spread_markov_hard",
+        "peak_rss_bytes": 84701184,
+        "rss_end_bytes": 84680704,
+        "rss_start_bytes": 84541440,
+        "seconds": 0.17799648899999987
+      },
+      {
+        "name": "group-11/evaluate/features_only",
+        "peak_rss_bytes": 85372928,
+        "rss_end_bytes": 85372928,
+        "rss_start_bytes": 84725760,
+        "seconds": 0.03103523000000008
+      },
+      {
+        "name": "group-11/evaluate/graph_gcn",
+        "peak_rss_bytes": 85438464,
+        "rss_end_bytes": 85417984,
+        "rss_start_bytes": 85372928,
+        "seconds": 0.02697739099999996
+      },
+      {
+        "name": "group-11/evaluate/quantum_direct",
+        "peak_rss_bytes": 85450752,
+        "rss_end_bytes": 85430272,
+        "rss_start_bytes": 85417984,
+        "seconds": 0.026469779000000138
+      },
+      {
+        "name": "group-11/evaluate/quantum_sparse",
+        "peak_rss_bytes": 85508096,
+        "rss_end_bytes": 85491712,
+        "rss_start_bytes": 85430272,
+        "seconds": 0.026937291999999946
+      },
+      {
+        "name": "group-11/evaluate/quantum_hard",
+        "peak_rss_bytes": 85544960,
+        "rss_end_bytes": 85524480,
+        "rss_start_bytes": 85491712,
+        "seconds": 0.027186739999999876
+      },
+      {
+        "name": "group-11/evaluate/markov_direct",
+        "peak_rss_bytes": 85557248,
+        "rss_end_bytes": 85536768,
+        "rss_start_bytes": 85524480,
+        "seconds": 0.02608853100000008
+      },
+      {
+        "name": "group-11/evaluate/markov_sparse",
+        "peak_rss_bytes": 85557248,
+        "rss_end_bytes": 85536768,
+        "rss_start_bytes": 85536768,
+        "seconds": 0.0251138580000001
+      },
+      {
+        "name": "group-11/evaluate/markov_hard",
+        "peak_rss_bytes": 85561344,
+        "rss_end_bytes": 85540864,
+        "rss_start_bytes": 85536768,
+        "seconds": 0.024920571000000002
+      },
+      {
+        "name": "group-11/evaluate/spread_markov_direct",
+        "peak_rss_bytes": 85561344,
+        "rss_end_bytes": 85561344,
+        "rss_start_bytes": 85540864,
+        "seconds": 0.02580241800000005
+      },
+      {
+        "name": "group-11/evaluate/spread_markov_sparse",
+        "peak_rss_bytes": 85602304,
+        "rss_end_bytes": 85581824,
+        "rss_start_bytes": 85561344,
+        "seconds": 0.026155772000000077
+      },
+      {
+        "name": "group-11/evaluate/spread_markov_hard",
+        "peak_rss_bytes": 85602304,
+        "rss_end_bytes": 85581824,
+        "rss_start_bytes": 85581824,
+        "seconds": 0.02566541599999983
+      },
+      {
+        "name": "group-23/hamiltonian",
+        "peak_rss_bytes": 85581824,
+        "rss_end_bytes": 85581824,
+        "rss_start_bytes": 85581824,
+        "seconds": 0.0028529559999999066
+      },
+      {
+        "name": "group-23/dense_quantum",
+        "peak_rss_bytes": 85594112,
+        "rss_end_bytes": 85594112,
+        "rss_start_bytes": 85581824,
+        "seconds": 0.00150044100000013
+      },
+      {
+        "name": "group-23/dense_markov",
+        "peak_rss_bytes": 85688320,
+        "rss_end_bytes": 85688320,
+        "rss_start_bytes": 85594112,
+        "seconds": 0.0008791299999999502
+      },
+      {
+        "name": "group-23/dense_spread_markov",
+        "peak_rss_bytes": 85835776,
+        "rss_end_bytes": 85835776,
+        "rss_start_bytes": 85688320,
+        "seconds": 0.003175217000000341
+      },
+      {
+        "name": "group-23/hard_candidates_shared",
+        "peak_rss_bytes": 85979136,
+        "rss_end_bytes": 85979136,
+        "rss_start_bytes": 85835776,
+        "seconds": 0.01950597399999987
+      },
+      {
+        "name": "group-23/quantum_soft_sparse",
+        "peak_rss_bytes": 85991424,
+        "rss_end_bytes": 85991424,
+        "rss_start_bytes": 85979136,
+        "seconds": 0.012189945000000257
+      },
+      {
+        "name": "group-23/quantum_hard",
+        "peak_rss_bytes": 86102016,
+        "rss_end_bytes": 86097920,
+        "rss_start_bytes": 86016000,
+        "seconds": 0.17577114000000016
+      },
+      {
+        "name": "group-23/markov_soft_sparse",
+        "peak_rss_bytes": 86102016,
+        "rss_end_bytes": 86102016,
+        "rss_start_bytes": 86097920,
+        "seconds": 0.007827865000000322
+      },
+      {
+        "name": "group-23/markov_hard",
+        "peak_rss_bytes": 86159360,
+        "rss_end_bytes": 86155264,
+        "rss_start_bytes": 86102016,
+        "seconds": 0.179599509
+      },
+      {
+        "name": "group-23/spread_markov_soft_sparse",
+        "peak_rss_bytes": 86155264,
+        "rss_end_bytes": 86155264,
+        "rss_start_bytes": 86155264,
+        "seconds": 0.010733601000000093
+      },
+      {
+        "name": "group-23/spread_markov_hard",
+        "peak_rss_bytes": 86220800,
+        "rss_end_bytes": 86200320,
+        "rss_start_bytes": 86200320,
+        "seconds": 0.18361065099999996
+      },
+      {
+        "name": "group-23/evaluate/features_only",
+        "peak_rss_bytes": 86200320,
+        "rss_end_bytes": 86200320,
+        "rss_start_bytes": 86200320,
+        "seconds": 0.023315702000000105
+      },
+      {
+        "name": "group-23/evaluate/graph_gcn",
+        "peak_rss_bytes": 86200320,
+        "rss_end_bytes": 86200320,
+        "rss_start_bytes": 86200320,
+        "seconds": 0.02508162700000005
+      },
+      {
+        "name": "group-23/evaluate/quantum_direct",
+        "peak_rss_bytes": 86212608,
+        "rss_end_bytes": 86212608,
+        "rss_start_bytes": 86200320,
+        "seconds": 0.025718265999999712
+      },
+      {
+        "name": "group-23/evaluate/quantum_sparse",
+        "peak_rss_bytes": 86237184,
+        "rss_end_bytes": 86216704,
+        "rss_start_bytes": 86212608,
+        "seconds": 0.02530998100000037
+      },
+      {
+        "name": "group-23/evaluate/quantum_hard",
+        "peak_rss_bytes": 86216704,
+        "rss_end_bytes": 86216704,
+        "rss_start_bytes": 86216704,
+        "seconds": 0.02523475499999961
+      },
+      {
+        "name": "group-23/evaluate/markov_direct",
+        "peak_rss_bytes": 86237184,
+        "rss_end_bytes": 86216704,
+        "rss_start_bytes": 86216704,
+        "seconds": 0.0250164810000002
+      },
+      {
+        "name": "group-23/evaluate/markov_sparse",
+        "peak_rss_bytes": 86249472,
+        "rss_end_bytes": 86228992,
+        "rss_start_bytes": 86216704,
+        "seconds": 0.0254942929999995
+      },
+      {
+        "name": "group-23/evaluate/markov_hard",
+        "peak_rss_bytes": 86233088,
+        "rss_end_bytes": 86233088,
+        "rss_start_bytes": 86228992,
+        "seconds": 0.025801122999999926
+      },
+      {
+        "name": "group-23/evaluate/spread_markov_direct",
+        "peak_rss_bytes": 86233088,
+        "rss_end_bytes": 86233088,
+        "rss_start_bytes": 86233088,
+        "seconds": 0.023902656000000633
+      },
+      {
+        "name": "group-23/evaluate/spread_markov_sparse",
+        "peak_rss_bytes": 86249472,
+        "rss_end_bytes": 86249472,
+        "rss_start_bytes": 86233088,
+        "seconds": 0.024451394000000626
+      },
+      {
+        "name": "group-23/evaluate/spread_markov_hard",
+        "peak_rss_bytes": 86278144,
+        "rss_end_bytes": 86257664,
+        "rss_start_bytes": 86249472,
+        "seconds": 0.0264443399999994
+      },
+      {
+        "name": "group-37/hamiltonian",
+        "peak_rss_bytes": 86257664,
+        "rss_end_bytes": 86257664,
+        "rss_start_bytes": 86257664,
+        "seconds": 0.002689969000000403
+      },
+      {
+        "name": "group-37/dense_quantum",
+        "peak_rss_bytes": 86257664,
+        "rss_end_bytes": 86257664,
+        "rss_start_bytes": 86257664,
+        "seconds": 0.001448615000000153
+      },
+      {
+        "name": "group-37/dense_markov",
+        "peak_rss_bytes": 86257664,
+        "rss_end_bytes": 86257664,
+        "rss_start_bytes": 86257664,
+        "seconds": 0.0008287630000003432
+      },
+      {
+        "name": "group-37/dense_spread_markov",
+        "peak_rss_bytes": 86331392,
+        "rss_end_bytes": 86331392,
+        "rss_start_bytes": 86257664,
+        "seconds": 0.005102975000000676
+      },
+      {
+        "name": "group-37/hard_candidates_shared",
+        "peak_rss_bytes": 86425600,
+        "rss_end_bytes": 86425600,
+        "rss_start_bytes": 86331392,
+        "seconds": 0.018445562000000137
+      },
+      {
+        "name": "group-37/quantum_soft_sparse",
+        "peak_rss_bytes": 86437888,
+        "rss_end_bytes": 86437888,
+        "rss_start_bytes": 86425600,
+        "seconds": 0.01340681199999949
+      },
+      {
+        "name": "group-37/quantum_hard",
+        "peak_rss_bytes": 86495232,
+        "rss_end_bytes": 86478848,
+        "rss_start_bytes": 86437888,
+        "seconds": 0.16270633900000053
+      },
+      {
+        "name": "group-37/markov_soft_sparse",
+        "peak_rss_bytes": 86478848,
+        "rss_end_bytes": 86478848,
+        "rss_start_bytes": 86478848,
+        "seconds": 0.007733370000000406
+      },
+      {
+        "name": "group-37/markov_hard",
+        "peak_rss_bytes": 86515712,
+        "rss_end_bytes": 86495232,
+        "rss_start_bytes": 86478848,
+        "seconds": 0.15801178300000007
+      },
+      {
+        "name": "group-37/spread_markov_soft_sparse",
+        "peak_rss_bytes": 86499328,
+        "rss_end_bytes": 86499328,
+        "rss_start_bytes": 86495232,
+        "seconds": 0.011152080000000453
+      },
+      {
+        "name": "group-37/spread_markov_hard",
+        "peak_rss_bytes": 86519808,
+        "rss_end_bytes": 86499328,
+        "rss_start_bytes": 86499328,
+        "seconds": 0.2189161430000004
+      },
+      {
+        "name": "group-37/evaluate/features_only",
+        "peak_rss_bytes": 86519808,
+        "rss_end_bytes": 86499328,
+        "rss_start_bytes": 86499328,
+        "seconds": 0.03527854000000019
+      },
+      {
+        "name": "group-37/evaluate/graph_gcn",
+        "peak_rss_bytes": 86523904,
+        "rss_end_bytes": 86503424,
+        "rss_start_bytes": 86499328,
+        "seconds": 0.03162040499999996
+      },
+      {
+        "name": "group-37/evaluate/quantum_direct",
+        "peak_rss_bytes": 86532096,
+        "rss_end_bytes": 86511616,
+        "rss_start_bytes": 86503424,
+        "seconds": 0.027061449000000515
+      },
+      {
+        "name": "group-37/evaluate/quantum_sparse",
+        "peak_rss_bytes": 86515712,
+        "rss_end_bytes": 86515712,
+        "rss_start_bytes": 86511616,
+        "seconds": 0.029207803000000254
+      },
+      {
+        "name": "group-37/evaluate/quantum_hard",
+        "peak_rss_bytes": 86523904,
+        "rss_end_bytes": 86523904,
+        "rss_start_bytes": 86515712,
+        "seconds": 0.029268128000000004
+      },
+      {
+        "name": "group-37/evaluate/markov_direct",
+        "peak_rss_bytes": 86523904,
+        "rss_end_bytes": 86523904,
+        "rss_start_bytes": 86523904,
+        "seconds": 0.028195823000000786
+      },
+      {
+        "name": "group-37/evaluate/markov_sparse",
+        "peak_rss_bytes": 86548480,
+        "rss_end_bytes": 86528000,
+        "rss_start_bytes": 86523904,
+        "seconds": 0.03165272599999991
+      },
+      {
+        "name": "group-37/evaluate/markov_hard",
+        "peak_rss_bytes": 86548480,
+        "rss_end_bytes": 86528000,
+        "rss_start_bytes": 86528000,
+        "seconds": 0.030556999999999945
+      },
+      {
+        "name": "group-37/evaluate/spread_markov_direct",
+        "peak_rss_bytes": 86528000,
+        "rss_end_bytes": 86528000,
+        "rss_start_bytes": 86528000,
+        "seconds": 0.02822102599999976
+      },
+      {
+        "name": "group-37/evaluate/spread_markov_sparse",
+        "peak_rss_bytes": 86548480,
+        "rss_end_bytes": 86528000,
+        "rss_start_bytes": 86528000,
+        "seconds": 0.028445546000000377
+      },
+      {
+        "name": "group-37/evaluate/spread_markov_hard",
+        "peak_rss_bytes": 86532096,
+        "rss_end_bytes": 86532096,
+        "rss_start_bytes": 86528000,
+        "seconds": 0.02829416900000048
+      },
+      {
+        "name": "pairwise-11/hamiltonian",
+        "peak_rss_bytes": 86532096,
+        "rss_end_bytes": 86532096,
+        "rss_start_bytes": 86532096,
+        "seconds": 0.00306783899999985
+      },
+      {
+        "name": "pairwise-11/dense_quantum",
+        "peak_rss_bytes": 86568960,
+        "rss_end_bytes": 86568960,
+        "rss_start_bytes": 86532096,
+        "seconds": 0.002104812999999872
+      },
+      {
+        "name": "pairwise-11/dense_markov",
+        "peak_rss_bytes": 86568960,
+        "rss_end_bytes": 86568960,
+        "rss_start_bytes": 86568960,
+        "seconds": 0.001436441000000066
+      },
+      {
+        "name": "pairwise-11/dense_spread_markov",
+        "peak_rss_bytes": 86605824,
+        "rss_end_bytes": 86605824,
+        "rss_start_bytes": 86568960,
+        "seconds": 0.0045026969999995
+      },
+      {
+        "name": "pairwise-11/hard_candidates_shared",
+        "peak_rss_bytes": 86679552,
+        "rss_end_bytes": 86679552,
+        "rss_start_bytes": 86605824,
+        "seconds": 0.02192909700000012
+      },
+      {
+        "name": "pairwise-11/quantum_soft_sparse",
+        "peak_rss_bytes": 86691840,
+        "rss_end_bytes": 86691840,
+        "rss_start_bytes": 86679552,
+        "seconds": 0.015822717999999902
+      },
+      {
+        "name": "pairwise-11/quantum_hard",
+        "peak_rss_bytes": 86732800,
+        "rss_end_bytes": 86712320,
+        "rss_start_bytes": 86691840,
+        "seconds": 0.19281395600000018
+      },
+      {
+        "name": "pairwise-11/markov_soft_sparse",
+        "peak_rss_bytes": 86712320,
+        "rss_end_bytes": 86712320,
+        "rss_start_bytes": 86712320,
+        "seconds": 0.008977440999999864
+      },
+      {
+        "name": "pairwise-11/markov_hard",
+        "peak_rss_bytes": 86749184,
+        "rss_end_bytes": 86728704,
+        "rss_start_bytes": 86712320,
+        "seconds": 0.1885790070000004
+      },
+      {
+        "name": "pairwise-11/spread_markov_soft_sparse",
+        "peak_rss_bytes": 86728704,
+        "rss_end_bytes": 86728704,
+        "rss_start_bytes": 86728704,
+        "seconds": 0.01127098999999987
+      },
+      {
+        "name": "pairwise-11/spread_markov_hard",
+        "peak_rss_bytes": 86749184,
+        "rss_end_bytes": 86732800,
+        "rss_start_bytes": 86728704,
+        "seconds": 0.21000047199999994
+      },
+      {
+        "name": "pairwise-11/evaluate/features_only",
+        "peak_rss_bytes": 86740992,
+        "rss_end_bytes": 86740992,
+        "rss_start_bytes": 86732800,
+        "seconds": 0.028750561999999924
+      },
+      {
+        "name": "pairwise-11/evaluate/graph_gcn",
+        "peak_rss_bytes": 86740992,
+        "rss_end_bytes": 86740992,
+        "rss_start_bytes": 86740992,
+        "seconds": 0.024652455000000018
+      },
+      {
+        "name": "pairwise-11/evaluate/quantum_direct",
+        "peak_rss_bytes": 86740992,
+        "rss_end_bytes": 86740992,
+        "rss_start_bytes": 86740992,
+        "seconds": 0.025742040999999993
+      },
+      {
+        "name": "pairwise-11/evaluate/quantum_sparse",
+        "peak_rss_bytes": 86749184,
+        "rss_end_bytes": 86749184,
+        "rss_start_bytes": 86740992,
+        "seconds": 0.025520341000000002
+      },
+      {
+        "name": "pairwise-11/evaluate/quantum_hard",
+        "peak_rss_bytes": 86769664,
+        "rss_end_bytes": 86749184,
+        "rss_start_bytes": 86749184,
+        "seconds": 0.026147647000000163
+      },
+      {
+        "name": "pairwise-11/evaluate/markov_direct",
+        "peak_rss_bytes": 86769664,
+        "rss_end_bytes": 86749184,
+        "rss_start_bytes": 86749184,
+        "seconds": 0.031002713000000348
+      },
+      {
+        "name": "pairwise-11/evaluate/markov_sparse",
+        "peak_rss_bytes": 86749184,
+        "rss_end_bytes": 86749184,
+        "rss_start_bytes": 86749184,
+        "seconds": 0.027150230000000164
+      },
+      {
+        "name": "pairwise-11/evaluate/markov_hard",
+        "peak_rss_bytes": 86773760,
+        "rss_end_bytes": 86753280,
+        "rss_start_bytes": 86749184,
+        "seconds": 0.028365035000000205
+      },
+      {
+        "name": "pairwise-11/evaluate/spread_markov_direct",
+        "peak_rss_bytes": 86777856,
+        "rss_end_bytes": 86757376,
+        "rss_start_bytes": 86753280,
+        "seconds": 0.03105550899999976
+      },
+      {
+        "name": "pairwise-11/evaluate/spread_markov_sparse",
+        "peak_rss_bytes": 86757376,
+        "rss_end_bytes": 86757376,
+        "rss_start_bytes": 86757376,
+        "seconds": 0.027712571000000352
+      },
+      {
+        "name": "pairwise-11/evaluate/spread_markov_hard",
+        "peak_rss_bytes": 86781952,
+        "rss_end_bytes": 86761472,
+        "rss_start_bytes": 86757376,
+        "seconds": 0.03235007600000017
+      },
+      {
+        "name": "pairwise-23/hamiltonian",
+        "peak_rss_bytes": 86761472,
+        "rss_end_bytes": 86761472,
+        "rss_start_bytes": 86761472,
+        "seconds": 0.004455556000000804
+      },
+      {
+        "name": "pairwise-23/dense_quantum",
+        "peak_rss_bytes": 86761472,
+        "rss_end_bytes": 86761472,
+        "rss_start_bytes": 86761472,
+        "seconds": 0.0019805980000002776
+      },
+      {
+        "name": "pairwise-23/dense_markov",
+        "peak_rss_bytes": 86818816,
+        "rss_end_bytes": 86818816,
+        "rss_start_bytes": 86761472,
+        "seconds": 0.001456843000000596
+      },
+      {
+        "name": "pairwise-23/dense_spread_markov",
+        "peak_rss_bytes": 86855680,
+        "rss_end_bytes": 86855680,
+        "rss_start_bytes": 86818816,
+        "seconds": 0.006428871999999863
+      },
+      {
+        "name": "pairwise-23/hard_candidates_shared",
+        "peak_rss_bytes": 86900736,
+        "rss_end_bytes": 86900736,
+        "rss_start_bytes": 86855680,
+        "seconds": 0.02403179000000044
+      },
+      {
+        "name": "pairwise-23/quantum_soft_sparse",
+        "peak_rss_bytes": 86925312,
+        "rss_end_bytes": 86908928,
+        "rss_start_bytes": 86900736,
+        "seconds": 0.03981630499999955
+      },
+      {
+        "name": "pairwise-23/quantum_hard",
+        "peak_rss_bytes": 86929408,
+        "rss_end_bytes": 86913024,
+        "rss_start_bytes": 86908928,
+        "seconds": 0.28367759500000034
+      },
+      {
+        "name": "pairwise-23/markov_soft_sparse",
+        "peak_rss_bytes": 86917120,
+        "rss_end_bytes": 86917120,
+        "rss_start_bytes": 86913024,
+        "seconds": 0.01296608700000057
+      },
+      {
+        "name": "pairwise-23/markov_hard",
+        "peak_rss_bytes": 86941696,
+        "rss_end_bytes": 86921216,
+        "rss_start_bytes": 86921216,
+        "seconds": 0.24231400800000014
+      },
+      {
+        "name": "pairwise-23/spread_markov_soft_sparse",
+        "peak_rss_bytes": 86925312,
+        "rss_end_bytes": 86925312,
+        "rss_start_bytes": 86921216,
+        "seconds": 0.013983786999999914
+      },
+      {
+        "name": "pairwise-23/spread_markov_hard",
+        "peak_rss_bytes": 86945792,
+        "rss_end_bytes": 86925312,
+        "rss_start_bytes": 86925312,
+        "seconds": 0.2358710360000007
+      },
+      {
+        "name": "pairwise-23/evaluate/features_only",
+        "peak_rss_bytes": 86953984,
+        "rss_end_bytes": 86933504,
+        "rss_start_bytes": 86925312,
+        "seconds": 0.03225660699999988
+      },
+      {
+        "name": "pairwise-23/evaluate/graph_gcn",
+        "peak_rss_bytes": 86933504,
+        "rss_end_bytes": 86933504,
+        "rss_start_bytes": 86933504,
+        "seconds": 0.025764867000000358
+      },
+      {
+        "name": "pairwise-23/evaluate/quantum_direct",
+        "peak_rss_bytes": 86933504,
+        "rss_end_bytes": 86933504,
+        "rss_start_bytes": 86933504,
+        "seconds": 0.02463540399999964
+      },
+      {
+        "name": "pairwise-23/evaluate/quantum_sparse",
+        "peak_rss_bytes": 86937600,
+        "rss_end_bytes": 86937600,
+        "rss_start_bytes": 86933504,
+        "seconds": 0.026858339000000342
+      },
+      {
+        "name": "pairwise-23/evaluate/quantum_hard",
+        "peak_rss_bytes": 86958080,
+        "rss_end_bytes": 86937600,
+        "rss_start_bytes": 86937600,
+        "seconds": 0.027851743000000262
+      },
+      {
+        "name": "pairwise-23/evaluate/markov_direct",
+        "peak_rss_bytes": 86958080,
+        "rss_end_bytes": 86937600,
+        "rss_start_bytes": 86937600,
+        "seconds": 0.026299362000000492
+      },
+      {
+        "name": "pairwise-23/evaluate/markov_sparse",
+        "peak_rss_bytes": 86937600,
+        "rss_end_bytes": 86937600,
+        "rss_start_bytes": 86937600,
+        "seconds": 0.026552882999999916
+      },
+      {
+        "name": "pairwise-23/evaluate/markov_hard",
+        "peak_rss_bytes": 86937600,
+        "rss_end_bytes": 86937600,
+        "rss_start_bytes": 86937600,
+        "seconds": 0.027050705999999813
+      },
+      {
+        "name": "pairwise-23/evaluate/spread_markov_direct",
+        "peak_rss_bytes": 86958080,
+        "rss_end_bytes": 86937600,
+        "rss_start_bytes": 86937600,
+        "seconds": 0.02730015599999991
+      },
+      {
+        "name": "pairwise-23/evaluate/spread_markov_sparse",
+        "peak_rss_bytes": 86937600,
+        "rss_end_bytes": 86937600,
+        "rss_start_bytes": 86937600,
+        "seconds": 0.025077565000000135
+      },
+      {
+        "name": "pairwise-23/evaluate/spread_markov_hard",
+        "peak_rss_bytes": 86937600,
+        "rss_end_bytes": 86937600,
+        "rss_start_bytes": 86937600,
+        "seconds": 0.02241776999999967
+      },
+      {
+        "name": "pairwise-37/hamiltonian",
+        "peak_rss_bytes": 86937600,
+        "rss_end_bytes": 86937600,
+        "rss_start_bytes": 86937600,
+        "seconds": 0.0023919900000004546
+      },
+      {
+        "name": "pairwise-37/dense_quantum",
+        "peak_rss_bytes": 86937600,
+        "rss_end_bytes": 86937600,
+        "rss_start_bytes": 86937600,
+        "seconds": 0.0015959070000004516
+      },
+      {
+        "name": "pairwise-37/dense_markov",
+        "peak_rss_bytes": 86994944,
+        "rss_end_bytes": 86994944,
+        "rss_start_bytes": 86937600,
+        "seconds": 0.0010960510000002088
+      },
+      {
+        "name": "pairwise-37/dense_spread_markov",
+        "peak_rss_bytes": 86994944,
+        "rss_end_bytes": 86994944,
+        "rss_start_bytes": 86994944,
+        "seconds": 0.0035823559999998977
+      },
+      {
+        "name": "pairwise-37/hard_candidates_shared",
+        "peak_rss_bytes": 87048192,
+        "rss_end_bytes": 87048192,
+        "rss_start_bytes": 86994944,
+        "seconds": 0.01641464899999967
+      },
+      {
+        "name": "pairwise-37/quantum_soft_sparse",
+        "peak_rss_bytes": 87048192,
+        "rss_end_bytes": 87048192,
+        "rss_start_bytes": 87048192,
+        "seconds": 0.011948937000000548
+      },
+      {
+        "name": "pairwise-37/quantum_hard",
+        "peak_rss_bytes": 87068672,
+        "rss_end_bytes": 87048192,
+        "rss_start_bytes": 87048192,
+        "seconds": 0.19200047900000072
+      },
+      {
+        "name": "pairwise-37/markov_soft_sparse",
+        "peak_rss_bytes": 87048192,
+        "rss_end_bytes": 87048192,
+        "rss_start_bytes": 87048192,
+        "seconds": 0.010614012999999645
+      },
+      {
+        "name": "pairwise-37/markov_hard",
+        "peak_rss_bytes": 87093248,
+        "rss_end_bytes": 87072768,
+        "rss_start_bytes": 87048192,
+        "seconds": 0.19786833900000023
+      },
+      {
+        "name": "pairwise-37/spread_markov_soft_sparse",
+        "peak_rss_bytes": 87072768,
+        "rss_end_bytes": 87072768,
+        "rss_start_bytes": 87072768,
+        "seconds": 0.012414105999999592
+      },
+      {
+        "name": "pairwise-37/spread_markov_hard",
+        "peak_rss_bytes": 87093248,
+        "rss_end_bytes": 87072768,
+        "rss_start_bytes": 87072768,
+        "seconds": 0.19530190199999975
+      },
+      {
+        "name": "pairwise-37/evaluate/features_only",
+        "peak_rss_bytes": 87093248,
+        "rss_end_bytes": 87072768,
+        "rss_start_bytes": 87072768,
+        "seconds": 0.03214262599999884
+      },
+      {
+        "name": "pairwise-37/evaluate/graph_gcn",
+        "peak_rss_bytes": 87093248,
+        "rss_end_bytes": 87072768,
+        "rss_start_bytes": 87072768,
+        "seconds": 0.03667504600000093
+      },
+      {
+        "name": "pairwise-37/evaluate/quantum_direct",
+        "peak_rss_bytes": 87097344,
+        "rss_end_bytes": 87076864,
+        "rss_start_bytes": 87072768,
+        "seconds": 0.030433220000000816
+      },
+      {
+        "name": "pairwise-37/evaluate/quantum_sparse",
+        "peak_rss_bytes": 87097344,
+        "rss_end_bytes": 87076864,
+        "rss_start_bytes": 87076864,
+        "seconds": 0.02717102899999979
+      },
+      {
+        "name": "pairwise-37/evaluate/quantum_hard",
+        "peak_rss_bytes": 87097344,
+        "rss_end_bytes": 87076864,
+        "rss_start_bytes": 87076864,
+        "seconds": 0.027802730999999525
+      },
+      {
+        "name": "pairwise-37/evaluate/markov_direct",
+        "peak_rss_bytes": 87076864,
+        "rss_end_bytes": 87076864,
+        "rss_start_bytes": 87076864,
+        "seconds": 0.026254854999999466
+      },
+      {
+        "name": "pairwise-37/evaluate/markov_sparse",
+        "peak_rss_bytes": 87097344,
+        "rss_end_bytes": 87076864,
+        "rss_start_bytes": 87076864,
+        "seconds": 0.028482123999999942
+      },
+      {
+        "name": "pairwise-37/evaluate/markov_hard",
+        "peak_rss_bytes": 87097344,
+        "rss_end_bytes": 87076864,
+        "rss_start_bytes": 87076864,
+        "seconds": 0.027144469999999643
+      },
+      {
+        "name": "pairwise-37/evaluate/spread_markov_direct",
+        "peak_rss_bytes": 87097344,
+        "rss_end_bytes": 87076864,
+        "rss_start_bytes": 87076864,
+        "seconds": 0.026250239999999536
+      },
+      {
+        "name": "pairwise-37/evaluate/spread_markov_sparse",
+        "peak_rss_bytes": 87097344,
+        "rss_end_bytes": 87076864,
+        "rss_start_bytes": 87076864,
+        "seconds": 0.024710925999999134
+      },
+      {
+        "name": "pairwise-37/evaluate/spread_markov_hard",
+        "peak_rss_bytes": 87076864,
+        "rss_end_bytes": 87076864,
+        "rss_start_bytes": 87076864,
+        "seconds": 0.023290745000000612
+      },
+      {
+        "name": "heterophily-11/hamiltonian",
+        "peak_rss_bytes": 87076864,
+        "rss_end_bytes": 87076864,
+        "rss_start_bytes": 87076864,
+        "seconds": 0.0026130380000015663
+      },
+      {
+        "name": "heterophily-11/dense_quantum",
+        "peak_rss_bytes": 87076864,
+        "rss_end_bytes": 87076864,
+        "rss_start_bytes": 87076864,
+        "seconds": 0.0014084140000001355
+      },
+      {
+        "name": "heterophily-11/dense_markov",
+        "peak_rss_bytes": 87076864,
+        "rss_end_bytes": 87076864,
+        "rss_start_bytes": 87076864,
+        "seconds": 0.000757904000000309
+      },
+      {
+        "name": "heterophily-11/dense_spread_markov",
+        "peak_rss_bytes": 87076864,
+        "rss_end_bytes": 87076864,
+        "rss_start_bytes": 87076864,
+        "seconds": 0.003616125000000636
+      },
+      {
+        "name": "heterophily-11/hard_candidates_shared",
+        "peak_rss_bytes": 87126016,
+        "rss_end_bytes": 87126016,
+        "rss_start_bytes": 87076864,
+        "seconds": 0.017321069999999494
+      },
+      {
+        "name": "heterophily-11/quantum_soft_sparse",
+        "peak_rss_bytes": 87126016,
+        "rss_end_bytes": 87126016,
+        "rss_start_bytes": 87126016,
+        "seconds": 0.01172255800000066
+      },
+      {
+        "name": "heterophily-11/quantum_hard",
+        "peak_rss_bytes": 87146496,
+        "rss_end_bytes": 87126016,
+        "rss_start_bytes": 87126016,
+        "seconds": 0.2088334370000009
+      },
+      {
+        "name": "heterophily-11/markov_soft_sparse",
+        "peak_rss_bytes": 87126016,
+        "rss_end_bytes": 87126016,
+        "rss_start_bytes": 87126016,
+        "seconds": 0.010667670000000129
+      },
+      {
+        "name": "heterophily-11/markov_hard",
+        "peak_rss_bytes": 87183360,
+        "rss_end_bytes": 87162880,
+        "rss_start_bytes": 87126016,
+        "seconds": 0.21029658600000012
+      },
+      {
+        "name": "heterophily-11/spread_markov_soft_sparse",
+        "peak_rss_bytes": 87162880,
+        "rss_end_bytes": 87162880,
+        "rss_start_bytes": 87162880,
+        "seconds": 0.011819088999999394
+      },
+      {
+        "name": "heterophily-11/spread_markov_hard",
+        "peak_rss_bytes": 87199744,
+        "rss_end_bytes": 87179264,
+        "rss_start_bytes": 87162880,
+        "seconds": 0.4521757649999998
+      },
+      {
+        "name": "heterophily-11/evaluate/features_only",
+        "peak_rss_bytes": 87199744,
+        "rss_end_bytes": 87179264,
+        "rss_start_bytes": 87179264,
+        "seconds": 0.03546367700000097
+      },
+      {
+        "name": "heterophily-11/evaluate/graph_gcn",
+        "peak_rss_bytes": 87199744,
+        "rss_end_bytes": 87179264,
+        "rss_start_bytes": 87179264,
+        "seconds": 0.029619326000000612
+      },
+      {
+        "name": "heterophily-11/evaluate/quantum_direct",
+        "peak_rss_bytes": 87203840,
+        "rss_end_bytes": 87183360,
+        "rss_start_bytes": 87179264,
+        "seconds": 0.02999555699999945
+      },
+      {
+        "name": "heterophily-11/evaluate/quantum_sparse",
+        "peak_rss_bytes": 87212032,
+        "rss_end_bytes": 87191552,
+        "rss_start_bytes": 87183360,
+        "seconds": 0.03329877399999859
+      },
+      {
+        "name": "heterophily-11/evaluate/quantum_hard",
+        "peak_rss_bytes": 87212032,
+        "rss_end_bytes": 87191552,
+        "rss_start_bytes": 87191552,
+        "seconds": 0.031047230000000425
+      },
+      {
+        "name": "heterophily-11/evaluate/markov_direct",
+        "peak_rss_bytes": 87212032,
+        "rss_end_bytes": 87191552,
+        "rss_start_bytes": 87191552,
+        "seconds": 0.033351993000000135
+      },
+      {
+        "name": "heterophily-11/evaluate/markov_sparse",
+        "peak_rss_bytes": 87212032,
+        "rss_end_bytes": 87191552,
+        "rss_start_bytes": 87191552,
+        "seconds": 0.03520702800000031
+      },
+      {
+        "name": "heterophily-11/evaluate/markov_hard",
+        "peak_rss_bytes": 87212032,
+        "rss_end_bytes": 87191552,
+        "rss_start_bytes": 87191552,
+        "seconds": 0.04155219099999918
+      },
+      {
+        "name": "heterophily-11/evaluate/spread_markov_direct",
+        "peak_rss_bytes": 87212032,
+        "rss_end_bytes": 87191552,
+        "rss_start_bytes": 87191552,
+        "seconds": 0.03664989399999996
+      },
+      {
+        "name": "heterophily-11/evaluate/spread_markov_sparse",
+        "peak_rss_bytes": 87212032,
+        "rss_end_bytes": 87191552,
+        "rss_start_bytes": 87191552,
+        "seconds": 0.03939874599999982
+      },
+      {
+        "name": "heterophily-11/evaluate/spread_markov_hard",
+        "peak_rss_bytes": 87220224,
+        "rss_end_bytes": 87203840,
+        "rss_start_bytes": 87191552,
+        "seconds": 0.03764445199999855
+      },
+      {
+        "name": "heterophily-23/hamiltonian",
+        "peak_rss_bytes": 87203840,
+        "rss_end_bytes": 87203840,
+        "rss_start_bytes": 87203840,
+        "seconds": 0.004794664999998588
+      },
+      {
+        "name": "heterophily-23/dense_quantum",
+        "peak_rss_bytes": 87203840,
+        "rss_end_bytes": 87203840,
+        "rss_start_bytes": 87203840,
+        "seconds": 0.0026901220000006276
+      },
+      {
+        "name": "heterophily-23/dense_markov",
+        "peak_rss_bytes": 87203840,
+        "rss_end_bytes": 87203840,
+        "rss_start_bytes": 87203840,
+        "seconds": 0.0011049169999992614
+      },
+      {
+        "name": "heterophily-23/dense_spread_markov",
+        "peak_rss_bytes": 87203840,
+        "rss_end_bytes": 87203840,
+        "rss_start_bytes": 87203840,
+        "seconds": 0.007225602000000109
+      },
+      {
+        "name": "heterophily-23/hard_candidates_shared",
+        "peak_rss_bytes": 87265280,
+        "rss_end_bytes": 87244800,
+        "rss_start_bytes": 87203840,
+        "seconds": 0.023375846000000422
+      },
+      {
+        "name": "heterophily-23/quantum_soft_sparse",
+        "peak_rss_bytes": 87244800,
+        "rss_end_bytes": 87244800,
+        "rss_start_bytes": 87244800,
+        "seconds": 0.019058925999999587
+      },
+      {
+        "name": "heterophily-23/quantum_hard",
+        "peak_rss_bytes": 87269376,
+        "rss_end_bytes": 87248896,
+        "rss_start_bytes": 87244800,
+        "seconds": 0.29991781700000075
+      },
+      {
+        "name": "heterophily-23/markov_soft_sparse",
+        "peak_rss_bytes": 87257088,
+        "rss_end_bytes": 87257088,
+        "rss_start_bytes": 87248896,
+        "seconds": 0.019952831999999532
+      },
+      {
+        "name": "heterophily-23/markov_hard",
+        "peak_rss_bytes": 87310336,
+        "rss_end_bytes": 87289856,
+        "rss_start_bytes": 87265280,
+        "seconds": 0.27154091899999955
+      },
+      {
+        "name": "heterophily-23/spread_markov_soft_sparse",
+        "peak_rss_bytes": 87289856,
+        "rss_end_bytes": 87289856,
+        "rss_start_bytes": 87289856,
+        "seconds": 0.015269941000001452
+      },
+      {
+        "name": "heterophily-23/spread_markov_hard",
+        "peak_rss_bytes": 87310336,
+        "rss_end_bytes": 87289856,
+        "rss_start_bytes": 87289856,
+        "seconds": 0.2491772440000002
+      },
+      {
+        "name": "heterophily-23/evaluate/features_only",
+        "peak_rss_bytes": 87310336,
+        "rss_end_bytes": 87289856,
+        "rss_start_bytes": 87289856,
+        "seconds": 0.03401253400000037
+      },
+      {
+        "name": "heterophily-23/evaluate/graph_gcn",
+        "peak_rss_bytes": 87310336,
+        "rss_end_bytes": 87289856,
+        "rss_start_bytes": 87289856,
+        "seconds": 0.03925298299999902
+      },
+      {
+        "name": "heterophily-23/evaluate/quantum_direct",
+        "peak_rss_bytes": 87310336,
+        "rss_end_bytes": 87289856,
+        "rss_start_bytes": 87289856,
+        "seconds": 0.035016272000000015
+      },
+      {
+        "name": "heterophily-23/evaluate/quantum_sparse",
+        "peak_rss_bytes": 87314432,
+        "rss_end_bytes": 87293952,
+        "rss_start_bytes": 87289856,
+        "seconds": 0.040508598999998924
+      },
+      {
+        "name": "heterophily-23/evaluate/quantum_hard",
+        "peak_rss_bytes": 87318528,
+        "rss_end_bytes": 87298048,
+        "rss_start_bytes": 87293952,
+        "seconds": 0.07394614100000041
+      },
+      {
+        "name": "heterophily-23/evaluate/markov_direct",
+        "peak_rss_bytes": 87322624,
+        "rss_end_bytes": 87302144,
+        "rss_start_bytes": 87298048,
+        "seconds": 0.03721501300000085
+      },
+      {
+        "name": "heterophily-23/evaluate/markov_sparse",
+        "peak_rss_bytes": 87322624,
+        "rss_end_bytes": 87302144,
+        "rss_start_bytes": 87302144,
+        "seconds": 0.04153678300000152
+      },
+      {
+        "name": "heterophily-23/evaluate/markov_hard",
+        "peak_rss_bytes": 87322624,
+        "rss_end_bytes": 87302144,
+        "rss_start_bytes": 87302144,
+        "seconds": 0.03813320799999964
+      },
+      {
+        "name": "heterophily-23/evaluate/spread_markov_direct",
+        "peak_rss_bytes": 87322624,
+        "rss_end_bytes": 87302144,
+        "rss_start_bytes": 87302144,
+        "seconds": 0.03682045900000119
+      },
+      {
+        "name": "heterophily-23/evaluate/spread_markov_sparse",
+        "peak_rss_bytes": 87326720,
+        "rss_end_bytes": 87306240,
+        "rss_start_bytes": 87302144,
+        "seconds": 0.038203255999999186
+      },
+      {
+        "name": "heterophily-23/evaluate/spread_markov_hard",
+        "peak_rss_bytes": 87326720,
+        "rss_end_bytes": 87306240,
+        "rss_start_bytes": 87306240,
+        "seconds": 0.03654990700000127
+      },
+      {
+        "name": "heterophily-37/hamiltonian",
+        "peak_rss_bytes": 87306240,
+        "rss_end_bytes": 87306240,
+        "rss_start_bytes": 87306240,
+        "seconds": 0.004302508000000316
+      },
+      {
+        "name": "heterophily-37/dense_quantum",
+        "peak_rss_bytes": 87306240,
+        "rss_end_bytes": 87306240,
+        "rss_start_bytes": 87306240,
+        "seconds": 0.01107892199999938
+      },
+      {
+        "name": "heterophily-37/dense_markov",
+        "peak_rss_bytes": 87306240,
+        "rss_end_bytes": 87306240,
+        "rss_start_bytes": 87306240,
+        "seconds": 0.0013937800000007883
+      },
+      {
+        "name": "heterophily-37/dense_spread_markov",
+        "peak_rss_bytes": 87306240,
+        "rss_end_bytes": 87306240,
+        "rss_start_bytes": 87306240,
+        "seconds": 0.010907471000001223
+      },
+      {
+        "name": "heterophily-37/hard_candidates_shared",
+        "peak_rss_bytes": 87379968,
+        "rss_end_bytes": 87359488,
+        "rss_start_bytes": 87306240,
+        "seconds": 0.026329093999999387
+      },
+      {
+        "name": "heterophily-37/quantum_soft_sparse",
+        "peak_rss_bytes": 87359488,
+        "rss_end_bytes": 87359488,
+        "rss_start_bytes": 87359488,
+        "seconds": 0.018931058999999806
+      },
+      {
+        "name": "heterophily-37/quantum_hard",
+        "peak_rss_bytes": 87384064,
+        "rss_end_bytes": 87363584,
+        "rss_start_bytes": 87359488,
+        "seconds": 0.2650319339999996
+      },
+      {
+        "name": "heterophily-37/markov_soft_sparse",
+        "peak_rss_bytes": 87363584,
+        "rss_end_bytes": 87363584,
+        "rss_start_bytes": 87363584,
+        "seconds": 0.01778483200000025
+      },
+      {
+        "name": "heterophily-37/markov_hard",
+        "peak_rss_bytes": 87384064,
+        "rss_end_bytes": 87363584,
+        "rss_start_bytes": 87363584,
+        "seconds": 0.28144501599999927
+      },
+      {
+        "name": "heterophily-37/spread_markov_soft_sparse",
+        "peak_rss_bytes": 87363584,
+        "rss_end_bytes": 87363584,
+        "rss_start_bytes": 87363584,
+        "seconds": 0.016406821999998655
+      },
+      {
+        "name": "heterophily-37/spread_markov_hard",
+        "peak_rss_bytes": 87384064,
+        "rss_end_bytes": 87363584,
+        "rss_start_bytes": 87363584,
+        "seconds": 0.2612675580000001
+      },
+      {
+        "name": "heterophily-37/evaluate/features_only",
+        "peak_rss_bytes": 87384064,
+        "rss_end_bytes": 87363584,
+        "rss_start_bytes": 87363584,
+        "seconds": 0.03540892399999862
+      },
+      {
+        "name": "heterophily-37/evaluate/graph_gcn",
+        "peak_rss_bytes": 87384064,
+        "rss_end_bytes": 87363584,
+        "rss_start_bytes": 87363584,
+        "seconds": 0.03631268100000007
+      },
+      {
+        "name": "heterophily-37/evaluate/quantum_direct",
+        "peak_rss_bytes": 87384064,
+        "rss_end_bytes": 87363584,
+        "rss_start_bytes": 87363584,
+        "seconds": 0.03694587999999932
+      },
+      {
+        "name": "heterophily-37/evaluate/quantum_sparse",
+        "peak_rss_bytes": 87384064,
+        "rss_end_bytes": 87367680,
+        "rss_start_bytes": 87363584,
+        "seconds": 0.03507388699999936
+      },
+      {
+        "name": "heterophily-37/evaluate/quantum_hard",
+        "peak_rss_bytes": 87388160,
+        "rss_end_bytes": 87367680,
+        "rss_start_bytes": 87367680,
+        "seconds": 0.03379545099999959
+      },
+      {
+        "name": "heterophily-37/evaluate/markov_direct",
+        "peak_rss_bytes": 87388160,
+        "rss_end_bytes": 87367680,
+        "rss_start_bytes": 87367680,
+        "seconds": 0.04037639499999912
+      },
+      {
+        "name": "heterophily-37/evaluate/markov_sparse",
+        "peak_rss_bytes": 87392256,
+        "rss_end_bytes": 87371776,
+        "rss_start_bytes": 87367680,
+        "seconds": 0.0362503089999997
+      },
+      {
+        "name": "heterophily-37/evaluate/markov_hard",
+        "peak_rss_bytes": 87392256,
+        "rss_end_bytes": 87371776,
+        "rss_start_bytes": 87371776,
+        "seconds": 0.03808648799999936
+      },
+      {
+        "name": "heterophily-37/evaluate/spread_markov_direct",
+        "peak_rss_bytes": 87392256,
+        "rss_end_bytes": 87371776,
+        "rss_start_bytes": 87371776,
+        "seconds": 0.02935816899999999
+      },
+      {
+        "name": "heterophily-37/evaluate/spread_markov_sparse",
+        "peak_rss_bytes": 87392256,
+        "rss_end_bytes": 87371776,
+        "rss_start_bytes": 87371776,
+        "seconds": 0.027900975999999744
+      },
+      {
+        "name": "heterophily-37/evaluate/spread_markov_hard",
+        "peak_rss_bytes": 87400448,
+        "rss_end_bytes": 87379968,
+        "rss_start_bytes": 87371776,
+        "seconds": 0.027438009999999124
+      }
+    ],
+    "total_profiled_seconds": 9.766856910000007
+  },
+  "protocol": "latent_b1_synthetic_smoke_v1",
+  "records": [
+    {
+      "evaluation": {
+        "model_fingerprint": "1c30fb5f3df02e4b6e1872760ee30b7b4267a79dade8e344b60554f14b18f372",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9675225150563332,
+        "test_macro_f1": 0.4777777777777777,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.0256423560921673,
+        "validation_macro_f1": 0.32756132756132755,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.03126682200000008,
+      "graph_id": "group-11",
+      "method": "features_only",
+      "operator": {},
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "79ba04ae9b9a630383b647286fefc378e0ea5a8497fcbc1e329ac3b8c96e2914",
+        "selected_C": 10.0,
+        "test_accuracy": 0.8333333333333334,
+        "test_log_loss": 0.16178246924007852,
+        "test_macro_f1": 0.8380952380952381,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 0.05497105305790891,
+        "validation_macro_f1": 1.0,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.02714302799999979,
+      "graph_id": "group-11",
+      "method": "graph_gcn",
+      "operator": {},
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "392b0a4ff3be81d9f473900e8e81e10eed2c6300c2d6c6b6161dcb3c003ccf2b",
+        "selected_C": 0.1,
+        "test_accuracy": 0.6666666666666666,
+        "test_log_loss": 0.8533809235769102,
+        "test_macro_f1": 0.6626984126984127,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 0.9108379953507016,
+        "validation_macro_f1": 0.6666666666666666,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.026715497000000088,
+      "graph_id": "group-11",
+      "method": "quantum_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.7844607789476497,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "40ec50964e1e42e3c861530a9560f67fa0957b30bfab49c539a7e32e06a8d1ce",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.9450000770633076,
+        "test_macro_f1": 0.5793650793650794,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 0.9864805961118136,
+        "validation_macro_f1": 0.5222222222222221,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.027121446999999854,
+      "graph_id": "group-11",
+      "method": "quantum_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.0950751311113205,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 396,
+        "mean_diagonal": 0.9281301359429337,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9547035620191852,
+        "spectral_error_to_full": 0.2693676882548328,
+        "trace_error_exact": 6.896129135773641,
+        "trace_upper_bound": 24.929514180692124
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "dcadd192a87465c609f1643ce6f1cde7da4f5083f04607145461cd3e6187cd79",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9116403843789569,
+        "test_macro_f1": 0.4777777777777777,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 0.9920372289975475,
+        "validation_macro_f1": 0.6005291005291006,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.02741285299999996,
+      "graph_id": "group-11",
+      "method": "quantum_hard",
+      "operator": {
+        "frobenius_error_to_full": 1.290713919972316,
+        "incidence_nnz": 82,
+        "mean_diagonal": 0.9100115740740741,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "fd6164c2ef9a50b45772fdc5784a522d0c06bdb79717ff1fff3c411a467bb7e5",
+        "selected_C": 0.1,
+        "test_accuracy": 0.6666666666666666,
+        "test_log_loss": 0.852515107419201,
+        "test_macro_f1": 0.6626984126984127,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 0.9119725432613581,
+        "validation_macro_f1": 0.6666666666666666,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.026349524000000013,
+      "graph_id": "group-11",
+      "method": "markov_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.7865702459264258,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "83df5c011bb82bb8cbe037ba12a20f1fbed3220ae6732c2bab8717b8b1805e2e",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9450903840833957,
+        "test_macro_f1": 0.4777777777777777,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 0.986036666683941,
+        "validation_macro_f1": 0.5222222222222221,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.025313178999999852,
+      "graph_id": "group-11",
+      "method": "markov_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.0867979365021847,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 376,
+        "mean_diagonal": 0.9293657098785127,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9541890243446063,
+        "spectral_error_to_full": 0.263925735601837,
+        "trace_error_exact": 6.854182269700166,
+        "trace_upper_bound": 24.947293210939716
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "dcadd192a87465c609f1643ce6f1cde7da4f5083f04607145461cd3e6187cd79",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9116403843789569,
+        "test_macro_f1": 0.4777777777777777,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 0.9920372289975475,
+        "validation_macro_f1": 0.6005291005291006,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.02517327800000002,
+      "graph_id": "group-11",
+      "method": "markov_hard",
+      "operator": {
+        "frobenius_error_to_full": 1.2604816004749804,
+        "incidence_nnz": 82,
+        "mean_diagonal": 0.9100115740740741,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "e00042405a6d41b98499d3e51388793226b3d43a70ed30e39ce3680179b5621a",
+        "selected_C": 0.1,
+        "test_accuracy": 0.6666666666666666,
+        "test_log_loss": 0.8511424911198491,
+        "test_macro_f1": 0.6626984126984127,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 0.9106222592773113,
+        "validation_macro_f1": 0.6666666666666666,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.025992372000000152,
+      "graph_id": "group-11",
+      "method": "spread_markov_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.7844607789476493,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "3be9effffb625623659a96b16d7844f7b6859323e1528c0aeb6f3db22125edce",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9448581105754058,
+        "test_macro_f1": 0.4777777777777777,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 0.9856522556764187,
+        "validation_macro_f1": 0.5222222222222221,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.026316702999999997,
+      "graph_id": "group-11",
+      "method": "spread_markov_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.0974958752723785,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 376,
+        "mean_diagonal": 0.9287169035681178,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.953550603195267,
+        "spectral_error_to_full": 0.2663626358512289,
+        "trace_error_exact": 6.924293981782479,
+        "trace_upper_bound": 24.968476802357088
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "dcadd192a87465c609f1643ce6f1cde7da4f5083f04607145461cd3e6187cd79",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9116403843789569,
+        "test_macro_f1": 0.4777777777777777,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 0.9920372289975475,
+        "validation_macro_f1": 0.6005291005291006,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.025821347000000383,
+      "graph_id": "group-11",
+      "method": "spread_markov_hard",
+      "operator": {
+        "frobenius_error_to_full": 1.2716958873723436,
+        "incidence_nnz": 82,
+        "mean_diagonal": 0.9100115740740741,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "d6dedb970b82e28b73b15eb8b00f5a380b52273613bc0efdfd52f0c7b7e22a77",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.0783934717789747,
+        "test_macro_f1": 0.4777777777777778,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1696409695412988,
+        "validation_macro_f1": 0.40740740740740744,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.023528479000000324,
+      "graph_id": "group-23",
+      "method": "features_only",
+      "operator": {},
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "6cd45881cfd9de4c7bee747e4b66136b6d1cb8e99c4c0bce278f4eae2949819a",
+        "selected_C": 10.0,
+        "test_accuracy": 1.0,
+        "test_log_loss": 0.04198091852543034,
+        "test_macro_f1": 1.0,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 0.027100939266705537,
+        "validation_macro_f1": 1.0,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.025282736999999944,
+      "graph_id": "group-23",
+      "method": "graph_gcn",
+      "operator": {},
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "1f6483622b370d578ca3bf8442f9904c9b4f73ba4faf9d0527efb1685b8b58ad",
+        "selected_C": 1.0,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.024782965448892,
+        "test_macro_f1": 0.5052910052910053,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.0396220185643334,
+        "validation_macro_f1": 0.40740740740740744,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.025916744999999963,
+      "graph_id": "group-23",
+      "method": "quantum_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.7915301567608263,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "e894772e87b6c81688a0d403a798152c1d4d7c5094e0f2a5bf94f89aec8e1570",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.057190084550994,
+        "test_macro_f1": 0.4777777777777778,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1288037386852885,
+        "validation_macro_f1": 0.40740740740740744,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.02553625900000034,
+      "graph_id": "group-23",
+      "method": "quantum_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.0674264605015502,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 412,
+        "mean_diagonal": 0.9296920397245566,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9575374014781227,
+        "spectral_error_to_full": 0.2537388192437746,
+        "trace_error_exact": 6.6317703822590595,
+        "trace_upper_bound": 24.796581842563107
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "7ac44901c96e5b796de9b3e73cf65ab59327e5345aa08d4e3b2f65837c07dd4b",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.0176761939201384,
+        "test_macro_f1": 0.5052910052910053,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.10701711970881,
+        "validation_macro_f1": 0.4777777777777778,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.02543028000000014,
+      "graph_id": "group-23",
+      "method": "quantum_hard",
+      "operator": {
+        "frobenius_error_to_full": 0.9537520776469336,
+        "incidence_nnz": 87,
+        "mean_diagonal": 0.8833333333333333,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "e83a1462b65375f1a074eb12037a9c1341cffb233fb86fc4d3b480343a37c9ba",
+        "selected_C": 1.0,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.0295759822774138,
+        "test_macro_f1": 0.5052910052910053,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.0436429319877985,
+        "validation_macro_f1": 0.40740740740740744,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.0252436420000004,
+      "graph_id": "group-23",
+      "method": "markov_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.7931379213838374,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "fe03e4fde642fe460e32cbc359ff55e449d5b9656231e631e36f17a456357a83",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.0581696792440305,
+        "test_macro_f1": 0.4777777777777778,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.130072315211562,
+        "validation_macro_f1": 0.40740740740740744,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.025652036999999517,
+      "graph_id": "group-23",
+      "method": "markov_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.0659673897351742,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 390,
+        "mean_diagonal": 0.9308943865368645,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9574060810346117,
+        "spectral_error_to_full": 0.25478499632078266,
+        "trace_error_exact": 6.612310327345292,
+        "trace_upper_bound": 24.80074761199823
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "7ac44901c96e5b796de9b3e73cf65ab59327e5345aa08d4e3b2f65837c07dd4b",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.0176761939201384,
+        "test_macro_f1": 0.5052910052910053,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.10701711970881,
+        "validation_macro_f1": 0.4777777777777778,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.02601824699999966,
+      "graph_id": "group-23",
+      "method": "markov_hard",
+      "operator": {
+        "frobenius_error_to_full": 0.9408627617011965,
+        "incidence_nnz": 87,
+        "mean_diagonal": 0.8833333333333333,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "a122a6225ecca358008a6201aca4a8e2d8126c140a7e83a037ca3b616fc05ad8",
+        "selected_C": 1.0,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.0275107028557935,
+        "test_macro_f1": 0.5052910052910053,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.0409711562183872,
+        "validation_macro_f1": 0.40740740740740744,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.02411201099999971,
+      "graph_id": "group-23",
+      "method": "spread_markov_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.7915301567608263,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "4a100fee352a1debc6834fb10c09f8fddc8ec8896b3c9fa2ec2de1514ce3b24a",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.057995624589323,
+        "test_macro_f1": 0.4777777777777778,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.129772085512271,
+        "validation_macro_f1": 0.40740740740740744,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.024636656999999396,
+      "graph_id": "group-23",
+      "method": "spread_markov_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.0742683992764872,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 390,
+        "mean_diagonal": 0.9304040973776551,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9569291243246291,
+        "spectral_error_to_full": 0.2565660807856005,
+        "trace_error_exact": 6.665949149607782,
+        "trace_upper_bound": 24.81672536067215
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "7ac44901c96e5b796de9b3e73cf65ab59327e5345aa08d4e3b2f65837c07dd4b",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.0176761939201384,
+        "test_macro_f1": 0.5052910052910053,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.10701711970881,
+        "validation_macro_f1": 0.4777777777777778,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.02666040400000025,
+      "graph_id": "group-23",
+      "method": "spread_markov_hard",
+      "operator": {
+        "frobenius_error_to_full": 0.9489193277317505,
+        "incidence_nnz": 87,
+        "mean_diagonal": 0.8833333333333333,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "22f46f0d6e9c5aa68e1665b22a62dd36039d8c1aefeae06854ebefa8f42629c1",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9542805967369361,
+        "test_macro_f1": 0.48412698412698413,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.243042137044798,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.035569966999999814,
+      "graph_id": "group-37",
+      "method": "features_only",
+      "operator": {},
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "bea5b13b7e17c7bec7f450413062708b4c0df0bf9c5a2e4dc7924488e3f60b38",
+        "selected_C": 1.0,
+        "test_accuracy": 1.0,
+        "test_log_loss": 0.17624962232411642,
+        "test_macro_f1": 1.0,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 0.3953019184218298,
+        "validation_macro_f1": 0.9153439153439153,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.031852250000000026,
+      "graph_id": "group-37",
+      "method": "graph_gcn",
+      "operator": {},
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "f56fddefb48956f36d0e51e05a54d18aebd5203baa833d17ea57d9063a3b49f0",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.8703295902618113,
+        "test_macro_f1": 0.5555555555555555,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1389359945346131,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.02727567899999972,
+      "graph_id": "group-37",
+      "method": "quantum_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.784332905768372,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "8146995a182a1ff9f08731cb1283e1923e753e5641b2a2b464b4ece400898c26",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.9297770266662807,
+        "test_macro_f1": 0.5555555555555555,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.2142669492366303,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.02979763699999971,
+      "graph_id": "group-37",
+      "method": "quantum_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.1037274575823965,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 398,
+        "mean_diagonal": 0.9253573561618903,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9616361504213979,
+        "spectral_error_to_full": 0.3005836776662692,
+        "trace_error_exact": 6.769173618888875,
+        "trace_upper_bound": 24.637736481137964
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "d152ce5a1e48581d92a73c059d0c7315eb2b43ada86114b3209ce787ce84cab0",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.9167676834368409,
+        "test_macro_f1": 0.5793650793650794,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1609309580706355,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.029539043999999848,
+      "graph_id": "group-37",
+      "method": "quantum_hard",
+      "operator": {
+        "frobenius_error_to_full": 1.0755692571873825,
+        "incidence_nnz": 88,
+        "mean_diagonal": 0.8739583333333334,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "194dfddc9eaee0254d92fca95e736191519120915fca103128ba3ab11b4d5c62",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.8704708459887969,
+        "test_macro_f1": 0.5555555555555555,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1404178229843553,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.028438198999999997,
+      "graph_id": "group-37",
+      "method": "markov_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.786895010661366,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "79b7034327abcf2bde864f69f2404283717a7c0744514525caf0e5543f4869f5",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9269541804599158,
+        "test_macro_f1": 0.48412698412698413,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.2124878859206445,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.031868464999999624,
+      "graph_id": "group-37",
+      "method": "markov_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.0935066849644872,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 386,
+        "mean_diagonal": 0.9267899143216226,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9614356268430098,
+        "spectral_error_to_full": 0.2913192461228075,
+        "trace_error_exact": 6.714955375692321,
+        "trace_upper_bound": 24.645884678403633
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "8f1b6c6946e38c90c998e11ced58bdc42ef2d4731cd086ebb950c1e724f9413f",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.9148059974422705,
+        "test_macro_f1": 0.5793650793650794,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1713351947763206,
+        "validation_macro_f1": 0.2888888888888888,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.030785974000000493,
+      "graph_id": "group-37",
+      "method": "markov_hard",
+      "operator": {
+        "frobenius_error_to_full": 1.0468953715436666,
+        "incidence_nnz": 88,
+        "mean_diagonal": 0.8822916666666667,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "642035ccf91f03bea6bfe578f70b3b868a062fe91543ab45b92302945f386d71",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.8692899878788213,
+        "test_macro_f1": 0.5555555555555555,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1389750268185985,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.02849373399999955,
+      "graph_id": "group-37",
+      "method": "spread_markov_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.784332905768372,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "5727a2b9eec5e29c9e60051aae3f43036b6e73925e46db4a8b2ceca1282e198f",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9265927862222064,
+        "test_macro_f1": 0.48412698412698413,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.212147073100001,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.028611747000000243,
+      "graph_id": "group-37",
+      "method": "spread_markov_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.10646516422339,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 386,
+        "mean_diagonal": 0.9259714046514981,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9607437855530109,
+        "spectral_error_to_full": 0.29442803697989434,
+        "trace_error_exact": 6.798647946390047,
+        "trace_upper_bound": 24.669081948925964
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "d152ce5a1e48581d92a73c059d0c7315eb2b43ada86114b3209ce787ce84cab0",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.9167676834368409,
+        "test_macro_f1": 0.5793650793650794,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1609309580706355,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.02851091600000011,
+      "graph_id": "group-37",
+      "method": "spread_markov_hard",
+      "operator": {
+        "frobenius_error_to_full": 1.0631172583291246,
+        "incidence_nnz": 88,
+        "mean_diagonal": 0.8739583333333334,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "group"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "1c30fb5f3df02e4b6e1872760ee30b7b4267a79dade8e344b60554f14b18f372",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9675225150563332,
+        "test_macro_f1": 0.4777777777777777,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.0256423560921673,
+        "validation_macro_f1": 0.32756132756132755,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.029010026999999994,
+      "graph_id": "pairwise-11",
+      "method": "features_only",
+      "operator": {},
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "b96f353d3334e598f7978efa35242f2babc8408745546e153b004415969f87e4",
+        "selected_C": 10.0,
+        "test_accuracy": 1.0,
+        "test_log_loss": 0.05261515681695617,
+        "test_macro_f1": 1.0,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 0.10888345119885527,
+        "validation_macro_f1": 0.9153439153439153,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.024902604000000217,
+      "graph_id": "pairwise-11",
+      "method": "graph_gcn",
+      "operator": {},
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "a4916654aa1aa2b2d59835b46cde236c12e812861c6db812758c6da68e62cd3c",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.8431424608570746,
+        "test_macro_f1": 0.5793650793650794,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 0.8843715961301903,
+        "validation_macro_f1": 0.746031746031746,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.025942972000000175,
+      "graph_id": "pairwise-11",
+      "method": "quantum_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.7834487074785573,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "435a4765dd13760c39f6015a9fe2eb8119186e51bdcaf264c12ea9d40916a473",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.9338535031119162,
+        "test_macro_f1": 0.5793650793650794,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 0.9906921147205104,
+        "validation_macro_f1": 0.6005291005291006,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.025709238000000134,
+      "graph_id": "pairwise-11",
+      "method": "quantum_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.11510597744107,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 432,
+        "mean_diagonal": 0.9295617934575852,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9515387123681522,
+        "spectral_error_to_full": 0.2787819989996099,
+        "trace_error_exact": 7.013428126993347,
+        "trace_upper_bound": 25.042746470094315
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "672e709e181b3299456280403a2b188955af23fa69a2a63bd4587806e34f5303",
+        "selected_C": 0.1,
+        "test_accuracy": 0.6666666666666666,
+        "test_log_loss": 0.8885342484359234,
+        "test_macro_f1": 0.6626984126984127,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 0.9601072284716072,
+        "validation_macro_f1": 0.5222222222222221,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.02646958399999999,
+      "graph_id": "pairwise-11",
+      "method": "quantum_hard",
+      "operator": {
+        "frobenius_error_to_full": 1.0227602259996353,
+        "incidence_nnz": 88,
+        "mean_diagonal": 0.8802083333333334,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "965f731262159d9936f75b111f8ada6069b2bac7f18ab148b6d1e43acfdfb6ef",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.8442360556656525,
+        "test_macro_f1": 0.5793650793650794,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 0.8853041128199531,
+        "validation_macro_f1": 0.746031746031746,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.031274166000000214,
+      "graph_id": "pairwise-11",
+      "method": "markov_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.785552329825108,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "13a177266bebb6f37e5594e31c8bd9db464dd9162dc73b9e2858041752b8df12",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.9332976365017709,
+        "test_macro_f1": 0.5793650793650794,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 0.9941850492296836,
+        "validation_macro_f1": 0.6005291005291006,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.0273917430000008,
+      "graph_id": "pairwise-11",
+      "method": "markov_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.1037389198840832,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 412,
+        "mean_diagonal": 0.9295040893037342,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9528401200741556,
+        "spectral_error_to_full": 0.2806661361127717,
+        "trace_error_exact": 6.909684454974065,
+        "trace_upper_bound": 24.988389632370477
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "672e709e181b3299456280403a2b188955af23fa69a2a63bd4587806e34f5303",
+        "selected_C": 0.1,
+        "test_accuracy": 0.6666666666666666,
+        "test_log_loss": 0.8885342484359234,
+        "test_macro_f1": 0.6626984126984127,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 0.9601072284716072,
+        "validation_macro_f1": 0.5222222222222221,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.02861702800000021,
+      "graph_id": "pairwise-11",
+      "method": "markov_hard",
+      "operator": {
+        "frobenius_error_to_full": 1.0024453171445935,
+        "incidence_nnz": 88,
+        "mean_diagonal": 0.8802083333333334,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "af0a21e96b972626c21b4de104144c4775aa83a501a7a281b191f3e0955b0172",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.8427850825983825,
+        "test_macro_f1": 0.5793650793650794,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 0.8836906433141047,
+        "validation_macro_f1": 0.746031746031746,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.03156482400000016,
+      "graph_id": "pairwise-11",
+      "method": "spread_markov_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.7834487074785571,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "33fab75f1c515bd2fe1b00fcb0789806aa8bf49d3669b4764ba36c86bc804000",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.9329338709104328,
+        "test_macro_f1": 0.5793650793650794,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 0.9938598087406715,
+        "validation_macro_f1": 0.6005291005291006,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.02794540400000045,
+      "graph_id": "pairwise-11",
+      "method": "spread_markov_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.114649713594797,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 412,
+        "mean_diagonal": 0.9288901003603991,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9521537026565617,
+        "spectral_error_to_full": 0.2828976759719589,
+        "trace_error_exact": 6.981186858328403,
+        "trace_upper_bound": 25.011024452645128
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "672e709e181b3299456280403a2b188955af23fa69a2a63bd4587806e34f5303",
+        "selected_C": 0.1,
+        "test_accuracy": 0.6666666666666666,
+        "test_log_loss": 0.8885342484359234,
+        "test_macro_f1": 0.6626984126984127,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 0.9601072284716072,
+        "validation_macro_f1": 0.5222222222222221,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.03256147300000034,
+      "graph_id": "pairwise-11",
+      "method": "spread_markov_hard",
+      "operator": {
+        "frobenius_error_to_full": 1.012844508813549,
+        "incidence_nnz": 88,
+        "mean_diagonal": 0.8802083333333334,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "d6dedb970b82e28b73b15eb8b00f5a380b52273613bc0efdfd52f0c7b7e22a77",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.0783934717789747,
+        "test_macro_f1": 0.4777777777777778,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1696409695412988,
+        "validation_macro_f1": 0.40740740740740744,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.032485805999999506,
+      "graph_id": "pairwise-23",
+      "method": "features_only",
+      "operator": {},
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "9f6ccdf978ab95bcd2059fb0899a974eec88871f38c8e886f12dbe40272507d1",
+        "selected_C": 10.0,
+        "test_accuracy": 1.0,
+        "test_log_loss": 0.11167614571024514,
+        "test_macro_f1": 1.0,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 0.017252072560505368,
+        "validation_macro_f1": 1.0,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.02598110000000009,
+      "graph_id": "pairwise-23",
+      "method": "graph_gcn",
+      "operator": {},
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "da80b1eac46f7eb2581b542da8545f89942abeb677a1d0d7ccde1c7027617424",
+        "selected_C": 1.0,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 1.0436201446692461,
+        "test_macro_f1": 0.580952380952381,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.0091452200843658,
+        "validation_macro_f1": 0.41005291005291006,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.02481576799999985,
+      "graph_id": "pairwise-23",
+      "method": "quantum_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.791430285427269,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "2b58eb786fbe0dd8a4f382aaf2c8017fbb616d129540c5bf740bcf0a32155c49",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.055474400233181,
+        "test_macro_f1": 0.4777777777777778,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1281742846140113,
+        "validation_macro_f1": 0.40740740740740744,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.027039991999999735,
+      "graph_id": "pairwise-23",
+      "method": "quantum_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.104574448641895,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 400,
+        "mean_diagonal": 0.9373636700414677,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9519678120461453,
+        "spectral_error_to_full": 0.2817412410100834,
+        "trace_error_exact": 7.004802461481528,
+        "trace_upper_bound": 25.035749137556895
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "11086ff6859aacfe9d936e7ff0cb90c85529a7bf1e4fc722e1b89e3f9fc40c7d",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 1.0290856422407144,
+        "test_macro_f1": 0.5793650793650794,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.0924597135060008,
+        "validation_macro_f1": 0.48340548340548345,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.028069365000000346,
+      "graph_id": "pairwise-23",
+      "method": "quantum_hard",
+      "operator": {
+        "frobenius_error_to_full": 0.9883787767088893,
+        "incidence_nnz": 87,
+        "mean_diagonal": 0.8853009259259258,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "3a60b7c372e614373713c1a683829a742a846bb740e54a821e0f9e668df0732b",
+        "selected_C": 1.0,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 1.0460536774391587,
+        "test_macro_f1": 0.580952380952381,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.0140637994346036,
+        "validation_macro_f1": 0.41005291005291006,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.026515010999999866,
+      "graph_id": "pairwise-23",
+      "method": "markov_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.7928866073771278,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "bbb63223036803656809cb7e34f9c789dc0a8a6a9af655c8b8c32c6a39aefe99",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 1.0555569952171096,
+        "test_macro_f1": 0.5793650793650794,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1284883728985549,
+        "validation_macro_f1": 0.40740740740740744,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.026732502999999852,
+      "graph_id": "pairwise-23",
+      "method": "markov_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.096390654317307,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 386,
+        "mean_diagonal": 0.9366217741043769,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9534208139618784,
+        "spectral_error_to_full": 0.2872439733082081,
+        "trace_error_exact": 6.899288002907957,
+        "trace_upper_bound": 24.975021237283784
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "8b6b4c8d067c769ffc381ca00de7703a7cf12f47864d8030b2de84a98569b1ae",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 1.0289997122330543,
+        "test_macro_f1": 0.5793650793650794,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.088276272460208,
+        "validation_macro_f1": 0.580952380952381,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.027340249999999955,
+      "graph_id": "pairwise-23",
+      "method": "markov_hard",
+      "operator": {
+        "frobenius_error_to_full": 0.9783519991763833,
+        "incidence_nnz": 88,
+        "mean_diagonal": 0.8822916666666667,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "937a80fe6c5e938d232749303952e7db083b86b66c8bd7e29893ee8a3a475477",
+        "selected_C": 1.0,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 1.044408648285988,
+        "test_macro_f1": 0.580952380952381,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.0112915700489715,
+        "validation_macro_f1": 0.41005291005291006,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.02748215300000023,
+      "graph_id": "pairwise-23",
+      "method": "spread_markov_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.7914302854272691,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "f8208f760d2958c42026c2e7bcc1222d2c3433c7645a9ac33eaca5f8667e54f1",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 1.0553883001528517,
+        "test_macro_f1": 0.5793650793650794,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1282088042909364,
+        "validation_macro_f1": 0.40740740740740744,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.025246775000000277,
+      "graph_id": "pairwise-23",
+      "method": "spread_markov_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.1040346968686288,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 386,
+        "mean_diagonal": 0.936207585077673,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9529557808398675,
+        "spectral_error_to_full": 0.2889332944484989,
+        "trace_error_exact": 6.949310383219382,
+        "trace_upper_bound": 24.99063559064304
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "8b6b4c8d067c769ffc381ca00de7703a7cf12f47864d8030b2de84a98569b1ae",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 1.0289997122330543,
+        "test_macro_f1": 0.5793650793650794,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.088276272460208,
+        "validation_macro_f1": 0.580952380952381,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.022589830000000255,
+      "graph_id": "pairwise-23",
+      "method": "spread_markov_hard",
+      "operator": {
+        "frobenius_error_to_full": 0.9852425251552004,
+        "incidence_nnz": 88,
+        "mean_diagonal": 0.8822916666666667,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "22f46f0d6e9c5aa68e1665b22a62dd36039d8c1aefeae06854ebefa8f42629c1",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9542805967369361,
+        "test_macro_f1": 0.48412698412698413,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.243042137044798,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.03238436599999961,
+      "graph_id": "pairwise-37",
+      "method": "features_only",
+      "operator": {},
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "d998b088222f313a3dbf6d150e324f66cf7d6d2b51e3d91a79f2076e6284458b",
+        "selected_C": 10.0,
+        "test_accuracy": 1.0,
+        "test_log_loss": 0.05391452133859701,
+        "test_macro_f1": 1.0,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 0.08750598649745232,
+        "validation_macro_f1": 1.0,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.03690830700000092,
+      "graph_id": "pairwise-37",
+      "method": "graph_gcn",
+      "operator": {},
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "27f4296d84a432df2090bd6aee72895c850ba93825e074a8ac2c19504fca9ded",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.8643774313186151,
+        "test_macro_f1": 0.5555555555555555,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.145837032598969,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.03063264300000057,
+      "graph_id": "pairwise-37",
+      "method": "quantum_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.78635253068434,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "bc6f54f7dad6624953560f278637fd98a626e353ca1c6bf215bc805940e1f91b",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.9242323181239276,
+        "test_macro_f1": 0.5555555555555555,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.2286759802382685,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.027370137000000128,
+      "graph_id": "pairwise-37",
+      "method": "quantum_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.1052418254056093,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 444,
+        "mean_diagonal": 0.9297882291562921,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9594238223994109,
+        "spectral_error_to_full": 0.2934660603644659,
+        "trace_error_exact": 6.884913526653705,
+        "trace_upper_bound": 24.73757588900227
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "56f31981748b1f7346d254cc9ef2cbadf4ac46aaeb2e9c71524b9b88ad7a01a5",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9074060004675185,
+        "test_macro_f1": 0.48412698412698413,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1920155833787867,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.027985923000001023,
+      "graph_id": "pairwise-37",
+      "method": "quantum_hard",
+      "operator": {
+        "frobenius_error_to_full": 1.0258260293640686,
+        "incidence_nnz": 88,
+        "mean_diagonal": 0.88125,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "8872723319525c460615ab0e025d6ce73cc7e9dd6d08fe60d9306a1861028bb4",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.8658981187435781,
+        "test_macro_f1": 0.5555555555555555,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1497486372444221,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.026452082000000487,
+      "graph_id": "pairwise-37",
+      "method": "markov_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.7887286030225195,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "cdb48f7a785f4ab2fdf980aa38acda718006edb5d50c242f530564716d886be0",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.924509796891753,
+        "test_macro_f1": 0.5555555555555555,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.2259152272738272,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.02866580599999935,
+      "graph_id": "pairwise-37",
+      "method": "markov_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.0961997750542951,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 418,
+        "mean_diagonal": 0.9307730192104406,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9596591004579255,
+        "spectral_error_to_full": 0.2897530185215269,
+        "trace_error_exact": 6.818131977020215,
+        "trace_upper_bound": 24.730358070609938
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "538477ee02e3c326ec259d9c36dca0d81b30d86b64daa9a2836a2b85c4d79b8e",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.92378100131549,
+        "test_macro_f1": 0.5555555555555555,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1565433736036137,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.027362660999999733,
+      "graph_id": "pairwise-37",
+      "method": "markov_hard",
+      "operator": {
+        "frobenius_error_to_full": 1.0205005356267045,
+        "incidence_nnz": 88,
+        "mean_diagonal": 0.8822916666666666,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "3712756a97c319096a4f857dc14c17a4b0852e34d54dbdbf460273ff3ee6600f",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.8647833497973351,
+        "test_macro_f1": 0.5555555555555555,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1483886941276138,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.026474957000001353,
+      "graph_id": "pairwise-37",
+      "method": "spread_markov_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.78635253068434,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "f7ac0e34bf41c9d6d705dae52163b0791e6b8a57e6a043c58f723aa04c2b9df9",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.9242144752104141,
+        "test_macro_f1": 0.5555555555555555,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.2257244165475414,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.024862470000000414,
+      "graph_id": "pairwise-37",
+      "method": "spread_markov_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.108377945372239,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 418,
+        "mean_diagonal": 0.9300638313322526,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9589643905144761,
+        "spectral_error_to_full": 0.29251701158029064,
+        "trace_error_exact": 6.898142431099814,
+        "trace_upper_bound": 24.753927690417996
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "538477ee02e3c326ec259d9c36dca0d81b30d86b64daa9a2836a2b85c4d79b8e",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.92378100131549,
+        "test_macro_f1": 0.5555555555555555,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1565433736036137,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.02345599500000084,
+      "graph_id": "pairwise-37",
+      "method": "spread_markov_hard",
+      "operator": {
+        "frobenius_error_to_full": 1.0319648976601292,
+        "incidence_nnz": 88,
+        "mean_diagonal": 0.8822916666666666,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "pairwise"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "1c30fb5f3df02e4b6e1872760ee30b7b4267a79dade8e344b60554f14b18f372",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9675225150563332,
+        "test_macro_f1": 0.4777777777777777,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.0256423560921673,
+        "validation_macro_f1": 0.32756132756132755,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.03573761900000072,
+      "graph_id": "heterophily-11",
+      "method": "features_only",
+      "operator": {},
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "7e6ac8f92404916ba27221dee7ea0b0515b154b2dcffd8737885ff43aa2028e5",
+        "selected_C": 0.1,
+        "test_accuracy": 0.16666666666666666,
+        "test_log_loss": 1.176382737774889,
+        "test_macro_f1": 0.14814814814814817,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.073306017521733,
+        "validation_macro_f1": 0.20454545454545456,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.029854922000000172,
+      "graph_id": "heterophily-11",
+      "method": "graph_gcn",
+      "operator": {},
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "71490cfa46c273aa57f390dff0b3cf76aeb3c37230e186bf3e188fdf4b5202c3",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.0129236083495188,
+        "test_macro_f1": 0.48340548340548345,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.0945255742206403,
+        "validation_macro_f1": 0.2222222222222222,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.030247940999998946,
+      "graph_id": "heterophily-11",
+      "method": "quantum_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.7819818372981576,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "c39359b0a69ca2cbe72063769598c57da4e913c400ab085ef6c18c76d9b7a5cd",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9995364325058129,
+        "test_macro_f1": 0.48340548340548345,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.0614059687900756,
+        "validation_macro_f1": 0.32756132756132755,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.033523225999999795,
+      "graph_id": "heterophily-11",
+      "method": "quantum_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.0927604997916711,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 460,
+        "mean_diagonal": 0.9218631270338974,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9617571176878674,
+        "spectral_error_to_full": 0.2800511250906471,
+        "trace_error_exact": 6.714301907315511,
+        "trace_upper_bound": 24.60338240438269
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "4b6e5486e94f08b7b776d650668dd637299f1649cc43eb34b4d2e51321c66d39",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9655515455985153,
+        "test_macro_f1": 0.48340548340548345,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.0399054003557162,
+        "validation_macro_f1": 0.21645021645021645,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.0313057919999995,
+      "graph_id": "heterophily-11",
+      "method": "quantum_hard",
+      "operator": {
+        "frobenius_error_to_full": 1.0536635157115681,
+        "incidence_nnz": 86,
+        "mean_diagonal": 0.8863425925925924,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "2493c442018624618a38229fd93125046c7dab3cffd0a15926fb06e17aca3a6c",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.0116256323251367,
+        "test_macro_f1": 0.48340548340548345,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.092081358820961,
+        "validation_macro_f1": 0.2222222222222222,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.03358407200000002,
+      "graph_id": "heterophily-11",
+      "method": "markov_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.7869673908807848,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "74ecdd07e2be82e26bedbab33e4437c8e4b3065b19ff6c146f570a2058141c5c",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.996456458127577,
+        "test_macro_f1": 0.48340548340548345,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.0594213936737866,
+        "validation_macro_f1": 0.32756132756132755,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.03550725900000096,
+      "graph_id": "heterophily-11",
+      "method": "markov_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.0791248501309176,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 448,
+        "mean_diagonal": 0.9258869098390815,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.960483017695725,
+        "spectral_error_to_full": 0.2747690232556774,
+        "trace_error_exact": 6.668136909998241,
+        "trace_upper_bound": 24.66215756639091
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "4b6e5486e94f08b7b776d650668dd637299f1649cc43eb34b4d2e51321c66d39",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9655515455985153,
+        "test_macro_f1": 0.48340548340548345,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.0399054003557162,
+        "validation_macro_f1": 0.21645021645021645,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.041785388999999284,
+      "graph_id": "heterophily-11",
+      "method": "markov_hard",
+      "operator": {
+        "frobenius_error_to_full": 1.0192341404107403,
+        "incidence_nnz": 86,
+        "mean_diagonal": 0.8863425925925924,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "880835d896fc4e80734bff9390bf56c9dd14992b08e3ec725336b10293776a26",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.012502736206702,
+        "test_macro_f1": 0.48340548340548345,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.0933516770008624,
+        "validation_macro_f1": 0.2222222222222222,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.03690972599999931,
+      "graph_id": "heterophily-11",
+      "method": "spread_markov_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.7819818372981576,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "dec98ba32dc3c85d390c547d56f1b41b4bf4dca51622c2359912633653564ac9",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9970601695268103,
+        "test_macro_f1": 0.48340548340548345,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.0600617802131522,
+        "validation_macro_f1": 0.32756132756132755,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.03962195899999976,
+      "graph_id": "heterophily-11",
+      "method": "spread_markov_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.1047520133990267,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 448,
+        "mean_diagonal": 0.9244282692900022,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9589573508494907,
+        "spectral_error_to_full": 0.2802662533497875,
+        "trace_error_exact": 6.83742873560854,
+        "trace_upper_bound": 24.71337263149946
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "4b6e5486e94f08b7b776d650668dd637299f1649cc43eb34b4d2e51321c66d39",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9655515455985153,
+        "test_macro_f1": 0.48340548340548345,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.0399054003557162,
+        "validation_macro_f1": 0.21645021645021645,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.037913323999999804,
+      "graph_id": "heterophily-11",
+      "method": "spread_markov_hard",
+      "operator": {
+        "frobenius_error_to_full": 1.0447588958056424,
+        "incidence_nnz": 86,
+        "mean_diagonal": 0.8863425925925924,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "d6dedb970b82e28b73b15eb8b00f5a380b52273613bc0efdfd52f0c7b7e22a77",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.0783934717789747,
+        "test_macro_f1": 0.4777777777777778,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1696409695412988,
+        "validation_macro_f1": 0.40740740740740744,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.03452416900000088,
+      "graph_id": "heterophily-23",
+      "method": "features_only",
+      "operator": {},
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "eb35268e391a1c5bbcc2c1cb9c14bc2eed41ec82f1ea2b162521d61cde4ad6f2",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.0660398451213882,
+        "test_macro_f1": 0.49338624338624343,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.3052689192927436,
+        "validation_macro_f1": 0.12121212121212122,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.03949584399999928,
+      "graph_id": "heterophily-23",
+      "method": "graph_gcn",
+      "operator": {},
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "e9fe622969b16d57127f004764af2f8661335b5cda8972f6ca2d033494e5d81d",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.130426452972541,
+        "test_macro_f1": 0.4777777777777778,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.212015030752266,
+        "validation_macro_f1": 0.3238095238095238,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.03536607899999922,
+      "graph_id": "heterophily-23",
+      "method": "quantum_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.7889565118354945,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "69b68615af9e3ee43028d6eda5513c83b59f6aca8e01e04a81118dfd14e66628",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.0972334471890166,
+        "test_macro_f1": 0.4777777777777778,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1661268116042505,
+        "validation_macro_f1": 0.41005291005291006,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.04242072099999916,
+      "graph_id": "heterophily-23",
+      "method": "quantum_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.086904610361953,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 474,
+        "mean_diagonal": 0.9310979581961908,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9564174354378748,
+        "spectral_error_to_full": 0.2804810446087567,
+        "trace_error_exact": 6.82278942531342,
+        "trace_upper_bound": 24.855026894398648
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "a23a11d5cf4e61368b2a5fe98a8ddd8622e30fd20ceb670486a657634722e815",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.101569772200581,
+        "test_macro_f1": 0.4814814814814814,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1647284332208268,
+        "validation_macro_f1": 0.41005291005291006,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.07420171999999958,
+      "graph_id": "heterophily-23",
+      "method": "quantum_hard",
+      "operator": {
+        "frobenius_error_to_full": 1.1276684188288908,
+        "incidence_nnz": 85,
+        "mean_diagonal": 0.8971808862433862,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "d926e62151c6d0cacc087b7b176bbeb8072f4fe115b78b8910483facf176db62",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.1282778131898672,
+        "test_macro_f1": 0.4777777777777778,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.2107492565277516,
+        "validation_macro_f1": 0.3238095238095238,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.037540347000000196,
+      "graph_id": "heterophily-23",
+      "method": "markov_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.793431443448771,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "e148cb8667f3cbb4a8d9393db7de5da233ef492e8014d5b67fda50477e72e590",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.0966652617686614,
+        "test_macro_f1": 0.4777777777777778,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1706182377196923,
+        "validation_macro_f1": 0.41005291005291006,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.041869469999999964,
+      "graph_id": "heterophily-23",
+      "method": "markov_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.071339994724594,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 460,
+        "mean_diagonal": 0.93404140652504,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9557048283888707,
+        "spectral_error_to_full": 0.27067883118049973,
+        "trace_error_exact": 6.749278227660909,
+        "trace_upper_bound": 24.88983118231158
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "a23a11d5cf4e61368b2a5fe98a8ddd8622e30fd20ceb670486a657634722e815",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.101569772200581,
+        "test_macro_f1": 0.4814814814814814,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1647284332208268,
+        "validation_macro_f1": 0.41005291005291006,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.03838969999999975,
+      "graph_id": "heterophily-23",
+      "method": "markov_hard",
+      "operator": {
+        "frobenius_error_to_full": 1.099301548517694,
+        "incidence_nnz": 85,
+        "mean_diagonal": 0.8971808862433862,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "b36e9e593534f6b2f4ee47b49bba613abc8961c80fc666fa56d2443e65d6caf4",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.1291840777917956,
+        "test_macro_f1": 0.4777777777777778,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.2114535202737318,
+        "validation_macro_f1": 0.3238095238095238,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.03704315800000124,
+      "graph_id": "heterophily-23",
+      "method": "spread_markov_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.788956511835495,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "c94a20e283ee2845e39c4f82b42d438df5b7e1db99e79d699b66f777566d4274",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.0969686199890933,
+        "test_macro_f1": 0.4777777777777778,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1705625285148369,
+        "validation_macro_f1": 0.41005291005291006,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.038472417999999564,
+      "graph_id": "heterophily-23",
+      "method": "spread_markov_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.0945786062343832,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 460,
+        "mean_diagonal": 0.9327963589657159,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9542365151430642,
+        "spectral_error_to_full": 0.27542093291262915,
+        "trace_error_exact": 6.904312662250598,
+        "trace_upper_bound": 24.939812981909874
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "a23a11d5cf4e61368b2a5fe98a8ddd8622e30fd20ceb670486a657634722e815",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 1.101569772200581,
+        "test_macro_f1": 0.4814814814814814,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1647284332208268,
+        "validation_macro_f1": 0.41005291005291006,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.0368146669999998,
+      "graph_id": "heterophily-23",
+      "method": "spread_markov_hard",
+      "operator": {
+        "frobenius_error_to_full": 1.1214477187804164,
+        "incidence_nnz": 85,
+        "mean_diagonal": 0.8971808862433862,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "22f46f0d6e9c5aa68e1665b22a62dd36039d8c1aefeae06854ebefa8f42629c1",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9542805967369361,
+        "test_macro_f1": 0.48412698412698413,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.243042137044798,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.03564507299999953,
+      "graph_id": "heterophily-37",
+      "method": "features_only",
+      "operator": {},
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "2418780c54ebfe0a4d9d22b1240829177b7fdd296fbd571f8308b52682ee42cb",
+        "selected_C": 0.1,
+        "test_accuracy": 0.6666666666666666,
+        "test_log_loss": 0.8780992136243172,
+        "test_macro_f1": 0.6722222222222222,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.1128025250623215,
+        "validation_macro_f1": 0.25,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.03652256899999884,
+      "graph_id": "heterophily-37",
+      "method": "graph_gcn",
+      "operator": {},
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "092d08dedcfc925ae43aa5521530dd48e14a4278c0d2beddbc046b76f35216d7",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.9735024342247441,
+        "test_macro_f1": 0.5555555555555555,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.2539497892327927,
+        "validation_macro_f1": 0.2558922558922559,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.03713602400000049,
+      "graph_id": "heterophily-37",
+      "method": "quantum_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.7829240494189516,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "80131c887336e85abda11c988e77d76e6a6ac72db3530cbcd02a9610657d838c",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9623322460602588,
+        "test_macro_f1": 0.48412698412698413,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.2475151688342518,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.03544614700000004,
+      "graph_id": "heterophily-37",
+      "method": "quantum_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.089587891050378,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 446,
+        "mean_diagonal": 0.9248561892503493,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9548258058729097,
+        "spectral_error_to_full": 0.2906598241542288,
+        "trace_error_exact": 6.81274271190709,
+        "trace_upper_bound": 24.893255170964096
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "40beab29a6aa496e12f43da96e9b4df69b3f52f9f77c63db3c93fe7f11dd719f",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9520224444489416,
+        "test_macro_f1": 0.48412698412698413,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.2481069541791843,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.034152929999999415,
+      "graph_id": "heterophily-37",
+      "method": "quantum_hard",
+      "operator": {
+        "frobenius_error_to_full": 1.1345606054307171,
+        "incidence_nnz": 84,
+        "mean_diagonal": 0.8939236111111111,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "04deb79c760400781e8ffc9e2f150ada1cd9fe7029528def61bd4d41416be0bb",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.9741078313815968,
+        "test_macro_f1": 0.5555555555555555,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.2551689464998443,
+        "validation_macro_f1": 0.2558922558922559,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.040575443999999905,
+      "graph_id": "heterophily-37",
+      "method": "markov_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.7875883334142162,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "e07e62e7161caba42b5654767dbf482d786c854341d1a164d10d3008f9798097",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9632517456263822,
+        "test_macro_f1": 0.48412698412698413,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.2467147198763067,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.03650170100000061,
+      "graph_id": "heterophily-37",
+      "method": "markov_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.0731178884846397,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 446,
+        "mean_diagonal": 0.9279790614069731,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9544957462865479,
+        "spectral_error_to_full": 0.28204801789423756,
+        "trace_error_exact": 6.738754943652335,
+        "trace_upper_bound": 24.91625214003728
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "40beab29a6aa496e12f43da96e9b4df69b3f52f9f77c63db3c93fe7f11dd719f",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9520224444489416,
+        "test_macro_f1": 0.48412698412698413,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.2481069541791843,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.03840898500000023,
+      "graph_id": "heterophily-37",
+      "method": "markov_hard",
+      "operator": {
+        "frobenius_error_to_full": 1.103606185835108,
+        "incidence_nnz": 84,
+        "mean_diagonal": 0.8939236111111111,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "78f595a6c27e8915e64310e608b93d03eeebb9d3c6b30197f07a2f5789b23071",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5833333333333334,
+        "test_log_loss": 0.9743261888992839,
+        "test_macro_f1": 0.5555555555555555,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.2552561557043571,
+        "validation_macro_f1": 0.2558922558922559,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.029569490000000087,
+      "graph_id": "heterophily-37",
+      "method": "spread_markov_direct",
+      "operator": {
+        "matrix_nnz_at_1e-12": 2304,
+        "mean_diagonal": 0.7829240494189516,
+        "operator_type": "complete_transport_gram"
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "a7d9dee0298ea56a935a4039feb9cc3e26b58b0d1318a8c1d56009c7bf28ca43",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9633597120461856,
+        "test_macro_f1": 0.48412698412698413,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.2467427392689605,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.028118992999999648,
+      "graph_id": "heterophily-37",
+      "method": "spread_markov_sparse",
+      "operator": {
+        "frobenius_error_to_full": 1.0971041645725734,
+        "incidence_nnz": 408,
+        "induced_graph_nnz": 446,
+        "mean_diagonal": 0.9266387987812279,
+        "n_group_edges": 72,
+        "n_singleton_edges": 48,
+        "operator_type": "certified_sparse_soft_hypergraph",
+        "retained_mass_mean": 0.9529332459006904,
+        "spectral_error_to_full": 0.2873023959582001,
+        "trace_error_exact": 6.898307969389267,
+        "trace_upper_bound": 24.967957377521184
+      },
+      "regime": "heterophily"
+    },
+    {
+      "evaluation": {
+        "model_fingerprint": "40beab29a6aa496e12f43da96e9b4df69b3f52f9f77c63db3c93fe7f11dd719f",
+        "selected_C": 0.1,
+        "test_accuracy": 0.5,
+        "test_log_loss": 0.9520224444489416,
+        "test_macro_f1": 0.48412698412698413,
+        "test_size": 12,
+        "train_size": 24,
+        "validation_log_loss": 1.2481069541791843,
+        "validation_macro_f1": 0.2740740740740741,
+        "validation_size": 12
+      },
+      "evaluation_seconds": 0.027639053000001468,
+      "graph_id": "heterophily-37",
+      "method": "spread_markov_hard",
+      "operator": {
+        "frobenius_error_to_full": 1.1272471854240147,
+        "incidence_nnz": 84,
+        "mean_diagonal": 0.8939236111111111,
+        "n_group_edges": 10,
+        "n_singleton_edges": 48,
+        "operator_type": "greedy_hard_hypergraph",
+        "status": "budget_exhausted"
+      },
+      "regime": "heterophily"
+    }
+  ],
+  "source_sha256": {
+    "main.py": "218dd9fe536a0e2408291542f3fdfdfdccf42e5e30ef3f45a2273f1379aeea4e",
+    "qhyper/construction_candidates.py": "fd1d92886d37e6f9d2fd84c8a51a7f914279e7a04a54edb5ed7cf6ef36f73d28",
+    "qhyper/construction_cluster.py": "80f2ec45be248c2795b37e487203abd8a554a815b6c92ecbb3730c733694a966",
+    "qhyper/construction_compression.py": "aa55abec101e0148922a67937573346b46d83fbd09ece9a5dfb8ba9d4ea1705d",
+    "qhyper/construction_evaluation.py": "3819ee886b34d6f1e797e7367f1bf7793c222367820f1e1412999ba6fa52c7c2",
+    "qhyper/construction_kernels.py": "fbed572061d6d1dc13527d332a613f6e646dff356b3f25f449b077ae8f132d30",
+    "qhyper/construction_pipeline.py": "27377eee26d631d0a0ed7a4283e806012c1b168749b02946d8cd792a47ee3bfd",
+    "qhyper/construction_sparse.py": "161fa3903e82e6d701cc9b5c6c90f88b7e569099b5db15e665efba7e0eeecb8b",
+    "qhyper/construction_synthetic.py": "90cca264e3bad5c1ce413bf001bf2090e58a35bc18276bd9023feaa41fdfd7cb",
+    "qhyper/experiment_logger.py": "14ca3959190a3f0d388fc8d0fbfed3035cdd403774ebb1a15e79f960934c9375",
+    "qhyper/hamiltonian.py": "e9690ab6a4e42f0769567326e481944c50156794c826dd2b30269a423d86d0b3"
+  },
+  "status": "exploratory_b1_no_confirmatory_claim",
+  "summary": {
+    "group": {
+      "methods": {
+        "features_only": {
+          "n": 3,
+          "test_macro_f1_mean": 0.4798941798941799,
+          "test_macro_f1_sd": 0.0036657159948547857
+        },
+        "graph_gcn": {
+          "n": 3,
+          "test_macro_f1_mean": 0.9460317460317461,
+          "test_macro_f1_sd": 0.09347575786879654
+        },
+        "markov_direct": {
+          "n": 3,
+          "test_macro_f1_mean": 0.5745149911816578,
+          "test_macro_f1_sd": 0.08039818484347527
+        },
+        "markov_hard": {
+          "n": 3,
+          "test_macro_f1_mean": 0.5208112874779541,
+          "test_macro_f1_sd": 0.05254192925958505
+        },
+        "markov_sparse": {
+          "n": 3,
+          "test_macro_f1_mean": 0.4798941798941799,
+          "test_macro_f1_sd": 0.0036657159948547857
+        },
+        "quantum_direct": {
+          "n": 3,
+          "test_macro_f1_mean": 0.5745149911816578,
+          "test_macro_f1_sd": 0.08039818484347527
+        },
+        "quantum_hard": {
+          "n": 3,
+          "test_macro_f1_mean": 0.5208112874779541,
+          "test_macro_f1_sd": 0.05254192925958505
+        },
+        "quantum_sparse": {
+          "n": 3,
+          "test_macro_f1_mean": 0.5375661375661376,
+          "test_macro_f1_sd": 0.05312917588901448
+        },
+        "spread_markov_direct": {
+          "n": 3,
+          "test_macro_f1_mean": 0.5745149911816578,
+          "test_macro_f1_sd": 0.08039818484347527
+        },
+        "spread_markov_hard": {
+          "n": 3,
+          "test_macro_f1_mean": 0.5208112874779541,
+          "test_macro_f1_sd": 0.05254192925958505
+        },
+        "spread_markov_sparse": {
+          "n": 3,
+          "test_macro_f1_mean": 0.4798941798941799,
+          "test_macro_f1_sd": 0.0036657159948547857
+        }
+      },
+      "n_graph_records": 3,
+      "paired_quantum_minus_markov": {
+        "direct": {
+          "mean": 0.0,
+          "n": 3,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "hard": {
+          "mean": 0.0,
+          "n": 3,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "sparse": {
+          "mean": 0.05767195767195769,
+          "n": 3,
+          "values": [
+            0.10158730158730173,
+            0.0,
+            0.07142857142857134
+          ]
+        }
+      },
+      "paired_quantum_minus_spread_markov": {
+        "direct": {
+          "mean": 0.0,
+          "n": 3,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "hard": {
+          "mean": 0.0,
+          "n": 3,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "sparse": {
+          "mean": 0.05767195767195769,
+          "n": 3,
+          "values": [
+            0.10158730158730173,
+            0.0,
+            0.07142857142857134
+          ]
+        }
+      },
+      "unit_type": "independent_synthetic_draw"
+    },
+    "heterophily": {
+      "methods": {
+        "features_only": {
+          "n": 3,
+          "test_macro_f1_mean": 0.4798941798941799,
+          "test_macro_f1_sd": 0.0036657159948547857
+        },
+        "graph_gcn": {
+          "n": 3,
+          "test_macro_f1_mean": 0.4379188712522046,
+          "test_macro_f1_sd": 0.26640360509524164
+        },
+        "markov_direct": {
+          "n": 3,
+          "test_macro_f1_mean": 0.5055796055796056,
+          "test_macro_f1_sd": 0.04337181630571876
+        },
+        "markov_hard": {
+          "n": 3,
+          "test_macro_f1_mean": 0.48300464967131634,
+          "test_macro_f1_sd": 0.0013675422566324063
+        },
+        "markov_sparse": {
+          "n": 3,
+          "test_macro_f1_mean": 0.4817700817700818,
+          "test_macro_f1_sd": 0.0034762061501019026
+        },
+        "quantum_direct": {
+          "n": 3,
+          "test_macro_f1_mean": 0.5055796055796056,
+          "test_macro_f1_sd": 0.04337181630571876
+        },
+        "quantum_hard": {
+          "n": 3,
+          "test_macro_f1_mean": 0.48300464967131634,
+          "test_macro_f1_sd": 0.0013675422566324063
+        },
+        "quantum_sparse": {
+          "n": 3,
+          "test_macro_f1_mean": 0.4817700817700818,
+          "test_macro_f1_sd": 0.0034762061501019026
+        },
+        "spread_markov_direct": {
+          "n": 3,
+          "test_macro_f1_mean": 0.5055796055796056,
+          "test_macro_f1_sd": 0.04337181630571876
+        },
+        "spread_markov_hard": {
+          "n": 3,
+          "test_macro_f1_mean": 0.48300464967131634,
+          "test_macro_f1_sd": 0.0013675422566324063
+        },
+        "spread_markov_sparse": {
+          "n": 3,
+          "test_macro_f1_mean": 0.4817700817700818,
+          "test_macro_f1_sd": 0.0034762061501019026
+        }
+      },
+      "n_graph_records": 3,
+      "paired_quantum_minus_markov": {
+        "direct": {
+          "mean": 0.0,
+          "n": 3,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "hard": {
+          "mean": 0.0,
+          "n": 3,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "sparse": {
+          "mean": 0.0,
+          "n": 3,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "paired_quantum_minus_spread_markov": {
+        "direct": {
+          "mean": 0.0,
+          "n": 3,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "hard": {
+          "mean": 0.0,
+          "n": 3,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "sparse": {
+          "mean": 0.0,
+          "n": 3,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "unit_type": "independent_synthetic_draw"
+    },
+    "pairwise": {
+      "methods": {
+        "features_only": {
+          "n": 3,
+          "test_macro_f1_mean": 0.4798941798941799,
+          "test_macro_f1_sd": 0.0036657159948547857
+        },
+        "graph_gcn": {
+          "n": 3,
+          "test_macro_f1_mean": 1.0,
+          "test_macro_f1_sd": 0.0
+        },
+        "markov_direct": {
+          "n": 3,
+          "test_macro_f1_mean": 0.571957671957672,
+          "test_macro_f1_sd": 0.01422680387275008
+        },
+        "markov_hard": {
+          "n": 3,
+          "test_macro_f1_mean": 0.5992063492063492,
+          "test_macro_f1_sd": 0.056259709836340585
+        },
+        "markov_sparse": {
+          "n": 3,
+          "test_macro_f1_mean": 0.5714285714285715,
+          "test_macro_f1_sd": 0.013746434980705456
+        },
+        "quantum_direct": {
+          "n": 3,
+          "test_macro_f1_mean": 0.571957671957672,
+          "test_macro_f1_sd": 0.01422680387275008
+        },
+        "quantum_hard": {
+          "n": 3,
+          "test_macro_f1_mean": 0.5753968253968255,
+          "test_macro_f1_sd": 0.08935182737458493
+        },
+        "quantum_sparse": {
+          "n": 3,
+          "test_macro_f1_mean": 0.5375661375661376,
+          "test_macro_f1_sd": 0.05312917588901448
+        },
+        "spread_markov_direct": {
+          "n": 3,
+          "test_macro_f1_mean": 0.571957671957672,
+          "test_macro_f1_sd": 0.01422680387275008
+        },
+        "spread_markov_hard": {
+          "n": 3,
+          "test_macro_f1_mean": 0.5992063492063492,
+          "test_macro_f1_sd": 0.056259709836340585
+        },
+        "spread_markov_sparse": {
+          "n": 3,
+          "test_macro_f1_mean": 0.5714285714285715,
+          "test_macro_f1_sd": 0.013746434980705456
+        }
+      },
+      "n_graph_records": 3,
+      "paired_quantum_minus_markov": {
+        "direct": {
+          "mean": 0.0,
+          "n": 3,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "hard": {
+          "mean": -0.02380952380952378,
+          "n": 3,
+          "values": [
+            0.0,
+            0.0,
+            -0.07142857142857134
+          ]
+        },
+        "sparse": {
+          "mean": -0.03386243386243387,
+          "n": 3,
+          "values": [
+            0.0,
+            -0.10158730158730161,
+            0.0
+          ]
+        }
+      },
+      "paired_quantum_minus_spread_markov": {
+        "direct": {
+          "mean": 0.0,
+          "n": 3,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "hard": {
+          "mean": -0.02380952380952378,
+          "n": 3,
+          "values": [
+            0.0,
+            0.0,
+            -0.07142857142857134
+          ]
+        },
+        "sparse": {
+          "mean": -0.03386243386243387,
+          "n": 3,
+          "values": [
+            0.0,
+            -0.10158730158730161,
+            0.0
+          ]
+        }
+      },
+      "unit_type": "independent_synthetic_draw"
+    }
+  },
+  "total_processing_seconds_excluding_final_report_write": 10.246753817999998
+}

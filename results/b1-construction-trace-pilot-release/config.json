@@ -1,0 +1,63 @@
+{
+  "evaluation": {
+    "C_grid": [
+      0.1,
+      1.0,
+      10.0
+    ]
+  },
+  "hard": {
+    "budget": 10,
+    "enabled": true,
+    "max_candidates": 90,
+    "max_size": 4,
+    "min_size": 2,
+    "neighborhood_cap": 8,
+    "weight_grid": [
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ]
+  },
+  "kernel": {
+    "dense_limit": 128,
+    "kind": "norm_laplacian",
+    "lam": 0.0,
+    "time_candidates": [
+      2.0,
+      4.0,
+      6.0,
+      8.0,
+      10.0,
+      12.0,
+      16.0
+    ],
+    "time_policy": "gcn_trace_match"
+  },
+  "project": {
+    "mode": "synthetic",
+    "protocol": "latent_b1_synthetic_trace_pilot_v1",
+    "seed": 20261115
+  },
+  "sparse": {
+    "batch_size": 12,
+    "landmarks": 24,
+    "top_k": 5
+  },
+  "synthetic": {
+    "graph_seeds": [
+      101,
+      102,
+      103,
+      104,
+      105
+    ],
+    "n_nodes": 48,
+    "regimes": [
+      "group",
+      "pairwise",
+      "heterophily"
+    ]
+  }
+}

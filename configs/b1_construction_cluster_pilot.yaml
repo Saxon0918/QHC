@@ -1,0 +1,39 @@
+# New independent graphs after the trace pilot. Endpoint merging uses four
+# groups (48*4=192 memberships) versus about 24*5+48=168 sparse memberships.
+project:
+  protocol: latent_b1_synthetic_cluster_pilot_v1
+  mode: synthetic
+  seed: 20261115
+
+synthetic:
+  regimes: [group, pairwise, heterophily]
+  graph_seeds: [201, 202, 203, 204, 205]
+  n_nodes: 48
+
+kernel:
+  kind: norm_laplacian
+  lam: 0.0
+  time_policy: gcn_trace_match
+  time_candidates: [2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 16.0]
+  dense_limit: 128
+
+sparse:
+  landmarks: 24
+  top_k: 5
+  batch_size: 12
+
+cluster:
+  enabled: true
+  n_groups: 4
+
+hard:
+  enabled: true
+  min_size: 2
+  max_size: 4
+  neighborhood_cap: 8
+  max_candidates: 90
+  budget: 10
+  weight_grid: [0.25, 0.5, 1.0, 2.0]
+
+evaluation:
+  C_grid: [0.1, 1.0, 10.0]
