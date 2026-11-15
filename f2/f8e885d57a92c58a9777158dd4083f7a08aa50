@@ -1,0 +1,31 @@
+configs/b1_construction_npz_fusion.yaml
+  s_86ca5e2515274a::t_4ce278ec568c44 1-32
+qhyper/construction_evaluation.py
+  s_86ca5e2515274a::t_4ce278ec568c44 203-335
+tests/test_construction_evaluation.py
+  s_86ca5e2515274a::t_4ce278ec568c44 9,11,113-148
+qhyper/construction_pipeline.py
+  s_86ca5e2515274a::t_4ce278ec568c44 21,141-148,317-333,564-596
+tests/test_construction_pipeline.py
+  s_86ca5e2515274a::t_4ce278ec568c44 80-109,122,128-129
+README.md
+  s_86ca5e2515274a::t_30292bfb1f6569 217-232
+docs/LATENT_CONSTRUCTION_THEORY.md
+  s_86ca5e2515274a::t_4c3229b059b218 184-204
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.24",
+  "base_commit_sha": "f2f8e885d57a92c58a9777158dd4083f7a08aa50",
+  "prompts": {},
+  "sessions": {
+    "s_86ca5e2515274a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "01a1d1bd-207b-7fe2-a577-553362b96fbe",
+        "model": "unknown"
+      },
+      "human_author": "saxon.zhu <saxon.zhu@htx-inc.com>"
+    }
+  }
+}
