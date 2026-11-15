@@ -2,9 +2,21 @@
 
 import numpy as np
 import pytest
+import subprocess
+import sys
+from pathlib import Path
 
 from qhyper.construction_pipeline import _load_npz_graph
 from scripts.prepare_b1_planetoid import save_b1_npz
+
+
+def test_direct_script_invocation_finds_qhyper_without_editable_install(tmp_path):
+    script = Path(__file__).resolve().parents[1] / "scripts" / "prepare_b1_planetoid.py"
+    completed = subprocess.run(
+        [sys.executable, "-I", str(script), "--help"],
+        cwd=tmp_path, text=True, capture_output=True, check=True,
+    )
+    assert "--dataset" in completed.stdout
 
 
 def test_planetoid_export_round_trips_binary_graph_and_masks(tmp_path):

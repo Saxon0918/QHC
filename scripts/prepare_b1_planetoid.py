@@ -9,15 +9,18 @@ from __future__ import annotations
 
 import argparse
 from pathlib import Path
+import sys
 
 import numpy as np
 from scipy import sparse
 
+# Direct execution adds scripts/ (not the repository root) to sys.path.
+ROOT = Path(__file__).resolve().parent.parent
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
 from qhyper.experiment_logger import sha256_file, write_json
 from qhyper.hamiltonian import checked_adjacency
-
-
-ROOT = Path(__file__).resolve().parent.parent
 
 
 def save_b1_npz(
