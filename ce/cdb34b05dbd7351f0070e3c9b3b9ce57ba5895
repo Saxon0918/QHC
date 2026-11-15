@@ -1,0 +1,21 @@
+scripts/prepare_b1_planetoid.py
+  s_9503dc1e5f7d67::t_377e099c097717 12,17-21
+tests/test_prepare_b1_planetoid.py
+  s_9503dc1e5f7d67::t_f4d6d6e05ec780 5-7,13-21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.24",
+  "base_commit_sha": "cecdb34b05dbd7351f0070e3c9b3b9ce57ba5895",
+  "prompts": {},
+  "sessions": {
+    "s_9503dc1e5f7d67": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d1bd-207b-7fe2-a577-553362b96fbe",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "saxon.zhu <saxon.zhu@htx-inc.com>"
+    }
+  }
+}
