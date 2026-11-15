@@ -1,0 +1,42 @@
+{
+  "evaluation": {
+    "C_grid": [
+      0.1,
+      1.0,
+      10.0
+    ]
+  },
+  "hard": {
+    "enabled": false
+  },
+  "kernel": {
+    "dense_limit": 128,
+    "kind": "norm_laplacian",
+    "lam": 0.0,
+    "times": [
+      0.75,
+      1.5,
+      3.0
+    ],
+    "weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ]
+  },
+  "npz": {
+    "files": [
+      "../data/processed/cora_b1.npz"
+    ]
+  },
+  "project": {
+    "mode": "npz",
+    "protocol": "latent_b1_npz_pilot_v1",
+    "seed": 20261115
+  },
+  "sparse": {
+    "batch_size": 16,
+    "landmarks": 128,
+    "top_k": 16
+  }
+}
