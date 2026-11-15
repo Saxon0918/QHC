@@ -77,6 +77,36 @@ def test_large_graph_path_avoids_dense_reference(tmp_path):
                for row in report["records"] if row["method"].endswith("sparse"))
 
 
+def test_optional_graph_fusion_adds_matched_controls_and_selected_operators(tmp_path):
+    config = _config(dense_limit=12, hard=False)
+    config["cluster"]["enabled"] = False
+    config["fusion"] = {"enabled": True, "alphas": [0.0, 0.5, 1.0]}
+    report, output = _run(tmp_path, config)
+    arms = {row["method"]: row for row in report["records"]}
+    fused = {"graph_identity_fusion", "graph_quantum_sparse_fusion",
+             "graph_markov_sparse_fusion"}
+    assert set(arms) == {"features_only", "graph_gcn", "quantum_sparse",
+                         "markov_sparse"} | fused
+    for method in fused:
+        scores = arms[method]["evaluation"]
+        assert scores["selected_alpha"] in (0.0, 0.5, 1.0)
+        assert [row["alpha"] for row in scores["validation_by_alpha"]] == [0.0, 0.5, 1.0]
+        assert (output / "graphs" / "group-7" / f"{method}_theta.npz").exists()
+    summary = report["summary"]["group"]
+    assert summary["paired_fusion_quantum_minus_graph"]["n"] == 1
+    assert summary["paired_fusion_quantum_minus_identity"]["n"] == 1
+    assert summary["paired_fusion_quantum_minus_markov"]["n"] == 1
+
+
+@pytest.mark.parametrize("alphas", [[0.0, 1.0], [0.0, 0.5, 0.5, 1.0],
+                                      [0.0, 0.5, 1.1], [0.0, 0.5, 0.75]])
+def test_fusion_config_requires_distinct_bounded_endpoints_and_interior(tmp_path, alphas):
+    config = _config(dense_limit=12, hard=False)
+    config["fusion"] = {"enabled": True, "alphas": alphas}
+    with pytest.raises(ValueError, match="fusion.alphas"):
+        _run(tmp_path, config)
+
+
 def test_npz_mode_uses_explicit_held_out_indices(tmp_path):
     A, X, y, _ = make_synthetic_graph("pairwise", 3, n=24)
     split = stratified_node_split(y, seed=29)
@@ -89,11 +119,14 @@ def test_npz_mode_uses_explicit_held_out_indices(tmp_path):
     config["project"]["mode"] = "npz"
     config.pop("synthetic")
     config["npz"] = {"files": ["graph.npz"]}
+    config["fusion"] = {"enabled": True, "alphas": [0.0, 0.5, 1.0]}
     report, _ = _run(tmp_path, config)
     assert report["graphs"][0]["metadata"]["source_sha256"]
     assert report["graphs"][0]["train_idx"] == split["train"].tolist()
     assert report["graphs"][0]["test_idx"] == split["test"].tolist()
     assert report["summary"]["npz"]["unit_type"] == "archive_independence_unverified"
+    assert "graph_quantum_sparse_fusion" in {
+        row["method"] for row in report["records"]}
 
 
 def test_label_blind_trace_calibration_is_recorded(tmp_path):

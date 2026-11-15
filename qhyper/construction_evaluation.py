@@ -200,6 +200,139 @@ def evaluate_operator(
     }
 
 
+def fused_operator(
+    graph: sparse.spmatrix | np.ndarray,
+    additional: sparse.spmatrix | np.ndarray,
+    alpha: float,
+) -> sparse.csr_matrix | np.ndarray:
+    """Convexly combine graph and additional propagation operators.
+
+    The additional operator may come from a soft hypergraph or be the identity
+    control.  Endpoints return the corresponding operator exactly, and sparse
+    inputs stay sparse so the large-graph path never forms an N-by-N array.
+    """
+    if isinstance(alpha, bool) or not isinstance(alpha, (int, float)) \
+            or not np.isfinite(alpha) or not 0.0 <= alpha <= 1.0:
+        raise ValueError("alpha must be finite and lie in [0, 1]")
+    base = _validated_operator(graph)
+    other = _validated_operator(additional)
+    if base.shape != other.shape:
+        raise ValueError("fusion operators must have the same shape")
+    if alpha == 0.0:
+        return base
+    if alpha == 1.0:
+        return other
+    if sparse.issparse(base) or sparse.issparse(other):
+        first = base if sparse.issparse(base) else sparse.csr_matrix(base)
+        second = other if sparse.issparse(other) else sparse.csr_matrix(other)
+        fused = ((1.0 - alpha) * first + alpha * second).tocsr()
+        fused.eliminate_zeros()
+        return fused
+    return (1.0 - alpha) * base + alpha * other
+
+
+def evaluate_fusion(
+    graph: sparse.spmatrix | np.ndarray,
+    additional: sparse.spmatrix | np.ndarray,
+    X: sparse.spmatrix | np.ndarray,
+    y: np.ndarray,
+    split: Mapping[str, np.ndarray],
+    alphas: Iterable[float],
+    C_grid: Iterable[float] = _DEFAULT_C_GRID,
+) -> dict[str, object]:
+    """Choose fusion weight and decoder using validation labels only.
+
+    Every alpha gets the same train-only scaler and C search.  Test labels are
+    read once, after the lowest-validation-loss (alpha, C) pair is selected.
+    The complete validation curve is retained for auditing without exposing
+    test scores for unselected alpha values.
+    """
+    base = _validated_operator(graph)
+    other = _validated_operator(additional)
+    if base.shape != other.shape:
+        raise ValueError("fusion operators must have the same shape")
+    try:
+        alpha_values = list(alphas)
+    except TypeError as exc:
+        raise ValueError("alphas must be a nonempty sequence in [0, 1]") from exc
+    if (not alpha_values or any(isinstance(a, bool) or not isinstance(a, (int, float))
+                                or not np.isfinite(a) or not 0.0 <= a <= 1.0
+                                for a in alpha_values)
+            or len(set(alpha_values)) != len(alpha_values)):
+        raise ValueError("alphas must be distinct finite values in [0, 1]")
+    alpha_values = sorted(float(a) for a in alpha_values)
+    grid = _validated_grid(C_grid)
+    n = base.shape[0]
+    features = _dense_features(X, n)
+    labels = np.asarray(y)
+    if labels.ndim != 1 or labels.shape[0] != n:
+        raise ValueError("labels must be a length-N vector")
+    roles = _validated_split(split, n)
+    train, validation, test = (roles[role] for role in ("train", "validation", "test"))
+    train_classes = np.unique(labels[train])
+    if train_classes.size < 2:
+        raise ValueError("training split must contain at least two classes")
+    if not np.isin(labels[validation], train_classes).all():
+        raise ValueError("validation labels contain a class absent from training")
+
+    validation_by_alpha: list[dict[str, float]] = []
+    selected: tuple[tuple[float, float, float], StandardScaler,
+                    LogisticRegression, np.ndarray] | None = None
+    for alpha in alpha_values:
+        propagated = fused_operator(base, other, alpha) @ features
+        scaler = StandardScaler().fit(propagated[train])
+        train_x = scaler.transform(propagated[train])
+        validation_x = scaler.transform(propagated[validation])
+        best_for_alpha: tuple[float, float, LogisticRegression] | None = None
+        for c in grid:
+            model = LogisticRegression(C=c, max_iter=2000, solver="lbfgs", random_state=0)
+            model.fit(train_x, labels[train])
+            probability = model.predict_proba(validation_x)
+            loss = float(log_loss(labels[validation], probability, labels=model.classes_))
+            if best_for_alpha is None or (loss, c) < best_for_alpha[:2]:
+                best_for_alpha = (loss, c, model)
+        assert best_for_alpha is not None
+        loss, c, model = best_for_alpha
+        validation_by_alpha.append({
+            "alpha": alpha,
+            "selected_C": c,
+            "validation_log_loss": loss,
+            "validation_macro_f1": float(f1_score(
+                labels[validation], model.predict(validation_x),
+                labels=model.classes_, average="macro", zero_division=0)),
+        })
+        key = (loss, alpha, c)
+        if selected is None or key < selected[0]:
+            selected = (key, scaler, model, propagated)
+    assert selected is not None
+    (validation_loss, selected_alpha, selected_c), scaler, model, propagated = selected
+    if not np.isin(labels[test], model.classes_).all():
+        raise ValueError("test labels contain a class absent from training")
+    test_x = scaler.transform(propagated[test])
+    test_probabilities = model.predict_proba(test_x)
+    validation_x = scaler.transform(propagated[validation])
+    return {
+        "selected_alpha": selected_alpha,
+        "alpha_grid": alpha_values,
+        "validation_by_alpha": validation_by_alpha,
+        "selected_C": selected_c,
+        "validation_log_loss": validation_loss,
+        "validation_macro_f1": float(f1_score(
+            labels[validation], model.predict(validation_x),
+            labels=model.classes_, average="macro", zero_division=0)),
+        "test_macro_f1": float(f1_score(
+            labels[test], model.predict(test_x), labels=model.classes_,
+            average="macro", zero_division=0)),
+        "test_log_loss": float(log_loss(
+            labels[test], test_probabilities, labels=model.classes_)),
+        "test_accuracy": float(accuracy_score(labels[test], model.predict(test_x))),
+        "train_size": int(train.size),
+        "validation_size": int(validation.size),
+        "test_size": int(test.size),
+        "model_fingerprint": _model_fingerprint(scaler, model, selected_c),
+    }
+
+
 def operator_equivalence_error(
     left: sparse.spmatrix | np.ndarray,
     right: sparse.spmatrix | np.ndarray,

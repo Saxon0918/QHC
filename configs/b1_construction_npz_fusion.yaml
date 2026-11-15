@@ -1,0 +1,32 @@
+# Exploratory graph-plus-hypergraph Cora pilot. The original NPZ protocol and
+# its result remain unchanged; this run adds validation-selected fusion arms.
+project:
+  protocol: latent_b1_npz_graph_fusion_v1
+  mode: npz
+  seed: 20261115
+
+npz:
+  files:
+    - ../data/processed/cora_b1.npz
+
+kernel:
+  kind: norm_laplacian
+  lam: 0.0
+  times: [0.75, 1.5, 3.0]
+  weights: [0.3333333333333333, 0.3333333333333333, 0.3333333333333333]
+  dense_limit: 128
+
+sparse:
+  landmarks: 128
+  top_k: 16
+  batch_size: 16
+
+hard:
+  enabled: false
+
+fusion:
+  enabled: true
+  alphas: [0.0, 0.25, 0.5, 0.75, 1.0]
+
+evaluation:
+  C_grid: [0.1, 1.0, 10.0]

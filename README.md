@@ -214,6 +214,22 @@ python scripts/prepare_b1_planetoid.py --dataset Cora --output data/processed/co
 python main.py b1-construction --config configs/b1_construction_npz.yaml
 ```
 
+The follow-up graph-fusion pilot uses the same Cora archive, quantum/Markov
+construction budget, node split, features and decoder. It adds three arms:
+original-graph propagation mixed with the quantum sparse hypergraph, the
+matched Markov sparse hypergraph, or the identity operator. The identity arm
+checks whether any gain merely comes from retaining more of each node's own
+features. For each arm, the fusion weight and logistic-regression `C` are
+chosen jointly by validation LogLoss from the predeclared grids; test metrics
+are computed only for the chosen pair. The report records the validation curve,
+chosen weight and saved propagation operator for each arm. This is an
+exploratory follow-up because the earlier Cora test result has already been
+inspected.
+
+```bash
+python main.py b1-construction --config configs/b1_construction_npz_fusion.yaml
+```
+
 The B1 output directory stores the resolved config, source hashes, split
 indices, constructed incidence and operator matrices, per-graph scores and
 resource records. Family construction times exclude shared input/Hamiltonian

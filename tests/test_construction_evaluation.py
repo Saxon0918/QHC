@@ -6,7 +6,9 @@ from scipy import sparse
 
 from qhyper.construction_evaluation import (
     assert_operator_equivalence,
+    evaluate_fusion,
     evaluate_operator,
+    fused_operator,
     operator_equivalence_error,
 )
 from qhyper.construction_synthetic import make_synthetic_graph, stratified_node_split
@@ -108,3 +110,39 @@ def test_sparse_operator_validation_rejects_nonfinite_and_complex():
     complex_operator = sparse.eye(n, dtype=np.complex128, format="csr")
     with pytest.raises(ValueError, match="real"):
         evaluate_operator(complex_operator, features, labels, split)
+
+
+def test_fusion_endpoints_and_train_only_selection():
+    graph, features, labels, split = _sample()
+    graph = sparse.csr_matrix(graph)
+    identity = sparse.eye(graph.shape[0], format="csr")
+    np.testing.assert_array_equal(fused_operator(graph, identity, 0.0).toarray(),
+                                  graph.toarray())
+    np.testing.assert_array_equal(fused_operator(graph, identity, 1.0).toarray(),
+                                  identity.toarray())
+    assert sparse.issparse(fused_operator(graph, identity, 0.5))
+
+    graph_only = evaluate_operator(graph, features, labels, split, C_grid=(0.1, 1.0))
+    endpoint = evaluate_fusion(graph, identity, features, labels, split,
+                               alphas=(0.0,), C_grid=(0.1, 1.0))
+    assert endpoint["selected_alpha"] == 0.0
+    for key, value in graph_only.items():
+        assert endpoint[key] == value
+
+    reference = evaluate_fusion(graph, identity, features, labels, split,
+                                alphas=(0.0, 0.5, 1.0), C_grid=(0.1, 1.0))
+    permuted_labels = labels.copy()
+    permuted_labels[split["test"]] = np.roll(labels[split["test"]], 3)
+    permuted = evaluate_fusion(graph, identity, features, permuted_labels, split,
+                               alphas=(0.0, 0.5, 1.0), C_grid=(0.1, 1.0))
+    for key in ("selected_alpha", "selected_C", "validation_by_alpha",
+                "validation_log_loss", "validation_macro_f1", "model_fingerprint"):
+        assert reference[key] == permuted[key]
+
+
+def test_fusion_rejects_invalid_weights_and_shape():
+    graph = sparse.eye(3, format="csr")
+    with pytest.raises(ValueError, match="alpha"):
+        fused_operator(graph, graph, 1.1)
+    with pytest.raises(ValueError, match="same shape"):
+        fused_operator(graph, sparse.eye(4, format="csr"), 0.5)

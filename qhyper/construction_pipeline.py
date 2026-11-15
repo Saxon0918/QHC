@@ -18,7 +18,7 @@ import yaml
 from .construction_candidates import propose_groups
 from .construction_cluster import cluster_transport_hypergraph
 from .construction_compression import compress_kernel
-from .construction_evaluation import evaluate_operator
+from .construction_evaluation import evaluate_fusion, evaluate_operator, fused_operator
 from .construction_kernels import (matched_markov, quantum_transport,
                                    spread_matched_markov)
 from .construction_sparse import (selected_transport_columns,
@@ -138,6 +138,14 @@ def load_construction_config(path: Path) -> dict[str, Any]:
     if not isinstance(evaluation, dict):
         raise ValueError("evaluation settings are required")
     _positive_grid(evaluation.get("C_grid"), "evaluation.C_grid")
+    fusion = cfg.get("fusion", {"enabled": False})
+    if not isinstance(fusion, dict) or not isinstance(fusion.get("enabled"), bool):
+        raise ValueError("fusion.enabled must be boolean")
+    if fusion["enabled"]:
+        alphas = _positive_grid(fusion.get("alphas"), "fusion.alphas", allow_zero=True)
+        if (len(set(alphas)) != len(alphas) or any(alpha > 1.0 for alpha in alphas)
+                or 0.0 not in alphas or 1.0 not in alphas or len(alphas) < 3):
+            raise ValueError("fusion.alphas must be distinct values in [0, 1] with both endpoints and an interior value")
     return cfg
 
 
@@ -306,6 +314,23 @@ def _paired_summary(records: list[dict[str, Any]], *, mode: str) -> dict[str, An
                         "n": len(deltas), "mean": float(np.mean(deltas)),
                         "values": [float(delta) for delta in deltas],
                     }
+        fused_quantum = "graph_quantum_sparse_fusion"
+        for control, destination in (
+            ("graph_gcn", "paired_fusion_quantum_minus_graph"),
+            ("graph_identity_fusion", "paired_fusion_quantum_minus_identity"),
+            ("graph_markov_sparse_fusion", "paired_fusion_quantum_minus_markov"),
+        ):
+            matched = [arms for arms in graph_rows
+                       if fused_quantum in arms and control in arms]
+            if matched:
+                deltas = [float(arms[fused_quantum]["evaluation"]["test_macro_f1"]
+                                - arms[control]["evaluation"]["test_macro_f1"])
+                          for arms in matched]
+                regime_summary[destination] = {
+                    "n": len(deltas), "mean": float(np.mean(deltas)),
+                    "values": deltas,
+                    "alpha_selection": "independent_validation_selection_from_shared_grid",
+                }
         summary[regime] = regime_summary
     return summary
 
@@ -536,6 +561,39 @@ def run_construction(config_path: Path, output: Path) -> dict[str, Any]:
                 "evaluation": scores, "operator": diagnostics[method],
                 "evaluation_seconds": perf_counter() - start,
             })
+        if cfg.get("fusion", {}).get("enabled", False):
+            graph_operator = operators["graph_gcn"]
+            fusion_sources = {
+                "graph_identity_fusion": operators["features_only"],
+                "graph_quantum_sparse_fusion": operators["quantum_sparse"],
+                "graph_markov_sparse_fusion": operators["markov_sparse"],
+            }
+            for method, additional in fusion_sources.items():
+                start = perf_counter()
+                with profile.stage(f"{stage}/evaluate/{method}"):
+                    scores = evaluate_fusion(
+                        graph_operator, additional, X, y, split,
+                        alphas=cfg["fusion"]["alphas"],
+                        C_grid=cfg["evaluation"]["C_grid"])
+                    selected_alpha = float(scores["selected_alpha"])
+                    selected_operator = fused_operator(
+                        graph_operator, additional, selected_alpha)
+                    sparse.save_npz(graph_dir / f"{method}_theta.npz",
+                                    sparse.csr_matrix(selected_operator))
+                records.append({
+                    "regime": kind, "graph_id": graph_key, "method": method,
+                    "evaluation": scores,
+                    "operator": {
+                        "operator_type": "convex_graph_and_additional_propagation",
+                        "graph_source": "original_binary_graph_with_self_loops",
+                        "additional_source": ("identity" if method == "graph_identity_fusion"
+                                              else method.removeprefix("graph_").removesuffix("_fusion")),
+                        "selected_alpha": selected_alpha,
+                        "mean_diagonal": float(selected_operator.diagonal().mean()),
+                        "induced_graph_nnz": int(sparse.csr_matrix(selected_operator).nnz),
+                    },
+                    "evaluation_seconds": perf_counter() - start,
+                })
         kernel_comparison = {}
         if dense:
             quantum_k = np.asarray(full["quantum"]["K"])
