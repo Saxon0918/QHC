@@ -1,0 +1,83 @@
+tests/test_construction_candidates.py
+  s_86ca5e2515274a::t_5711659f925e16 1-100
+tests/test_construction_synthetic.py
+  s_86ca5e2515274a::t_5711659f925e16 1-83
+qhyper/construction_sparse.py
+  s_86ca5e2515274a::t_5711659f925e16 1-253
+tests/test_prepare_b1_planetoid.py
+  s_86ca5e2515274a::t_5711659f925e16 1-38
+qhyper/construction_pipeline.py
+  s_86ca5e2515274a::t_5711659f925e16 1-586
+tests/test_construction_compression.py
+  s_86ca5e2515274a::t_5711659f925e16 1-127
+scripts/prepare_b1_planetoid.py
+  s_86ca5e2515274a::t_5711659f925e16 1-132
+qhyper/construction_synthetic.py
+  s_86ca5e2515274a::t_5711659f925e16 1-229
+qhyper/construction_compression.py
+  s_86ca5e2515274a::t_5711659f925e16 1-241
+qhyper/construction_kernels.py
+  s_86ca5e2515274a::t_5711659f925e16 1-234
+tests/test_construction_pipeline.py
+  s_86ca5e2515274a::t_5711659f925e16 1-127
+configs/b1_construction_cluster_pilot.yaml
+  s_86ca5e2515274a::t_5711659f925e16 1-39
+qhyper/construction_evaluation.py
+  s_86ca5e2515274a::t_5711659f925e16 1-237
+tests/test_construction_kernels.py
+  s_86ca5e2515274a::t_5711659f925e16 1-204
+configs/b1_construction_npz.yaml
+  s_86ca5e2515274a::t_5711659f925e16 1-28
+tests/test_construction_exchange_theory.py
+  s_86ca5e2515274a::t_5711659f925e16 1-39
+tests/test_construction_evaluation.py
+  s_86ca5e2515274a::t_5711659f925e16 1-110
+qhyper/construction_candidates.py
+  s_86ca5e2515274a::t_5711659f925e16 1-161
+qhyper/construction_cluster.py
+  s_86ca5e2515274a::t_5711659f925e16 1-183
+tests/test_construction_sparse.py
+  s_86ca5e2515274a::t_5711659f925e16 1-153
+configs/b1_construction_smoke.yaml
+  s_86ca5e2515274a::t_5711659f925e16 1-34
+configs/b1_construction_trace_pilot.yaml
+  s_86ca5e2515274a::t_5711659f925e16 1-35
+main.py
+  s_86ca5e2515274a::t_5711659f925e16 12,44-48,54-55,60-65
+tests/test_construction_cluster.py
+  s_86ca5e2515274a::t_5711659f925e16 1-117
+README.md
+  s_86ca5e2515274a::t_1f157741afc583 1,3-5,15-18,146-225
+docs/B1_PILOT_RESULTS.md
+  s_86ca5e2515274a::t_c07c0fcf6fdd1d 1-37
+docs/LATENT_CONSTRUCTION_THEORY.md
+  s_86ca5e2515274a::t_8efe2f1698d902 1-183
+results/b1-construction-cluster-pilot-release/config.json
+  s_86ca5e2515274a::t_c74cc641dd3595 1-67
+results/b1-construction-cluster-pilot-release/report.json
+  s_86ca5e2515274a::t_a2415a255d5f36 1-11585
+results/b1-construction-smoke-release/config.json
+  s_86ca5e2515274a::t_635e3ad4977a92 1-61
+results/b1-construction-smoke-release/report.json
+  s_86ca5e2515274a::t_166229c9227260 1-5699
+results/b1-construction-trace-pilot-release/config.json
+  s_86ca5e2515274a::t_7bbe848a6f8b85 1-63
+results/b1-construction-trace-pilot-release/report.json
+  s_86ca5e2515274a::t_e78bf6ad37aa32 1-9584
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.24",
+  "base_commit_sha": "1dc90fc97bf0ec0790c41b2ad98f783f7fb0a623",
+  "prompts": {},
+  "sessions": {
+    "s_86ca5e2515274a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "01a1d1bd-207b-7fe2-a577-553362b96fbe",
+        "model": "unknown"
+      },
+      "human_author": "saxon.zhu <saxon.zhu@htx-inc.com>"
+    }
+  }
+}
