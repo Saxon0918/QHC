@@ -80,7 +80,8 @@ def test_large_graph_path_avoids_dense_reference(tmp_path):
 def test_optional_graph_fusion_adds_matched_controls_and_selected_operators(tmp_path):
     config = _config(dense_limit=12, hard=False)
     config["cluster"]["enabled"] = False
-    config["fusion"] = {"enabled": True, "alphas": [0.0, 0.5, 1.0]}
+    config["fusion"] = {"enabled": True, "alphas": [0.0, 0.5, 1.0],
+                        "report_fixed_alpha_tests": True}
     report, output = _run(tmp_path, config)
     arms = {row["method"]: row for row in report["records"]}
     fused = {"graph_identity_fusion", "graph_quantum_sparse_fusion",
@@ -91,6 +92,21 @@ def test_optional_graph_fusion_adds_matched_controls_and_selected_operators(tmp_
         scores = arms[method]["evaluation"]
         assert scores["selected_alpha"] in (0.0, 0.5, 1.0)
         assert [row["alpha"] for row in scores["validation_by_alpha"]] == [0.0, 0.5, 1.0]
+        fixed = scores["fixed_alpha_results"]
+        assert [row["alpha"] for row in fixed] == [0.0, 0.5, 1.0]
+        for val, row in zip(scores["validation_by_alpha"], fixed):
+            assert row["selection_policy"] == "fixed_predeclared_alpha_validation_selected_C"
+            assert row["selected_C"] == val["selected_C"]
+            assert row["validation_log_loss"] == val["validation_log_loss"]
+        endpoint = {key: value for key, value in fixed[0].items()
+                    if key not in {"alpha", "selection_policy"}}
+        assert endpoint == arms["graph_gcn"]["evaluation"]
+        pure_method = {"graph_identity_fusion": "features_only",
+                       "graph_quantum_sparse_fusion": "quantum_sparse",
+                       "graph_markov_sparse_fusion": "markov_sparse"}[method]
+        endpoint = {key: value for key, value in fixed[-1].items()
+                    if key not in {"alpha", "selection_policy"}}
+        assert endpoint == arms[pure_method]["evaluation"]
         assert (output / "graphs" / "group-7" / f"{method}_theta.npz").exists()
     summary = report["summary"]["group"]
     assert summary["paired_fusion_quantum_minus_graph"]["n"] == 1
@@ -104,6 +120,14 @@ def test_fusion_config_requires_distinct_bounded_endpoints_and_interior(tmp_path
     config = _config(dense_limit=12, hard=False)
     config["fusion"] = {"enabled": True, "alphas": alphas}
     with pytest.raises(ValueError, match="fusion.alphas"):
+        _run(tmp_path, config)
+
+
+def test_fusion_fixed_alpha_reporting_flag_must_be_boolean(tmp_path):
+    config = _config(dense_limit=12, hard=False)
+    config["fusion"] = {"enabled": True, "alphas": [0.0, 0.5, 1.0],
+                        "report_fixed_alpha_tests": "yes"}
+    with pytest.raises(ValueError, match="fusion.report_fixed_alpha_tests"):
         _run(tmp_path, config)
 
 

@@ -146,6 +146,8 @@ def load_construction_config(path: Path) -> dict[str, Any]:
         if (len(set(alphas)) != len(alphas) or any(alpha > 1.0 for alpha in alphas)
                 or 0.0 not in alphas or 1.0 not in alphas or len(alphas) < 3):
             raise ValueError("fusion.alphas must be distinct values in [0, 1] with both endpoints and an interior value")
+        if not isinstance(fusion.get("report_fixed_alpha_tests", False), bool):
+            raise ValueError("fusion.report_fixed_alpha_tests must be boolean")
     return cfg
 
 
@@ -575,6 +577,22 @@ def run_construction(config_path: Path, output: Path) -> dict[str, Any]:
                         graph_operator, additional, X, y, split,
                         alphas=cfg["fusion"]["alphas"],
                         C_grid=cfg["evaluation"]["C_grid"])
+                    if cfg["fusion"].get("report_fixed_alpha_tests", False):
+                        # These are separate predeclared exploratory arms. Each
+                        # fixed alpha selects only C on validation; no test
+                        # metric feeds back into alpha or C selection.
+                        fixed_results = []
+                        for alpha in scores["alpha_grid"]:
+                            fixed = evaluate_operator(
+                                fused_operator(graph_operator, additional, alpha),
+                                X, y, split, C_grid=cfg["evaluation"]["C_grid"])
+                            fixed_results.append({
+                                "alpha": float(alpha),
+                                "selection_policy": "fixed_predeclared_alpha_validation_selected_C",
+                                **fixed,
+                            })
+                        scores["fixed_alpha_results"] = fixed_results
+                        scores["selection_policy"] = "validation_selected_alpha_and_C"
                     selected_alpha = float(scores["selected_alpha"])
                     selected_operator = fused_operator(
                         graph_operator, additional, selected_alpha)

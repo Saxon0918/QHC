@@ -230,6 +230,20 @@ inspected.
 python main.py b1-construction --config configs/b1_construction_npz_fusion.yaml
 ```
 
+To inspect every predeclared fusion weight rather than only the
+validation-selected deployment model, run the fixed-alpha exploratory protocol:
+
+```bash
+python main.py b1-construction --config configs/b1_construction_npz_fusion_fixed.yaml
+```
+
+For each of the three fusion families, `evaluation.fixed_alpha_results` in
+`report.json` contains validation and test Accuracy, Macro-F1 and LogLoss for
+every configured alpha. Each fixed alpha independently selects only `C` on
+validation; the original `selected_alpha` result remains separate. Do not
+choose a preferred alpha by looking at these test rows: Cora's test outcomes
+have already informed this follow-up, so the grid table is exploratory.
+
 The B1 output directory stores the resolved config, source hashes, split
 indices, constructed incidence and operator matrices, per-graph scores and
 resource records. Family construction times exclude shared input/Hamiltonian
